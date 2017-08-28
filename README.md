@@ -1,6 +1,6 @@
 # Storytelling with Data
 
-This repository contains course materials for the Dartmouth Course [Story Telling with Data (PSYC 81.06)](http://pbs.dartmouth.edu/undergraduate/permission-courses/fall-2017).
+This repository contains course materials for the Dartmouth Course [Story Telling with Data (PSYC 81.06)](http://pbs.dartmouth.edu/undergraduate/permission-courses/fall-2017).  The syllabus may be found [[here](https://github.com/ContextLab/storytelling-with-data/blob/master/PSYC_81_syllabus.pdf)].
 
 ## Student instructions
 
