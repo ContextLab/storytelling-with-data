@@ -19,6 +19,7 @@ In addition to the GitHub tutorial above, if you're new to computer programming,
 - Introduction to [Python](https://www.codecademy.com/learn/learn-python) (beginner)
 - Introduction to [Git](https://www.codecademy.com/learn/learn-git) (beginner)
 - Video introduction to [Jupyter Notebooks](https://www.youtube.com/watch?v=e9cSF3eVQv0) (with [code](https://github.com/alfredessa/awesomedata.science/tree/master/1.0JupyterTour)) (beginner)
+- Learning to code with [Python *and* Jupyter Notebooks](http://introtopython.org/) (beginner)
 
 Once you have the basics down, you can move on to learn about some very useful Python packages:
 
