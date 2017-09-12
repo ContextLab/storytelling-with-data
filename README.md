@@ -14,11 +14,27 @@ All code for this course should be written in [Python](https://www.python.org/) 
 
 In addition to the GitHub tutorial above, if you're new to computer programming, Python, or Jupyter notebooks, you'll want to run through some tutorials to help you get started.
 
-To do: make a list of relevant tutorials
+- Introduction to [Python](https://www.codecademy.com/learn/learn-python) (beginner)
+- Introduction to [Git](https://www.codecademy.com/learn/learn-git) (beginner)
+- Video introduction to [Jupyter Notebooks](https://www.youtube.com/watch?v=e9cSF3eVQv0) (with [code](https://github.com/alfredessa/awesomedata.science/tree/master/1.0JupyterTour)) (beginner)
+
+Once you have the basics down, you can move on to learn about some very useful Python packages:
+
+- Introduction to [Pandas](https://pandas.pydata.org/pandas-docs/stable/10min.html) (intermediate)
+- Practice your Pandas [skills](https://github.com/guipsamora/pandas_exercises) (intermediate)
+- Getting started with [Numpy](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html) (intermediate)
+- Getting started with [Scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/index.html) (intermediate)
+- Exploring high dimensional data with [HyperTools](http://blog.kaggle.com/2017/04/10/exploring-the-structure-of-high-dimensional-data-with-hypertools-in-kaggle-kernels/) (intermediate)
 
 ## Datasets folder
 
-To do: add list of public datasets
+In todays data-centric world, there are an abundance of high-quality, free datasets to explore.  Below is a short list of websites that are great resources for data:
+
+- [Kaggle](https://www.kaggle.com/datasets)
+- [FiveThirtyEight](https://github.com/fivethirtyeight/data)
+- [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets)
+- [Datalad](http://datasets.datalad.org/)
+- [Princeton Neuroscience Institute](http://dataspace.princeton.edu/jspui/handle/88435/dsp0147429c369)
 
 ## Projects folder
 
