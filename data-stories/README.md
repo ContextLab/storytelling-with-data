@@ -13,7 +13,7 @@ You can also add additional files that you think are useful.  Note: do *not* sto
 ## Setting up a Slack channel (optional)
 If you're starting a several-person project, you should start a new channel on the course Slack account.  Be sure to invite all team members, me (i.e. the course instructor, i.e. @jeremy), and others who express an interest and/or who you want to be aware of your project.
 
-## Updating the class Docker image
+## Updating the class Docker image (optional)
 Occasionally projects will require packages that aren't yet included in the Docker image.  To add request that new packages be added to the Docker image:
 - Send a message to Andy (@andy) on Slack, telling him which specific packages you'd like to add
 - Post a message to the #general channel on Slack, telling everyone to update their Docker image (so that they can run your code!)
