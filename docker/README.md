@@ -8,9 +8,9 @@ This is a Docker container pre-built with python tools you can use for data anal
   - jupyter
   - pandas
   - matplotlib
-  - [Hypertools](http://hypertools.readthedocs.io/en/latest/index.html)  
-  - [Seaborn](http://seaborn.pydata.org/)
-  - [Scikit-learn](http://scikit-learn.org/stable/index.html)
+  - [hypertools](http://hypertools.readthedocs.io/en/latest/index.html)  
+  - [seaborn](http://seaborn.pydata.org/)
+  - [scikit-learn](http://scikit-learn.org/stable/index.html)
 
 ## Usage instructions  
 
