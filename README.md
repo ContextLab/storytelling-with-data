@@ -28,6 +28,10 @@ Once you have the basics down, you can move on to learn about some very useful P
 - Getting started with [Scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/index.html) (intermediate)
 - Exploring high dimensional data with [HyperTools](http://blog.kaggle.com/2017/04/10/exploring-the-structure-of-high-dimensional-data-with-hypertools-in-kaggle-kernels/) (intermediate)
 
+Another really useful technique for doing reproducible open science in the real world is to develop [unit tests](http://docs.python-guide.org/en/latest/writing/tests/).  I suggest using [Travis CI](https://docs.travis-ci.com/) to automatically run your unit tests when you check in new code:
+- Testing applications with [Pytest](https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest) (advanced)
+- Setting up [Travis CI](https://docs.travis-ci.com/user/for-beginners) (advanced)
+
 ## Where to find nice datasets
 
 In todays "Big Data" world, there are an abundance of high-quality, free datasets to enjoy and explore.  Below is a short list of websites that are great resources for data:
