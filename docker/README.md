@@ -23,10 +23,10 @@ This is a Docker container pre-built with python tools you can use for data anal
 2. Launch the Docker daemon and adjust the preferences to allocate sufficient resources (e.g. > 4GB RAM)
 3. Download the docker image from [docker hub](https://hub.docker.com/r/contextlab/storytelling-with-data/) and build it:
     - Open a terminal and enter:
-    - `docker pull contextlab/storytelling-with-data`
+    - `docker pull contextlab/storytelling-with-data` (*might take a little while to download*)
 4. Create a new persistent interactive container (*only required once*)
     - The command below will create a new container that will map your computer's `Desktop` to `/mnt` within the container, so that location is shared between your host OS and the container. You can change what folder you want to share by editing the path in the command below. The command will also share port `9999` with your host computer so any jupyter notebooks launched from *within* the container should not conflict with other notebooks you may already have running. Container notebooks will be accessible at `localhost:9999` in your browser
-    - `docker run -it -p 9999:9999 --name MIND -v ~/Desktop:/mnt contextlab/storytelling-with-data/ `
+    - `docker run -it -p 9999:9999 --name storytelling -v ~/Desktop:/mnt contextlab/storytelling-with-data `
     - You should now see the `root@` prefix in your terminal, if so you've successfully created a container and are running a shell from *inside*!
 5. Execute commands as desired:
     - Launch a jupyter notebook:
