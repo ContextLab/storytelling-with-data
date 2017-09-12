@@ -1,8 +1,9 @@
 This is a Docker container pre-built with python tools you can use for data analysis and workshop demos during the Storytelling with data class.
 
 ## Contains
-
-[Scientific python stack](https://www.scipy.org/about.html) ([Anaconda version](https://www.continuum.io/what-is-anaconda)
+- Operating system: Debian (latest)
+- Python version: 3.6
+- [Scientific python stack](https://www.scipy.org/about.html) ([Anaconda version](https://www.continuum.io/what-is-anaconda))
   - numpy
   - scipy
   - jupyter
