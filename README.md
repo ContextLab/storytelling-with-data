@@ -28,7 +28,7 @@ Once you have the basics down, you can move on to learn about some very useful P
 - Getting started with [Scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/index.html) (intermediate)
 - Exploring high dimensional data with [HyperTools](http://blog.kaggle.com/2017/04/10/exploring-the-structure-of-high-dimensional-data-with-hypertools-in-kaggle-kernels/) (intermediate)
 
-## Datasets folder
+## Where to find nice datasets
 
 In todays "Big Data" world, there are an abundance of high-quality, free datasets to enjoy and explore.  Below is a short list of websites that are great resources for data:
 
@@ -38,7 +38,7 @@ In todays "Big Data" world, there are an abundance of high-quality, free dataset
 - [Datalad](http://datasets.datalad.org/)
 - [Princeton Neuroscience Institute](http://dataspace.princeton.edu/jspui/handle/88435/dsp0147429c369)
 
-## The *Data-stories* folder
+## The *data-stories* folder
 
 Each time you begin a new project, you should (in collaboration with your project team):
 - Fork this repository and clone it to your computer
