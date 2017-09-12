@@ -34,7 +34,7 @@ Another really useful technique for doing reproducible open science in the real 
 - Setting up [Travis CI](https://docs.travis-ci.com/user/for-beginners) (advanced)
 
 Domain-specific tutorials:
-- [Tools for analyzing dynamic brain patterns and brain networks](https://github.com/Summer-MIND/mind_2017)
+- [Tools for analyzing dynamic brain patterns and brain networks](https://github.com/Summer-MIND/mind_2017) (intermediate to advanced)
 
 ## Where to find nice datasets
 
