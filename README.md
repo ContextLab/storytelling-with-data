@@ -33,6 +33,9 @@ Another really useful technique for doing reproducible open science in the real 
 - Testing applications with [Pytest](https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest) (advanced)
 - Setting up [Travis CI](https://docs.travis-ci.com/user/for-beginners) (advanced)
 
+Domain-specific tutorials:
+- [Tools for analyzing dynamic brain patterns and brain networks](https://github.com/Summer-MIND/mind_2017)
+
 ## Where to find nice datasets
 
 In todays "Big Data" world, there are an abundance of high-quality, free datasets to enjoy and explore.  Below is a short list of websites that are great resources for data:
