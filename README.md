@@ -38,7 +38,7 @@ In todays "Big Data" world, there are an abundance of high-quality, free dataset
 - [Datalad](http://datasets.datalad.org/)
 - [Princeton Neuroscience Institute](http://dataspace.princeton.edu/jspui/handle/88435/dsp0147429c369)
 
-## The *Data-stories folder
+## The *Data-stories* folder
 
 Each time you begin a new project, you should (in collaboration with your project team):
 - Fork this repository and clone it to your computer
