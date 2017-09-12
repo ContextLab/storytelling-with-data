@@ -4,7 +4,7 @@ This repository contains course materials for the Dartmouth Course [Story Tellin
 
 ## Student instructions
 
-If you are a student enrolled in the class (or if you'd like to following along!) you should start by signing up for the course's [Slack account](stories-about-data.slack.com) (students: you need to join using your @dartmouth.edu email address).
+**If you are a student enrolled in the class (or if you'd like to following along!) you should start by signing up for the course's [Slack account](stories-about-data.slack.com) (you need to join using your @dartmouth.edu email address).**
 
 Next, run through this [GitHub tutorial](https://try.github.io).  Then fork this repository so that you can contribute!
 
