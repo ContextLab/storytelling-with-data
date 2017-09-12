@@ -1,5 +1,3 @@
-# mind-tools
-
 This is a Docker container pre-built with python tools you can use for data analysis and workshop demos during the Storytelling with data class.
 
 ## Contains
