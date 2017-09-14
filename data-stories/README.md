@@ -8,7 +8,7 @@ Each project should exist as a subfolder of the current [data-stories](https://g
 - **README.md** -- documentation for your project
 - **notebook.ipynb** (you can rename this file to something descriptive) -- code for running the key analyses and/or generating the key figures
 
-You can also add additional files that you think are useful.  Note: do *not* store data in GitHub-- it can't deal with big files well!
+You can also add additional files that you think are useful.  Note: do *not* store big datasets in GitHub-- it can't deal with big files well!  But if your dataset fits in a small spreadsheet file or text file, it's probably fine to store here.
 
 ## Setting up a Slack channel (optional)
 If you're starting a several-person project, you should start a new channel on the course Slack account.  Be sure to invite all team members, me (i.e. the course instructor, i.e. @jeremy), and others who express an interest and/or who you want to be aware of your project.
