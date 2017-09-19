@@ -1,6 +1,6 @@
 # Overview
 
-We'll be exploring student attendance data from local (Windsort County, VT) schools.  Local police and school administrators are interested in understanding the patterns that contribute to truancy.
+We'll be exploring student attendance data from local (Windsor County, VT) schools.  Local police and school administrators are interested in understanding the patterns that contribute to truancy.
 
 # Downloading the dataset
 
