@@ -4,7 +4,7 @@ We'll be exploring student attendance data from local (Windsor County, VT) schoo
 
 # Downloading the dataset
 
-(Need to add this once we get the data!)
+The data is not yet public but is taken from a spreadsheet including students'
 
 # Running the code
 
