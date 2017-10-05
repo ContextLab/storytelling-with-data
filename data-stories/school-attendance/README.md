@@ -1,10 +1,10 @@
 # Overview
 
-We'll be exploring student attendance data from local (Windsor County, VT) schools.  Local police and school administrators are interested in understanding the patterns that contribute to truancy.
+We'll be exploring student attendance data from local schools.  Local police and school administrators are interested in understanding the patterns that contribute to truancy.
 
 # Downloading the dataset
 
-(Need to add this once we get the data!)
+The data is not yet public but is taken from a spreadsheet including students' demographic and attendance info
 
 # Running the code
 
