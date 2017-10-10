@@ -37,7 +37,8 @@ RUN ["/bin/bash", "-c", "conda install -y gcc"]
 RUN pip install hypertools \
     deepdish \
     dask \
-    seaborn
+    seaborn \
+    python-twitter
 
 RUN conda create -n py3 python=3.6
 RUN ["/bin/bash", "-c", "source activate py3 && \
