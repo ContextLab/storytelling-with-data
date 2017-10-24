@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd ~/Desktop/storytelling-with-data
+echo YOU SHOULD RUN THIS FROM WITHIN DOCKER!!
+
+cd /mnt/storytelling-with-data
 
 echo adding class repo as upstream
 git remote add upstream https://github.com/ContextLab/storytelling-with-data.git
