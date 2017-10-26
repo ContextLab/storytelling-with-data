@@ -1,4 +1,4 @@
-,birth_year,region,health,general_happy,past_week_happy,see_friends,see_relatives,income,work_hours,Job satisfaction,weekend_internet,weekday_internet,use_twitter,internet_per_week
+,birth_year,region,health,general_happy,past_week_happy,see_friends,see_relatives,income,work_hours,job_satisfaction,weekend_internet,weekday_internet,use_twitter,internet_per_week
 0,1969.0,New england,Good,Pretty happy,,Sev times a year,Almost daily,$170000 or over,,Mod. satisfied,,,,
 1,1955.0,New england,,Pretty happy,,Sev times a year,Sev times a year,$50000 to 59999,,Very satisfied,,,No,
 2,1944.0,New england,Good,Very happy,Most of the time,,,,,,,,No,
