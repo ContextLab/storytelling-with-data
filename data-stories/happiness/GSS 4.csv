@@ -1,4 +1,4 @@
-,age,region,health,general_happy,past_week_happy,see_friends,see_relatives,income,work_hours,Job satisfaction,weekend_internet,weekday_internet,use_twitter,internet_per_week
+,age,region,health,general_happy,past_week_happy,see_friends,see_relatives,income,work_hours,job_satisfaction,weekend_internet,weekday_internet,use_twitter,internet_per_week
 0,47.0,New england,Good,Pretty happy,,Sev times a year,Almost daily,170000.0,,Mod. satisfied,,,,
 1,61.0,New england,,Pretty happy,,Sev times a year,Sev times a year,54999.0,,Very satisfied,,,No,
 2,72.0,New england,Good,Very happy,Most of the time,,,,,,,,No,
