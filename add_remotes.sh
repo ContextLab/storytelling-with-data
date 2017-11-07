@@ -18,5 +18,6 @@ git remote add ariana https://github.com/ArianaMoran/storytelling-with-data.git
 git remote add ellie https://github.com/ebennett10/storytelling-with-data.git
 git remote add cameron https://github.com/camartin95/storytelling-with-data.git
 git remote add isabelle https://github.com/igleonaitis/storytelling-with-data.git
+git remote add amara https://github.com/amaragordon/storytelling-with-data.git
 
 echo done.
