@@ -8,7 +8,7 @@ Ariana Moran, Shinar Jain, and Campbell Field are the main contributors to this 
 
 # Downloading the dataset
 
-We are using a subset of the General Social Survey ([link](https://gssdataexplorer.norc.org)), which includes specific variables focusing on happiness, work, family, and internet use. Additionally, we have scraped Twitter for recent tweets containing specific keywords.
+We are using a subset of the General Social Survey ([link](https://gssdataexplorer.norc.org)), which includes specific variables focusing on happiness, demographics, work, family, and internet use. Additionally, we have scraped Twitter for recent tweets containing specific keywords.
 
 # Running the code
 
