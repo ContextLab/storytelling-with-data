@@ -5,10 +5,12 @@ PURPOSE:
 To visualize the fluctuation in time-related uber pickup traffic. 
 - locations throughout the day and correlate it with daily commuter transit. 
 
+PAST WORK: 
+FiveThirtyEight wrote four articles using the original dataset procured from TLC (linked below in the Data Section). One article focused on daily traffic fluctation to examine the effects of Uber on rush hour traffic (https://fivethirtyeight.com/features/is-uber-making-nyc-rush-hour-traffic-worse/)
+
 
 DATA:
-Data source link: 
-##FIND THIS
+Data source link: https://github.com/fivethirtyeight/uber-tlc-foil-response/
 
 We have edited the original data source in this github repo, removing unneeded data files. Data files that we kept are described below. 
 
