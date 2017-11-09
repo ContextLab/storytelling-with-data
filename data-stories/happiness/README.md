@@ -2,9 +2,13 @@
 
 We're exploring happiness in the United States and what factors contribute to an individual's happiness, comparing any trends we find to Twitter in order to see if sentiment expressed online lines up with what we've found.
 
+# Contributors
+
+Ariana Moran, Shinar Jain, and Campbell Field are the main contributors to this project.
+
 # Downloading the dataset
 
-We are using a subset of the General Social Survey ([link](https://gssdataexplorer.norc.org)), which includes specific variables focusing on happiness, work, family, and internet use.
+We are using a subset of the General Social Survey ([link](https://gssdataexplorer.norc.org)), which includes specific variables focusing on happiness, demographics, work, family, and internet use. Additionally, we have scraped Twitter for recent tweets containing specific keywords.
 
 # Running the code
 
