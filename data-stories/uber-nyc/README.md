@@ -1,10 +1,41 @@
-### Uber TLC FOIL Response
+## Uber NYC Rides Data Analysis 
+Group Members: 
+
+- Jane Lee 
+- Lillian Zhao
+
+Contributors: 
+
+- Jeremy Manning
+
+# Overview
+
+We're plotting some data from Uber.  The sample code loads in data, organizes it, and plots it (using Plotly).
+
+To run this analysis you need to install plotly (run from within the docker container):
+
+`pip install plotly`
+
+### Downloading the dataset
+
+The dataset is included in this folder.  It's from Fivethirtyeight.
+You can also find the full data set [here](https://github.com/fivethirtyeight/uber-tlc-foil-response).
+
+Purpose
+-
+The purpose of this data analysis is to be able to visualize the fluctuation of uber rides in time-related uber pickup traffic, as well as by locations throughout the day and correlate it with daily commuter transit.  We wanted to find patterns with the given data to see if we could draw conclusions about the individual habits of uber riders that contribute to a macro-change in the way modern transportation is used.  
+
+External sources
+-
+We first got our idea and [data set](https://github.com/fivethirtyeight/uber-tlc-foil-response) from FiveThirtyEight.  
+
+FiveThirtyEight wrote four articles using the original dataset procured from TLC (linked below in the Data Section). One [article](https://fivethirtyeight.com/features/is-uber-making-nyc-rush-hour-traffic-worse/) focused on daily traffic fluctation to examine the effects of Uber on rush hour traffic.  
+
+We have edited the original data source in this github repo, removing unneeded data files. Data files that we kept are described below. 
 
 This directory contains data on over 4.5 million Uber pickups in New York City from April to September 2014, and 14.3 million more Uber pickups from January to June 2015. Trip-level data on 10 other for-hire vehicle (FHV) companies, as well as aggregated data for 329 FHV companies, is also included. All the files are as they were received on August 3, Sept. 15 and Sept. 22, 2015. 
 
 FiveThirtyEight obtained the data from the [NYC Taxi & Limousine Commission (TLC)](http://www.nyc.gov/html/tlc/html/home/home.shtml) by submitting a Freedom of Information Law request on July 20, 2015. The TLC has sent us the data in batches as it continues to review trip data Uber and other HFV companies have submitted to it. The TLC's correspondence with FiveThirtyEight is included in the files `TLC_letter.pdf`, `TLC_letter2.pdf` and `TLC_letter3.pdf`. TLC records requests can be made [here](http://www.nyc.gov/html/tlc/html/passenger/records.shtml).
-
-This data was used for four FiveThirtyEight stories: [Uber Is Serving New York’s Outer Boroughs More Than Taxis Are](http://fivethirtyeight.com/features/uber-is-serving-new-yorks-outer-boroughs-more-than-taxis-are/), [Public Transit Should Be Uber’s New Best Friend](http://fivethirtyeight.com/features/public-transit-should-be-ubers-new-best-friend/), [Uber Is Taking Millions Of Manhattan Rides Away From Taxis](http://fivethirtyeight.com/features/uber-is-taking-millions-of-manhattan-rides-away-from-taxis/), and [Is Uber Making NYC Rush-Hour Traffic Worse?](http://fivethirtyeight.com/features/is-uber-making-nyc-rush-hour-traffic-worse/).
 
 In the folder `uber-trip-data`, there are six files of raw data on Uber pickups in New York City from April to September 2014. The files are separated by month and each has the following columns:
 
@@ -15,34 +46,40 @@ Header | Definition
 `Lon` | The longitude of the Uber pickup
 `Base` | The [TLC base company](http://www.nyc.gov/html/tlc/html/industry/base_and_business.shtml) code affiliated with the Uber pickup
 
-Also in the folder is the file `uber-raw-data-janjune-15.csv.zip` The unzipped file has the following columns:
-
-Header | Definition
----|---------
-`Dispatching_base_num` | The [TLC base company](http://www.nyc.gov/html/tlc/html/industry/base_and_business.shtml) code of the base that dispatched the Uber
-`Pickup_date` | The date and time of the Uber pickup
-`Affiliated_base_num` | The [TLC base company](http://www.nyc.gov/html/tlc/html/industry/base_and_business.shtml) code affiliated with the Uber pickup
-`locationID` | The pickup location ID affiliated with the Uber pickup
-
-The `Base` codes are for the following Uber bases:
-
-Base Code | Base Name
----|---------
-B02512 | Unter
-B02598 | Hinter
-B02617 | Weiter
-B02682 | Schmecken
-B02764 | Danach-NY
-B02765 | Grun
-B02835 | Dreist
-B02836 | Drinnen
-
-The file `taxi-zone-lookup.csv` shows the taxi `Zone` and `Borough` for each `locationID`
-
-In the folder `other-FHV-data`, there are 10 files of raw data on pickups from 10 for-hire vehicle (FHV) companies. The trip information varies by company, but can include day of trip, time of trip, pickup location, driver's for-hire license number, and vehicle's for-hire license number.
-
-There is also a file `other-FHV-data-jan-aug-2015.csv` containing daily pickup data for 329 FHV companies from January 2015 through August 2015.
-
 The file `Aggregate_FHV_Data.xlsx`, which contains aggregate analysis on taxi and FHV trips, came directly from the TLC.
 
 The file `Uber-Jan-Feb-FOIL.csv` contains aggregated daily Uber trip statistics in January and February 2015.
+
+
+
+LIBRARIES:
+We're plotting some data from Uber.  The sample code loads in data, organizes it, and plots it (using Plotly).
+To run this analysis you need to install plotly (run from within the docker container):
+`pip install plotly`
+
+Plots and Figures
+-
+We generated plots and figures in the Jupyter Notebooks.  
+
+1) In the notebook named `Uber Rides Analysis by Hour Timeblock per Season.ipynb`, we have 3 sets of plots generated.  Each one comes from a month of a different season (Apr - Spring, Jun - Summer, Sep - Fall).
+We generate a plot for each timeblock (eg. plot 0 is rides between 12am-1am, plot 1 is rides between 1am-2am, etc.).  We do this for each season to see the timelapse between rides throughout hours, and then compare that between seasons, expecting a larger volume for summer, because of summer break and tourism.
+
+Instructions to generate gif:
+
+- Running the jupyter notebook will add a number of .html files to the `/img-html` in the repo.  
+- Clicking on these .html files will open a link and will automatically download a .png to your computer downloads folder, where you can see the entire timelapse in .png form.  
+- You can make a gif with simple tools like https://imgflip.com/images-to-gif, or generate a preview of the pngs and scroll through them to see the comparisons between pngs.  
+
+*For #2-4, we generate figures to see average rides by some measure per another measure in order to compare across traces. These graphs can be generated by just running through the code int he respective Jupyter Notebooks*
+
+2) In the notebook named `Uber Average Rides Timeblock x Day of Week.ipynb`, we generate a figure to see the average number of rides by timeblock with a trace for each Day of Week.  
+
+3) In the notebook named `Uber Average Rides Day of Week x Month.ipynb`, we generate a figure to see the average number of rides by day of week with a trace for each Month.  
+
+4) In the notebook named `Uber Average Rides Timeblock x Month.ipynb`, we generate a figure to see the average number of rides by timeblock with a trace for each Month.
+
+
+Credits
+-
+Thank you to Professor Jeremy Manning and PSYC 81.09 Storytelling with Data!
+
