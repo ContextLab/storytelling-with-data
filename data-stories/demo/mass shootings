@@ -1,0 +1,39 @@
+from twitterscraper import query_tweets
+from sklearn.decomposition import LatentDirichletAllocation as LDA
+from sklearn.feature_extraction.text import CountVectorizer
+from scipy.sparse import csr_matrix
+import seaborn as sns
+import numpy as np
+from textblob import TextBlob as tb
+import nltk
+import datetime as dt
+nltk.download('brown')
+nltk.download('punkt')
+%matplotlib inline
+
+#sample of all tweets after Pulse nightclub shooting
+n_tweets = 1000
+tweets=[]
+for tweet in query_tweets("the%20OR%20a%20since%3A2016-06-12%20until%3A2016-06-14", n_tweets)[:n_tweets]:
+    tweets.append(tweet)
+
+tweet_text_pulse = list(map(lambda x: x.text, tweets))
+print(tweet_text_pulse)
+
+#convert tweets from a list to a string
+tweet_pulse = ''.join(tweet_text_pulse)
+
+#number of times each word was mentioned
+def word_count(str):
+    counts = dict()
+    words = str.split()
+
+    for word in words:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+
+    return counts
+
+print(word_count(tweet_pulse))
