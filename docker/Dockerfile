@@ -42,12 +42,6 @@ RUN conda install --quiet --yes \
     'beautifulsoup4=4.6.*' \
     'protobuf=3.*' \
     'xlrd'  \
-    'hypertools' \
-    'deepdish' \
-    'dask' \
-    'seaborn' \
-    'python-twitter' \
-    'supereeg' \
     'joblib' && \
     conda remove --quiet --yes --force qt pyqt && \
     conda clean -tipsy && \
@@ -64,6 +58,10 @@ RUN conda install --quiet --yes \
     rm -rf /home/$NB_USER/.node-gyp && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
+
+RUN pip install hypertools \
+    supereeg \
+    python-twitter
 
 # Install facets which does not have a pip or conda package at the moment
 RUN cd /tmp && \
