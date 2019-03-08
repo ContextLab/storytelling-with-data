@@ -61,7 +61,8 @@ RUN conda install --quiet --yes \
 
 RUN pip install hypertools \
     supereeg \
-    python-twitter
+    python-twitter \
+    jupytext==0.7.1
 
 # Install facets which does not have a pip or conda package at the moment
 RUN cd /tmp && \
