@@ -38,7 +38,8 @@ RUN pip install hypertools \
     deepdish \
     dask \
     seaborn \
-    python-twitter
+    python-twitter \
+    supereeg
 
 RUN conda create -n py3 python=3.6
 RUN ["/bin/bash", "-c", "source activate py3 && \
@@ -56,5 +57,13 @@ RUN ["/bin/bash", "-c", "source activate py3 && \
     jupyter \
     seaborn"]
 
-# What should run when the container is launched
-ENTRYPOINT ["/bin/bash"]
+# source: https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#notebook-public-server
+# Add Tini. Tini operates as a process subreaper for jupyter. This prevents
+# kernel crashes.
+ENV TINI_VERSION v0.18.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
+RUN chmod +x /usr/bin/tini
+ENTRYPOINT ["/usr/bin/tini", "--"]
+
+EXPOSE 8888
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
