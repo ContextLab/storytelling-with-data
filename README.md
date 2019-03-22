@@ -15,8 +15,8 @@ We will use the following tools in this course:
 
 If you are a Dartmouth student currently enrolled in PSYC 81.09, please follow *Setup Track 1, Part 1: Dartmouth students* below, followed by *Setup Track 2, Part 1: Everyone*.  If you are **not** currently enrolled in PYSC 81.09, please follow *Setup Track 2, Part 1: Everyone else* below, followed by *Setup Part 2: Everyone*.
 
->     *"There're Dartmouth students, and then there's everyone else..."*
->        *- Dartmouth Alum*
+>     "There're Dartmouth students, and then there's everyone else..."
+>        ~ Dartmouth Alum
 
 ## Setup Track 1, Part 1: Dartmouth students
 1. You should start by signing up for the course's [Slack account](stories-about-data.slack.com) (you need to join using your @dartmouth.edu email address).  You can ask questions and get help with all aspects of the course via Slack.
