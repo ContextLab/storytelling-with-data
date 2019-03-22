@@ -2,3 +2,6 @@
 *.ipynb_checkpoints*
 data-stories/school-attendance/At Risk Students For Dartmouth.xlsx
 *.DS_Store
+hypertools_data
+supereeg_data
+nltk_data
