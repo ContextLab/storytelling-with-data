@@ -13,10 +13,13 @@ We will use the following tools in this course:
 - [GitHub](www.github.com): used to download code and data, collaborate with other students, and submit course assignments
 - [Dartmouth JupyterHub Cluster](https://jupyter.dartmouth.edu/): a Dartmouth server we will used to write code, download data, run analyses, and submit assignments
 
-If you are a Dartmouth student currently enrolled in PSYC 81.09, please follow *Setup Track 1, Part 1: Dartmouth students* below, followed by *Setup Track 2, Part 1: Everyone*.  If you are **not** currently enrolled in PYSC 81.09, please follow *Setup Track 2, Part 1: Everyone else* below, followed by *Setup Part 2: Everyone*.
+If you are a Dartmouth student currently enrolled in PSYC 81.09, please follow *Setup Track 1, Part 1: Dartmouth students* below, followed by *Setup Track 2, Part 1: Everyone*.  If you are **not** currently enrolled in PYSC 81.09, please follow *Setup Track 2, Part 1: Everyone else* below, followed by *Setup Part 2: Everyone*.  In selecting the right track for you, you may find it useful to draw inspiration and/or guidance from the quotes below.
 
->     "There're Dartmouth students, and then there's everyone else..."
+>     "There are Dartmouth students, and then there's everyone else..."
 >        ~ Dartmouth Alum
+
+>     "Know thyself" [paraphrasing]
+>        ~ Pythagoras
 
 ## Setup Track 1, Part 1: Dartmouth students
 1. You should start by signing up for the course's [Slack account](stories-about-data.slack.com) (you need to join using your @dartmouth.edu email address).  You can ask questions and get help with all aspects of the course via Slack.
@@ -45,10 +48,13 @@ git remote add <your first name> https://github.com/<GitHub username>/storytelli
 6. Run the `add_remotes.sh` script: `./add_remotes.sh`
 7. Pull the changes from the upstream fork into your local fork: `git pull upstream master`
 8. Merge any changes from the upstream fork into your local fork: `git commit -a -m "merging upstream changes into my fork"`
-9. Push your changes to your local fork: `git push`
+9. Push your changes to your local fork: `git push`.  Note for advanced users: if you've set up two-factor authentication, [here](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) is how you can get your push requests working (they will fail to authenticate unless you follow those instructions).  In summary, this entails:
+  - Generating a [new token](https://github.com/settings/tokens)
+  - Using the token in place of your actual GitHub password when it asks
+  - Note: to store your credentials so that you don't have to keep typing your username and password, run `git config credential.helper store`, followed by `git pull` (or another operation that requires you to enter your username/password).  Your credentials should now be stored (and used when you make further commits, pull requests, push requests, etc.).
 10. Submit a pull request to integrate your changes into the main course repository.  Navigate (using a web browser) to your repository's fork on GitHub (e.g. something like https://github.com/ContextLab/storytelling-with-data, but replacing "ContextLab" with your GitHub username) and click on the "Pull requests" button near the top.  Then click the green "New pull request" button, followed by the Green "Create pull request" button.  Add a title and comment to your pull request and then confirm it by pressing the new "Create pull request" button.
 
-In the future, any time you want to incorporate changes from the main course repository into your local fork, you'll repeat steps 7 and 8 (prior to making any additional changes to your local fork in order to avoid merge conflicts).  The `add_remotes.sh` script also allows you to pull in changes from any other course participant's fork, which is useful for collaborative projects.  For example, `git pull jeremy master` will pull the latest changes from `jeremymanning`'s fork into your fork.
+In the future, any time you want to incorporate changes from the main course repository into your local fork, you'll repeat steps 7 and 8 (prior to making any additional changes to your local fork in order to avoid merge conflicts).  Having run the `add_remotes.sh` script will also allow you to pull in changes from any other course participant's fork, which is useful for collaborative projects.  For example, `git pull jeremy master` will pull the latest changes from `jeremymanning`'s fork into your fork.  (Note: re-running the `add_remotes.sh` script is safe, but will display a `fatal: remote <name> already exists` message for any repositories that you have already tagged.)  Make sure to run the final version of the `add_remotes.sh` script after all students have added themselves to it.
 
 # Course projects
 This course is organized around a series of hackathon-style projects.  The central repository for all of these projects is the `data-stories` folder within this GitHub repository.
@@ -95,6 +101,8 @@ Once you have the basics down, you can move on to learn about some very useful P
 Another really useful technique for doing reproducible open science in the real world is to develop [unit tests](http://docs.python-guide.org/en/latest/writing/tests/).  I suggest using [Travis CI](https://docs.travis-ci.com/) to automatically run your unit tests when you check in new code:
 - Testing applications with [Pytest](https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest) (advanced)
 - Setting up [Travis CI](https://docs.travis-ci.com/user/for-beginners) (advanced)
+
+My lab also maintains a public repository of tutorials on a variety of topics [here](https://github.com/ContextLab/CDL-tutorials).
 
 # Where to find nice datasets
 
