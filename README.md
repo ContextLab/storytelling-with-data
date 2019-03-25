@@ -9,8 +9,8 @@ This course is taught as an *Open Course*, meaning that the course is designed f
 
 ## Overview
 We will use the following tools in this course:
-- [Slack](stories-about-data.slack.com): used to coordinate all course communication
-- [GitHub](www.github.com): used to download code and data, collaborate with other students, and submit course assignments
+- [Slack](https://stories-about-data.slack.com): used to coordinate all course communication
+- [GitHub](https://www.github.com): used to download code and data, collaborate with other students, and submit course assignments
 - [Dartmouth JupyterHub Cluster](https://jupyter.dartmouth.edu/): a Dartmouth server we will used to write code, download data, run analyses, and submit assignments
 
 If you are a Dartmouth student currently enrolled in PSYC 81.09, please follow *Setup Track 1, Part 1: Dartmouth students* below, followed by *Setup Track 2, Part 1: Everyone*.  If you are **not** currently enrolled in PYSC 81.09, please follow *Setup Track 2, Part 1: Everyone else* below, followed by *Setup Part 2: Everyone*.  In selecting the right track for you, you may find it useful to draw inspiration and/or guidance from the quotes below.
@@ -22,8 +22,8 @@ If you are a Dartmouth student currently enrolled in PSYC 81.09, please follow *
 >        ~ Pythagoras
 
 ## Setup Track 1, Part 1: Dartmouth students
-1. You should start by signing up for the course's [Slack account](stories-about-data.slack.com) (you need to join using your @dartmouth.edu email address).  You can ask questions and get help with all aspects of the course via Slack.
-2. Next, create a free [GitHub account](www.github.com) if you don't already have one.  (If you already have an account, you may use it for this course.)
+1. You should start by signing up for the course's [Slack account](https://stories-about-data.slack.com) (you need to join using your @dartmouth.edu email address).  You can ask questions and get help with all aspects of the course via Slack.
+2. Next, create a free [GitHub account](https://www.github.com) if you don't already have one.  (If you already have an account, you may use it for this course.)
 3. Sign up for a [DartFS](https://rcweb.dartmouth.edu/accounts/) account.  This will give you access to the course fileserver.  You can access the fileserver from on campus, or from off campus using [Dartmouth's VPN](https://services.dartmouth.edu/TDClient/KB/ArticleDet?ID=66806).  You can also mount the fileserver on your computer using these instructions: [Mac](https://rc.dartmouth.edu/index.php/hrf_faq/how-to-access-dartfs-from-a-mac/), [PC](https://rc.dartmouth.edu/index.php/hrf_faq/how-to-access-dartfs-from-a-pc/).
 4. Use your DartID to sign up for an account on our [JupyterHub cluster](https://jupyter.dartmouth.edu/).  You should sign in using the username `KIEWIT\<Your DartID>` (replacing `<Your DartID>` with your actual Dartmouth ID, using all lowercase letters).  You can use any password (choose something secure)-- you will use your password to log into your account for the duration of the course.  When you log in, perform the following sequence of steps to connect your JupyterHub account with DartFS:
   - Open a Terminal window (using the *New* menu from the Jupyter window)
@@ -76,7 +76,7 @@ In the course of modifying an existing project, you may determine that your proj
 
 # Getting help
 Data science is a tricky, rewarding, and often frustrating business.  Luckily for us data scientists, there are many places to get help!  Examples include:
-- [Google](http://www.google.com)-- searchable portal to of all human knowledge. Most Internet things are reachable through here, and it's a great place to start your search.  You can often find code that other people have written that solves a similar problem to the one you're working on, or a tutorial that teaches you how to solve a particular class of problems.
+- [Google](https://www.google.com)-- searchable portal to of all human knowledge. Most Internet things are reachable through here, and it's a great place to start your search.  You can often find code that other people have written that solves a similar problem to the one you're working on, or a tutorial that teaches you how to solve a particular class of problems.
 - [Wikipedia](https://www.wikipedia.org/)-- community-curated encyclopedia. Wikipedia is a good resource for learning about the background of a technique, looking up equations, etc.  It's not a good source for tutorials.
 - [Slack](https://stories-about-data.slack.com)-- course chatroom for Dartmouth students.  A good place for to ask questions, post ideas, etc., to other members of the class.
 - The last (but hopefully not least) option if you're feeling stuck, unhappy with how things are progressing, looking for fun new ideas to revitalize your project and get you interested in science again, etc. is to *come talk with me*.  If you're a Dartmouth person you can come to my regular office hours, [email me](mailto:jeremy@dartmouth.edu), message me on Slack, or come visit [my lab](http://www.context-lab.com/).
