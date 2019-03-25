@@ -85,6 +85,8 @@ Data science is a tricky, rewarding, and often frustrating business.  Luckily fo
 # Tutorials
 If you're new to computer programming, Python, or Jupyter notebooks, you'll want to run through some tutorials to help you get started.  We'll go over the very high-level ideas in class, and you can always ask questions in class or via Slack, but you will likely need to go through these tutorials on your own time to fully experience the delicious learning benefits encapsulated within.
 
+- Quickstart guide to [Python with Jupyter Notebooks](https://gitlab.erc.monash.edu.au/andrease/Python4Maths/tree/master/Intro-to-Python) (über beginner)
+
 - Introduction to [Python](https://www.codecademy.com/learn/learn-python) (beginner)
 - Introduction to [Git](https://www.codecademy.com/learn/learn-git) (beginner)
 - Video introduction to [Jupyter Notebooks](https://www.youtube.com/watch?v=e9cSF3eVQv0) (with [code](https://github.com/alfredessa/awesomedata.science/tree/master/1.0JupyterTour)) (beginner)
