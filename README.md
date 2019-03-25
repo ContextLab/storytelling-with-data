@@ -89,7 +89,7 @@ If you're new to computer programming, Python, or Jupyter notebooks, you'll want
 
 - Introduction to [Python](https://www.codecademy.com/learn/learn-python) (beginner)
 - Introduction to [Git](https://www.codecademy.com/learn/learn-git) (beginner)
-- Video introduction to [Jupyter Notebooks](https://www.youtube.com/watch?v=e9cSF3eVQv0) (with [code](https://github.com/alfredessa/awesomedata.science/tree/master/1.0JupyterTour)) (beginner)
+- Video introduction to [Jupyter Notebooks](https://youtu.be/CSkTJRNBTME) (with [code](https://github.com/dartmouth-brainhack-2017/IntroToJupyter/tree/9a2cca0a88b837745430b234a3002ba6165ed6ce)) (beginner)
 - Learning to code with [Python *and* Jupyter Notebooks](http://introtopython.org/) (beginner)
 
 Once you have the basics down, you can move on to learn about some very useful Python packages:
