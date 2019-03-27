@@ -18,9 +18,6 @@ git remote add amara https://github.com/amaragordon/storytelling-with-data.git
 git remote add sonia https://github.com/soniarowley/storytelling-with-data.git
 git remote add paxton https://github.com/paxtonfitzpatrick/storytelling-with-data.git
 git remote add nathan https://github.com/ngreenstein/storytelling-with-data.git
-<<<<<<< HEAD
 git remote add jay https://github.com/jayxzhou/storytelling-with-data.git
-=======
 git remote add Abigail https://github.com/AbigailBuckley/storytelling-with-data.git
 git remote add athina https://github.com/alshhi/storytelling-with-data.git
->>>>>>> 54326898e06c5f62b210c45542b3a23e088b63e9
