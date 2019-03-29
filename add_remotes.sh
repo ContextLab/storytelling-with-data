@@ -15,4 +15,4 @@ git remote add ellie https://github.com/ebennett10/storytelling-with-data.git
 git remote add cameron https://github.com/camartin95/storytelling-with-data.git
 git remote add isabelle https://github.com/igleonaitis/storytelling-with-data.git
 git remote add amara https://github.com/amaragordon/storytelling-with-data.git
-git remote add SarahKovan https://github.com/SarahKovan/storytelling-with-data.git
+git remote add Sarah https://github.com/SarahKovan/storytelling-with-data.git
