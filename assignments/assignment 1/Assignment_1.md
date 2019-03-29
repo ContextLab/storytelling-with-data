@@ -1,7 +1,7 @@
 # Storytelling with Data: Assignment 1
 
 ## Overview
-The purpose of this assignment is to introduce you to GitHub and basic programming in Python.  In this assignment you will perform some basic GitHub operations and write a computer program.  Completing the assignment entails finishing *all* of the tasks below.  To receive credit for this assignment you must submit it by making a pull request to the [main course GitHub repository](https://github.com/ContextLab/storytelling-with-data) by the due date (prior to the start of class on Friday, March 29, 2019).  This assignment is worth 3% of your final course grade.
+The purpose of this assignment is to introduce you to GitHub and basic programming in Python.  In this assignment you will perform some basic GitHub operations and write a computer program.  Completing the assignment entails finishing *all* of the tasks below.  To receive credit for this assignment you must submit it by making a pull request to the [main course GitHub repository](https://github.com/ContextLab/storytelling-with-data) by the due date (prior to the start of class on Monday, April 1, 2019).  This assignment is worth 3% of your final course grade.
 
 ## A note on what it means to "complete" this assignment
 You may not be able to complete every part of this assignment.  That's OK!  If you are stuck on any step or task, you can still earn most of the credit (up to 90%) if you do the following for each thing you got stuck on, written in one or more `Markdown` cell(s) within your assignment's Jupyter notebook:
