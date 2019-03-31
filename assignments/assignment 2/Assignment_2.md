@@ -4,7 +4,7 @@
 The purpose of this assignment is to introduce you to some "data wrangling" tools-- i.e. tools for organizing and manipulating data.  We will be exploring two tools in this assignment: [`Numpy`](http://www.numpy.org/) and [`Pandas`](https://pandas.pydata.org/).  You will download a sample dataset of your choosing (some example data sources may be found in the README file on the [main course GitHub repository](https://github.com/ContextLab/storytelling-with-data), or in the [data visualization notebook](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/data_visualization.ipynb)).  Completing the assignment entails finishing *all* of the tasks below.  To receive credit for this assignment you must submit it by making a pull request to the [main course GitHub repository](https://github.com/ContextLab/storytelling-with-data) by the due date (prior to the start of class on Monday, April 8, 2019).  This assignment is worth 3% of your final course grade.
 
 ### Background
-You may find it useful to go through [this `numpy` tutorial](https://docs.scipy.org/doc/numpy/user/quickstart.html) and/or [this `pandas` tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html) prior to beginning this assignment. 
+You may find it useful to go through [this `numpy` tutorial](https://docs.scipy.org/doc/numpy/user/quickstart.html) and/or [this `pandas` tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html) prior to beginning this assignment.
 
 ## A note on what it means to "complete" this assignment
 You may not be able to complete every part of this assignment.  That's OK!  If you are stuck on any step or task, you can still earn most of the credit (up to 90%) if you do the following for each thing you got stuck on, written in one or more `Markdown` cell(s) within your assignment's Jupyter notebook:
@@ -22,10 +22,10 @@ You may not be able to complete every part of this assignment.  That's OK!  If y
 
 ## Todo list
 In your notebook, please do each of the following:
-  - [ ] Create a cell at the top of your notebook that imports any libraries you'll be using in the rest of your notebook.  At minimum, import `numpy` and `pandas`.
+  - [ ] Create a cell at the top of your notebook that imports any libraries you'll be using in the rest of your notebook.  At minimum, import `pandas`.
   - [ ] Add a second cell that downloads or imports a dataset of your choosing into the notebook.  If you download your data to one or more files, save them to your assignment folder.  Load the data into a Pandas DataFrame and display the first 5 rows using `DataFrame.head`.
   - [ ] Add a third cell that does some data cleaning:
-    - Remove non-numerical values
+    - Remove non-numerical values (or turn non-numerical values into numerical values)
     - Use `fill_na` to remove "nan" values
     - Rename or drop rows and/or columns that are irrelevant
   - [ ] Add a fourth cell that creates a plot (can be of any type, using any graphics library including built-in `Pandas` functions)
@@ -41,7 +41,7 @@ Next, edit the `README.md` file you created in your assignment folder.  Add the 
   - [ ] In the *Contributing* section, briefly describe how other people could build on your work.  For example, you might have ideas for sections of your notebook that could use some cleaning up or debugging, or you might have ideas for followup analyses.  Also acknowledge any collaborations (e.g. other students you consulted for this assignment).
 
 Finally, add your assignment folder (add all assignment files) to your fork (using `git`'s `add`, `commit`, and `push` commands) and then submit a `pull` request to merge your changes into the [main course GitHub repository](https://github.com/ContextLab/storytelling-with-data).
- 
+
 ## Advanced users
 If you are already familiar with `pandas` and `numpy`, try using `apply` and/or [`groupby`](https://pandas.pydata.org/pandas-docs/version/0.22/groupby.html) somewhere in your assignment.  Other ideas:
   - Create some sort of interesting visualization, rather than just a basic visualization (e.g. something visually pleasing, an animated plot, an interactive plot, a 3-dimensional graphic of some sort, etc.)
@@ -52,4 +52,4 @@ If you are already familiar with `pandas` and `numpy`, try using `apply` and/or 
 Your assignment is considered to have been submitted when you make a pull request to the main course GitHub repository.
 
 ## Honor code
-You may work with other students on this project, but you may *not* copy anyone else's code.  Each student should independently code up and submit their own work.  If you work with other students on this assignment you should make a note (in a Markdown comment) in your Jupyter notebook.
+You may work with other students on this project, but you may *not* (simply) copy anyone else's code.  Note: you *may* "mix and match" code from other students, the course materials, code you find on the Internet, etc.-- but you need to be the one that actually enters the code and text into your notebook and understandings (and accepts responsibility for!) any code that makes it into your notebook.  Each student should independently submit their own work.  If you work with other students on this assignment you should make a note (in a Markdown comment) in your Jupyter notebook and/or in the README file for your assignment.
