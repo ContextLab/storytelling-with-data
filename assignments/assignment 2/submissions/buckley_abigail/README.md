@@ -1,6 +1,6 @@
 # Overview
 
-I analyzed a dataset on happiness, reading the csv file and creating a pandas dataframe. From there I cleaned up the dataset by removing NaN values and irrelevant columns. I also made some simple plots from both the dataframe and an extracted numpy array.
+I analyzed a dataset on happiness, reading the csv file and creating a pandas dataframe. From there I cleaned up the dataset by removing NaN values and irrelevant columns and recasting ordinal data as numerical data so that I could better graph and execute calculations. I also made some simple plots from both the dataframe and an extracted numpy array.
 
 # Downloading the dataset
 
