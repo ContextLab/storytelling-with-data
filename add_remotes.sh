@@ -29,3 +29,4 @@ git remote add morgan https://github.com/msizemore0115/storytelling-with-data.gi
 git remote add abigail https://github.com/abbyzweifach/storytelling-with-data.git
 git remote add richard https://github.com/rky19/storytelling-with-data.git
 git remote add aly https://github.com/alyberger/storytelling-with-data.git
+git remote add xinming https://github.com/xinmingxu/storytelling-with-data.git
