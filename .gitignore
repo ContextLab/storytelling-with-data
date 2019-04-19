@@ -5,3 +5,7 @@ data-stories/school-attendance/At Risk Students For Dartmouth.xlsx
 hypertools_data
 supereeg_data
 nltk_data
+slides/*.ipynb
+assignments/README.md
+assignments/assignment*/Assignment_*.md
+
