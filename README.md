@@ -1,6 +1,6 @@
 # Storytelling with Data
 
-This repository contains course materials for the Dartmouth Course [Storytelling with Data (PSYC 81.09)](https://pbs.dartmouth.edu/undergraduate/permission-courses/spring-2019).  The syllabus may be found [[here](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)].  Feel free to follow along with the course materials (whether you are officially enrolled in the course or just visiting!), submit comments and suggestions, etc.  If you are a Dartmouth student currently enrolled in this course, please read the *Student instructions* below to get set up.  A list of Tutorials and some ideas for tracking down some nice datasets may be found at the bottom of this document.
+This repository contains course materials for the Dartmouth Course [Storytelling with Data (PSYC 81.09)](https://pbs.dartmouth.edu/undergraduate/permission-courses/spring-2019).  The syllabus may be found [[here](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)].  Feel free to follow along with the course materials (whether you are officially enrolled in the course or just visiting!), submit comments and suggestions, etc.  If you are a Dartmouth student currently enrolled in this course, please read the *Student instructions* below to get set up.  A list of tutorials and some ideas for tracking down some nice datasets may be found at the bottom of this document.
 
 ## A note about this Open Course
 This course is taught as an *Open Course*, meaning that the course is designed from the ground up to be shareable and accessible to anyone.  To that end, all code for this course should be written in [Python](https://www.python.org/) and organized in a [Jupyter notebook](http://jupyter.org/).  Any data you analyze must be shareable with all other students in the course, and ideally it should be shareable with the public.  All code and other student-generated materials will be shared publicly.
@@ -11,7 +11,7 @@ This course is taught as an *Open Course*, meaning that the course is designed f
 We will use the following tools in this course:
 - [Slack](https://stories-about-data.slack.com): used to coordinate all course communication
 - [GitHub](https://www.github.com): used to download code and data, collaborate with other students, and submit course assignments
-- [Dartmouth JupyterHub Cluster](https://jupyter.dartmouth.edu/): a Dartmouth server we will used to write code, download data, run analyses, and submit assignments
+- [Dartmouth JupyterHub Cluster](https://jupyter.dartmouth.edu/): a Dartmouth server we will use to write code, download data, run analyses, and submit assignments
 
 If you are a Dartmouth student currently enrolled in PSYC 81.09, please follow *Setup Track 1, Part 1: Dartmouth students* below, followed by *Setup Track 2, Part 1: Everyone*.  If you are **not** currently enrolled in PYSC 81.09, please follow *Setup Track 2, Part 1: Everyone else* below, followed by *Setup Part 2: Everyone*.  In selecting the right track for you, you may find it useful to draw inspiration and/or guidance from the quotes below.
 
