@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-##Overview -  write a few sentences about what you did in your notebook (e.g. what was the "point" of the analyses you ran)
-=======
 ## Overview -  write a few sentences about what you did in your notebook (e.g. what was the "point" of the analyses you ran)
->>>>>>> f9b2c491c4f0381ed79bac1d3f7bcf0a9bdf4f8d
 
 This analysis looked at trends in how people of different religions feel comfortable:
  * (1) telling people they'll pray for them
