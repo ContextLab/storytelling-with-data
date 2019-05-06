@@ -3,7 +3,7 @@
 
 ## Overview
 
-In this notebook, we mapped the parking violations in Greenpoint Brooklyn (94 Precinct) that occurred on January 1, 2019. The icon at the site of each violation is colored by the type of violation that occurred. 
+In this notebook, we mapped the parking violations in Greenpoint Brooklyn (94th Precinct) that occurred on January 1, 2019. The icon at the site of each violation is colored by the type of violation that occurred. 
 
 ## Dataset
 
@@ -13,13 +13,13 @@ Source: https://data.cityofnewyork.us/City-Government/Parking-Violations-Issued-
 
 Because the full 2019 dataset (as of April 28) has 8,718,669 rows, we filtered the data in the NYC OpenData website by precinct (94) and date (1-1-2019) before downloading.
 
-In Microsoft Excel, we further pared down the data. First we deleted all the columns that were irrelevant to our analysis, keeping only Summons Number, Street Number, Street Name, Violation Time, Violation Code, and Intersection. We then began to format addresses. In order for our program to work, we needed addresses in the format “## Street, City, State, #####”. We deleted the 34 rows that did not have properly-formatted addresses for our analysis. These entries’ addresses were recorded as corners, i.e. “Street 1 c/o Street 2”. Then, we manually added a city_state column. Every entry in this pared-down data was from Brooklyn, NY.
+In Microsoft Excel, we further pared down the data. First we deleted all the columns that were irrelevant to our analysis, keeping only Summons Number, Street Number, Street Name, Violation Time, Violation Code, and Intersection. We then began to format addresses. In order for our program to work, we needed addresses in the format “**Street, City, State, etc...*** ”. We deleted the 34 rows that did not have properly-formatted addresses for our analysis. These entries’ addresses were recorded as corners, i.e. “Street 1 c/o Street 2”. Then, we manually added a city_state column. Every entry in this pared-down data was from Brooklyn, NY.
 
 In Jupyter Notebooks, we used GoogleMaps to add the zip code, latitude, and longitude of each address to the dataset.
 
 ## Running the Code
 This code requires the following packages to run: `numpy`, `pandas`, `pickle`, `googlemaps`, and `folium`. Obtaining geodata from addresses requires a google maps API key. 
-Other users should set file loading paths to representing the location of the dataset on their computers. 
+Other users should set file loading paths to the location of the dataset on their computers. 
 In "violations-map," running cells whose last line contains a single 'm' will generate a veiw of the map.
 
 ## Contributing
