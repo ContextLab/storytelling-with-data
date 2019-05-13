@@ -8,4 +8,8 @@ data-stories/upper-valley-land-trust/jeremy_uvlt_notebook.ipynb
 nltk_data
 slides/*.ipynb
 assignments/README.md
+<<<<<<< HEAD
 assignments/assignment*/Assignment_*.md
+=======
+assignments/assignment*/Assignment_*.md
+>>>>>>> 3810e55d70abd56baf3d805e8c5d8c46c04f1acb
