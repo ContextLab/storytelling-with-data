@@ -1,0 +1,19 @@
+Diagnosed Diabetes; Crude; Number; Adults Aged 20+ Years; Arizona Counties; 2015,,,,,
+Data downloaded on 29-April-2019,,,,,
+County,State,CountyFIPS,Number,Lower Limit, Upper Limit
+Apache County,Arizona,4001,7665,6629,8788
+Cochise County,Arizona,4003,9945,8753,11151
+Coconino County,Arizona,4005,7737,6423,9175
+Gila County,Arizona,4007,5390,4670,6231
+Graham County,Arizona,4009,2870,2324,3510
+Greenlee County,Arizona,4011,746,545,993
+La Paz County,Arizona,4012,2384,1851,2979
+Maricopa County,Arizona,4013,274898,261305,287274
+Mohave County,Arizona,4015,21876,19306,24465
+Navajo County,Arizona,4017,10838,9356,12487
+Pima County,Arizona,4019,66136,60702,72172
+Pinal County,Arizona,4021,37245,33485,41360
+Santa Cruz County,Arizona,4023,2933,2248,3761
+Yavapai County,Arizona,4025,18575,16337,21051
+Yuma County,Arizona,4027,19933,16777,23378
+US Diabetes Surveillance System; www.cdc.gov/diabetes/data; Division of Diabetes Translation - Centers for Disease Control and Prevention.,,,,,
