@@ -4,7 +4,12 @@ data-stories/school-attendance/At Risk Students For Dartmouth.xlsx
 *.DS_Store
 hypertools_data
 supereeg_data
+data-stories/upper-valley-land-trust/jeremy_uvlt_notebook.ipynb
 nltk_data
 slides/*.ipynb
 assignments/README.md
+<<<<<<< HEAD
 assignments/assignment*/Assignment_*.md
+=======
+assignments/assignment*/Assignment_*.md
+>>>>>>> 396d13a9e4742d7c7f60db8b07e61f0b3ff43d94
