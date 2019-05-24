@@ -1,0 +1,16 @@
+County,CountyFIPS,Percentage,Lower Limit, Upper Limit
+"Apache County, AZ",4001,14.2,12.2,16.4
+"Cochise County, AZ",4003,8.7,7.6,9.9
+"Coconino County, AZ",4005,7.8,6.5,9.3
+"Gila County, AZ",4007,10,8.5,11.8
+"Graham County, AZ",4009,10.8,8.7,13.3
+"Greenlee County, AZ",4011,10.9,7.9,14.5
+"La Paz County, AZ",4012,10.2,7.7,13.3
+"Maricopa County, AZ",4013,8.5,8.1,8.9
+"Mohave County, AZ",4015,10.1,8.7,11.5
+"Navajo County, AZ",4017,12.6,10.7,14.6
+"Pima County, AZ",4019,7.6,6.9,8.3
+"Pinal County, AZ",4021,10.9,9.7,12.2
+"Santa Cruz County, AZ",4023,7.8,5.9,10.2
+"Yavapai County, AZ",4025,7.3,6.2,8.4
+"Yuma County, AZ",4027,12.5,10.4,14.9
