@@ -1,4 +1,4 @@
-State,Percentage,Lower Limit, Upper Limit
+Name,Percentage,Lower Limit, Upper Limit
 Alabama,13.2,12.2,14.2
 Alaska,7.7,6.5,9.2
 Arizona,9.7,9,10.5
@@ -50,6 +50,3 @@ Washington,8.6,8.1,9.1
 West Virginia,12.7,11.9,13.5
 Wisconsin,8.6,7.7,9.5
 Wyoming,7.6,6.7,8.6
-Guam,11.3,9.3,13.7
-Puerto Rico,13.7,12.7,14.8
-Virgin Islands of the U.S.,11.9,9.8,14.4
