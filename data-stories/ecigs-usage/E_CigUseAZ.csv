@@ -1,0 +1,31 @@
+Year,Location Description,Topic Description,Measure Description,Response,Data Value Type,Data Value,Low Confidence Limit,High Confidence Limit,Sample Size,Gender,Age,Race,Education
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,*,*,*,*,Overall,All Ages,African American,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,*,*,*,*,Overall,All Ages,American Indian/Alaska Native,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,13.2,9.4,18.2,1012,Overall,All Ages,Hispanic,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,21.7,16.1,28.5,554,Overall,All Ages,White,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,16.1,12.2,20.9,1809,Overall,All Ages,All Races,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,*,*,*,*,Overall,All Ages,Multiple Race,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,*,*,*,*,Overall,All Ages,Asian,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,*,*,*,*,Overall,All Ages,Pacific Islander,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,18.9,13.6,25.6,876,Male,All Ages,All Races,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Current,Percentage,13.1,10,16.9,915,Female,All Ages,All Races,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,*,*,*,*,Overall,All Ages,Asian,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,*,*,*,*,Overall,All Ages,Pacific Islander,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,51,45.9,56,2094,Overall,All Ages,All Races,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,*,*,*,*,Overall,All Ages,Multiple Race,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,53.6,47.5,59.7,1171,Overall,All Ages,Hispanic,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,50.9,44.4,57.5,648,Overall,All Ages,White,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,*,*,*,*,Overall,All Ages,African American,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,*,*,,*,Overall,All Ages,American Indian/Alaska Native,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,52.5,48,57,1032,Male,All Ages,All Races,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Ever,Percentage,49.4,42,56.9,1045,Female,All Ages,All Races,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,*,*,*,*,Overall,All Ages,American Indian/Alaska Native,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,*,*,*,*,Overall,All Ages,African American,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,7.9,5.2,11.9,554,Overall,All Ages,White,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,3.6,1.8,7.4,1012,Overall,All Ages,Hispanic,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,*,*,*,*,Overall,All Ages,Multiple Race,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,5.3,3.2,8.8,1809,Overall,All Ages,All Races,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,*,*,*,*,Overall,All Ages,Pacific Islander,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,*,*,*,*,Overall,All Ages,Asian,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,8,5.2,12.1,876,Male,All Ages,All Races,High School
+2017,Arizona,E-Cigarette Use (Youth),User Status,Frequent,Percentage,2.4,1.1,5.2,915,Female,All Ages,All Races,High School
