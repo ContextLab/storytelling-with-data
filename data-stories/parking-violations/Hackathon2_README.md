@@ -28,7 +28,6 @@ The final dataset includes 5582 rows.
 `totalcounts.csv` is a tiny dataframe, created in Excel for the choropleth map. It includes total # of tickets issued and total cost of tickets issued in each of the six precincts. 
 
 ## Running the Code
-**Briefly describe how someone should run your notebook.  (Assume your audience is someone else in the class.)  If you have more than one notebook, explain what each notebook does.**
 
 This code requires the following packages to run: `numpy`, `pandas`, `folium`, `pyplot`, and `datetime`. 
 
@@ -51,7 +50,6 @@ For the Choropleth map the folium package is also used. It works by binding a pa
 
 
 ## Contributing
-**Briefly describe how other people could build on your work.  For example, you might have ideas for sections of your notebook(s) that could use some cleaning up or debugging, or you might have ideas for followup analyses.
 
 As before, we got the inspiration for this project from https://www.reddit.com/r/dataisbeautiful/comments/anvc7v/oc_visualizing_all_parking_violations_in_los/. 
 
