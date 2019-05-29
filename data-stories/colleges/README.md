@@ -15,5 +15,5 @@ This notebook should be run in order and careful attention should be paid to whi
 
 ## Contributing to the code
 
-Others can contribute to this project by creating more plots along other dimensions, potentially realizing new trends. 
+Others can contribute to this project by creating more plots along other dimensions, potentially realizing new trends. Additionally, the dataframes contain more information on graduation rates beyond the standard 4 years which may reveal more trends that haven't yet been explored in this project. 
 
