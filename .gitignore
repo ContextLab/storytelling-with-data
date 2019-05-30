@@ -9,5 +9,5 @@ nltk_data
 slides/*.ipynb
 assignments/README.md
 assignments/assignment*/Assignment_*.md
-
-data-stories/parking-violations/gmaps.api.key
+data-stories/semantic-mapping/data
+*__pycache__
