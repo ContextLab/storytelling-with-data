@@ -17,14 +17,14 @@ def zscore(mat, return_unzvals=False):
         unzvals[ri,0] = np.std(mat[ri,:])
         unzvals[ri,1] = np.mean(mat[ri,:])
         zmat[ri,:] = (mat[ri,:]-unzvals[ri,1]) / (1e-10+unzvals[ri,0])
-    
+
     if return_unzvals:
         return zmat, unzvals
-    
+
     return zmat
 
 def center(mat, return_uncvals=False):
-    """Centers the rows of [mat] by subtracting off the mean, but doesn't 
+    """Centers the rows of [mat] by subtracting off the mean, but doesn't
     divide by the SD.
     Can be undone like zscore.
     """
@@ -33,10 +33,10 @@ def center(mat, return_uncvals=False):
     for ri in range(mat.shape[0]):
         uncvals[ri,1] = np.mean(mat[ri,:])
         cmat[ri,:] = mat[ri,:]-uncvals[ri,1]
-    
+
     if return_uncvals:
         return cmat, uncvals
-    
+
     return cmat
 
 def unzscore(mat, unzvals):
@@ -66,10 +66,10 @@ def model_voxels(Rstim, Pstim, Rresp, Presp, alpha):
     print ("Z-scoring stimuli (with a flip)... (or not)")
     #zRstim = zscore(Rstim.T).T
     #zPstim = zscore(Pstim.T).T
-    
+
     Rresp[np.isnan(Rresp)] = 0.0
     Presp[np.isnan(Presp)] = 0.0
-    
+
     print ("Running ridge regression...")
     rwts = ridge(Rstim, Rresp.T, alpha)
     print ("Finding correlations...")
@@ -77,7 +77,7 @@ def model_voxels(Rstim, Pstim, Rresp, Presp, alpha):
     prednorms = np.apply_along_axis(np.linalg.norm, 0, pred)
     respnorms = np.apply_along_axis(np.linalg.norm, 0, Presp)
     correlations = np.array(np.sum(np.multiply(Presp, pred), 0)).squeeze()/(prednorms*respnorms)
-    
+
     print ("Max correlation: %0.3f" % np.max(correlations))
     print ("Skewness: %0.3f" % scipy.stats.skew(correlations))
     return np.array(correlations), rwts
@@ -90,10 +90,10 @@ def model_voxels_old(Rstim, Pstim, Rresp, Presp, alpha):
     print ("Z-scoring stimuli (with a flip)...")
     #zRstim = zscore(Rstim.T).T
     #zPstim = zscore(Pstim.T).T
-    
+
     Rresp[np.isnan(Rresp)] = 0.0
     Presp[np.isnan(Presp)] = 0.0
-    
+
     print ("Running ridge regression...")
     rwts = ridge(Rstim, Rresp.T, alpha)
     print ("Finding correlations...")
@@ -101,7 +101,7 @@ def model_voxels_old(Rstim, Pstim, Rresp, Presp, alpha):
     for vi in range(Presp.shape[1]):
         rcorr = np.corrcoef(Presp[:,vi].T,np.array((np.matrix(Pstim) * np.matrix(rwts[:,vi]))).T)[0,1]
         correlations.append(rcorr)
-        
+
     print ("Max correlation: %0.3f" % np.max(correlations))
     print ("Skewness: %0.3f" % scipy.stats.skew(correlations))
     return np.array(correlations), rwts
@@ -122,9 +122,9 @@ def gaussianize_mat(mat):
     return gmat
 
 def make_delayed(stim, delays, circpad=False):
-    """Creates non-interpolated concatenated delayed versions of [stim] with the given [delays] 
+    """Creates non-interpolated concatenated delayed versions of [stim] with the given [delays]
     (in samples).
-    
+
     If [circpad], instead of being padded with zeros, [stim] will be circularly shifted.
     """
     nt,ndim = stim.shape
@@ -155,7 +155,7 @@ def mult_diag(d, mtx, left=True):
     Output:
       mult_diag(d, mts, left=True) == dot(diag(d), mtx)
       mult_diag(d, mts, left=False) == dot(mtx, diag(d))
-    
+
     By Pietro Berkes
     From http://mail.scipy.org/pipermail/numpy-discussion/2007-March/026807.html
     """
@@ -176,10 +176,10 @@ def counter(iterable, countevery=100, total=None, logger=logging.getLogger("coun
     if total is None:
         if hasattr(iterable, "__len__"):
             total = len(iterable)
-    
+
     for count, thing in enumerate(iterable):
         yield thing
-        
+
         if not count%countevery:
             current_time = time.time()
             rate = float(count+1)/(current_time-start_time)
@@ -188,7 +188,7 @@ def counter(iterable, countevery=100, total=None, logger=logging.getLogger("coun
                 ratestr = "%0.2f items/second"%rate
             else: ## less than 1 item/second
                 ratestr = "%0.2f seconds/item"%(rate**-1)
-            
+
             if total is not None:
                 remitems = total-(count+1)
                 remtime = remitems/rate
@@ -219,4 +219,6 @@ def wait_for_disk(dir, maxtime=0.2, retrytime=10.0, maxtries=100):
             print ("Disk access is slow (%0.3f seconds to ls), waiting more.." % lstime)
             time.sleep(retrytime)
 
-    print ("Disk access is slow but fuck it, I'm starting anyway..")
+    # note: print statement edited for content from original version, found here
+    # https://github.com/HuthLab/speechmodeltutorial/blob/master/utils.py
+    print ("Disk access is slow but eh, I'm starting anyway..")
