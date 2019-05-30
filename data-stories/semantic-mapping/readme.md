@@ -33,7 +33,7 @@ You will also need to download the [data files](https://utexas.box.com/shared/st
 
 ## A note on running the code
 
-These notebooks take quite a while to run and consume a fair amount of processing resources (particularly fitting the regression models) and memory resources (particularly fitting the topic models).  LDA models fit to more topics and smaller text windows take longer to run (sometimes up to 12 hours).  It is recommended you only run a single notebook at a time and run the pre-written cells that save the fit LDA models as `.joblib` files to having to re-train them each time.  
+These notebooks take quite a while to run and consume a fair amount of processing resources (particularly fitting the regression models) and memory resources (particularly fitting the topic models).  LDA models fit to more topics and smaller text windows take longer to run (sometimes up to 12 hours).  It is recommended you only run a single notebook at a time and run the pre-written cells that save the fit LDA models as `.joblib` files to avoid having to re-train them each time.  
 
 ## Analyses conducted and results
 
