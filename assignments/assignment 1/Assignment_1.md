@@ -1,51 +1,56 @@
-# Storytelling with Data: Assignment 1
+# Storytelling with Data Assignment 1: Tell me a story!
 
-## Overview
-The purpose of this assignment is to introduce you to GitHub and basic programming in Python.  In this assignment you will perform some basic GitHub operations and write a computer program.  Completing the assignment entails finishing *all* of the tasks below.  To receive credit for this assignment you must submit it by making a pull request to the [main course GitHub repository](https://github.com/ContextLab/storytelling-with-data) by the due date (prior to the start of class on Monday, April 1, 2019).  This assignment is worth 3% of your final course grade.
+Note: please work through the material in [Module 1](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#module-1-what-makes-a-good-story) before beginning this assignment.
 
-## A note on what it means to "complete" this assignment
-You may not be able to complete every part of this assignment.  That's OK!  If you are stuck on any step or task, you can still earn most of the credit (up to 90%) if you do the following for each thing you got stuck on, written in one or more `Markdown` cell(s) within your assignment's Jupyter notebook:
-1. Describe (in plain English) what you were trying to do
-2. Describe how you tried to solve the task
-3. Describe what you thought would happen when you tried solving the task in that way
-4. Describe what actually happened
-5. Describe what you did to help get yourself unstuck (e.g. asked a classmate, met with the course instructor, posted questions to Slack, searched on Google or Stack Exchange, read a book, watched a tutorial, etc.)
-6. Estimate how much time you spent working on that part of the assignment (rounded to the nearest hour)
+For this assignment you'll be telling a story about anything you choose.  It can be a fiction or non-fiction story.  It can take place in the past, present, or future.  It can be happy, sad, exciting, thrilling, or upsetting.  It can involve yourself, others, people, or non-people.  It can be about animate or inanimate objects.  Your story should:
+  - Connect with people.  Your target audience is your Spring, 2020 Storytelling with Data class (students and instructor).
+  - Be brief.  You'll have a maximum of 5 minutes to share your story with the class in its final form.  (There is no minimum story length.)
+  - Tell a story that you haven't told or heard before.  Part of what I want you to get out of this assignemnt is practice coming up with new stories.  You won't get that unless your story is actually new.
 
-## Setup task list
-Work through the setup instructions in the [course introduction README file](https://github.com/ContextLab/storytelling-with-data/blob/master/README.md):
-  - [ ] Create a fork of this GitHub repository
-  - [ ] Create an account on the course JupyterHub cluster
-  - [ ] Create a personal folder for your use under the Psych81.09/course directory on DartFS (name it something unique, using your first name, last name, username, or some combination)
-  - [ ] Clone your fork of the course GitHub repository to your personal folder
+Please upload your assignment as a single .zip file to Slack (in the `#your-stories` channel).  I'll copy the materials to the [public class repository](https://github.com/ContextLab/storytelling-with-data), so please consider that your story will be made public in deciding what story to tell.
 
-Next, create your assignment file:
-  - [ ] Navigate to the `storytelling-with-data/assignments/assignment 1/submissions` folder and create a new Jupyter notebook (select the `Psych 81.09` kernel from the dropdown menu in the upper right).  Rename the notebook to `<lastname>_<firstname>.ipynb` (you don't need to specify the file extension if you rename it from within the Jupyter window).
+## Narrative outline
 
-## What to add to your notebook
-You'll be adding some simple sample code to your notebook to get familiar with the main tools (Python, Jupyter notebooks, GitHub) that we'll be using throughout this course.  If this is your first time working with Jupyter notebooks, you may want to check out [this tutorial](https://nbviewer.jupyter.org/format/slides/github/dartmouth-brainhack-2017/IntroToJupyter/blob/master/Intro_To_Jupyter_Notebooks.ipynb#/) (you may also want to view the [associated video](https://www.youtube.com/watch?v=CSkTJRNBTME&index=3&t=0s&list=PLEE6ggCEJ0H0KOlMKx_PUVB_16VoCfGj9)).  Similarly, if you haven't written computer code before, you'll likely want to go through a Python tutorial like [this one](https://www.codecademy.com/learn/learn-python).  You don't need to go through the full tutorial to complete this assignment-- just go through as much as you need to in order to accomplish the tasks below.
+Briefly outline your story:
+  - Introduce the main idea.  What's the "hook" you'll be using to grab your audience at the start of your story?
+  - Go through the high-level key events in your story.  How are you furthering your main idea with each event?
+  - Conclude.  What's your overall goal or point and what message do you want to leave people with?
 
-In your notebook, please do each of the following:
-- [ ] Create a cell at the top of your notebook that imports one or more libraries (e.g. `numpy`, `pandas`, etc.)
-- [ ] Create another cell that defines a Python function (it can do anything).  The function should:
-  - [ ] Support one or more input arguments
-  - [ ] Use an `if`/`elif`/`else` block somewhere in the function
-  - [ ] Use a `for` loop somewhere in the function
-  - [ ] Use a `while` loop somewhere in the function
-  - [ ] Use a `list` somewhere in the function
-  - [ ] Return one or more values
-- [ ] Add a third cell that runs your function on some sample input and prints the result
-- [ ] Add a `Markdown` cell (above the cell that defines your function) that describes what the function does.  ([Here](https://www.markdowntutorial.com/) is a quick introduction to Markdown.)  Include, in plain-English, information about:
-  - [ ] What arguments the user needs to pass to the function
-  - [ ] What values are supported
-  - [ ] What the function does
-  - [ ] What gets returned
+You should produce a single document containing your outline (as a .txt, .docx, .md, or .pdf file).
 
-## Advanced users
-If you are already familiar with Python, as a challenge problem for this assignment (for fun) take a look at one of the projects in the `data-stories` folder and modify it in some way.  (This should be done in addition to the above assignment.)
+## Written narrative
 
-## Submitting your assignment
-Your assignment is considered to have been submitted when you make a pull request to the main course GitHub repository.
+Write out your story in roughly one page (single-spaced, size 10 font or larger).  Include all major plot points and tell the story in a way you think your audience will find to be compelling.
 
-## Honor code
-You may work with other students on this project, but you may *not* copy anyone else's code.  Each student should independently code up and submit their own work.  If you work with other students on this assignment you should make a note (in a Markdown comment) in your Jupyter notebook.
+You should produce a single document containing your story (as a .txt, .docx, .md, or .pdf file).
+
+## Narrative "sketch"
+
+In whatever format (pencil and paper, sculpture with play-dough, GIFs or memes, food, photographs-- anything!) represent your narrative visually.  You are encouraged to be creative, but don't get too abstract; your visual depictions should directly reflect actual story events, key ideas, or plot points.  The idea is to represent your story in a way that can be seen using one or more images.
+
+Don't worry about making your "sketches" look perfect.  Rather, try to find a way to bolster the key points in your story using visual tools of your preferred form.
+
+You should produce one or more images pasted into a single document (.doc, .md, or .pdf).  You can optionally include descriptive text to accompany the images.
+
+## Tell your story
+
+Create a video (up to 5 minutes) telling your story.  You might want to record a video of yourself speaking, or narrate while showing visual props or sketches, or screencast a powerpoint presentation, etc.  You get to choose how you present the story.
+
+You should produce a single video file (formatted as a .mov file).
+
+## Reflections
+
+Please reflect on the assignment by briefly answering the following questions:
+  - What went well for you?  Which parts did you find easy?  Which parts of your story are you most happy with?
+  - What did you have trouble with?  What was the hardest part of telling a story?  Which parts of your story are you least happy with?
+  - What sort of feedback would be most helpful to you?  For example, what insights from others could most help you improve your story?  Or were there particular aspects of the storytelling process that you could use help with?  What would help make you a better storyteller?
+
+You should produce a single document containing your answers (as a .txt, .docx, .md, or .pdf file).
+
+# Files to include in your submission
+Your final submission should comprise a single .zip file containing the following files:
+- An outline of your story
+- Your written narrative
+- A document containing your visual depictions of key elements of your story
+- A video file of your story
+- A document containing your reflections on the assignment
