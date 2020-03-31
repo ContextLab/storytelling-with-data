@@ -2,6 +2,7 @@
 
 ## Introduction
 - [Welcome message](https://www.youtube.com/watch?v=LvFQLLTu5KY)
+  - [Supplemental welcome message](https://youtu.be/JwA6zyWdNIs)
 - Learning remotely: [tools](https://youtu.be/uxqZ-Xdra0I), [tips](https://youtu.be/RzCXL8p5VAU), and [tricks](https://youtu.be/5OmFGIYy1kM)
 - [Course syllabus](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)
 - Discussion: the pursuit of truth
