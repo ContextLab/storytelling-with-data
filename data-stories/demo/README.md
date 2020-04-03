@@ -11,6 +11,8 @@ This is where you describe what your project is about, in a few sentences.  Spec
   - What sorts of data science tools did you use?
 - What did you find or accomplish (be brief)?  For example, did you find any interesting results or insights?  Or did you solve an interesting problem that might be useful in another project?
 
+Upload a movie of your data story to YouTube and include a link here.
+
 # Downloading the data
 
 Provide a link to the dataset(s) you're using for the project, along with a brief description of the data.
