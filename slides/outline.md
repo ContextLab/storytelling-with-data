@@ -9,7 +9,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
   - [Supplemental welcome message](https://youtu.be/JwA6zyWdNIs)
 - Learning remotely: [tools](https://youtu.be/uxqZ-Xdra0I), [tips](https://youtu.be/RzCXL8p5VAU), and [tricks](https://youtu.be/5OmFGIYy1kM)
 - [Course syllabus](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)
-- Discussion: the pursuit of truth
+- [Discussion: the pursuit of truth](https://www.youtube.com/watch?v=GZA21yA0kNM)
 
 ## Module 1: What makes a good story?
 - [Introduction to storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling/we-are-all-storytellers/v/storytelling-introb) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
@@ -21,7 +21,9 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Giving constructive feedback](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching2) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
 - [Using feedback to improve your story](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching3) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
 - [Assignment 1: tell the class a 5-minute story](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md).  You may also find some inspiration by taking a look at some [Moth Radio Hour stories](https://themoth.org/radio-hour).
+  - Workshopping story ideas [[part 1](https://www.youtube.com/watch?v=F0nTHmxp1jY)][[part 2](https://www.youtube.com/watch?v=PvUdF4u1_BU)]
   - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar)]
+  - [Discussions about stories](https://youtu.be/7Wx2G5kLKEc)
 
 ## Module 2: Visualizing data
 - [Introduction to representing data](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning/pre-algebra-representing-data/v/ways-to-represent-data) (Source: [Khan Academy's Representing Data course](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning#pre-algebra-representing-data))
