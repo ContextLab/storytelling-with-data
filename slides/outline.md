@@ -1,5 +1,9 @@
 # Course outline
 
+PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises four modules, and is collectively aimed at introducing students to the process of creating "data stories" using Python data science tools.  Part II is project-based, and revolves around mini data science projects.  For each project, one or more students choose a question and dataset to explore and turn into a data story.  Each week students and groups will report on their progress with the latest iterations of their stories.  Students should aim to participate in three or more projects during Part II of the course.  At students' discretion, those three (or more) projects may comprise the same questions and/or datasets (e.g., whereby each story builds on the previous story), or multiple questions and/or datasets that may or may not be related.  In addition, students are encouraged to build off of each others' code, projects, and questions.  Projects and project groups should form organically and should remain flexible to facilitate changing goals and interests.
+
+# Part I
+
 ## Introduction
 - [Welcome message](https://www.youtube.com/watch?v=LvFQLLTu5KY)
   - [Supplemental welcome message](https://youtu.be/JwA6zyWdNIs)
@@ -47,3 +51,17 @@
 - [Visualizing high-dimensional data with Hypertools](https://hypertools.readthedocs.io/en/latest/tutorials.html) (Source: [hypertools.readthedocs.io](https://hypertools.readthedocs.io/)
 - Discussion: approaches to data science
 - Assignment 4: tell your first (notebook-based) data story!
+
+# Part II
+
+Each data story should be contained in a single sub-folder of [data-stories](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories).  Your project should comprise the following files:
+- A README.md markdown file based on [this template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/README.md).  The README file should contain:
+  - A project description and overview
+  - A link to a YouTube video of your (5 minute) data story
+  - Links to the data you analyzed
+  - Instructions for replicating your results
+  - A description of how someone could contribute to your project
+  - Acknowledgements and citations
+- Your data story (hosted on YouTube and cited in your README file)
+- Your project's code (e.g., notebooks, Python scripts, etc.)
+- If under 10 MB (total), you can include your data files directly in your project folder
