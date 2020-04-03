@@ -40,6 +40,8 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
   - [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides)
   - [Codecademy's Introduction to Python](https://www.codecademy.com/learn/learn-python) (Source: [codecademy](https://www.codecademy.com/))
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
+- Introduction to using the command line
+- Project management and version control with git and GitHub
 - Assignment 3: binary converter
 
 ## Module 4: Data science tools
