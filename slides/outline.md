@@ -20,7 +20,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Pitching your story (or idea!)](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching1) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
 - [Giving constructive feedback](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching2) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
 - [Using feedback to improve your story](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching3) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
-- [Assignment 1: tell the class a 5-minute story](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md).  You may also find some inspiration by taking a look at some [Moth Radio Hour stories](https://themoth.org/radio-hour).
+- [Assignment 1: tell the class a 5-minute story](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md), due at midnight on April 2, 2020.  You may also find some inspiration by taking a look at some [Moth Radio Hour stories](https://themoth.org/radio-hour).
   - Workshopping story ideas [[part 1](https://www.youtube.com/watch?v=F0nTHmxp1jY)][[part 2](https://www.youtube.com/watch?v=PvUdF4u1_BU)]
   - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar)]
   - [Discussions about stories](https://youtu.be/7Wx2G5kLKEc)
@@ -29,10 +29,17 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Introduction to representing data](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning/pre-algebra-representing-data/v/ways-to-represent-data) (Source: [Khan Academy's Representing Data course](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning#pre-algebra-representing-data))
 - [Designing effective scientific figures](https://www.dropbox.com/s/qdiqqt3a8i632hn/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf) (Source: [Aiora Zabala](https://bioinformatics-core-shared-training.github.io/effective-figure-design/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf))
 - [Maximizing the data-to-ink ratio](https://medium.com/plotly/maximizing-the-data-ink-ratio-in-dashboards-and-slide-deck-7887f7c1fab) (Source: [medium.com](https://medium.com/))
-- Read [A Layered Grammar of Graphics](https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf) by Hadley Wickham
+- Take a look at [A Layered Grammar of Graphics](https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf) by Hadley Wickham (read the parts you find interesting)
 - Discussion: telling effective stories about data
-- Assignment 2: data story remix
-
+- [Assignment 2: data story remix](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%202/Assignment_2.md), due at midnight on April 9, 2020.  You find some inspiration by taking a look at one or more of the following sources of data stories:
+  - [FiveThirtyEight.com](https://fivethirtyeight.com/)
+  - [Towards Data Science](https://towardsdatascience.com/)
+  - [Minute Physics](https://www.youtube.com/user/minutephysics)
+  - [Kaggle Blog](https://medium.com/kaggle-blog)
+  - [IQuantNY](https://iquantny.tumblr.com/)
+  - [New York Times: Science](https://www.nytimes.com/section/science)
+  - [Washington Post: Visual Stories](https://www.washingtonpost.com/)
+  - [Distill.pub](https://distill.pub/archive/)
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: what's a programming language and why might computers be a useful tool for data storytelling?
