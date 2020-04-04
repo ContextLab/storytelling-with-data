@@ -31,7 +31,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Maximizing the data-to-ink ratio](https://medium.com/plotly/maximizing-the-data-ink-ratio-in-dashboards-and-slide-deck-7887f7c1fab) (Source: [medium.com](https://medium.com/))
 - Read [A Layered Grammar of Graphics](https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf) by Hadley Wickham
 - Discussion: telling effective stories about data
-- Assignment 2: data story critique
+- Assignment 2: data story remix
 
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
