@@ -29,7 +29,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Introduction to representing data](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning/pre-algebra-representing-data/v/ways-to-represent-data) (Source: [Khan Academy's Representing Data course](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning#pre-algebra-representing-data))
 - [Designing effective scientific figures](https://www.dropbox.com/s/qdiqqt3a8i632hn/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf) (Source: [Aiora Zabala](https://bioinformatics-core-shared-training.github.io/effective-figure-design/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf))
 - [Maximizing the data-to-ink ratio](https://medium.com/plotly/maximizing-the-data-ink-ratio-in-dashboards-and-slide-deck-7887f7c1fab) (Source: [medium.com](https://medium.com/))
-- Take a look at [A Layered Grammar of Graphics](https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf) by Hadley Wickham (read the parts you find interesting)
+- Take a look at [A Layered Grammar of Graphics](https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf) by Hadley Wickham (skim or skip the code examples) and [The Grammar of Graphics](https://www.dropbox.com/s/4qwd16psogqdgi6/Wilk10.pdf) by Leland Wilkinson.
 - Discussion: telling effective stories about data
 - [Assignment 2: data story remix](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%202/Assignment_2.md), due at midnight on April 9, 2020.  You find some inspiration by taking a look at one or more of the following sources of data stories:
   - [FiveThirtyEight.com](https://fivethirtyeight.com/)
