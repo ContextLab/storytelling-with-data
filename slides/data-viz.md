@@ -18,7 +18,7 @@ class:
 - But that's (usually) ineffective at conveying the **specific message** we want to get across
 
 ---
-## Which is clearer to you?
+## Which is clearest to you?
 ![Image](https://miro.medium.com/max/693/1*bV7S0zACdidh11ikjYpLpQ.png)
 
 ---
@@ -28,8 +28,12 @@ class:
 - Conveying the patterns we want people to perceive means figuring out how to **turn data into pictures**
 
 ---
-## Anscombe's quartet
+## Statistics and summaries can't tell us the whole story: **Anscombe's quartet**
 ![Image](https://seaborn.pydata.org/_images/anscombes_quartet.png)
+
+---
+## Statistics and summaries can't tell us the whole story: **The Datasaurus Dozen**
+![Image](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
 
 ---
 ## Grammar of graphics: intuition
@@ -75,7 +79,7 @@ class:
 - **Animations**: use movement to convey additional information
 
 ---
-# Displaying "raw" data
+# Displaying "raw" data: directly map each observation onto a single point or shape
 
 ---
 ## Table
@@ -110,78 +114,197 @@ class:
 ![Image](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/36139/versions/8/screenshot.jpg)
 
 ---
-# Summaries
+# Summaries: characterize overarching trends or patterns in the data, but don't show individual datapoints
 
 ---
-- histogram (discrete) -- can be 1d or 2d
-- distribution or area plot (continuous)
-- regression lines
-- statistical reports
-- vector fields, streamline plots
+## Reports
+![Image](https://www.pybloggers.com/wp-content/uploads/2016/02/www.marsja.sewp-contentuploads201602output_pandas_describe-36b54bfafa7419582f516b1a41d1feb3d22e5bdf.png)
 
 ---
-# Combinations
-- violin plot, swarm plot, boxenplot, boxplot
-- ridge plot
-- joint grid, joint plot (hex, scatter)
-- pair grid
-- scatterplot matrix
-- lmplot
-- raincloud plot
+## Histograms and density plots (discrete)
+![Image](https://seaborn.pydata.org/_images/distributions_6_0.png)
 
 ---
-# Polar coordinates (angles)
-- Rose plot
-- Pie chart, polar area chart
-- target plot
+## Two-dimensional histogram (discrete)
+![Image](https://seaborn.pydata.org/_images/seaborn-jointplot-4.png)
 
 ---
-# Clustering
-- clustermap
-- dendrogram
+## Kernel density plot (continuous)
+![Image](https://seaborn.pydata.org/_images/seaborn-kdeplot-2.png)
 
 ---
-# Timeseries data
-- line plot, ribbon plot
+## Ridge plot
+![Image](https://seaborn.pydata.org/_images/kde_ridgeplot.png)
 
 ---
-# Networks:
-- circos plots
-- circular tree
-- edge colormap
-- graph, directed graph
-- node colormap
-- edge colormap
-- ego graph
+## Regression lines
+![Image](https://seaborn.pydata.org/_images/seaborn-regplot-1.png)
 
 ---
-# Geospatial data:
-- map projections
-- cloropleth maps
-- geo scatterplots and line plots
+## Vector field
+![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/quiver_plot.png)
 
 ---
-# Animations:
-- uber use
-- world happiness animation
-- hypertools story listening
+## Streamline plot
+![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/streamplot.png)
 
 ---
-# Classics:
-- periodic table: https://docs.bokeh.org/en/latest/docs/gallery/periodic.html
-- napoleonic campaign infographic: https://en.wikipedia.org/wiki/Charles_Joseph_Minard
-- fivethirtyeight snake plot https://medium.com/@kevindewalt/fivethirtyeights-snake-is-data-visualization-genius-f9901be5a74a
+# Combination plots: show both the individual datapoints *and* the summary in a single plot
 
 ---
-# Grammar of graphics:
-- useful way of framing data visualization
-- main idea: separate data from how we visualize it
-- a language for describing *all* possible plots we could make
-- plot = data + geometric objects (how data are summarized and/or converted to shapes) + scale and coordinate system (how geometric shapes are transformed and/or organized visually) + facets (groupings of different subsets of data) + annotations (axis labels, title, tick labels, etc.)
+## Violin plot
+![Image](https://seaborn.pydata.org/_images/simple_violinplots.png)
 
 ---
-# General tips and tricks:
-- tufte's data-to-ink ratio principle
-- "at a glance" readability
-- use consistent color schemes to highlight connections
-- visual weight
+## Swarm plot
+![Image](https://seaborn.pydata.org/_images/seaborn-swarmplot-2.png)
+
+---
+## Boxenplot
+![Image](https://seaborn.pydata.org/_images/seaborn-boxenplot-2.png)
+
+---
+## Box (and whiskers) plot
+![Image](https://seaborn.pydata.org/_images/seaborn-boxplot-2.png)
+
+---
+## Joint plot (scatter)
+![Image](https://seaborn.pydata.org/_images/seaborn-jointplot-2.png)
+
+---
+## Joint plot (hex)
+![Image](https://seaborn.pydata.org/_images/seaborn-jointplot-3.png)
+
+---
+## Pair grid
+![Image](https://seaborn.pydata.org/_images/seaborn-PairGrid-2.png)
+
+---
+## Scatterplot matrix
+![Image](https://seaborn.pydata.org/_images/scatterplot_matrix.png)
+
+---
+## Raincloud plot
+![Image](https://raw.githubusercontent.com/RainCloudPlots/RainCloudPlots/master/images/10repanvplot_cropped.jpg)
+
+---
+# Polar plots: display circular (angular) data, or visualize data summaries using polar coordinates
+
+---
+## Polar area chart (AKA Coxcomb chart, Rose chart)
+![Image](https://datavizproject.com/wp-content/uploads/2016/06/DVP_1_100-40.png)
+
+---
+## Pie chart
+![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/pie_chart.png)
+
+---
+## Target (bullseye) plot
+![Image](https://ggplot2.tidyverse.org/reference/coord_polar-4.png)
+
+---
+# Clustering: emphasize or display groupings in the data
+
+---
+## Dendrogram
+![Image](https://python-graph-gallery.com/wp-content/uploads/402_leaf_labal_color.png)
+
+---
+## Clustermap
+![Image](https://seaborn.pydata.org/_images/seaborn-clustermap-1.png)
+
+---
+# Timeseries data: show changes over time
+
+---
+## Line plot
+![Image](https://seaborn.pydata.org/_images/wide_data_lineplot.png)
+
+---
+## Ribbon plot
+![Image](https://seaborn.pydata.org/_images/errorband_lineplots.png)
+
+---
+# Networks: highlight physical or conceptual links between datapoints
+
+---
+## Undirected graph
+![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_random_geometric_graph_001.png)
+
+---
+## Directed graph
+![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_directed_001.png)
+
+---
+## Circos plots (AKA Chord diagram)
+![Image](https://www.data-to-viz.com/graph/chord_files/figure-html/unnamed-chunk-1-1.png)
+
+---
+## Circular tree
+![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_circular_tree_001.png)
+
+---
+## Node colormap
+![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_node_colormap_001.png)
+
+---
+## Edge colormap
+![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_edge_colormap_001.png)
+
+---
+## Ego graph
+![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_ego_graph_001.png)
+
+---
+# Geospatial data: geographic maps (e.g., locations, addresses, GPS coordinates, etc.)
+
+---
+## Map projections (also see [Wikipedia](https://en.wikipedia.org/wiki/List_of_map_projections))
+![Image](https://geoawesomeness.com/wp-content/uploads/2016/10/What-Map-Projections-Say-About-You.png)
+
+---
+## Cloropleth map
+![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/cloropleth.png)
+
+---
+## Bubble map
+![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/bubble_map.png)
+
+---
+## Geographical line plot
+![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/lineplot_map.png)
+
+---
+# Animations: use movement to convey additional information
+
+---
+## Example: timelapse of Uber trips in New York City
+![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/uber_trips_timelapse.gif)
+
+---
+## Example: Yearly life expectancy vs. GDP throughout the world
+![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/gapminder.gif)
+
+## Example: brain-decoded thoughts from different people as they're listening to a story
+![Image](https://hypertools.readthedocs.io/en/latest/_images/hypertools.gif)
+
+---
+# Classics
+
+---
+## Periodic table
+![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/periodic_table.png)
+
+## Minard's map of Napoleon's Russian campaign
+![Image](https://en.wikipedia.org/wiki/Charles_Joseph_Minard#/media/File:Minard.png)
+
+## FiveThirtyEight's electoral votes depictions
+![Image](https://miro.medium.com/max/1400/0*zPd4Wajf8oE4-14H.png)
+
+---
+# General tips and tricks
+- Tufte's data-to-ink ratio principle
+- Optimize for intuition and readability
+- Use consistent color schemes to highlight connections
+- Use of visual weight across figure elements
+- Be willing to break all of the rules!
