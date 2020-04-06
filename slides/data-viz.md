@@ -86,7 +86,7 @@ class:
 
 ---
 ## Table
-![height:450px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/table.png)
+![height:450px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/table.png)
 
 ---
 ## Bar graph
@@ -98,7 +98,7 @@ class:
 
 ---
 ## Bar graph (stacked)
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/bar_stacked.png)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/bar_stacked.png)
 
 ---
 ## Scatterplot (2D)
@@ -106,7 +106,7 @@ class:
 
 ---
 ## Scatterplot (3D)
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/scatter3D.png)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/scatter3D.png)
 
 ---
 ## Heatmap
@@ -142,11 +142,11 @@ class:
 
 ---
 ## Vector field
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/quiver_plot.png)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/quiver_plot.png)
 
 ---
 ## Streamline plot
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/streamplot.png)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/streamplot.png)
 
 ---
 ![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
@@ -198,7 +198,7 @@ class:
 
 ---
 ## Pie chart
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/pie_chart.png)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/pie_chart.png)
 
 ---
 ## Target (bullseye) plot
@@ -270,15 +270,15 @@ class:
 
 ---
 ## Cloropleth map
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/cloropleth.png)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/cloropleth.png)
 
 ---
 ## Bubble map
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/bubble_map.png)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/bubble_map.png)
 
 ---
 ## Geographical line plot
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/lineplot_map.png)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/lineplot_map.png)
 
 ---
 ![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
@@ -286,11 +286,11 @@ class:
 
 ---
 ## Example: Uber trips in New York City
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/uber_trips_timelapse.gif)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/uber_trips_timelapse.gif)
 
 ---
 ## Example: Yearly life expectancy vs. GDP throughout the world
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/gapminder.gif)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/gapminder.gif)
 
 ---
 ## Example: brain-decoded thoughts from different people as they're listening to a story
@@ -302,7 +302,7 @@ class:
 
 ---
 ## Periodic table
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/periodic_table.png)
+![height:500px](https://raw.githubusercontent.com/ContextLab/storytelling-with-data/master/slides/figs/periodic_table.png)
 
 ---
 ## Minard's map of Napoleon's Russian campaign
