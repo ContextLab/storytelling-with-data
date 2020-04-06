@@ -2,11 +2,13 @@
 title: Data visualization
 description: Approaches to creating effective figures
 url: https://github.com/ContextLab/storytelling-with-data
-theme: default
+theme: gaia
 class:
+  - invert
   - lead
 ---
 
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Data visualization: approaches to creating effective figures
 ## Jeremy R. Manning
 ### PSYC 81.09: Storytelling with Data
@@ -19,7 +21,7 @@ class:
 
 ---
 ## Which is clearest to you?
-![Image](https://miro.medium.com/max/693/1*bV7S0zACdidh11ikjYpLpQ.png)
+![height:500px](https://miro.medium.com/max/693/1*bV7S0zACdidh11ikjYpLpQ.png)
 
 ---
 ## Why visualize data?
@@ -29,11 +31,11 @@ class:
 
 ---
 ## Statistics and summaries can't tell us the whole story: **Anscombe's quartet**
-![Image](https://seaborn.pydata.org/_images/anscombes_quartet.png)
+![height:500px](https://seaborn.pydata.org/_images/anscombes_quartet.png)
 
 ---
 ## Statistics and summaries can't tell us the whole story: **The Datasaurus Dozen**
-![Image](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
+![height:450px](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
 
 ---
 ## Grammar of graphics: intuition
@@ -79,232 +81,242 @@ class:
 - **Animations**: use movement to convey additional information
 
 ---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Displaying "raw" data: directly map each observation onto a single point or shape
 
 ---
 ## Table
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/table.png)
+![height:450px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/table.png)
 
 ---
 ## Bar graph
-![Image](https://seaborn.pydata.org/_images/color_palettes.png)
+![height:500px](https://seaborn.pydata.org/_images/color_palettes.png)
 
 ---
 ## Bar graph (grouped)
-![Image](https://seaborn.pydata.org/_images/grouped_barplot.png)
+![height:500px](https://seaborn.pydata.org/_images/grouped_barplot.png)
 
 ---
 ## Bar graph (stacked)
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/bar_stacked.png)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/bar_stacked.png)
 
 ---
 ## Scatterplot (2D)
-![Image](https://seaborn.pydata.org/_images/seaborn-scatterplot-4.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-scatterplot-4.png)
 
 ---
 ## Scatterplot (3D)
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/scatter3D.png)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/scatter3D.png)
 
 ---
 ## Heatmap
-![Image](https://seaborn.pydata.org/_images/seaborn-heatmap-1.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-heatmap-1.png)
 
 ---
 ## Volume plot
-![Image](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/36139/versions/8/screenshot.jpg)
+![height:450px](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/36139/versions/8/screenshot.jpg)
 
 ---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Summaries: characterize overarching trends or patterns in the data, but don't show individual datapoints
 
 ---
-## Reports
-![Image](https://www.pybloggers.com/wp-content/uploads/2016/02/www.marsja.sewp-contentuploads201602output_pandas_describe-36b54bfafa7419582f516b1a41d1feb3d22e5bdf.png)
+## Report
+![height:500px](https://www.pybloggers.com/wp-content/uploads/2016/02/www.marsja.sewp-contentuploads201602output_pandas_describe-36b54bfafa7419582f516b1a41d1feb3d22e5bdf.png)
 
 ---
-## Histograms and density plots (discrete)
-![Image](https://seaborn.pydata.org/_images/distributions_6_0.png)
+## Histograms and density plot
+![height:500px](https://seaborn.pydata.org/_images/distributions_6_0.png)
 
 ---
-## Two-dimensional histogram (discrete)
-![Image](https://seaborn.pydata.org/_images/seaborn-jointplot-4.png)
-
----
-## Kernel density plot (continuous)
-![Image](https://seaborn.pydata.org/_images/seaborn-kdeplot-2.png)
+## Two-dimensional histogram or density plot
+![height:500px](https://seaborn.pydata.org/_images/seaborn-jointplot-4.png)
 
 ---
 ## Ridge plot
-![Image](https://seaborn.pydata.org/_images/kde_ridgeplot.png)
+![height:500px](https://seaborn.pydata.org/_images/kde_ridgeplot.png)
 
 ---
-## Regression lines
-![Image](https://seaborn.pydata.org/_images/seaborn-regplot-1.png)
+## Regression line
+![height:500px](https://seaborn.pydata.org/_images/seaborn-regplot-1.png)
 
 ---
 ## Vector field
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/quiver_plot.png)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/quiver_plot.png)
 
 ---
 ## Streamline plot
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/streamplot.png)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/streamplot.png)
 
 ---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Combination plots: show both the individual datapoints *and* the summary in a single plot
 
 ---
 ## Violin plot
-![Image](https://seaborn.pydata.org/_images/simple_violinplots.png)
+![height:500px](https://seaborn.pydata.org/_images/simple_violinplots.png)
 
 ---
 ## Swarm plot
-![Image](https://seaborn.pydata.org/_images/seaborn-swarmplot-2.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-swarmplot-2.png)
 
 ---
 ## Boxenplot
-![Image](https://seaborn.pydata.org/_images/seaborn-boxenplot-2.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-boxenplot-2.png)
 
 ---
 ## Box (and whiskers) plot
-![Image](https://seaborn.pydata.org/_images/seaborn-boxplot-2.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-boxplot-2.png)
 
 ---
 ## Joint plot (scatter)
-![Image](https://seaborn.pydata.org/_images/seaborn-jointplot-2.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-jointplot-2.png)
 
 ---
 ## Joint plot (hex)
-![Image](https://seaborn.pydata.org/_images/seaborn-jointplot-3.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-jointplot-3.png)
 
 ---
 ## Pair grid
-![Image](https://seaborn.pydata.org/_images/seaborn-PairGrid-2.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-PairGrid-2.png)
 
 ---
 ## Scatterplot matrix
-![Image](https://seaborn.pydata.org/_images/scatterplot_matrix.png)
+![height:500px](https://seaborn.pydata.org/_images/scatterplot_matrix.png)
 
 ---
 ## Raincloud plot
-![Image](https://raw.githubusercontent.com/RainCloudPlots/RainCloudPlots/master/images/10repanvplot_cropped.jpg)
+![height:500px](https://raw.githubusercontent.com/RainCloudPlots/RainCloudPlots/master/images/10repanvplot_cropped.jpg)
 
 ---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Polar plots: display circular (angular) data, or visualize data summaries using polar coordinates
 
 ---
 ## Polar area chart (AKA Coxcomb chart, Rose chart)
-![Image](https://datavizproject.com/wp-content/uploads/2016/06/DVP_1_100-40.png)
+![height:500px](https://datavizproject.com/wp-content/uploads/2016/06/DVP_1_100-40.png)
 
 ---
 ## Pie chart
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/pie_chart.png)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/pie_chart.png)
 
 ---
 ## Target (bullseye) plot
-![Image](https://ggplot2.tidyverse.org/reference/coord_polar-4.png)
+![height:500px](https://ggplot2.tidyverse.org/reference/coord_polar-4.png)
 
 ---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Clustering: emphasize or display groupings in the data
 
 ---
 ## Dendrogram
-![Image](https://python-graph-gallery.com/wp-content/uploads/402_leaf_labal_color.png)
+![height:500px](https://python-graph-gallery.com/wp-content/uploads/402_leaf_labal_color.png)
 
 ---
 ## Clustermap
-![Image](https://seaborn.pydata.org/_images/seaborn-clustermap-1.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-clustermap-1.png)
 
 ---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Timeseries data: show changes over time
 
 ---
 ## Line plot
-![Image](https://seaborn.pydata.org/_images/wide_data_lineplot.png)
+![height:500px](https://seaborn.pydata.org/_images/wide_data_lineplot.png)
 
 ---
 ## Ribbon plot
-![Image](https://seaborn.pydata.org/_images/errorband_lineplots.png)
+![height:500px](https://seaborn.pydata.org/_images/errorband_lineplots.png)
 
 ---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Networks: highlight physical or conceptual links between datapoints
 
 ---
 ## Undirected graph
-![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_random_geometric_graph_001.png)
+![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_random_geometric_graph_001.png)
 
 ---
 ## Directed graph
-![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_directed_001.png)
+![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_directed_001.png)
 
 ---
 ## Circos plots (AKA Chord diagram)
-![Image](https://www.data-to-viz.com/graph/chord_files/figure-html/unnamed-chunk-1-1.png)
+![height:500px](https://www.data-to-viz.com/graph/chord_files/figure-html/unnamed-chunk-1-1.png)
 
 ---
 ## Circular tree
-![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_circular_tree_001.png)
+![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_circular_tree_001.png)
 
 ---
 ## Node colormap
-![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_node_colormap_001.png)
+![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_node_colormap_001.png)
 
 ---
 ## Edge colormap
-![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_edge_colormap_001.png)
+![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_edge_colormap_001.png)
 
 ---
 ## Ego graph
-![Image](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_ego_graph_001.png)
+![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_ego_graph_001.png)
 
 ---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Geospatial data: geographic maps (e.g., locations, addresses, GPS coordinates, etc.)
 
 ---
 ## Map projections (also see [Wikipedia](https://en.wikipedia.org/wiki/List_of_map_projections))
-![Image](https://geoawesomeness.com/wp-content/uploads/2016/10/What-Map-Projections-Say-About-You.png)
+![height:400px](https://geoawesomeness.com/wp-content/uploads/2016/10/What-Map-Projections-Say-About-You.png)
 
 ---
 ## Cloropleth map
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/cloropleth.png)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/cloropleth.png)
 
 ---
 ## Bubble map
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/bubble_map.png)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/bubble_map.png)
 
 ---
 ## Geographical line plot
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/lineplot_map.png)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/lineplot_map.png)
 
 ---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Animations: use movement to convey additional information
 
 ---
-## Example: timelapse of Uber trips in New York City
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/uber_trips_timelapse.gif)
+## Example: Uber trips in New York City
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/uber_trips_timelapse.gif)
 
 ---
 ## Example: Yearly life expectancy vs. GDP throughout the world
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/gapminder.gif)
-
-## Example: brain-decoded thoughts from different people as they're listening to a story
-![Image](https://hypertools.readthedocs.io/en/latest/_images/hypertools.gif)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/gapminder.gif)
 
 ---
+## Example: brain-decoded thoughts from different people as they're listening to a story
+![height:450px](https://hypertools.readthedocs.io/en/latest/_images/hypertools.gif)
+
+---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # Classics
 
 ---
 ## Periodic table
-![Image](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/periodic_table.png)
-
-## Minard's map of Napoleon's Russian campaign
-![Image](https://en.wikipedia.org/wiki/Charles_Joseph_Minard#/media/File:Minard.png)
-
-## FiveThirtyEight's electoral votes depictions
-![Image](https://miro.medium.com/max/1400/0*zPd4Wajf8oE4-14H.png)
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/periodic_table.png)
 
 ---
+## Minard's map of Napoleon's Russian campaign
+![height:500px](https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png)
+
+---
+## FiveThirtyEight's electoral votes depictions
+![height:500px](https://miro.medium.com/max/1400/0*zPd4Wajf8oE4-14H.png)
+
+---
+![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
 # General tips and tricks
 - Tufte's data-to-ink ratio principle
 - Optimize for intuition and readability
 - Use consistent color schemes to highlight connections
 - Use of visual weight across figure elements
-- Be willing to break all of the rules!
+- **Be willing to break all of the rules!**
