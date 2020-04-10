@@ -42,6 +42,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
   - [Distill.pub](https://distill.pub/archive/)
 - [Workshopping data story ideas](https://youtu.be/PNzm65lSnW0)
 - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y)]
+- [Discussions about data stories](https://youtu.be/WBIy24iOus4)
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: what's a programming language and why might computers be a useful tool for data storytelling?
