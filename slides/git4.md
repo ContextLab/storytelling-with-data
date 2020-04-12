@@ -1,5 +1,5 @@
 ---
-title: ignore, revert, branch, remote
+title: ignore, revert, checkout, branch, remote
 description: Git tutorial part 4
 url: https://github.com/ContextLab/storytelling-with-data
 theme: uncover
@@ -30,3 +30,36 @@ class:
 
 ---
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_commits_highlighted.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_revert.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_page.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_commits.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_commits_browse_files.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_commit_view_files.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_checkout.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_create_branch.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_switch_to_branch.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_merge.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_remote.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_pull_upstream_master.png)
