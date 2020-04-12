@@ -23,6 +23,9 @@ class:
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_force_add.png)
 
 ---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_log.png)
+
+---
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_page.png)
 
 ---
