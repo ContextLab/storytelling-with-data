@@ -66,3 +66,5 @@ class:
 
 ---
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_pull_upstream_master.png)
+
+%%
