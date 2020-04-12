@@ -32,10 +32,16 @@ class:
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_push.png)
 
 ---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_pull.png)
+
+---
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_pull_request_tab.png)
 
 ---
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_create_pull_request.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_describe_pull_request.png)
 
 ---
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_merge_pull_request.png)
