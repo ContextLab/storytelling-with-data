@@ -27,3 +27,6 @@ class:
 
 ---
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_commits.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_commits_highlighted.png)
