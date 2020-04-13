@@ -45,7 +45,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Discussions about data stories](https://youtu.be/WBIy24iOus4)
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
-- Discussion: what's a programming language and why might computers be a useful tool for data storytelling?
+- Discussion: Introduction to programming
 - [Getting set up on Google Colaboratory](https://colab.research.google.com/github/ContextLab/cs-for-psych/blob/master/slides/module_1/introduction_and_overview.ipynb) (Source: [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides))
 - Project management and version control with git and GitHub:
   - [Overview of Git and GitHub](https://www.youtube.com/watch?v=4Fsg4UPHsrM)
