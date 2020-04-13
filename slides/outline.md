@@ -52,8 +52,8 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
   - [Git basics part 1: fork, clone, and status](https://www.youtube.com/watch?v=4aMftm6V_lY)
   - [Git basics part 2: add, rm, mv, commit, push, and pull](https://www.youtube.com/watch?v=j1EuezxSqsY)
   - [Intermediate git: ignore, revert, checkout, branch, merge, and remote](https://www.youtube.com/watch?v=PlqGgzpw1c0)
-  - [Handling git merge conflicts](link)
-  - [GitHub project management tools](link)
+  - [Handling git merge conflicts](https://youtu.be/N9_OP6gwgjU)
+  - [GitHub project management tools](https://youtu.be/9SIqCrj_vyQ)
 - [Introduction to using the command line](https://www.codecademy.com/learn/learn-the-command-line) (Source: [codecademy](https://www.codecademy.com/))
 - [High-level introduction to Python](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/intro_to_python.ipynb)
 - Resources for learning Python:
