@@ -54,7 +54,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
 - Introduction to using the command line
 - Project management and version control with git and GitHub
-- Assignment 3: binary converter
+- Assignment 3: [Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
 
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
