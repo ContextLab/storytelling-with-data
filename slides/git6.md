@@ -26,4 +26,7 @@ class:
 ![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_create_new_project.png)
 
 ---
-![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_project.png)
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_project1.png)
+
+---
+![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_project2.png)
