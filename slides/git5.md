@@ -14,4 +14,4 @@ class:
 ### PSYC 81.09: Storytelling with Data
 
 ---
-![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_merge_conflict.png)
+![height:750px](https://i.github-camo.com/44ff44f156f274b8799022e44bcacb804fadc08a/68747470733a2f2f7261772e6769746875622e636f6d2f736d61736877696c736f6e2f6d657267652d636f6e666c696374732f6d61737465722f646f63732f636f6e666c6963742d7265736f6c7574696f6e2e676966)
