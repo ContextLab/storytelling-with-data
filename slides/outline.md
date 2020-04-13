@@ -54,12 +54,12 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
   - [Intermediate git: ignore, revert, checkout, branch, merge, and remote](https://www.youtube.com/watch?v=PlqGgzpw1c0)
   - [Handling git merge conflicts](link)
   - [GitHub project management tools](link)
+- [Introduction to using the command line](https://www.codecademy.com/learn/learn-the-command-line) (Source: [codecademy](https://www.codecademy.com/))
 - [High-level introduction to Python](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/intro_to_python.ipynb)
 - Resources for learning Python:
   - [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides)
   - [Codecademy's Introduction to Python](https://www.codecademy.com/learn/learn-python) (Source: [codecademy](https://www.codecademy.com/))
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
-- [Introduction to using the command line](https://www.codecademy.com/learn/learn-the-command-line) (Source: [codecademy](https://www.codecademy.com/))
 - Assignment 3: [Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
 
 ## Module 4: Data science tools
