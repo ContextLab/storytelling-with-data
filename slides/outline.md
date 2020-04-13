@@ -46,14 +46,20 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: what's a programming language and why might computers be a useful tool for data storytelling?
-- Getting set up on Google Colaboratory
+- [Getting set up on Google Colaboratory](https://colab.research.google.com/github/ContextLab/cs-for-psych/blob/master/slides/module_1/introduction_and_overview.ipynb) (Source: [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides))
+- Project management and version control with git and GitHub:
+  - [Overview of Git and GitHub](https://www.youtube.com/watch?v=4Fsg4UPHsrM)
+  - [Git basics part 1: fork, clone, and status](https://www.youtube.com/watch?v=4aMftm6V_lY)
+  - [Git basics part 2: add, rm, mv, commit, push, and pull](https://www.youtube.com/watch?v=j1EuezxSqsY)
+  - [Intermediate git: ignore, revert, checkout, branch, merge, and remote](https://www.youtube.com/watch?v=PlqGgzpw1c0)
+  - [Handling git merge conflicts](link)
+  - [GitHub project management tools](link)
 - [High-level introduction to Python](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/intro_to_python.ipynb)
 - Resources for learning Python:
   - [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides)
   - [Codecademy's Introduction to Python](https://www.codecademy.com/learn/learn-python) (Source: [codecademy](https://www.codecademy.com/))
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
-- Introduction to using the command line
-- Project management and version control with git and GitHub
+- [Introduction to using the command line](https://www.codecademy.com/learn/learn-the-command-line) (Source: [codecademy](https://www.codecademy.com/))
 - Assignment 3: [Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
 
 ## Module 4: Data science tools
