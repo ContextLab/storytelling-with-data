@@ -84,5 +84,5 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
   - A description of how someone could contribute to your project
   - Acknowledgements and citations
 - Your data story (hosted on YouTube and cited in your README file)
-- Your project's code (e.g., notebooks, Python scripts, etc.)
-- If under 10 MB (total), you can include your data files directly in your project folder
+- Your project's code (e.g., notebooks, Python scripts, etc.), based on [this template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/demo.ipynb)
+- If under 10 MB (total), you can include your data files directly in your project folder.  Otherwise you should host it on Google Drive, Dropbox, or some other cloud-based source accessible to all (current and future) students.
