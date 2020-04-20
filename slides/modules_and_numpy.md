@@ -19,6 +19,7 @@ class:
 - A Python *module* is a package that provides access to **functions**, **variables**, and **data** within your workspace.
 - Modules extend the *Python standard library*.
 - Modules are kind of like Python's *apps*.
+- AKA: library, package, toolbox, toolkit
 
 ---
 # Which Python modules can you use?
@@ -82,6 +83,14 @@ from glob import glob as lsdir
 ### (Part of the) Python data science computing stack
 
 ![height:550px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/python_libraries.png)
+
+---
+# Storytelling with Data project template
+![height:550px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/demo_repo_github.png)
+
+---
+# Storytelling with Data project template
+![height:550px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/demo_notebook.png)
 
 ---
 # Data wrangling
