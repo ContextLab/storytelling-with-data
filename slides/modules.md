@@ -1,6 +1,6 @@
 ---
-title: Python external modules: numpy and pandas
-description: Introduction to Python modules, numpy, and pandas
+title: Python external modules and intro to numpy
+description: Intro to data science with Python
 url: https://github.com/ContextLab/storytelling-with-data
 theme: gaia
 class:
@@ -9,7 +9,7 @@ class:
 ---
 
 ![bg opacity:0.1](https://miro.medium.com/max/1000/0*H-KlSZBvm_6tzGGH.png)
-# Python external modules: numpy and pandas
+# Python external modules and introduction to NumPy
 ## Jeremy R. Manning
 ### PSYC 81.09: Storytelling with Data
 
@@ -41,11 +41,11 @@ pip install --user hypertools
 ---
 # Which modules are installed in your environment?
 
-- To get a list of your already-installed modules from within Colaboratory, type:
+- To get a list of the (many!) already-installed modules from within Colaboratory, type:
 ```bash
 !pip freeze
 ```
-- In a "regular" Terminal session, just omit the `!`
+- In a "regular" Terminal session (e.g., on your local machine), just omit the `!`
 
 ---
 # Use `import` statements to gain access to new modules in your workspace
@@ -72,16 +72,16 @@ from glob import glob as lsdir
 
 ---
 # Python has excellent libraries for...
-- *Wrangling data*: getting the data from the format it's in to the format you need it in
-- *Analyzing data*: carrying out statistical tests, machine learning
-- *Modeling data*: fitting existing models to your data and/or implementing your own models
-- *Visualizing data*: creating figures
+- **Wrangling data**: getting the data from the format it's in to the format you need it in
+- **Analyzing data**: carrying out statistical tests, machine learning
+- **Modeling data**: fitting existing models to your data and/or implementing your own models
+- **Visualizing data**: creating figures
 - ...and nearly anything else you can imagine!
 
 ---
-# Python data science computing stack
+### (Part of the) Python data science computing stack
 
-![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/python_libraries.png)
+![height:550px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/python_libraries.png)
 
 ---
 # Data wrangling
@@ -94,14 +94,15 @@ from glob import glob as lsdir
 ---
 ![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
 # NumPy: efficiently storing and manipulating data
-- NumPy stands for NUMerical PYthon.  It's the building block of nearly every data science analysis in Python.
+- NumPy stands for NUMerical PYthon.  **It's the foundation of nearly every data science tool and analysis in Python.**
 - Introduces a new type of object called an `array` (plus some others).  These objects store *n*-dimensional tables of numbers (i.e., vectors, matrices, and tensors).
 - Also introduces a bunch of functions for efficiently working with `array` objects, and with lots of other useful linear algebra and calculus functions, random number generators, etc.
-- Allows for very efficient data storage and manipulation.
+- Official tutorials and documentation may be found [here](https://numpy.org/doc/stable/user/quickstart.html).
 
 ---
 ![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
 # NumPy: basic usage
+- Open up a scratch notebook in Colaboratory and follow along!
 ```python
 import numpy as np
 
@@ -114,7 +115,7 @@ array([3, 4, 5])
 
 ---
 ![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-# Some useful functions for querying `array` objects
+# Some useful functions for querying `array` objects (try them!)
 - `a.ndim`: the number of axes (dimensions) of the array
 - `a.shape`: returns a `tuple` indicating the size of the array in each dimension
 - `a.size`: the total number of elements in the array
@@ -137,7 +138,7 @@ array([3, 4, 5])
 
 ---
 ![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-# Some other very commonly used `numpy` functions (part 1)
+# Some other commonly used `numpy` functions (part 1)
 - `np.arange`: works like the `range` function, but returns an `array` object
 - `np.linspace`, `np.logspace`, `np.mgrid`, `np.ogrid`: create `array`s of linearly (or logarithmically) spaced values
 - `np.zeros` and `np.ones`: produce an `array` of the given size, filled with all 0s or 1s
@@ -145,28 +146,63 @@ array([3, 4, 5])
 
 ---
 ![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-# Some other very commonly used `numpy` functions (part 2)
-- Many standard math and stats functions you might expect (`np.sin`, `np.cos`, `np.exp`, `np.sqrt`, `np.dot`, `np.outer`, `np.mean`, `np.std`, etc.)
+# Some other commonly used `numpy` functions (part 2)
+- Many standard math and stats functions you might expect
+  - `np.sin`, `np.cos`, `np.exp`, `np.sqrt`, `np.dot`, `np.outer`, `np.mean`, `np.std`, etc.
   - These all operate on `array` objects, but can also be used for other built-in datatypes like `int` and `float`.
-- `np.random.rand`, `np.random.randn`, `np.random.randint`: generate random numbers
-- `np.random.choice`: choose random element(s) from a 1D array
+- `np.random.rand`, `np.random.randn`, `np.random.randint`: generate random numbers.
+- `np.random.choice`: choose random element(s) from a 1D `array`.
 
 ---
 ![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-# Some other very commonly used `numpy` functions (part 3)
-- `a.all()`: `True` iff every element of the array is `True`
+# Some other commonly used `numpy` functions (part 3)
+- `a.all()`: `True` iff *every* element of the array is `True`
 - `a.any()`: `True` iff *any* element of the array is `True`
 - `a.argmax`, `a.argmin`: return the max or min values (potentially along each dimension)
 - `a.cumsum`, `a.cumprod`: return an array of the same size as `a`, but storing the cumulative sum or product of each successive element of `a` along the given dimension
 
 ---
 ![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-# Some strange NumPy stuff
+## Some strange NumPy stuff
 - When you slice an array, it returns a *pointer* to the original data, called a `view`.
 - If you change the data in the original array, the values in the slice will change too.
 - If you don't want this to happen, use `copy`:
   - `a.copy()`: creates a new `array` with the same data
+- If you're finding that your data is being changed in strange ways, a good thing to check first is that you're dealing with `array` objects correctly.
+- Only copy data when you need too-- otherwise you'll be wasting memory by storing redundant copies of the same thing.
 
 ---
 ![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-# Some strange NumPy stuff
+# Practicing NumPy: basics
+- Create an `array` of ones with 10 rows and 5 columns
+- Create a 4 by 7 `array` of random integers between 6 and 30
+  - Find the rows and columns of all values greater than 10
+  - Write a function that checks if any of the values are equal to 30.
+    - If so, the function should print "The array contains at least 1 30!"
+    - If not, the function should print "No 30s were found"
+    - Then return the number of times 30 appeared in the array
+
+---
+## Practicing NumPy: broadcasting and loops
+- Create an `array` containing the first 10 cubes (i.e., 1, 8, 27, etc.)
+- Create a function that returns an `array` containing the square roots of `n` evenly spaced values between to integers, `x` and `y`.  (Your function should accept 3 inputs: `x`, `y`, and `n`.)
+- Create a 3 by 4 by 5 `array` of random numbers chosen uniformly between 0 and 1.
+  - Sort the values in ascending order and reshape the `array` into a new 20 by 30 `array`
+  - Print out the 10th row
+  - Print out rows 5 through 9 (inclusive) of columns 20 through 25
+
+---
+## Practicing NumPy: manipulating matrices
+- Create two `array` objects, each filled with random draws from the unit Gaussian distribution:
+  - `a` should be 5 by 7
+  - `b` should be 10 by 7
+- Create a new `array`, `c`, comprising `a` stacked on top of `b`
+- Reshape `c` into a column vector
+- Create a new `array`, `d`, comprising `c` stacked horizontally 5 times
+- Create a new `array`, `e`, that repeats each element of `d` 2 times in a row (it should have twice as many rows and columns as `d`)
+
+---
+# Closing thoughts and things to consider
+- Most (all?) data may be represented as matrices, so `array` objects are highly generalizable.
+- Suppose you had a dataset, like a huge spreadsheet of measurements.  How could you use NumPy to start understanding your data?
+- Think about what is or isn't *intuitive* about NumPy.  Why might things have been set up the way they are?  Can you articulate any points of confusion?
