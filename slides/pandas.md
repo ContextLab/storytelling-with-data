@@ -8,7 +8,7 @@ class:
 ---
 
 ![bg opacity:0.1](https://miro.medium.com/max/1080/1*_oSOImPmBFeKj8vqE4FCkQ.jpeg)
-# Introduction to Pandas: PythoN Data AnalysiS toolkit
+# Introduction to Pandas: **P**ytho**n** **d**ata **a**nalysi**s** toolkit
 ## Jeremy R. Manning
 ### PSYC 81.09: Storytelling with Data
 
