@@ -13,14 +13,19 @@
 <h3>PSYC 81.09: Storytelling with Data</h3>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section class="lead" style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
-<h1>Pandas = NumPy + <img class="emoji" draggable="false" alt="🌟" src="https://twemoji.maxcdn.com/2/svg/1f31f.svg" data-marp-twemoji=""/></h1>
+<h3>Python data science computing stack</h3>
+<p><img src="https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/python_libraries.png" alt="height:500px" style="height:500px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Pandas = NumPy + <img class="emoji" draggable="false" alt="🌟" src="https://twemoji.maxcdn.com/2/svg/1f31f.svg" data-marp-twemoji=""/></h3>
 <ul>
 <li>NumPy <code>array</code> objects organize information into tables</li>
 <li>Pandas introduces <code>Series</code> and <code>DataFrame</code> objects, which are like enhanced versions of <code>array</code></li>
-<li>Pandas also includes a bunch of functions for reading in common filetypes like .csv, .xlsx, .json, .html, and many others</li>
+<li>Pandas includes a bunch of functions for creating <code>DataFrame</code> objects from common filetypes like .csv, .xlsx, .json, .html, and many others</li>
+<li>The toolbox also includes some (basic) statistical analysis and plotting functions</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h1>Installing Pandas</h1>
 <ul>
 <li>Pandas is installed by default in Colaboratory</li>
@@ -29,12 +34,12 @@
 <pre><code class="language-bash">pip install pandas
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Importing Pandas into your workspace (follow along in a notebook!)</h3>
 <pre><code class="language-python"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h2><code>Series</code> objects: 1-D array of indexed data</h2>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>data = pd.Series([<span class="hljs-number">0.25</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">0.75</span>, <span class="hljs-number">1.0</span>])
 <span class="hljs-meta">&gt;&gt;&gt; </span>data
@@ -45,7 +50,7 @@
 dtype: float64
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h2><code>Series</code> objects: 1-D array of indexed data</h2>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>data.values
 array([ <span class="hljs-number">0.25</span>,  <span class="hljs-number">0.5</span> ,  <span class="hljs-number">0.75</span>,  <span class="hljs-number">1.</span>  ])
@@ -62,7 +67,7 @@ RangeIndex(start=<span class="hljs-number">0</span>, stop=<span class="hljs-numb
 dtype: float64
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Defining indices</h3>
 <ul>
 <li>By default, <code>Series</code> objects are indexed by integers</li>
@@ -78,7 +83,7 @@ d    <span class="hljs-number">1.00</span>
 dtype: float64
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Defining indices</h3>
 <ul>
 <li>This allows <code>Series</code> objects to act like a more powerful version of <code>dict</code></li>
@@ -93,7 +98,7 @@ c    <span class="hljs-number">0.75</span>
 dtype: float64
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3><code>DataFrame</code>: a more powerful <code>array</code></h3>
 <ul>
 <li>A <code>DataFrame</code> is like a 2D <code>array</code>, but with the rows and columns labeled</li>
@@ -101,7 +106,7 @@ dtype: float64
 <li>Column labels are called the <code>columns</code></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3><code>DataFrame</code>: a more powerful <code>array</code></h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>areas = {<span class="hljs-string">'California'</span>: <span class="hljs-number">423967</span>,
              <span class="hljs-string">'Texas'</span>: <span class="hljs-number">695662</span>,
@@ -115,7 +120,7 @@ dtype: float64
                    <span class="hljs-string">'Illinois'</span>: <span class="hljs-number">12882135</span>}
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3><code>DataFrame</code>: a more powerful <code>array</code></h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states = pd.DataFrame({<span class="hljs-string">'population'</span>: populations, <span class="hljs-string">'area'</span>: areas})
 <span class="hljs-meta">&gt;&gt;&gt; </span>states
@@ -127,7 +132,7 @@ Florida       <span class="hljs-number">19552860</span>  <span class="hljs-numbe
 Illinois      <span class="hljs-number">12882135</span>  <span class="hljs-number">149995</span>
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3><code>DataFrame</code>: a more powerful <code>array</code></h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states.index
 Index([<span class="hljs-string">'California'</span>, <span class="hljs-string">'Texas'</span>, <span class="hljs-string">'New York'</span>, <span class="hljs-string">'Florida'</span>,
@@ -144,7 +149,7 @@ array([[<span class="hljs-number">38332521</span>,   <span class="hljs-number">4
        [<span class="hljs-number">12882135</span>,   <span class="hljs-number">149995</span>]])
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Indexing <code>DataFrame</code> objects</h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states[<span class="hljs-string">'area'</span>]
 California    <span class="hljs-number">423967</span>
@@ -155,7 +160,7 @@ Texas         <span class="hljs-number">695662</span>
 Name: area, dtype: int64
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Indexing <code>DataFrame</code> objects</h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states[<span class="hljs-string">'California'</span>]
 ----------------------------------------------------------
@@ -166,7 +171,7 @@ KeyError                 Traceback (most recent call last)
 KeyError: <span class="hljs-string">'California'</span>
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Indexing <code>DataFrame</code> objects</h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states.loc[<span class="hljs-string">'California'</span>]
 population    <span class="hljs-number">38332521</span>
@@ -177,7 +182,7 @@ Name: California, dtype: int64
 pandas.core.series.Series
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Indexing <code>DataFrame</code> objects</h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states.iloc[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]
 population    area
@@ -185,7 +190,7 @@ Texas       <span class="hljs-number">26448193</span>  <span class="hljs-number"
 New York    <span class="hljs-number">19651127</span>  <span class="hljs-number">141297</span>
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Adding columns to <code>DataFrame</code> objects</h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states[<span class="hljs-string">'density'</span>] = states[<span class="hljs-string">'population'</span>] / states[<span class="hljs-string">'area'</span>]
 <span class="hljs-meta">&gt;&gt;&gt; </span>states
@@ -197,11 +202,11 @@ Florida       <span class="hljs-number">19552860</span>  <span class="hljs-numbe
 Illinois      <span class="hljs-number">12882135</span>  <span class="hljs-number">149995</span>   <span class="hljs-number">85.883763</span>
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Modifying values of <code>DataFrame</code> objects</h3>
-<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states.loc[<span class="hljs-string">'California'</span>, <span class="hljs-string">'population'</span>] = <span class="hljs-number">38332522</span>
+<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states.loc[<span class="hljs-string">'California'</span>, <span class="hljs-string">'population'</span>] += <span class="hljs-number">1</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>states
-population    area     density
+            population    area     density
 California    <span class="hljs-number">38332522</span>  <span class="hljs-number">423967</span>   <span class="hljs-number">90.413926</span>
 Texas         <span class="hljs-number">26448193</span>  <span class="hljs-number">695662</span>   <span class="hljs-number">38.018740</span>
 New York      <span class="hljs-number">19651127</span>  <span class="hljs-number">141297</span>  <span class="hljs-number">139.076746</span>
@@ -209,7 +214,7 @@ Florida       <span class="hljs-number">19552860</span>  <span class="hljs-numbe
 Illinois      <span class="hljs-number">12882135</span>  <span class="hljs-number">149995</span>   <span class="hljs-number">85.883763</span>
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Let's get some data!</h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>cars = pd.read_csv(<span class="hljs-string">'https://tinyurl.com/ydevw29o'</span>)
 <span class="hljs-meta">&gt;&gt;&gt; </span>cars.head()
@@ -223,7 +228,7 @@ Illinois      <span class="hljs-number">12882135</span>  <span class="hljs-numbe
 [<span class="hljs-number">5</span> rows x <span class="hljs-number">9</span> columns]
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Data summaries with <code>pandas.describe</code></h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>cars.describe()
               mpg   cylinders  ...  acceleration  model_year
@@ -239,7 +244,7 @@ max     <span class="hljs-number">46.600000</span>    <span class="hljs-number">
 [<span class="hljs-number">8</span> rows x <span class="hljs-number">7</span> columns]
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Some other useful functions to explore (part 1)</h3>
 <ul>
 <li><code>groupby</code>: organize data according to particular values (e.g., group cars by model year)</li>
@@ -249,7 +254,7 @@ max     <span class="hljs-number">46.600000</span>    <span class="hljs-number">
 <li><code>melt</code>: restructure <code>DataFrame</code> to have just two columns-- <code>variable</code> and <code>value</code></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3>Some other useful functions to explore (part 2)</h3>
 <ul>
 <li><code>head</code>, <code>tail</code>: print out just the first (or last) rows</li>
@@ -257,7 +262,7 @@ max     <span class="hljs-number">46.600000</span>    <span class="hljs-number">
 <li><code>plot</code>: create figures (lots of options!)</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h2>Summary</h2>
 <ul>
 <li>Pandas is a powerful tool for organizing and manipulating data</li>
