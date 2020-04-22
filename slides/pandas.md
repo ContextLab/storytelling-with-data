@@ -4,7 +4,7 @@ description: Introduction to Pandas
 url: https://github.com/ContextLab/storytelling-with-data
 theme: uncover
 class:
-  - lead
+  - lead  
 ---
 
 ![bg opacity:0.1](https://miro.medium.com/max/1080/1*_oSOImPmBFeKj8vqE4FCkQ.jpeg)
@@ -131,9 +131,11 @@ Illinois      12882135  149995
 
 ---
 ### `DataFrame`: a more powerful `array`
+
 ```python
 >>> states.index
-Index(['California', 'Texas', 'New York', 'Florida', 'Illinois'], dtype='object')
+Index(['California', 'Texas', 'New York', 'Florida',
+       'Illinois'], dtype='object')
 
 >>> states.columns
 Index(['population', 'area'], dtype='object')
@@ -145,3 +147,128 @@ array([[38332521,   423967],
        [19552860,   170312],
        [12882135,   149995]])
 ```
+
+---
+### Indexing `DataFrame` objects
+```python
+>>> states['area']
+California    423967
+Florida       170312
+Illinois      149995
+New York      141297
+Texas         695662
+Name: area, dtype: int64
+```
+
+---
+### Indexing `DataFrame` objects
+```python
+>>> states['California']
+----------------------------------------------------------
+
+KeyError                 Traceback (most recent call last)
+...
+...
+KeyError: 'California'
+```
+
+---
+### Indexing `DataFrame` objects
+```python
+>>> states.loc['California']
+population    38332521
+area            423967
+Name: California, dtype: int64
+
+>>> type(states.loc['California'])
+pandas.core.series.Series
+```
+
+---
+### Indexing `DataFrame` objects
+```python
+>>> states.iloc[1:3]
+population    area
+Texas       26448193  695662
+New York    19651127  141297
+```
+
+---
+### Adding columns to `DataFrame` objects
+```python
+>>> states['density'] = states['population'] / states['area']
+>>> states
+            population    area     density
+California    38332521  423967   90.413926
+Texas         26448193  695662   38.018740
+New York      19651127  141297  139.076746
+Florida       19552860  170312  114.806121
+Illinois      12882135  149995   85.883763
+```
+
+---
+### Modifying values of `DataFrame` objects
+```python
+>>> states.loc['California', 'population'] = 38332522
+>>> states
+population    area     density
+California    38332522  423967   90.413926
+Texas         26448193  695662   38.018740
+New York      19651127  141297  139.076746
+Florida       19552860  170312  114.806121
+Illinois      12882135  149995   85.883763
+```
+
+---
+### Let's get some data!
+```python
+>>> cars = pd.read_csv('https://tinyurl.com/ydevw29o')
+>>> cars.head()
+    mpg  cylinders  displacement  ...                      name
+0  18.0          8         307.0  ... chevrolet chevelle malibu
+1  15.0          8         350.0  ...         buick skylark 320
+2  18.0          8         318.0  ...        plymouth satellite
+3  16.0          8         304.0  ...             amc rebel sst
+4  17.0          8         302.0  ...               ford torino
+
+[5 rows x 9 columns]
+```
+
+---
+### Data summaries with `pandas.describe`
+
+```python
+>>> cars.describe()
+              mpg   cylinders  ...  acceleration  model_year
+count  398.000000  398.000000  ...    398.000000  398.000000
+mean    23.514573    5.454774  ...     15.568090   76.010050
+std      7.815984    1.701004  ...      2.757689    3.697627
+min      9.000000    3.000000  ...      8.000000   70.000000
+25%     17.500000    4.000000  ...     13.825000   73.000000
+50%     23.000000    4.000000  ...     15.500000   76.000000
+75%     29.000000    8.000000  ...     17.175000   79.000000
+max     46.600000    8.000000  ...     24.800000   82.000000
+
+[8 rows x 7 columns]
+```
+
+---
+### Some other useful functions to explore (part 1)
+- `groupby`: organize data according to particular values (e.g., group cars by model year)
+- `fillna`, `ffill`, `bfill`: deal with missing data
+- `rolling`: compute averages over a sliding window
+- `merge`, `join`: combine multiple `DataFrame` objects
+- `melt`: restructure `DataFrame` to have just two columns-- `variable` and `value`
+
+---
+### Some other useful functions to explore (part 2)
+- `head`, `tail`: print out just the first (or last) rows
+- `apply`: apply a function to each value along a given axis
+- `plot`: create figures (lots of options!)
+
+---
+## Summary
+- Pandas is a powerful tool for organizing and manipulating data
+- The more Pandas "tricks" you learn, the more efficiently you'll be able to work with data
+  - NumPy tricks also come in handy; most work in Pandas too!
+- The best way to learn is to load some real data into a `DataFrame` and start playing around with it

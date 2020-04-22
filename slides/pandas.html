@@ -126,9 +126,12 @@ New York      <span class="hljs-number">19651127</span>  <span class="hljs-numbe
 Florida       <span class="hljs-number">19552860</span>  <span class="hljs-number">170312</span>
 Illinois      <span class="hljs-number">12882135</span>  <span class="hljs-number">149995</span>
 </code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
 <h3><code>DataFrame</code>: a more powerful <code>array</code></h3>
 <pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states.index
-Index([<span class="hljs-string">'California'</span>, <span class="hljs-string">'Texas'</span>, <span class="hljs-string">'New York'</span>, <span class="hljs-string">'Florida'</span>, <span class="hljs-string">'Illinois'</span>], dtype=<span class="hljs-string">'object'</span>)
+Index([<span class="hljs-string">'California'</span>, <span class="hljs-string">'Texas'</span>, <span class="hljs-string">'New York'</span>, <span class="hljs-string">'Florida'</span>,
+       <span class="hljs-string">'Illinois'</span>], dtype=<span class="hljs-string">'object'</span>)
 
 <span class="hljs-meta">&gt;&gt;&gt; </span>states.columns
 Index([<span class="hljs-string">'population'</span>, <span class="hljs-string">'area'</span>], dtype=<span class="hljs-string">'object'</span>)
@@ -140,6 +143,131 @@ array([[<span class="hljs-number">38332521</span>,   <span class="hljs-number">4
        [<span class="hljs-number">19552860</span>,   <span class="hljs-number">170312</span>],
        [<span class="hljs-number">12882135</span>,   <span class="hljs-number">149995</span>]])
 </code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Indexing <code>DataFrame</code> objects</h3>
+<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states[<span class="hljs-string">'area'</span>]
+California    <span class="hljs-number">423967</span>
+Florida       <span class="hljs-number">170312</span>
+Illinois      <span class="hljs-number">149995</span>
+New York      <span class="hljs-number">141297</span>
+Texas         <span class="hljs-number">695662</span>
+Name: area, dtype: int64
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Indexing <code>DataFrame</code> objects</h3>
+<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states[<span class="hljs-string">'California'</span>]
+----------------------------------------------------------
+
+KeyError                 Traceback (most recent call last)
+...
+...
+KeyError: <span class="hljs-string">'California'</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Indexing <code>DataFrame</code> objects</h3>
+<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states.loc[<span class="hljs-string">'California'</span>]
+population    <span class="hljs-number">38332521</span>
+area            <span class="hljs-number">423967</span>
+Name: California, dtype: int64
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>type(states.loc[<span class="hljs-string">'California'</span>])
+pandas.core.series.Series
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Indexing <code>DataFrame</code> objects</h3>
+<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states.iloc[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]
+population    area
+Texas       <span class="hljs-number">26448193</span>  <span class="hljs-number">695662</span>
+New York    <span class="hljs-number">19651127</span>  <span class="hljs-number">141297</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Adding columns to <code>DataFrame</code> objects</h3>
+<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states[<span class="hljs-string">'density'</span>] = states[<span class="hljs-string">'population'</span>] / states[<span class="hljs-string">'area'</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>states
+            population    area     density
+California    <span class="hljs-number">38332521</span>  <span class="hljs-number">423967</span>   <span class="hljs-number">90.413926</span>
+Texas         <span class="hljs-number">26448193</span>  <span class="hljs-number">695662</span>   <span class="hljs-number">38.018740</span>
+New York      <span class="hljs-number">19651127</span>  <span class="hljs-number">141297</span>  <span class="hljs-number">139.076746</span>
+Florida       <span class="hljs-number">19552860</span>  <span class="hljs-number">170312</span>  <span class="hljs-number">114.806121</span>
+Illinois      <span class="hljs-number">12882135</span>  <span class="hljs-number">149995</span>   <span class="hljs-number">85.883763</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Modifying values of <code>DataFrame</code> objects</h3>
+<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>states.loc[<span class="hljs-string">'California'</span>, <span class="hljs-string">'population'</span>] = <span class="hljs-number">38332522</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>states
+population    area     density
+California    <span class="hljs-number">38332522</span>  <span class="hljs-number">423967</span>   <span class="hljs-number">90.413926</span>
+Texas         <span class="hljs-number">26448193</span>  <span class="hljs-number">695662</span>   <span class="hljs-number">38.018740</span>
+New York      <span class="hljs-number">19651127</span>  <span class="hljs-number">141297</span>  <span class="hljs-number">139.076746</span>
+Florida       <span class="hljs-number">19552860</span>  <span class="hljs-number">170312</span>  <span class="hljs-number">114.806121</span>
+Illinois      <span class="hljs-number">12882135</span>  <span class="hljs-number">149995</span>   <span class="hljs-number">85.883763</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Let's get some data!</h3>
+<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>cars = pd.read_csv(<span class="hljs-string">'https://tinyurl.com/ydevw29o'</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>cars.head()
+    mpg  cylinders  displacement  ...                      name
+<span class="hljs-number">0</span>  <span class="hljs-number">18.0</span>          <span class="hljs-number">8</span>         <span class="hljs-number">307.0</span>  ... chevrolet chevelle malibu
+<span class="hljs-number">1</span>  <span class="hljs-number">15.0</span>          <span class="hljs-number">8</span>         <span class="hljs-number">350.0</span>  ...         buick skylark <span class="hljs-number">320</span>
+<span class="hljs-number">2</span>  <span class="hljs-number">18.0</span>          <span class="hljs-number">8</span>         <span class="hljs-number">318.0</span>  ...        plymouth satellite
+<span class="hljs-number">3</span>  <span class="hljs-number">16.0</span>          <span class="hljs-number">8</span>         <span class="hljs-number">304.0</span>  ...             amc rebel sst
+<span class="hljs-number">4</span>  <span class="hljs-number">17.0</span>          <span class="hljs-number">8</span>         <span class="hljs-number">302.0</span>  ...               ford torino
+
+[<span class="hljs-number">5</span> rows x <span class="hljs-number">9</span> columns]
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Data summaries with <code>pandas.describe</code></h3>
+<pre><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>cars.describe()
+              mpg   cylinders  ...  acceleration  model_year
+count  <span class="hljs-number">398.000000</span>  <span class="hljs-number">398.000000</span>  ...    <span class="hljs-number">398.000000</span>  <span class="hljs-number">398.000000</span>
+mean    <span class="hljs-number">23.514573</span>    <span class="hljs-number">5.454774</span>  ...     <span class="hljs-number">15.568090</span>   <span class="hljs-number">76.010050</span>
+std      <span class="hljs-number">7.815984</span>    <span class="hljs-number">1.701004</span>  ...      <span class="hljs-number">2.757689</span>    <span class="hljs-number">3.697627</span>
+min      <span class="hljs-number">9.000000</span>    <span class="hljs-number">3.000000</span>  ...      <span class="hljs-number">8.000000</span>   <span class="hljs-number">70.000000</span>
+<span class="hljs-number">25</span>%     <span class="hljs-number">17.500000</span>    <span class="hljs-number">4.000000</span>  ...     <span class="hljs-number">13.825000</span>   <span class="hljs-number">73.000000</span>
+<span class="hljs-number">50</span>%     <span class="hljs-number">23.000000</span>    <span class="hljs-number">4.000000</span>  ...     <span class="hljs-number">15.500000</span>   <span class="hljs-number">76.000000</span>
+<span class="hljs-number">75</span>%     <span class="hljs-number">29.000000</span>    <span class="hljs-number">8.000000</span>  ...     <span class="hljs-number">17.175000</span>   <span class="hljs-number">79.000000</span>
+max     <span class="hljs-number">46.600000</span>    <span class="hljs-number">8.000000</span>  ...     <span class="hljs-number">24.800000</span>   <span class="hljs-number">82.000000</span>
+
+[<span class="hljs-number">8</span> rows x <span class="hljs-number">7</span> columns]
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Some other useful functions to explore (part 1)</h3>
+<ul>
+<li><code>groupby</code>: organize data according to particular values (e.g., group cars by model year)</li>
+<li><code>fillna</code>, <code>ffill</code>, <code>bfill</code>: deal with missing data</li>
+<li><code>rolling</code>: compute averages over a sliding window</li>
+<li><code>merge</code>, <code>join</code>: combine multiple <code>DataFrame</code> objects</li>
+<li><code>melt</code>: restructure <code>DataFrame</code> to have just two columns-- <code>variable</code> and <code>value</code></li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h3>Some other useful functions to explore (part 2)</h3>
+<ul>
+<li><code>head</code>, <code>tail</code>: print out just the first (or last) rows</li>
+<li><code>apply</code>: apply a function to each value along a given axis</li>
+<li><code>plot</code>: create figures (lots of options!)</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-class="lead" data-theme="uncover" class="lead" style="--class:lead;--theme:uncover;">
+<h2>Summary</h2>
+<ul>
+<li>Pandas is a powerful tool for organizing and manipulating data</li>
+<li>The more Pandas &quot;tricks&quot; you learn, the more efficiently you'll be able to work with data
+<ul>
+<li>NumPy tricks also come in handy; most work in Pandas too!</li>
+</ul>
+</li>
+<li>The best way to learn is to load some real data into a <code>DataFrame</code> and start playing around with it</li>
+</ul>
 </section>
 <script>!function(){"use strict";function t(t){Array.from(document.getElementsByTagName("svg"),e=>{if(e.hasAttribute("data-marpit-svg")){const{clientHeight:r,clientWidth:a}=e;e.style.transform||(e.style.transform="translateZ(0)");const o=t||e.currentScale||1,i=e.viewBox.baseVal.width/o,n=e.viewBox.baseVal.height/o,s=Math.min(r/n,a/i);Array.from(e.querySelectorAll(":scope > foreignObject"),t=>{const e=t.x.baseVal.value,o=t.y.baseVal.value;Array.from(t.querySelectorAll(":scope > section"),t=>{t.style.transformOrigin||(t.style.transformOrigin="0 0");const l=(a-s*i)/2-e,c=(r-s*n)/2-o;t.style.transform=`translate3d(${l}px,${c}px,0) scale(${s}) translate(${e}px,${o}px)`})})}})}const e=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function r(a=!0){for(const e of"Apple Computer, Inc."===navigator.vendor?[t]:[])e();Array.from(document.querySelectorAll('svg[data-marp-fitting="svg"]'),t=>{const r=t.firstChild,a=r.firstChild,{scrollWidth:o,scrollHeight:i}=a;let n,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(n=t.parentElement.parentElement),t.hasAttribute("data-marp-fitting-math")&&(n=t.parentElement),n){const t=getComputedStyle(n),e=Math.ceil(n.clientWidth-parseFloat(t.paddingLeft)-parseFloat(t.paddingRight));e&&(s=e)}const l=Math.max(o,s),c=Math.max(i,1),p=`0 0 ${l} ${c}`;e(r,"width",`${l}`),e(r,"height",`${c}`),e(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),e(t,"viewBox",p)&&t.classList.toggle("__reflow__")}),a&&window.requestAnimationFrame(()=>r(a))}!function(){if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");window.marpCoreBrowserScript?console.warn("Marp Core's browser script has already executed."):(Object.defineProperty(window,"marpCoreBrowserScript",{value:!0}),r())}()}();
 </script></foreignObject></svg></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),s=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),o={},a=function(e,t){return(t=t||{}).index=s.indexOf(e),t.slide=e,t},i=function(e,t){o[e]=(o[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(o[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){s[e]&&(n&&l("deactivate",a(n,t)),n=s[e],l("activate",a(n,t)))},d=function(e,t){var r=s.indexOf(n)+e;l(e>0?"next":"prev",a(n,t))&&c(r,t)},u={off:i,on:function(e,t){return(o[e]||(o[e]=[])).push(t),i.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return s.indexOf(n);l("slide",a(s[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:s,destroy:function(e){l("destroy",a(n,e)),o={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.map(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{e.slides.map(e=>e.classList.remove("bespoke-marp-active")),t.slide.classList.add("bespoke-marp-active")})}function n(e=2e3){return t=>{let n;function r(){n&&clearTimeout(n),n=setTimeout(()=>{t.parent.classList.add("bespoke-marp-inactive")},e),t.parent.classList.remove("bespoke-marp-inactive")}document.addEventListener("mousedown",r),document.addEventListener("mousemove",r),document.addEventListener("touchend",r),setTimeout(r,0)}}const r=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"];function s(e){e.parent.addEventListener("keydown",e=>{if(!e.target)return;const t=e.target;(r.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()})}function o(e){window.addEventListener("load",()=>{for(const t of e.slides){const e=t.querySelector("[data-marp-fitting]")?"":"hideable";t.setAttribute("data-bespoke-marp-load",e)}})}function a(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")])});const r=r=>void 0!==e.fragments[t][n+r],s=(r,s)=>{t=r,n=s,e.fragments.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const o=t<r||t===r&&n<=s;e.setAttribute("data-bespoke-marp-fragment",o?"active":"inactive"),t===r&&n===s?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fragmentIndex=s;const o={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:s};e.fire("fragment",o)};e.on("next",()=>{if(r(1))return s(t,n+1),!1;const o=t+1;e.fragments[o]&&s(o,0)}),e.on("prev",()=>{if(r(-1))return s(t,n-1),!1;const o=t-1;e.fragments[o]&&s(o,e.fragments[o].length-1)}),e.on("slide",({index:t,fragment:n})=>{let r=0;if(void 0!==n){const s=e.fragments[t];if(s){const{length:e}=s;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}s(t,r)}),s(0,0)}var i,l=function(e,t){return e(t={exports:{}},t.exports),t.exports}((function(e){
