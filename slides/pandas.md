@@ -13,11 +13,17 @@ class:
 ### PSYC 81.09: Storytelling with Data
 
 ---
-# Pandas = NumPy + :star2:
+### Python data science computing stack
+
+![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/python_libraries.png)
+
+---
+### Pandas = NumPy + :star2:
 
 - NumPy `array` objects organize information into tables
 - Pandas introduces `Series` and `DataFrame` objects, which are like enhanced versions of `array`
-- Pandas also includes a bunch of functions for reading in common filetypes like .csv, .xlsx, .json, .html, and many others
+- Pandas includes a bunch of functions for creating `DataFrame` objects from common filetypes like .csv, .xlsx, .json, .html, and many others
+- The toolbox also includes some (basic) statistical analysis and plotting functions
 
 ---
 # Installing Pandas
@@ -209,9 +215,9 @@ Illinois      12882135  149995   85.883763
 ---
 ### Modifying values of `DataFrame` objects
 ```python
->>> states.loc['California', 'population'] = 38332522
+>>> states.loc['California', 'population'] += 1
 >>> states
-population    area     density
+            population    area     density
 California    38332522  423967   90.413926
 Texas         26448193  695662   38.018740
 New York      19651127  141297  139.076746
