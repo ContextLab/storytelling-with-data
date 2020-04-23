@@ -27,7 +27,7 @@ Tell other people how they can contribute to the project you've started.  Specif
 - What are the most obvious next steps?
 - What are some questions that your work raises?
 - What challenges remain?
-- Are there any know bugs or problems with your approach that someone continuing your project should be aware of?
+- Are there any known bugs or problems with your approach that someone continuing your project should be aware of?
 
 # Acknowledgements
 
