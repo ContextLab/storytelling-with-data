@@ -2,7 +2,9 @@
 title: Intro to Pandas
 description: Introduction to Pandas
 url: https://github.com/ContextLab/storytelling-with-data
-theme: uncover
+theme: gaia
+backgroundColor: #fff
+backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 class:
   - lead  
 ---
