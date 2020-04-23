@@ -74,8 +74,8 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Data visualization overview](https://github.com/ContextLab/cs-for-psych/blob/master/slides/module_4/data_visualization.ipynb)
 - More details on plotting libraries: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
 - [Grammar of graphics in Python](https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129) (Source: [towardsdatascience.com](https://towardsdatascience.com/))
-- [Visualizing high-dimensional data with Hypertools](https://hypertools.readthedocs.io/en/latest/tutorials.html) (Source: [hypertools.readthedocs.io](https://hypertools.readthedocs.io/)
-- Discussion: approaches to data science
+- [Visualizing high-dimensional data with Hypertools](https://hypertools.readthedocs.io/en/latest/tutorials.html) (Source: [hypertools.readthedocs.io](https://hypertools.readthedocs.io/))
+- Interactive lecture: using data visualizations to understand some sample datasets
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
 
 # Part II
