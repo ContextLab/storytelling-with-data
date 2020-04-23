@@ -70,6 +70,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
   - [Introduction to Python modules and NumPy](https://youtu.be/aAwL26PjRI4) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
   - [Introduction to Pandas](https://youtu.be/2FjS97GFpRY) [[Slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
+  - (Optional) practice problems for [NumPy](https://github.com/rougier/numpy-100) and [Pandas](https://github.com/ajcr/100-pandas-puzzles)
 - [Data visualization overview](https://github.com/ContextLab/cs-for-psych/blob/master/slides/module_4/data_visualization.ipynb)
 - More details on plotting libraries: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
 - [Grammar of graphics in Python](https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129) (Source: [towardsdatascience.com](https://towardsdatascience.com/))
