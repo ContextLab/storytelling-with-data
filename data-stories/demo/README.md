@@ -11,7 +11,7 @@ This is where you describe what your project is about, in a few sentences.  Spec
   - What sorts of data science tools did you use?
 - What did you find or accomplish (be brief)?  For example, did you find any interesting results or insights?  Or did you solve an interesting problem that might be useful in another project?
 
-Upload a movie of your data story to YouTube and include a link here.
+Upload a movie of your data story to YouTube and include a link here.  You can narrate over a screencast of you scrolling through your notebook, or you can paste your figures into a Powerpoint or Keynote presentation (or similar).  You may also find [Marp](https://yhatt.github.io/marp/) useful; it's what I'm using to generate the slideshows for [Modules 1--4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  (Sample slides [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md) and [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md).)
 
 # Downloading the data
 
