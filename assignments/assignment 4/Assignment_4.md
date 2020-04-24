@@ -41,7 +41,6 @@ You may find some of the resources below useful as inspiration, or to help you
 implement your story (e.g., as a starting framework):
 - [Estimating COVID-19's effective reproduction number in real-time](https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb) (Source: [Kevin Systrom](https://en.wikipedia.org/wiki/Kevin_Systrom))
 - [Epidemic Simulation](https://prajwalsouza.github.io/Experiments/Epidemic-Simulation.html) (Source: [Prajwal DSouza](https://prajwalsouza.github.io/))
-- [Johns Hopkins University COVID-19 data and visualization tools](https://hub.jhu.edu/2020/04/09/data-visualization-covid19-map/)
 - [What's wrong with COVID-19 data visualizations, and how to fix it](https://towardsdatascience.com/whats-wrong-with-covid-19-data-visualizations-and-how-to-fix-it-3cdc9adc774d) (Source: [towardsdatascience.com](https://towardsdatascience.com))
 - [Seven ways to explore the math of the coronavirus](https://www.nytimes.com/2020/04/02/learning/7-ways-to-explore-the-math-of-the-coronavirus-using-the-new-york-times.html) (Source: [The New York Times](https://www.nytimes.com))
 - [COVID-19 Community Mobility Reports](https://www.blog.google/technology/health/covid-19-community-mobility-reports/) (Source: [Google](https://www.blog.google))
@@ -50,4 +49,12 @@ implement your story (e.g., as a starting framework):
 - [Understanding the 2020 US stock market drop using data visualizations](https://towardsdatascience.com/understanding-the-2020-us-stock-market-drop-using-data-visualizations-bccd2d91bf9f) (Source: [towardsdatascience.com](https://towardsdatascience.com))
 - [Not winning this fight](https://www.nytimes.com/2020/03/31/opinion/coronavirus-cases-united-states.html) (Source: [The New York Times](https://www.nytimes.com))
 - [How to tell if we're beating COVID-19](https://www.youtube.com/watch?v=54XLXg4fYsc&feature=youtu.be) (Source: [minutephysics](https://www.youtube.com/channel/UCUHW94eEFW7hkUMVaZz4eDg))
+- [Building a simple web scraped COVID-19 visualization with Bokeh](https://towardsdatascience.com/building-a-simple-web-scraped-covid-19-visualization-with-bokeh-by-region-84aa351f668) (Source: [towardsdatascience.com](https://towardsdatascience.com))
+
+## Data sources
 - [New York Times coronavirus data repository](https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html) (Source: [The New York Times](https://www.nytimes.com); also see this [GitHub link](https://github.com/nytimes/covid-19-data))
+- [The COVID Tracking Project Data API](https://covidtracking.com/api)
+- [Johns Hopkins University COVID-19 data and visualization tools](https://hub.jhu.edu/2020/04/09/data-visualization-covid19-map/)
+- [COVID-19 estimation updated](http://www.healthdata.org/covid) (Source: [The Institute for Health Metrics and Evaluation (IHME)](http://www.healthdata.org/))
+- [Laboratory-confirmed COVID-19 hospitalizations](https://gis.cdc.gov/grasp/COVIDNet/COVID19_3.html) (Source: [Centers for Disease Control and Prevention (CDC)](https://www.cdc.gov/))
+- [Delphi's Epidemiological Data API](https://cmu-delphi.github.io/delphi-epidata/api/) (Source: [Developing the theory and practice of epidemiological forecasting (DELPHI)](https://delphi.cmu.edu/))
