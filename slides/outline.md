@@ -63,7 +63,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
   - [Codecademy's Introduction to Python](https://www.codecademy.com/learn/learn-python) (Source: [codecademy](https://www.codecademy.com/))
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
   - [DataCamp](https://www.datacamp.com) has generously donated free access to all course materials for Dartmouth students enrolled in Storytelling with Data.  I have pinned an invite link to the `#general` channel in Slack.
-- Assignment 3: [Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
+- Assignment 3: [Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter), due at midnight on April 27, 2020. [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
 
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
@@ -76,7 +76,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Grammar of graphics in Python](https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129) (Source: [towardsdatascience.com](https://towardsdatascience.com/))
 - [Visualizing high-dimensional data with Hypertools](https://hypertools.readthedocs.io/en/latest/tutorials.html) (Source: [hypertools.readthedocs.io](https://hypertools.readthedocs.io/))
 - [Interactive lecture: exploring and visualizing a sample dataset](https://youtu.be/dOpcMeP9BEw) [[notebook](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/data_visualization_playground.ipynb)]
-- [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
+- [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md), due at midnight on May 3, 2020.
 
 # Part II
 
