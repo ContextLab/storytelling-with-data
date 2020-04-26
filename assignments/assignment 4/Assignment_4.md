@@ -58,3 +58,4 @@ implement your story (e.g., as a starting framework):
 - [COVID-19 estimation updated](http://www.healthdata.org/covid) (Source: [The Institute for Health Metrics and Evaluation (IHME)](http://www.healthdata.org/))
 - [Laboratory-confirmed COVID-19 hospitalizations](https://gis.cdc.gov/grasp/COVIDNet/COVID19_3.html) (Source: [Centers for Disease Control and Prevention (CDC)](https://www.cdc.gov/))
 - [Delphi's Epidemiological Data API](https://cmu-delphi.github.io/delphi-epidata/api/) (Source: [Developing the theory and practice of epidemiological forecasting (DELPHI)](https://delphi.cmu.edu/))
+- [Coronavirus Outbreak Research Collection](https://osf.io/collections/coronavirus/discover) (Source: [Center for Open Science](https://osf.io/))
