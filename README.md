@@ -1,6 +1,6 @@
 # Storytelling with Data
 
-Welcome!  This repository contains course materials for the Dartmouth Course [Storytelling with Data (PSYC 81.09)](https://pbs.dartmouth.edu/undergraduate/permission-courses/spring-2019).  The syllabus may be found [[here](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)].  Feel free to follow along with the course materials (whether you are officially enrolled in the course or just visiting!), submit comments and suggestions, etc.  An outline of the course materials, including links to pre-recorded lectures and assignments may be found [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).
+Welcome!  This repository contains course materials for the Dartmouth Course [Storytelling with Data (PSYC 81.09)](https://pbs.dartmouth.edu/undergraduate/permission-courses/spring-2019).  The syllabus may be found [[here](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)].  Feel free to follow along with the course materials (whether you are officially enrolled in the course or just visiting!), submit comments and suggestions, etc.  An outline of the course materials, including links to lecture and discussion videos and assignments may be found [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).
 
 ## Dartmouth student instructions
 
