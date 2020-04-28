@@ -1,8 +1,12 @@
 # Course outline
 
-PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises four modules, and is collectively aimed at introducing students to the process of creating "data stories" using Python data science tools.  Part II is project-based, and revolves around mini data science projects.  For each project, one or more students choose a question and dataset to explore and turn into a data story.  Each week students and groups will report on their progress with the latest iterations of their stories.  Students should aim to participate in three or more projects during Part II of the course.  At students' discretion, those three (or more) projects may comprise the same questions and/or datasets (e.g., whereby each story builds on the previous story), or multiple questions and/or datasets that may or may not be related.  In addition, students are encouraged to build off of each others' code, projects, and questions.  Projects and project groups should form organically and should remain flexible to facilitate changing goals and interests.
+PSYC 81.09 (Storytelling with Data) is organized into 2 main parts.  [Part I](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#part-i) comprises four modules, and is collectively aimed at introducing students to the process of creating "data stories" using Python data science tools:
+- [Module 1: What makes a good story?](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#module-1-what-makes-a-good-story)
+- [Module 2: Visualizing data](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#module-2-visualizing-data)
+- [Module 3: Python and Jupyter notebooks as a medium for data storytelling](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#module-3-python-and-jupyter-notebooks-as-a-medium-for-data-storytelling)
+- [Module 4: Data science tools](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#module-4-data-science-tools)
 
-# Part I
+[Part II](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#part-ii) is project-based, and revolves around mini data science projects.  For each project, one or more students choose a question and dataset to explore and turn into a data story.  Each week students and groups will report on their progress with the latest iterations of their stories.  Students should aim to participate in three or more projects during Part II of the course.  At students' discretion, those three (or more) projects may comprise the same questions and/or datasets (e.g., whereby each story builds on the previous story), or multiple questions and/or datasets that may or may not be related.  In addition, students are encouraged to build off of each others' code, projects, and questions.  Projects and project groups should form organically and should remain flexible to facilitate changing goals and interests.
 
 ## Introduction
 - [Welcome message](https://www.youtube.com/watch?v=LvFQLLTu5KY)
@@ -10,6 +14,10 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - Learning remotely: [tools](https://youtu.be/uxqZ-Xdra0I), [tips](https://youtu.be/RzCXL8p5VAU), and [tricks](https://youtu.be/5OmFGIYy1kM)
 - [Course syllabus](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)
 - [Discussion: the pursuit of truth](https://www.youtube.com/watch?v=GZA21yA0kNM)
+
+---
+
+# Part I
 
 ## Module 1: What makes a good story?
 - [Introduction to storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling/we-are-all-storytellers/v/storytelling-introb) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
@@ -80,6 +88,8 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
   - [Story ideas workshop and brainstorm](https://youtu.be/d4tt9jjSf_I)
   - [Datasets and analyses workshop and brainstorm](link)
   - [Debugging session](link)
+
+---
 
 # Part II
 
