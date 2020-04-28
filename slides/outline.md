@@ -79,7 +79,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 Parts.  Part I comprises
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md), due at midnight on May 3, 2020.
   - [Story ideas workshop and brainstorm](https://youtu.be/d4tt9jjSf_I)
   - [Datasets and analyses workshop and brainstorm](link)
-  - [Debugging session[(link)
+  - [Debugging session](link)
 
 # Part II
 
