@@ -86,7 +86,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 main parts.  [Part I](ht
 - [Interactive lecture: exploring and visualizing a sample dataset](https://youtu.be/dOpcMeP9BEw) [[notebook](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/data_visualization_playground.ipynb)]
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md), due at midnight on May 3, 2020.
   - [Story ideas workshop and brainstorm](https://youtu.be/d4tt9jjSf_I)
-  - [Datasets and analyses workshop and brainstorm](link)
+  - [Datasets and analyses workshop and brainstorm](https://youtu.be/iU8OZNM6tDE)
   - [Debugging session](link)
 
 ---
