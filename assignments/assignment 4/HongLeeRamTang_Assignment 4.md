@@ -14,12 +14,11 @@
 
 # Overview
 
-This is where you describe what your project is about, in a few sentences.  Specifically:
-- What was your main question?
-- How did you approach exploring and/or answering your question?
-  - What data did you use?
-  - What sorts of data science tools did you use?
-- What did you find or accomplish (be brief)?  For example, did you find any interesting results or insights?  Or did you solve an interesting problem that might be useful in another project?
+During the current COVID-19 crisis, some states have been hit harder economically than others. Our goal is to investigate what possible reasons could cause some states to suffer more economic downturn than others. We noticed that a couple states in particular, most notably New York, Vermont, Hawaii, Nevada, Michigan, and West Virginia. Vermont and Hawaii were incredibly hard hit with some data points showing a decrease in economic activity as big as 90%. Since Dartmouth is so closely tied to Vermont and with some of our group members even having held jobs there, we wanted to explore what made Vermont so different. 
+
+We looked at data including COVID-19 cases, political party of the current governor, date of state reopening to potentially explain why some states had a larger decrease in closed local businesses than others. We used plotly and Google Colab to analyze the data and create graphs.
+
+We found New York and Michigan were most likely impacted by the large number of COVID-19 cases, while Hawaii and Nevada were impacted by decreased tourism. Our analyses, however, were not able to figure out potential reasons why Vermont suffered so much more than the other 5 New England states.
 
 Upload a movie of your data story to YouTube and include a link here.  You can narrate over a screencast of you scrolling through your notebook, or you can paste your figures into a Powerpoint or Keynote presentation (or similar).  You may also find [Marp](https://yhatt.github.io/marp/) useful; it's what I'm using to generate the slideshows for [Modules 1--4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  (Sample slides [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md) and [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md).)
 
