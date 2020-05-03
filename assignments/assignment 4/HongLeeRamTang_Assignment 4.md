@@ -1,20 +1,16 @@
-# Project information
+# Project Name: HongLeeRamTang_Assignment 4
 
-Name the project and list the authors and their GitHub usernames.  If the GitHub commit history of your project does not reflect each contributor's work (e.g., if a single person was nominated to pull everyone's changes into the repository), you should include a brief description of each contributor's role in the project.
+### GitHub usernames:
+- Jae Hong (jaeshong)
+- Maddy Lee (maddyrlee)
+- Mira Ram (miramints)
+- Bill Tang (giga-bit)
 
-Project Name: HongLeeRamTang_Assignment 4
-
-GitHub usernames:
-Jae Hong (jaeshong)
-Maddy Lee (maddyrlee)
-Mira Ram (miramints)
-Bill Tang (giga-bit)
-
-Contributions:
-Jae Hong - Created the youtube video and helped find trends in the data.
-Maddy Lee - Assisted data collection, finding trends, and completed documentation.
-Mira Ram - Created cumulative csv including data from governor party and state opening dates. Found links to various datasets.
-Bill Tang - Imported datasets and created graphs for state opening, governor party, and age distributions. Helped find trends.
+### Contributions:
+- Jae Hong - Created the youtube video and helped find trends in the data.
+- Maddy Lee - Assisted data collection, finding trends, and completed documentation.
+- Mira Ram - Created cumulative csv including data from governor party and state opening dates. Found links to various datasets.
+- Bill Tang - Imported datasets and created graphs for state opening, governor party, and age distributions. Helped find trends.
 
 # Overview
 
