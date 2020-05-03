@@ -1,12 +1,12 @@
 # Project Name: HongLeeRamTang_Assignment 4
 
-### GitHub usernames:
+## GitHub usernames:
 - Jae Hong (jaeshong)
 - Maddy Lee (maddyrlee)
 - Mira Ram (miramints)
 - Bill Tang (giga-bit)
 
-### Contributions:
+## Contributions:
 - Jae Hong - Created the youtube video and helped find trends in the data.
 - Maddy Lee - Assisted data collection, finding trends, and completed documentation.
 - Mira Ram - Created cumulative csv including data from governor party and state opening dates. Found links to various datasets.
@@ -25,21 +25,19 @@ Upload a movie of your data story to YouTube and include a link here.  You can n
 
 # Downloading the data
 
-Provide a link to the dataset(s) you're using for the project, along with a brief description of the data.
-
-### Party of Governor
+## Party of Governor
 Party of the Governor per state as of 2020. 'R' indicates Republican and 'D' indicates Democrate. Located in the [gov_v_state.csv](https://github.com/maddyrlee/storytelling-with-data/blob/master/assignments/assignment%204/csvs/gov_v_state.csv) file. Source: https://en.wikipedia.org/wiki/List_of_United_States_governors
 
-### Date of State Reopening
+## Date of State Reopening
 Reported date of each state reopening located in the [states-reopening.csv](https://github.com/maddyrlee/storytelling-with-data/blob/master/assignments/assignment%204/csvs/state-reopenings.csv) file. Source: https://www.cnn.com/interactive/2020/us/states-reopen-coronavirus-trnd/
 
-### Local Businesses Closed
+## Local Businesses Closed
 COVID-19 impact on percent local businesses open per state located in the [businessdata.csv](https://github.com/maddyrlee/storytelling-with-data/blob/master/assignments/assignment%204/csvs/businessdata.csv) file. Sources: https://joinhomebase.com/data/covid-19/ 
 
-### COVID-19 Cases
+## COVID-19 Cases
 COVID-19 cases and deaths in each state from 1/21/2020 to present. Source: https://github.com/nytimes/covid-19-data/raw/master/us-states.csv
 
-### Age Distribution of COVID-19 Cases
+## Age Distribution of COVID-19 Cases
 Age distribution of COVID-19 cases per state and total population per state. Source: https://raw.githubusercontent.com/veltman/state-population-by-age/master/2010.csv
 
 # Running the code
