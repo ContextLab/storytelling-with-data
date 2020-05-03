@@ -1,12 +1,12 @@
 # Project Name: HongLeeRamTang_Assignment 4
 
-## GitHub usernames:
+### GitHub usernames:
 - Jae Hong (jaeshong)
 - Maddy Lee (maddyrlee)
 - Mira Ram (miramints)
 - Bill Tang (giga-bit)
 
-## Contributions:
+### Contributions:
 - Jae Hong - Created the youtube video and helped find trends in the data.
 - Maddy Lee - Assisted data collection, finding trends, and completed documentation.
 - Mira Ram - Created cumulative csv including data from governor party and state opening dates. Found links to various datasets.
@@ -42,16 +42,13 @@ Age distribution of COVID-19 cases per state and total population per state. Sou
 
 # Running the code
 
-Describe, in sufficient detail for a new person (moderately competent but unfamiliar with your work) to follow, how to run your code.  If the project is implemented in one or more Colaboratory notebooks, you should provide a link to the notebook(s) here.  Also copy the notebooks (as .ipynb files) into your project folder so that everything related to your project is backed up on GitHub.
+Open the [HongLeeRamTang_Assignment 4.ipynb]() file. Then run each line of code. 
 
 # Contributing to the code
+You can contribute too!
 
-Tell other people how they can contribute to the project you've started.  Specifically:
-- What are the most obvious next steps?
-- What are some questions that your work raises?
-- What challenges remain?
-- Are there any known bugs or problems with your approach that someone continuing your project should be aware of?
-
-# Acknowledgements
-
-If your idea is based on or inspired by someone else's work (either their code or their ideas), cite them and provide links to their work.  Also, if you received help or support from someone who is not listed as an author on this project, you should acknowledge them here.
+### We couldn't investigate every factor that could explain why certain states were impacted more financially than others.
+- Find more datasets of possible factors to potentially explain why some states were impacted more.
+- Examine the differences in how small vs. large businesses were affected.
+- What type of businesses were impacted more than others?
+- What are more factors that could affect Vermont that we did not consider?
