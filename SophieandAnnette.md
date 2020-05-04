@@ -2,6 +2,7 @@
 
 Our project is titled: The Impact of Coronavirus across New York State Counties.
 Our contributers are Sophie Lenihan (slenihan55) and Annette Gawric. 
+Video link: https://www.youtube.com/watch?v=zRznnjEk9AY&feature=youtu.be&app=desktop
 
 ## Overview
 
