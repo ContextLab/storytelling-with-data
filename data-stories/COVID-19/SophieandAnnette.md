@@ -18,7 +18,7 @@ Our dataset can be accessed at https://github.com/jeremymanning/storytelling-wit
 
 ### Running the code
 
-To run the code, you must import pandas, numpy, and plotlyexpress. A link to the collaboratory notebook is here: https://colab.research.google.com/drive/11tLVPaEctWpu92tGieOCdOlgAhv98a7J
+To run the code, you must import pandas, numpy, and plotlyexpress. A link to the collaboratory notebook is here: https://github.com/slenihan55/storytelling-with-data/blob/master/data-stories/COVID-19/sophieandannette.ipynb
 
 ## Contributing to the code
 
