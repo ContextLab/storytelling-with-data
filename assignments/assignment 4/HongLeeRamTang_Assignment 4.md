@@ -20,7 +20,7 @@ We looked at data including COVID-19 cases, political party of the current gover
 
 We found New York and Michigan were most likely impacted by the large number of COVID-19 cases, while Hawaii and Nevada were impacted by decreased tourism. Our analyses, however, were not able to figure out potential reasons why Vermont suffered so much more than the other 5 New England states.
 
-Upload a movie of your data story to YouTube and include a link here.  You can narrate over a screencast of you scrolling through your notebook, or you can paste your figures into a Powerpoint or Keynote presentation (or similar).  You may also find [Marp](https://yhatt.github.io/marp/) useful; it's what I'm using to generate the slideshows for [Modules 1--4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  (Sample slides [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md) and [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md).)
+Here is our youtube link: https://www.youtube.com/watch?v=QiQ2_Es3g3A&feature=youtu.be
 
 # Downloading the data
 
