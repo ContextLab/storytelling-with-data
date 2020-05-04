@@ -1,4 +1,4 @@
-# Project Name: HongLeeRamTang_Assignment 4
+# Project Name: HongLeeRamTang_4 ReadMe
 
 ### GitHub usernames:
 - Jae Hong (jaeshong)
