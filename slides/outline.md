@@ -94,6 +94,13 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 main parts.  [Part I](ht
 
 # Part II
 
+We will spend Part II of the course repeating three general steps in the storytelling process:
+1. *Pitching and brainstorming.*  You'll present your ideas to your classmates, form groups, workshop story ideas.
+2. *Refinement.* We'll workshop your (and your group's) ideas and code.  You can also use this time to bring up new content ideas that you'd like to learn more about.
+3. *Critiquing.* As a class we will discuss your story and provide constructive feedback.  We'll also go through your code and discuss any relevant coding issues (e.g., challenges, clever hacks, etc.) that might be relevant to the class.
+
+You should plan to make it through this cycle at least three times during Part II of the course (i.e., you should produce at least 3 data stories).
+
 Each data story should be contained in a single sub-folder of [data-stories](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories).  Your project should comprise the following files:
 - A README.md markdown file based on [this template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/README.md).  The README file should contain:
   - A project description and overview
