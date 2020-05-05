@@ -88,7 +88,8 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 main parts.  [Part I](ht
   - [Story ideas workshop and brainstorm](https://youtu.be/d4tt9jjSf_I)
   - [Datasets and analyses workshop and brainstorm](https://youtu.be/iU8OZNM6tDE)
   - [Debugging session](https://youtu.be/8qbiwzz5hlk)
-
+  - [Story critiques pt. 1](https://youtu.be/g6cIKfbxgtU)
+  - [Story critiques pt. 2](link)
 ---
 
 # Part II
