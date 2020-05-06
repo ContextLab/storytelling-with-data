@@ -1,3 +1,3 @@
 # Assignment 4: Franklin Goldszer and Nate Stuart
 
-## [Link to youtube video](https://www.youtube.com/watch?v=YAD0a6wWFrI)
+## [Link to youtube video](https://youtu.be/qSnmL0j6Kp0)
