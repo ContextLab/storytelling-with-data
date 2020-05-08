@@ -96,7 +96,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 main parts.  [Part I](ht
 
 We will spend Part II of the course repeating three general steps in the storytelling process (a video introduction to Part II may be found [here](https://youtu.be/WxW-6dsPxB0)):
 1. **Pitching and brainstorming.**  You'll present your ideas to your classmates, form groups, workshop story ideas.
-  - [Brainstorm session 1](https://youtu.be/iwWqDVJ5I1Q)
+    - [Brainstorm session 1](https://youtu.be/iwWqDVJ5I1Q)
 2. **Refinement.** We'll workshop your (and your group's) ideas and code.  You can also use this time to bring up new content ideas that you'd like to learn more about.
 3. **Critiquing.** As a class we will discuss your story and provide constructive feedback.  We'll also go through your code and discuss any relevant coding issues (e.g., challenges, clever hacks, etc.) that might be relevant to the class.
 
