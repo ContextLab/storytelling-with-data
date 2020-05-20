@@ -88,19 +88,28 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 main parts.  [Part I](ht
   - [Story ideas workshop and brainstorm](https://youtu.be/d4tt9jjSf_I)
   - [Datasets and analyses workshop and brainstorm](https://youtu.be/iU8OZNM6tDE)
   - [Debugging session](https://youtu.be/8qbiwzz5hlk)
-
+  - [Story critiques pt. 1](https://youtu.be/g6cIKfbxgtU)
+  - [Story critiques pt. 2](https://youtu.be/iSmejuwkf5U)
 ---
 
 # Part II
 
-Each data story should be contained in a single sub-folder of [data-stories](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories).  Your project should comprise the following files:
+We will spend Part II of the course repeating three general steps in the storytelling process (a video introduction to Part II may be found [here](https://youtu.be/WxW-6dsPxB0)):
+1. **Pitching and brainstorming.**  You'll present your ideas to your classmates, form groups, workshop story ideas.
+    - [Brainstorm session 1](https://youtu.be/iwWqDVJ5I1Q)
+2. **Refinement.** We'll workshop your (and your group's) ideas and code.  You can also use this time to bring up new content ideas that you'd like to learn more about.
+3. **Critiquing.** As a class we will discuss your story and provide constructive feedback.  We'll also go through your code and discuss any relevant coding issues (e.g., challenges, clever hacks, etc.) that might be relevant to the class.
+
+You should plan to make it through this cycle at least three times during Part II of the course (i.e., you should produce at least 3 data stories).
+
+Each data story should be contained in a single sub-folder of [data-stories](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories).  Your project should comprise the following files, based on [this project template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/):
 - A README.md markdown file based on [this template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/README.md).  The README file should contain:
-  - A project description and overview
-  - A link to a YouTube video of your (5 minute) data story
-  - Links to the data you analyzed
-  - Instructions for replicating your results
-  - A description of how someone could contribute to your project
-  - Acknowledgements and citations
-- Your data story (hosted on YouTube and cited in your README file)
-- Your project's code (e.g., notebooks, Python scripts, etc.), based on [this template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/demo.ipynb)
-- If under 10 MB (total), you can include your data files directly in your project folder.  Otherwise you should host it on Google Drive, Dropbox, or some other cloud-based source accessible to all (current and future) students.
+  - A project description and overview.
+  - A link to a YouTube video of your (5 minute) data story.  (A playlist containing the current set of data stories may be found [here](https://www.youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo).)
+  - Links to the data you analyzed.
+  - Instructions for replicating your results.
+  - A description of how someone could contribute to your project.
+  - Acknowledgements and citations.
+- Your data story (hosted on YouTube and cited in your README file).  Note: you don't need to upload the source video, but if you use any images or slides you should include them in a sub-folder.
+- Your project's code (e.g., notebooks, Python scripts, etc.), based on [this template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/demo.ipynb).
+- If under 10 MB (total), you can include your data files directly in your project folder.  Otherwise you should host it on Google Drive, Dropbox, or some other cloud-based source accessible to all (current and future) students.  Regardless of how your project's data files are hosted, your notebook should include code for downloading and importing the data (so from a user's perspective it shouldn't matter where the data files are hosted).

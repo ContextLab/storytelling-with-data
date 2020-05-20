@@ -1,6 +1,6 @@
 # Storytelling with Data
 
-Welcome!  This repository contains course materials for the Dartmouth Course [Storytelling with Data (PSYC 81.09)](https://pbs.dartmouth.edu/undergraduate/permission-courses/spring-2019).  The syllabus may be found [[here](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)].  Feel free to follow along with the course materials (whether you are officially enrolled in the course or just visiting!), submit comments and suggestions, etc.  An outline of the course materials, including links to lecture and discussion videos and assignments may be found [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).
+Welcome!  This repository contains course materials for the Dartmouth Course [Storytelling with Data (PSYC 81.09)](https://pbs.dartmouth.edu/undergraduate/permission-courses/spring-2019).  The syllabus may be found [[here](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)].  Feel free to follow along with the course materials (whether you are officially enrolled in the course or just visiting!), submit comments and suggestions, etc.  An outline of the course materials, including links to lecture and discussion videos and assignments may be found [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  A YouTube playlist of students' data stories for the 2020W term may be found [here](https://www.youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo).
 
 ## Dartmouth student instructions
 
@@ -19,11 +19,12 @@ Data science is a tricky, rewarding, and often frustrating business.  Luckily fo
 - **Important**-- chances are good that if you're feeling lost, you're not the only one!  If you learn something useful, please share it via Slack or by opening a [GitHub issue](https://github.com/ContextLab/storytelling-with-data/issues).
 
 # Where to find nice datasets
-In todays "Big Data" world, there are an abundance of high-quality, free datasets to enjoy and explore.  Below is a short list of websites that are great resources for data:
+In todays "Big Data" world, there are an abundance of high-quality, free datasets to enjoy and explore.  Below is a short list of websites that are great resources for data (each contains links to many datasets):
 
 - [Kaggle](https://www.kaggle.com/datasets)
 - [FiveThirtyEight](https://github.com/fivethirtyeight/data)
 - [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets)
-- [Datalad](http://datasets.datalad.org/)
-- [Princeton Neuroscience Institute](http://dataspace.princeton.edu/jspui/handle/88435/dsp0147429c369)
-- [New York Times-curated Coronavirus data](https://github.com/nytimes/covid-19-data)
+- [World Bank Open Data](https://data.worldbank.org/)
+- [World Health Organization](https://apps.who.int/gho/data/node.home)
+- [Google Public Data Explorer](https://www.google.com/publicdata/directory)
+- [Registry of Open Data on Amazon Web Services](https://registry.opendata.aws/)
