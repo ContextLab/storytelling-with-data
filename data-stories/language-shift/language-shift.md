@@ -28,14 +28,19 @@ Data source: https://ccis.ucsd.edu/_files/wp111.pdf
 
 ## Overall language
 English proficiency across three generations of multiple Asian and Hispanic ethnicities. [out%201.csv] (https://raw.githubusercontent.com/jaeshong/bob-the-weasel/master/out%201.csv)
-## Asian popuatlion
+
+## Asian population
 Asian population in tested cities in 2004. [area_vs_asian_population.csv](https://raw.githubusercontent.com/jaeshong/bob-the-weasel/master/area_vs_asian_population.csv)
+
 ## Hispanic population
 Hispanic population in tested cities in 2004. [area_vs_hispanic_population.csv](https://raw.githubusercontent.com/jaeshong/bob-the-weasel/master/area_vs_hispanic_population.csv)
+
 ## Asian language speakers
 English proficiency across three generations of Asians. [asian_generational_language_statistics.csv](https://raw.githubusercontent.com/jaeshong/bob-the-weasel/master/asian_generational_language_statistics.csv)
+
 ## Hispanic language speakers
 English proficiency across three generations of Hispanics. [hispanic_generational_language_statistics.csv]( https://raw.githubusercontent.com/jaeshong/bob-the-weasel/master/hispanic_generational_language_statistics.csv)
+
 ## County FIPS
 County FIPS. [ZIP-COUNTY-FIPS_2012-06.csv](https://raw.githubusercontent.com/jaeshong/bob-the-weasel/master/ZIP-COUNTY-FIPS_2012-06.csv)
 
