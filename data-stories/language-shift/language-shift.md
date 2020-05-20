@@ -27,7 +27,7 @@ We created multiple datasets. The information includes data from multiple Asian 
 Data source: https://ccis.ucsd.edu/_files/wp111.pdf
 
 ## Overall language
-English proficiency across three generations of multiple Asian and Hispanic ethnicities. [out_201.csv] (https://raw.githubusercontent.com/jaeshong/bob-the-weasel/master/out%201.csv)
+English proficiency across three generations of multiple Asian and Hispanic ethnicities. https://raw.githubusercontent.com/jaeshong/bob-the-weasel/master/out%201.csv
 
 ## Asian population
 Asian population in tested cities in 2004. [area_vs_asian_population.csv](https://raw.githubusercontent.com/jaeshong/bob-the-weasel/master/area_vs_asian_population.csv)
