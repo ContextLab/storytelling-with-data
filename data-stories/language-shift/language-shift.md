@@ -14,14 +14,12 @@
 
 # Overview
 
-This is where you describe what your project is about, in a few sentences.  Specifically:
-- What was your main question?
-- How did you approach exploring and/or answering your question?
-  - What data did you use?
-  - What sorts of data science tools did you use?
+Linguists have noticed a strange phenomenon dubbed third generation shift. Most immigrant groups switch to using English as their primary language by the 3rd generation. We found an interesting dataset that covers three generations of multiple Asian and Hispanic ethnicities and their language proficiency in various U.S. cities. We explored this dataset in order to compare and contrast language shift in Asian and Hispanic populations.
+
+We found that 
 - What did you find or accomplish (be brief)?  For example, did you find any interesting results or insights?  Or did you solve an interesting problem that might be useful in another project?
 
-Upload a movie of your data story to YouTube and include a link here.  You can narrate over a screencast of you scrolling through your notebook, or you can paste your figures into a Powerpoint or Keynote presentation (or similar).  You may also find [Marp](https://yhatt.github.io/marp/) useful; it's what I'm using to generate the slideshows for [Modules 1--4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  (Sample slides [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md) and [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md).)
+Link to youtube video:
 
 # Downloading the data
 
@@ -43,7 +41,7 @@ County FIPS. [ZIP-COUNTY-FIPS_2012-06.csv](https://raw.githubusercontent.com/jae
 
 # Running the code
 
-Open the [HongLeeRamTang_Assignment 4.ipynb]() file. Then run each line of code. 
+Open the [language_shift.ipynb]() file. Then run each line of code. 
 
 # Contributing to the code
 
