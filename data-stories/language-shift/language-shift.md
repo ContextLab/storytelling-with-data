@@ -16,10 +16,11 @@
 
 Linguists have noticed a strange phenomenon dubbed third generation shift. Most immigrant groups switch to using English as their primary language by the 3rd generation. We found an interesting dataset that covers three generations of multiple Asian and Hispanic ethnicities and their language proficiency in various U.S. cities. We explored this dataset in order to compare and contrast language shift in Asian and Hispanic populations.
 
-We found that 
-- What did you find or accomplish (be brief)?  For example, did you find any interesting results or insights?  Or did you solve an interesting problem that might be useful in another project?
+Although Asian immigrants had higher English Only scores than Hispanic immigrants in every generation, if one investigates how all the ethnicities within these broad categories, they will find that the trends within the groups vary greatly.
 
-Link to youtube video:
+In conclusion, Asian and Hispanic are broad categories that fit very different and diverse cultures within them. To understand the third generation shift, one must look at individual ethnicities rather than these broad labels.
+
+Link to youtube video is in [language_shift.ipynb]() file.
 
 # Downloading the data
 
@@ -49,13 +50,9 @@ County FIPS. [ZIP-COUNTY-FIPS_2012-06.csv](https://raw.githubusercontent.com/jae
 Open the [language_shift.ipynb]() file. Then run each line of code. 
 
 # Contributing to the code
-
-Tell other people how they can contribute to the project you've started.  Specifically:
-- What are the most obvious next steps?
-- What are some questions that your work raises?
-- What challenges remain?
-- Are there any known bugs or problems with your approach that someone continuing your project should be aware of?
-
-# Acknowledgements
-
-If your idea is based on or inspired by someone else's work (either their code or their ideas), cite them and provide links to their work.  Also, if you received help or support from someone who is not listed as an author on this project, you should acknowledge them here.
+We found many interesting trends within individual ethnicities in terms of where there are spikes or a lack of spikes in each group. Some paths to explore could include:
+- Does foreign conflict affect immigrant groups shift toward English exclusive language? 
+  - The spike in English proficiency occurs in second generation Japanese immigrants which correlates with World War Two. 
+  - The spike in English proficiency occurs in third generation Vietnamese immigrants which correlates with the Vietnam War.
+- Why Domincan immigrant groups do not have as strong of a third generation shift compared to other immigrant groups?
+- Does population density of individual ethnic groups affect mother tongue language retention?
