@@ -13,10 +13,9 @@
 - Bill Tang - Created graphs, Helped find trends.
 
 # Overview
+In our Language Shift project, we found that by the third generation, most immigrant groups lose their ability to speak their mother tongue. We specifically focused on Korean immigrants to see how they felt about this loss in language. We collected data through the Facebook group 'Subtle Korean Traits' and performed a sentiment analysis to see how they felt, as well as analyzed their language proficiency and what made them feel embarrased if they did based on their long answer responses.
 
-
-
-Here is our youtube link: 
+The link to our youtube story can be found in our colaboratory notebook.
 
 # Downloading the data
 
