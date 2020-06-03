@@ -8,7 +8,7 @@
 
 ### Contributions:
 - Jae Hong - Collected the datasets and helped find trends in the data.
-- Maddy Lee - Assisted data collection, finding trends, assisted movie creation and completed documentation.
+- Maddy Lee - Assisted data collection, finding trends, and completed documentation.
 - Mira Ram - Helped find trends, created the movie.
 - Bill Tang - Created graphs, Helped find trends.
 
