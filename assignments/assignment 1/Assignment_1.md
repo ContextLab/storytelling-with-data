@@ -3,7 +3,7 @@
 Note: please work through the material in [Module 1](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#module-1-what-makes-a-good-story) before beginning this assignment.
 
 For this assignment you'll be telling a story about anything you choose.  It can be a fiction or non-fiction story.  It can take place in the past, present, or future.  It can be happy, sad, exciting, thrilling, or upsetting.  It can involve yourself, others, people, or non-people.  It can be about animate or inanimate objects.  Your story should:
-  - Connect with people.  Your target audience is your Spring, 2020 Storytelling with Data class (students and instructor).
+  - Connect with people.  Your target audience is your Spring, 2021 Storytelling with Data class (students and instructor).
   - Be brief.  You'll have a maximum of 5 minutes to share your story with the class in its final form.  (There is no minimum story length.)
   - Tell a story that you haven't told or heard before.  Part of what I want you to get out of this assignemnt is practice coming up with new stories.  You won't get that unless your story is actually new.
 
