@@ -8,12 +8,14 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 main parts.  [Part I](ht
 
 [Part II](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#part-ii) is project-based, and revolves around mini data science projects.  For each project, one or more students choose a question and dataset to explore and turn into a data story.  Each week students and groups will report on their progress with the latest iterations of their stories.  Students should aim to participate in three or more projects during Part II of the course.  At students' discretion, those three (or more) projects may comprise the same questions and/or datasets (e.g., whereby each story builds on the previous story), or multiple questions and/or datasets that may or may not be related.  In addition, students are encouraged to build off of each others' code, projects, and questions.  Projects and project groups should form organically and should remain flexible to facilitate changing goals and interests.
 
+Lecture recordings are denoted in **bolded** links below.
+
 ## Introduction
 - [Welcome message](https://www.youtube.com/watch?v=LvFQLLTu5KY)
   - [Supplemental welcome message](https://youtu.be/JwA6zyWdNIs)
 - Learning remotely: [tools](https://youtu.be/uxqZ-Xdra0I), [tips](https://youtu.be/RzCXL8p5VAU), and [tricks](https://youtu.be/5OmFGIYy1kM)
 - [Course syllabus](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)
-- Discussion: the pursuit of truth
+- [**Discussion: the pursuit of truth**](https://youtu.be/079fSufDBDs)
 
 ---
 
