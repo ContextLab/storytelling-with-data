@@ -32,8 +32,9 @@ Lecture recordings are denoted in **bolded** links below.
 - [Using feedback to improve your story](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching3) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
 - [Assignment 1: tell the class a 5-minute story](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md)  You may find some inspiration by taking a look at some [Moth Radio Hour stories](https://themoth.org/radio-hour).
   - [**Workshopping story ideas**](https://youtu.be/fxjIzN7HUn0)
-  - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar)]
-  - Discussions about stories
+  - [**Discussions about stories**](https://youtu.be/6qDyE3MyBeU)
+    - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar)]
+    - Submissions for Spring, 2021: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vbr6g0_ATi5tkh7XtUPVQ)]
 
 ## Module 2: Visualizing data
 - [Introduction to representing data](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning/pre-algebra-representing-data/v/ways-to-represent-data) (Source: [Khan Academy's Representing Data course](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning#pre-algebra-representing-data))
@@ -51,8 +52,8 @@ Lecture recordings are denoted in **bolded** links below.
   - [Washington Post: Visual Stories](https://www.washingtonpost.com/)
   - [Distill.pub](https://distill.pub/archive/)
 - Workshopping data story ideas
-  - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y)]
 - Discussions about data stories
+  - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y)]
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: Introduction to programming
