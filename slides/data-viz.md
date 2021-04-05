@@ -90,7 +90,7 @@ class:
 
 ---
 ## Bar graph
-![height:500px](https://seaborn.pydata.org/_images/color_palettes.png)
+![height:500px](https://seaborn.pydata.org/_images/seaborn-barplot-1.png)
 
 ---
 ## Bar graph (grouped)
@@ -102,7 +102,7 @@ class:
 
 ---
 ## Scatterplot (2D)
-![height:500px](https://seaborn.pydata.org/_images/seaborn-scatterplot-4.png)
+![height:500px](https://seaborn.pydata.org/_images/scatterplot_3_0.png)
 
 ---
 ## Scatterplot (3D)
@@ -126,11 +126,11 @@ class:
 
 ---
 ## Histograms and density plot
-![height:500px](https://seaborn.pydata.org/_images/distributions_6_0.png)
+![height:500px](https://seaborn.pydata.org/_images/histplot_9_0.png)
 
 ---
 ## Two-dimensional histogram or density plot
-![height:500px](https://seaborn.pydata.org/_images/seaborn-jointplot-4.png)
+![height:500px](http://seaborn.pydata.org/_images/jointplot_3_0.png)
 
 ---
 ## Ridge plot
@@ -170,15 +170,15 @@ class:
 
 ---
 ## Joint plot (scatter)
-![height:500px](https://seaborn.pydata.org/_images/seaborn-jointplot-2.png)
+![height:500px](https://seaborn.pydata.org/_images/jointplot_7_0.png)
 
 ---
 ## Joint plot (hex)
-![height:500px](https://seaborn.pydata.org/_images/seaborn-jointplot-3.png)
+![height:500px](https://seaborn.pydata.org/_images/jointplot_11_0.png)
 
 ---
 ## Pair grid
-![height:500px](https://seaborn.pydata.org/_images/seaborn-PairGrid-2.png)
+![height:500px](https://seaborn.pydata.org/_images/PairGrid_5_0.png)
 
 ---
 ## Scatterplot matrix
@@ -210,7 +210,7 @@ class:
 
 ---
 ## Dendrogram
-![height:500px](https://python-graph-gallery.com/wp-content/uploads/402_leaf_labal_color.png)
+![height:500px](https://www.data-to-viz.com/graph/dendrogram_files/figure-html/unnamed-chunk-3-1.png)
 
 ---
 ## Clustermap
@@ -310,7 +310,7 @@ class:
 
 ---
 ## FiveThirtyEight's electoral votes depictions
-![height:500px](https://miro.medium.com/max/1400/0*zPd4Wajf8oE4-14H.png)
+![height:500px](https://images.squarespace-cdn.com/content/v1/5bfc8dbab40b9d7dd9054f41/1599947028927-DT85T3QZVWTYV9DDCSAJ/ke17ZwdGBToddI8pDm48kHLiAMEEMQDM76tQyRpIIg17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmnhbJtrfwp8bfXu9iW6Tjn7C_3AHyGAAQIRTc8e8HE5EqiurBLwmJjKjNnB4mrT8N/Snake+Chart+-+2020+-+Election+-+Forecast+-+FiveThirtyEight.jpg)
 
 ---
 ![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
