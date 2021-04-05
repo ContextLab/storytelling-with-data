@@ -23,7 +23,7 @@ While not strictly required, I recommend that (at least as a starting point) you
   - *Moral of the story*: explain why the audience should care and what should they do with this new knowledge you've left them with
 
 You should also:
-  - Connect with people.  Your target audience is your Spring, 2020 Storytelling with Data class (students and instructor).
+  - Connect with people.  Your target audience is your Spring, 2021 Storytelling with Data class (students and instructor).
   - Be brief.  You'll have a maximum of 5 minutes to share your story with the class in its final form.  (There is no minimum story length.)
   - Tell a story that you haven't told or heard before.  (You can remix existing content, but you'll need to take it in a new direction.)
 
