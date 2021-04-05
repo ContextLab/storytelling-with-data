@@ -4,7 +4,7 @@
 - [Hannah](https://youtu.be/qw9cLNZRENQ)
 - [Keara](https://youtu.be/JMnTvUqv9dM)
 - [Amelia](https://youtu.be/WUpZnfhbo5k)
-- [Laya](https://youtu.be/1DVHOPMa-mw)
+- [Laya](https://youtu.be/VcdnsAf7IIk)
 
 # [Stories from Spring, 2020](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar):
 - [Lindsay](https://youtu.be/rSSYIpscCj0)
