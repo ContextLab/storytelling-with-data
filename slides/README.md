@@ -32,7 +32,8 @@ Lecture recordings are denoted in **bolded** links below.
 - [Using feedback to improve your story](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching3) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
 - [Assignment 1: tell the class a 5-minute story](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md)  You may find some inspiration by taking a look at some [Moth Radio Hour stories](https://themoth.org/radio-hour).
   - [**Workshopping story ideas**](https://youtu.be/fxjIzN7HUn0)
-  - [**Discussions about stories**](https://youtu.be/6qDyE3MyBeU)
+  - [**Discussions about stories (part 1)**](https://youtu.be/6qDyE3MyBeU)
+  - [**Discussions about stories (part 2)**](https://youtu.be/IvMEPZGjLXI)
     - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar)]
     - Submissions for Spring, 2021: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vbr6g0_ATi5tkh7XtUPVQ)]
 
@@ -41,7 +42,7 @@ Lecture recordings are denoted in **bolded** links below.
 - [Designing effective scientific figures](https://www.dropbox.com/s/qdiqqt3a8i632hn/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf) (Source: [Aiora Zabala](https://bioinformatics-core-shared-training.github.io/effective-figure-design/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf))
 - [Maximizing the data-to-ink ratio](https://medium.com/plotly/maximizing-the-data-ink-ratio-in-dashboards-and-slide-deck-7887f7c1fab) (Source: [medium.com](https://medium.com/))
 - Take a look at [A Layered Grammar of Graphics](https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf) by Hadley Wickham (skim or skip the code examples) and [The Grammar of Graphics](https://www.dropbox.com/s/4qwd16psogqdgi6/Wilk10.pdf) by Leland Wilkinson.
-- Discussion: telling effective stories about data
+- [**Discussion: telling effective stories about data**](https://youtu.be/EP02RzX4PSw)
 - [Assignment 2: data story remix](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%202/Assignment_2.md)  You find some inspiration by taking a look at one or more of the following sources of data stories:
   - [FiveThirtyEight.com](https://fivethirtyeight.com/)
   - [Towards Data Science](https://towardsdatascience.com/)
