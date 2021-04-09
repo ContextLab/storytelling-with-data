@@ -52,7 +52,7 @@ Lecture recordings are denoted in **bolded** links below.
   - [New York Times: Science](https://www.nytimes.com/section/science)
   - [Washington Post: Visual Stories](https://www.washingtonpost.com/)
   - [Distill.pub](https://distill.pub/archive/)
-- [**Workshopping data story ideas**](https://youtu.be/vCjq4TN4NeU)
+- [**Workshopping data story ideas**](https://youtu.be/xse3opG0AWw)
 - Discussions about data stories
   - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y)]
 
