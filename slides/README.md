@@ -53,7 +53,7 @@ Lecture recordings are denoted in **bolded** links below.
   - [Washington Post: Visual Stories](https://www.washingtonpost.com/)
   - [Distill.pub](https://distill.pub/archive/)
 - [**Workshopping data story ideas**](https://youtu.be/xse3opG0AWw)
-- Discussions about data stories
+- [**Discussions about data stories**](https://youtu.be/975S25cTY8k)
   - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y)]
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
