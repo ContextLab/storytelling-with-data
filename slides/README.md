@@ -59,7 +59,6 @@ Lecture recordings are denoted in **bolded** links below.
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: Introduction to programming
   - [**Hackathon: making an English to Pig Latin translator**](https://youtu.be/Wxo5PwsRHmQ).  Note: this was an off-the-cuff lecture because all of the students who attended the synchronous course already had programming experience.  See [**this link**](https://youtu.be/kp4zoYErO84) for a recording of a more standard introduction to programming (from Spring, 2020).
-  - Open Q&A about introduction to programming and assignment 3
 - [Getting set up on Google Colaboratory](https://colab.research.google.com/github/ContextLab/cs-for-psych/blob/master/slides/module_1/introduction_and_overview.ipynb) (Source: [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides))
 - [Project management and version control with git and GitHub](https://www.youtube.com/playlist?list=PLjQYT8Fwp984zMjN5rJChfdI5Z8jtaWww):
   - [Overview of Git and GitHub](https://www.youtube.com/watch?v=4Fsg4UPHsrM)
@@ -77,6 +76,7 @@ Lecture recordings are denoted in **bolded** links below.
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
   - [DataCamp](https://www.datacamp.com) has generously donated free access to all course materials for Dartmouth students enrolled in Storytelling with Data.  I have pinned an invite link to the `#general` channel in Slack.
 - Assignment 3: [Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
+- [**Setting up GitHub and Colaboratory and getting started with Assignment 3**](https://youtu.be/KSQ7Q2O8zos)
 
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
