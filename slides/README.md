@@ -77,6 +77,7 @@ Lecture recordings are denoted in **bolded** links below.
   - [DataCamp](https://www.datacamp.com) has generously donated free access to all course materials for Dartmouth students enrolled in Storytelling with Data.  I have pinned an invite link to the `#general` channel in Slack.
 - Assignment 3: [Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
 - [**Setting up GitHub and Colaboratory and getting started with Assignment 3**](https://youtu.be/KSQ7Q2O8zos)
+- [**Assignment 3 Q&A, preview of Python data science stack**](https://youtu.be/0o4K748eLPo)
 
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
