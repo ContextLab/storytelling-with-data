@@ -75,14 +75,14 @@ Lecture recordings are denoted in **bolded** links below.
   - [Codecademy's Introduction to Python](https://www.codecademy.com/learn/learn-python) (Source: [codecademy](https://www.codecademy.com/))
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
   - [DataCamp](https://www.datacamp.com) has generously donated free access to all course materials for Dartmouth students enrolled in Storytelling with Data.  I have pinned an invite link to the `#general` channel in Slack.
-- Assignment 3: [Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
+- [Assignment 3: Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
 - [**Setting up GitHub and Colaboratory and getting started with Assignment 3**](https://youtu.be/KSQ7Q2O8zos)
-- [**Assignment 3 Q&A, preview of Python data science stack**](https://youtu.be/0o4K748eLPo) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+- [**Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack**](https://youtu.be/0o4K748eLPo) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
 
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
 - [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
-  - Introduction to Python modules and NumPy [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+  - [**Introduction to NumPy**](https://youtu.be/Vk1roCEJlqA) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
   - Introduction to Pandas [[Slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
   - (Optional) practice problems for [NumPy](https://github.com/rougier/numpy-100) and [Pandas](https://github.com/ajcr/100-pandas-puzzles)
 - [Data visualization overview](https://github.com/ContextLab/cs-for-psych/blob/master/slides/module_4/data_visualization.ipynb)
