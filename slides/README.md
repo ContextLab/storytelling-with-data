@@ -94,7 +94,7 @@ Lecture recordings are denoted in **bolded** links below.
   - [**Part II: data wrangling continued, basic plotting**](https://youtu.be/xiNBBfCaNQM)
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
   - [**Story ideas workshop and brainstorm**](https://youtu.be/6Dr449T4-gY)
-  - Datasets and analyses workshop and brainstorm
+  - [**Datasets and analyses workshop and brainstorm**](https://youtu.be/Xpxv0jslfpI)
   - Debugging session
   - Story critiques
 ---
