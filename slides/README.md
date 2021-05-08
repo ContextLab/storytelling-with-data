@@ -96,7 +96,7 @@ Lecture recordings are denoted in **bolded** links below.
   - [**Story ideas workshop and brainstorm**](https://youtu.be/6Dr449T4-gY)
   - [**Datasets and analyses workshop and brainstorm**](https://youtu.be/Xpxv0jslfpI)
   - [**Debugging session (Part I)**](https://youtu.be/71Xr0eBs4_0)
-  - Debugging session (Part II)
+  - [**Debugging session (Part II)**](https://youtu.be/YA6A_tpGHC0)
   - Story critiques
 ---
 
