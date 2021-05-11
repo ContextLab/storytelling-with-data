@@ -97,7 +97,8 @@ Lecture recordings are denoted in **bolded** links below.
   - [**Datasets and analyses workshop and brainstorm**](https://youtu.be/Xpxv0jslfpI)
   - [**Debugging session (Part I)**](https://youtu.be/71Xr0eBs4_0)
   - [**Debugging session (Part II)**](https://youtu.be/YA6A_tpGHC0)
-  - Story critiques
+  - [**Story critiques**](https://youtu.be/1crl0E-T18U)
+    - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987pUS5Ol-A5QIIfjZ7yFBLD)]
 ---
 
 # Part II
