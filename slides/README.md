@@ -59,7 +59,6 @@ Lecture recordings are denoted in **bolded** links below.
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: Introduction to programming
   - [**Hackathon: making an English to Pig Latin translator**](https://youtu.be/Wxo5PwsRHmQ).  Note: this was an off-the-cuff lecture because all of the students who attended the synchronous course already had programming experience.  See [**this link**](https://youtu.be/kp4zoYErO84) for a recording of a more standard introduction to programming (from Spring, 2020).
-  - Open Q&A about introduction to programming and assignment 3
 - [Getting set up on Google Colaboratory](https://colab.research.google.com/github/ContextLab/cs-for-psych/blob/master/slides/module_1/introduction_and_overview.ipynb) (Source: [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides))
 - [Project management and version control with git and GitHub](https://www.youtube.com/playlist?list=PLjQYT8Fwp984zMjN5rJChfdI5Z8jtaWww):
   - [Overview of Git and GitHub](https://www.youtube.com/watch?v=4Fsg4UPHsrM)
@@ -76,24 +75,30 @@ Lecture recordings are denoted in **bolded** links below.
   - [Codecademy's Introduction to Python](https://www.codecademy.com/learn/learn-python) (Source: [codecademy](https://www.codecademy.com/))
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
   - [DataCamp](https://www.datacamp.com) has generously donated free access to all course materials for Dartmouth students enrolled in Storytelling with Data.  I have pinned an invite link to the `#general` channel in Slack.
-- Assignment 3: [Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
+- [Assignment 3: Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
+- [**Setting up GitHub and Colaboratory and getting started with Assignment 3**](https://youtu.be/KSQ7Q2O8zos)
+- [**Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack**](https://youtu.be/0o4K748eLPo) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
 
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
 - [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
-  - Introduction to Python modules and NumPy [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
-  - Introduction to Pandas [[Slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
+  - [**Introduction to NumPy**](https://youtu.be/Vk1roCEJlqA) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+  - [**Introduction to Pandas**](https://youtu.be/OgGLw4uVW-Y) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
   - (Optional) practice problems for [NumPy](https://github.com/rougier/numpy-100) and [Pandas](https://github.com/ajcr/100-pandas-puzzles)
 - [Data visualization overview](https://github.com/ContextLab/cs-for-psych/blob/master/slides/module_4/data_visualization.ipynb)
 - More details on plotting libraries: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
 - [Grammar of graphics in Python](https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129) (Source: [towardsdatascience.com](https://towardsdatascience.com/))
 - [Visualizing high-dimensional data with Hypertools](https://hypertools.readthedocs.io/en/latest/tutorials.html) (Source: [hypertools.readthedocs.io](https://hypertools.readthedocs.io/))
 - Interactive lecture: exploring and visualizing a sample dataset [[notebook](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/data_visualization_playground.ipynb)]
+  - [**Part I: data wrangling**](https://youtu.be/Mi99FLb8-GM)
+  - [**Part II: data wrangling continued, basic plotting**](https://youtu.be/xiNBBfCaNQM)
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
-  - Story ideas workshop and brainstorm
-  - Datasets and analyses workshop and brainstorm
-  - Debugging session
-  - Story critiques
+  - [**Story ideas workshop and brainstorm**](https://youtu.be/6Dr449T4-gY)
+  - [**Datasets and analyses workshop and brainstorm**](https://youtu.be/Xpxv0jslfpI)
+  - [**Debugging session (Part I)**](https://youtu.be/71Xr0eBs4_0)
+  - [**Debugging session (Part II)**](https://youtu.be/YA6A_tpGHC0)
+  - [**Story critiques**](https://youtu.be/1crl0E-T18U)
+    - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987pUS5Ol-A5QIIfjZ7yFBLD)]
 ---
 
 # Part II

@@ -5,6 +5,7 @@
 - [Keara](https://youtu.be/JMnTvUqv9dM)
 - [Amelia](https://youtu.be/WUpZnfhbo5k)
 - [Laya](https://youtu.be/VcdnsAf7IIk)
+- [Summer](https://youtu.be/Ks2KhaPJ3IE)
 
 # [Stories from Spring, 2020](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar):
 - [Lindsay](https://youtu.be/rSSYIpscCj0)
