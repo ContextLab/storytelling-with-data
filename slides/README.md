@@ -125,3 +125,5 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
 
 ## Part II Lecture recordings:
   - [**GitHub pull requests and generating story ideas**](https://youtu.be/DrCPlXgVtyk)
+  - Brainstorming, pitch sessions, debugging, and story critiques:
+    - [**Part a**](https://youtu.be/YpxdBBGNvzo)
