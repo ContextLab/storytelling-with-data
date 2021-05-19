@@ -122,3 +122,9 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
 - Your data story (hosted on YouTube and cited in your README file).  Note: you don't need to upload the source video, but if you use any images or slides you should include them in a sub-folder.
 - Your project's code (e.g., notebooks, Python scripts, etc.), based on [this template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/demo.ipynb).
 - If under 10 MB (total), you can include your data files directly in your project folder.  Otherwise you should host it on Google Drive, Dropbox, or some other cloud-based source accessible to all (current and future) students.  Regardless of how your project's data files are hosted, your notebook should include code for downloading and importing the data (so from a user's perspective it shouldn't matter where the data files are hosted).
+
+## Part II Lecture recordings:
+  - [**GitHub pull requests and generating story ideas**](https://youtu.be/DrCPlXgVtyk)
+  - Brainstorming, pitch sessions, debugging, and story critiques:
+    - [**Part a**](https://youtu.be/N0AZlo4upM4)
+    - [**Part b**](https://youtu.be/rfTT2nhFIhE)
