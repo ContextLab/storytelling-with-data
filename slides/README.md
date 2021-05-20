@@ -128,3 +128,4 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
   - Brainstorming, pitch sessions, debugging, and story critiques:
     - [**Part a**](https://youtu.be/N0AZlo4upM4)
     - [**Part b**](https://youtu.be/rfTT2nhFIhE)
+    - [**Part c**](https://youtu.be/u4ttYcwhSxA)
