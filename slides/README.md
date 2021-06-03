@@ -132,3 +132,4 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
     - [**Part d**](https://youtu.be/hRGhnTzfqko)
     - [**Part e**](https://youtu.be/kAU7KLEiiyo)
     - [**Part f**](https://youtu.be/Y3Ag6NhLNDA)
+    - [**Part g**](https://youtu.be/fFkk0hPqh0c)
