@@ -9,7 +9,7 @@ Laya Indukuri (i-laya)
 My my question was to find out if student-athletes have a different admissions process, and if so, whether or not it is "fair". I was inspired to explore this by the recent Operation Varsity Blues scandal. I found many news articles and sources with interesting data that I put into Google Sheets and played around with in Colab so that the tables would work with the visualizations I wanted to show.
 
 
-Upload a movie of your data story to YouTube and include a link here.  You can narrate over a screencast of you scrolling through your notebook, or you can paste your figures into a Powerpoint or Keynote presentation (or similar).  You may also find [Marp](https://yhatt.github.io/marp/) useful; it's what I'm using to generate the slideshows for [Modules 1--4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  (Sample slides [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md) and [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md).)
+Link to Video: https://youtu.be/6GmFHc1Avlw
 
 # Downloading the data
 
@@ -20,7 +20,7 @@ Upload a movie of your data story to YouTube and include a link here.  You can n
 
 # Running the code
 
-https://colab.research.google.com/drive/16sqafCFWf5avgC3cYGHmBPQZFPp52-YX#scrollTo=yleVk7dWkq2O
+Link to Colab File: https://colab.research.google.com/drive/16sqafCFWf5avgC3cYGHmBPQZFPp52-YX?usp=sharing
 
 # Contributing to the code
 
