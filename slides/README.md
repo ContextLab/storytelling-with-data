@@ -8,14 +8,15 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 main parts.  [Part I](ht
 
 [Part II](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/README.md#part-ii) is project-based, and revolves around mini data science projects.  For each project, one or more students choose a question and dataset to explore and turn into a data story.  Each week students and groups will report on their progress with the latest iterations of their stories.  Students should aim to participate in three or more projects during Part II of the course.  At students' discretion, those three (or more) projects may comprise the same questions and/or datasets (e.g., whereby each story builds on the previous story), or multiple questions and/or datasets that may or may not be related.  In addition, students are encouraged to build off of each others' code, projects, and questions.  Projects and project groups should form organically and should remain flexible to facilitate changing goals and interests.
 
-Lecture recordings are denoted in **bolded** links below.
+Lecture recordings are denoted in **bolded** links below.  (Inactive links denote
+  lectures that have not happened yet.)
 
 ## Introduction
 - [Welcome message](https://www.youtube.com/watch?v=LvFQLLTu5KY)
   - [Supplemental welcome message](https://youtu.be/JwA6zyWdNIs)
-- Learning remotely: [tools](https://youtu.be/uxqZ-Xdra0I), [tips](https://youtu.be/RzCXL8p5VAU), and [tricks](https://youtu.be/5OmFGIYy1kM)
+- Learning remotely: [tools](https://youtu.be/uxqZ-Xdra0I), [tips](https://youtu.be/RzCXL8p5VAU), and [tricks](https://youtu.be/5OmFGIYy1kM) for engaging with online aspects of the course.
 - [Course syllabus](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)
-- [**Discussion: the pursuit of truth**](https://youtu.be/079fSufDBDs)
+- **Discussion: the pursuit of truth**
 
 ---
 
@@ -31,9 +32,9 @@ Lecture recordings are denoted in **bolded** links below.
 - [Giving constructive feedback](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching2) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
 - [Using feedback to improve your story](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching3) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
 - [Assignment 1: tell the class a 5-minute story](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md)  You may find some inspiration by taking a look at some [Moth Radio Hour stories](https://themoth.org/radio-hour).
-  - [**Workshopping story ideas**](https://youtu.be/fxjIzN7HUn0)
-  - [**Discussions about stories (part 1)**](https://youtu.be/6qDyE3MyBeU)
-  - [**Discussions about stories (part 2)**](https://youtu.be/IvMEPZGjLXI)
+  - **Workshopping story ideas**
+  - **Discussions about stories (part 1)**
+  - **Discussions about stories (part 2)**
     - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar)]
     - Submissions for Spring, 2021: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vbr6g0_ATi5tkh7XtUPVQ)]
 
@@ -42,7 +43,7 @@ Lecture recordings are denoted in **bolded** links below.
 - [Designing effective scientific figures](https://www.dropbox.com/s/qdiqqt3a8i632hn/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf) (Source: [Aiora Zabala](https://bioinformatics-core-shared-training.github.io/effective-figure-design/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf))
 - [Maximizing the data-to-ink ratio](https://medium.com/plotly/maximizing-the-data-ink-ratio-in-dashboards-and-slide-deck-7887f7c1fab) (Source: [medium.com](https://medium.com/))
 - Take a look at [A Layered Grammar of Graphics](https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf) by Hadley Wickham (skim or skip the code examples) and [The Grammar of Graphics](https://www.dropbox.com/s/4qwd16psogqdgi6/Wilk10.pdf) by Leland Wilkinson.
-- [**Discussion: telling effective stories about data**](https://youtu.be/EP02RzX4PSw)
+- **Discussion: telling effective stories about data**
 - [Assignment 2: data story remix](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%202/Assignment_2.md)  You find some inspiration by taking a look at one or more of the following sources of data stories:
   - [FiveThirtyEight.com](https://fivethirtyeight.com/)
   - [Towards Data Science](https://towardsdatascience.com/)
@@ -52,13 +53,14 @@ Lecture recordings are denoted in **bolded** links below.
   - [New York Times: Science](https://www.nytimes.com/section/science)
   - [Washington Post: Visual Stories](https://www.washingtonpost.com/)
   - [Distill.pub](https://distill.pub/archive/)
-- [**Workshopping data story ideas**](https://youtu.be/xse3opG0AWw)
-- [**Discussions about data stories**](https://youtu.be/975S25cTY8k)
+- **Workshopping data story ideas**
+- **Discussions about data stories**
   - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y)]
+  - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp984OgKhTwslvZ6RHIt1mXMeB)]
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: Introduction to programming
-  - [**Hackathon: making an English to Pig Latin translator**](https://youtu.be/Wxo5PwsRHmQ).  Note: this was an off-the-cuff lecture because all of the students who attended the synchronous course already had programming experience.  See [**this link**](https://youtu.be/kp4zoYErO84) for a recording of a more standard introduction to programming (from Spring, 2020).
+  - **Discussion: intro to programming**]
 - [Getting set up on Google Colaboratory](https://colab.research.google.com/github/ContextLab/cs-for-psych/blob/master/slides/module_1/introduction_and_overview.ipynb) (Source: [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides))
 - [Project management and version control with git and GitHub](https://www.youtube.com/playlist?list=PLjQYT8Fwp984zMjN5rJChfdI5Z8jtaWww):
   - [Overview of Git and GitHub](https://www.youtube.com/watch?v=4Fsg4UPHsrM)
@@ -76,28 +78,28 @@ Lecture recordings are denoted in **bolded** links below.
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
   - [DataCamp](https://www.datacamp.com) has generously donated free access to all course materials for Dartmouth students enrolled in Storytelling with Data.  I have pinned an invite link to the `#general` channel in Slack.
 - [Assignment 3: Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
-- [**Setting up GitHub and Colaboratory and getting started with Assignment 3**](https://youtu.be/KSQ7Q2O8zos)
-- [**Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack**](https://youtu.be/0o4K748eLPo) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+- **Setting up GitHub and Colaboratory and getting started with Assignment 3**
+- **Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
 
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
 - [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
-  - [**Introduction to NumPy**](https://youtu.be/Vk1roCEJlqA) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
-  - [**Introduction to Pandas**](https://youtu.be/OgGLw4uVW-Y) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
+  - **Introduction to NumPy** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+  - **Introduction to Pandas** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
   - (Optional) practice problems for [NumPy](https://github.com/rougier/numpy-100) and [Pandas](https://github.com/ajcr/100-pandas-puzzles)
 - [Data visualization overview](https://github.com/ContextLab/cs-for-psych/blob/master/slides/module_4/data_visualization.ipynb)
 - More details on plotting libraries: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
 - [Grammar of graphics in Python](https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129) (Source: [towardsdatascience.com](https://towardsdatascience.com/))
 - [Visualizing high-dimensional data with Hypertools](https://hypertools.readthedocs.io/en/latest/tutorials.html) (Source: [hypertools.readthedocs.io](https://hypertools.readthedocs.io/))
 - Interactive lecture: exploring and visualizing a sample dataset [[notebook](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/data_visualization_playground.ipynb)]
-  - [**Part I: data wrangling**](https://youtu.be/Mi99FLb8-GM)
-  - [**Part II: data wrangling continued, basic plotting**](https://youtu.be/xiNBBfCaNQM)
+  - **Part I: data wrangling**
+  - **Part II: data wrangling continued, basic plotting**
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
-  - [**Story ideas workshop and brainstorm**](https://youtu.be/6Dr449T4-gY)
-  - [**Datasets and analyses workshop and brainstorm**](https://youtu.be/Xpxv0jslfpI)
-  - [**Debugging session (Part I)**](https://youtu.be/71Xr0eBs4_0)
-  - [**Debugging session (Part II)**](https://youtu.be/YA6A_tpGHC0)
-  - [**Story critiques**](https://youtu.be/1crl0E-T18U)
+  - **Story ideas workshop and brainstorm**
+  - **Discussion with Vermont Department of Health**
+  - **Debugging session (Part I)**
+  - **Debugging session (Part II)**
+  - **Story critiques**
     - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987pUS5Ol-A5QIIfjZ7yFBLD)]
 ---
 
@@ -124,12 +126,12 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
 - If under 10 MB (total), you can include your data files directly in your project folder.  Otherwise you should host it on Google Drive, Dropbox, or some other cloud-based source accessible to all (current and future) students.  Regardless of how your project's data files are hosted, your notebook should include code for downloading and importing the data (so from a user's perspective it shouldn't matter where the data files are hosted).
 
 ## Part II Lecture recordings:
-  - [**GitHub pull requests and generating story ideas**](https://youtu.be/DrCPlXgVtyk)
+  - **GitHub pull requests and generating story ideas**
   - Brainstorming, pitch sessions, debugging, and story critiques:
-    - [**Part a**](https://youtu.be/N0AZlo4upM4)
-    - [**Part b**](https://youtu.be/rfTT2nhFIhE)
-    - [**Part c**](https://youtu.be/u4ttYcwhSxA)
-    - [**Part d**](https://youtu.be/hRGhnTzfqko)
-    - [**Part e**](https://youtu.be/kAU7KLEiiyo)
-    - [**Part f**](https://youtu.be/Y3Ag6NhLNDA)
-    - [**Part g**](https://youtu.be/fFkk0hPqh0c)
+    - **Part a**
+    - **Part b**
+    - **Part c**
+    - **Part d**
+    - **Part e**
+    - **Part f**
+    - **Part g**
