@@ -16,7 +16,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [Supplemental welcome message](https://youtu.be/JwA6zyWdNIs)
 - Learning remotely: [tools](https://youtu.be/uxqZ-Xdra0I), [tips](https://youtu.be/RzCXL8p5VAU), and [tricks](https://youtu.be/5OmFGIYy1kM) for engaging with online aspects of the course.
 - [Course syllabus](https://github.com/ContextLab/storytelling-with-data/blob/master/admin/PSYC_81_syllabus.pdf)
-- **Discussion: the pursuit of truth**
+- [**Discussion: the pursuit of truth**](https://youtu.be/X0P9GHjmmBE)
 
 ---
 
