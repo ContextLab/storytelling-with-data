@@ -37,6 +37,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - **Discussions about stories (part 2)**
     - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar)]
     - Submissions for Spring, 2021: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vbr6g0_ATi5tkh7XtUPVQ)]
+    - Submissions for Winter, 2022: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987zYZpfHblo0UwyBp407Nq6)]
 
 ## Module 2: Visualizing data
 - [Introduction to representing data](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning/pre-algebra-representing-data/v/ways-to-represent-data) (Source: [Khan Academy's Representing Data course](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning#pre-algebra-representing-data))
