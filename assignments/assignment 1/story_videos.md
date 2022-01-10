@@ -1,3 +1,13 @@
+# [Stories from Winter, 2022](https://youtube.com/playlist?list=PLjQYT8Fwp987zYZpfHblo0UwyBp407Nq6)
+- [Fanrui](https://youtu.be/aD_jxKjZv-s)
+- [Karim](https://youtu.be/yTQeZzwl40M)
+- [Allison](https://youtu.be/ZSK2PPUaWkA)
+- [Annemarija](https://youtu.be/1WzH1TYs1g4)
+- [Elisa](https://youtu.be/CzNmbh5LWt8)
+- [Frank](https://youtu.be/zelpsqq1mxc)
+- [Akiah](https://youtu.be/6q8VWcRbiBI)
+- [Emily](https://youtu.be/SQP_NeiZ0mE)
+
 # [Stories from Spring, 2021](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vbr6g0_ATi5tkh7XtUPVQ)
 - [Nathan](https://www.youtube.com/watch?v=xHmGvbgkXKE)
 - [Isha](https://youtu.be/nBZaInMG9dE)
@@ -20,4 +30,3 @@
 - [Tang, B.](https://youtu.be/fOr9OAaCFPU)
 - [Ram](https://youtu.be/R2raF14y3V4)
 - [Gawerc](https://youtu.be/13B5cXILXD8)
-
