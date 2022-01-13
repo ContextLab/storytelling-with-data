@@ -34,7 +34,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
 - [Assignment 1: tell the class a 5-minute story](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md)  You may find some inspiration by taking a look at some [Moth Radio Hour stories](https://themoth.org/radio-hour).
   - [**Workshopping story ideas**](https://youtu.be/neSuDd6s3Kc)
   - [**Discussions about stories (part 1)**](https://youtu.be/hopzOYrLTTc)
-  - **Discussions about stories (part 2)**
+  - [**Discussions about stories (part 2)**](https://youtu.be/58rs4Yy-c9Y)
     - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar)]
     - Submissions for Spring, 2021: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vbr6g0_ATi5tkh7XtUPVQ)]
     - Submissions for Winter, 2022: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987zYZpfHblo0UwyBp407Nq6)]
