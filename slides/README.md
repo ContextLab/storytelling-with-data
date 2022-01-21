@@ -59,6 +59,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
 - **Discussions about data stories**
   - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y)]
   - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp984OgKhTwslvZ6RHIt1mXMeB)]
+  - Submissions for Winter, 2022: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp984bcI29bbv9-mLSbKbx5RFW)]
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: Introduction to programming
