@@ -7,7 +7,7 @@
 6. [Akiah](https://youtu.be/sX2KVLUWTmQ)
 7. [Elisa](https://youtu.be/MwVulh3-gTg)
 8. [Saruul](https://youtu.be/cXiDnAclaYg)
-9. [Kareem](https://youtu.be/I1yKC0pyWPM)
+9. [Karim](https://youtu.be/I1yKC0pyWPM)
 
 # Submissions for Spring 2021
 
