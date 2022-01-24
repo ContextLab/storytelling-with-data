@@ -5,6 +5,8 @@
 4. [Bohan](https://youtu.be/RUv7R3JBBCQ)
 5. [Fanrui](https://youtu.be/mNvCdyWfOwM)
 6. [Akiah](https://youtu.be/sX2KVLUWTmQ)
+7. [Elisa](https://youtu.be/MwVulh3-gTg)
+8. [Saruul](https://youtu.be/cXiDnAclaYg)
 
 # Submissions for Spring 2021
 
