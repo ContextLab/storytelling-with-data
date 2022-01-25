@@ -56,7 +56,8 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [Washington Post: Visual Stories](https://www.washingtonpost.com/)
   - [Distill.pub](https://distill.pub/archive/)
 - [**Workshopping data story ideas**](https://youtu.be/o-FO7pulALM)
-- [**Discussions about data stories**](https://youtu.be/RowGoMEwBoQ)
+- [**Discussions about data stories (part 1)**](https://youtu.be/RowGoMEwBoQ)
+- [**Discussions about data stories (part 2)**](https://youtu.be/ygRP2rFwJjY)
   - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y)]
   - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp984OgKhTwslvZ6RHIt1mXMeB)]
   - Submissions for Winter, 2022: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp984bcI29bbv9-mLSbKbx5RFW)]
