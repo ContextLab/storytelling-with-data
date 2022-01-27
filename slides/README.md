@@ -64,7 +64,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: Introduction to programming
-  - **Discussion: intro to programming**
+  - [**Discussion: intro to programming**](https://youtu.be/g92mLcBc_gI)
 - [Getting set up on Google Colaboratory](https://colab.research.google.com/github/ContextLab/cs-for-psych/blob/master/slides/module_1/introduction_and_overview.ipynb) (Source: [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides))
 - [Project management and version control with git and GitHub](https://www.youtube.com/playlist?list=PLjQYT8Fwp984zMjN5rJChfdI5Z8jtaWww):
   - [Overview of Git and GitHub](https://www.youtube.com/watch?v=4Fsg4UPHsrM)
