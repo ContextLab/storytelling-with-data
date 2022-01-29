@@ -82,7 +82,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
   - [DataCamp](https://www.datacamp.com) has generously donated free access to all course materials for Dartmouth students enrolled in Storytelling with Data.  I have pinned an invite link to the `#general` channel in Slack.
 - [Assignment 3: Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
-- **Setting up GitHub and Colaboratory and getting started with Assignment 3**
+- [**Python continued: list comprehensions and decorators**](https://youtu.be/QcwJtVtmxz0)
 - **Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
 
 ## Module 4: Data science tools
