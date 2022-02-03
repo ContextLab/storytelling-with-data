@@ -88,7 +88,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
 - [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
-  - **Introduction to NumPy** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+  - [**Introduction to NumPy**](https://youtu.be/d82FIOduvik) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
   - **Introduction to Pandas** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
   - (Optional) practice problems for [NumPy](https://github.com/rougier/numpy-100) and [Pandas](https://github.com/ajcr/100-pandas-puzzles)
 - [Data visualization overview](https://github.com/ContextLab/cs-for-psych/blob/master/slides/module_4/data_visualization.ipynb)
