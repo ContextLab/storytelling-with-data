@@ -97,7 +97,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
 - [Visualizing high-dimensional data with Hypertools](https://hypertools.readthedocs.io/en/latest/tutorials.html) (Source: [hypertools.readthedocs.io](https://hypertools.readthedocs.io/))
 - Interactive lecture: exploring and visualizing a sample dataset [[notebook](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/data_visualization_playground.ipynb)]
   - [**Part I: data wrangling**](https://youtu.be/UPNTM_eakg8)
-  - **Part II: data wrangling continued, basic plotting**
+  - [**Part II: data wrangling continued, basic plotting**](https://youtu.be/aN5PrEeiWbY)
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
   - **Story ideas workshop and brainstorm**
   - **Discussion with Vermont Department of Health**
