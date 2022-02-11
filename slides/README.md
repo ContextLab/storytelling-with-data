@@ -99,8 +99,8 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [**Part I: data wrangling**](https://youtu.be/UPNTM_eakg8)
   - [**Part II: data wrangling continued, basic plotting**](https://youtu.be/aN5PrEeiWbY)
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
-  - **Story ideas workshop and brainstorm**
-  - **Discussion with Vermont Department of Health**
+  - **Discussion with Vermont Department of Health** [[slides](https://github.com/ContextLab/storytelling-with-data/raw/master/assignments/assignment%204/VT_DOH_slides.pptx)]
+  - **Story ideas workshop and brainstorm**  
   - **Debugging session (Part I)**
   - **Debugging session (Part II)**
   - **Story critiques**
