@@ -33,19 +33,21 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
 - [Using feedback to improve your story](https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching3) (Source: [Khan Academy's The art of storytelling](https://www.khanacademy.org/partner-content/pixar/storytelling))
 - [Assignment 1: tell the class a 5-minute story](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md)  You may find some inspiration by taking a look at some [Moth Radio Hour stories](https://themoth.org/radio-hour).
   - [**Workshopping story ideas**](https://youtu.be/neSuDd6s3Kc)
-  - **Discussions about stories (part 1)**
-  - **Discussions about stories (part 2)**
+  - [**Discussions about stories (part 1)**](https://youtu.be/hopzOYrLTTc)
+  - [**Discussions about stories (part 2)**](https://youtu.be/58rs4Yy-c9Y)
     - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar)]
     - Submissions for Spring, 2021: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp985vbr6g0_ATi5tkh7XtUPVQ)]
+    - Submissions for Winter, 2022: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987zYZpfHblo0UwyBp407Nq6)]
 
 ## Module 2: Visualizing data
 - [Introduction to representing data](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning/pre-algebra-representing-data/v/ways-to-represent-data) (Source: [Khan Academy's Representing Data course](https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning#pre-algebra-representing-data))
 - [Designing effective scientific figures](https://www.dropbox.com/s/qdiqqt3a8i632hn/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf) (Source: [Aiora Zabala](https://bioinformatics-core-shared-training.github.io/effective-figure-design/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf))
 - [Maximizing the data-to-ink ratio](https://medium.com/plotly/maximizing-the-data-ink-ratio-in-dashboards-and-slide-deck-7887f7c1fab) (Source: [medium.com](https://medium.com/))
 - Take a look at [A Layered Grammar of Graphics](https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf) by Hadley Wickham (skim or skip the code examples) and [The Grammar of Graphics](https://www.dropbox.com/s/4qwd16psogqdgi6/Wilk10.pdf) by Leland Wilkinson.
-- **Discussion: telling effective stories about data**
+- [**Discussion: telling effective stories about data**](https://youtu.be/TbrNyfw9voU)
 - [Assignment 2: data story remix](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%202/Assignment_2.md)  You find some inspiration by taking a look at one or more of the following sources of data stories:
   - [FiveThirtyEight.com](https://fivethirtyeight.com/)
+  - [Reddit: DataIsBeautiful](https://www.reddit.com/r/dataisbeautiful/)
   - [Towards Data Science](https://towardsdatascience.com/)
   - [Minute Physics](https://www.youtube.com/user/minutephysics)
   - [Kaggle Blog](https://medium.com/kaggle-blog)
@@ -53,14 +55,16 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [New York Times: Science](https://www.nytimes.com/section/science)
   - [Washington Post: Visual Stories](https://www.washingtonpost.com/)
   - [Distill.pub](https://distill.pub/archive/)
-- **Workshopping data story ideas**
-- **Discussions about data stories**
+- [**Workshopping data story ideas**](https://youtu.be/o-FO7pulALM)
+- [**Discussions about data stories (part 1)**](https://youtu.be/RowGoMEwBoQ)
+- [**Discussions about data stories (part 2)**](https://youtu.be/ygRP2rFwJjY)
   - Submissions for Spring, 2020: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y)]
   - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp984OgKhTwslvZ6RHIt1mXMeB)]
+  - Submissions for Winter, 2022: [[link](https://www.youtube.com/playlist?list=PLjQYT8Fwp984bcI29bbv9-mLSbKbx5RFW)]
 
 ## Module 3: Python and Jupyter notebooks as a medium for data storytelling
 - Discussion: Introduction to programming
-  - **Discussion: intro to programming**]
+  - [**Discussion: intro to programming**](https://youtu.be/g92mLcBc_gI)
 - [Getting set up on Google Colaboratory](https://colab.research.google.com/github/ContextLab/cs-for-psych/blob/master/slides/module_1/introduction_and_overview.ipynb) (Source: [Introduction to Programming for Psychological Scientists](https://github.com/ContextLab/cs-for-psych/tree/master/slides))
 - [Project management and version control with git and GitHub](https://www.youtube.com/playlist?list=PLjQYT8Fwp984zMjN5rJChfdI5Z8jtaWww):
   - [Overview of Git and GitHub](https://www.youtube.com/watch?v=4Fsg4UPHsrM)
@@ -78,22 +82,22 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
   - [DataCamp](https://www.datacamp.com) has generously donated free access to all course materials for Dartmouth students enrolled in Storytelling with Data.  I have pinned an invite link to the `#general` channel in Slack.
 - [Assignment 3: Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
-- **Setting up GitHub and Colaboratory and getting started with Assignment 3**
-- **Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+- [**Python continued: list comprehensions and decorators**](https://youtu.be/QcwJtVtmxz0)
+- [**Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack**](https://youtu.be/WY_mOznaQyA) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
 
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
 - [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
-  - **Introduction to NumPy** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
-  - **Introduction to Pandas** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
+  - [**Introduction to NumPy**](https://youtu.be/d82FIOduvik) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+  - [**Introduction to Pandas**](https://youtu.be/Ly6ZweQ5bJs) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
   - (Optional) practice problems for [NumPy](https://github.com/rougier/numpy-100) and [Pandas](https://github.com/ajcr/100-pandas-puzzles)
 - [Data visualization overview](https://github.com/ContextLab/cs-for-psych/blob/master/slides/module_4/data_visualization.ipynb)
 - More details on plotting libraries: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
 - [Grammar of graphics in Python](https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129) (Source: [towardsdatascience.com](https://towardsdatascience.com/))
 - [Visualizing high-dimensional data with Hypertools](https://hypertools.readthedocs.io/en/latest/tutorials.html) (Source: [hypertools.readthedocs.io](https://hypertools.readthedocs.io/))
 - Interactive lecture: exploring and visualizing a sample dataset [[notebook](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/data_visualization_playground.ipynb)]
-  - **Part I: data wrangling**
-  - **Part II: data wrangling continued, basic plotting**
+  - [**Part I: data wrangling**](https://youtu.be/UPNTM_eakg8)
+  - [**Part II: data wrangling continued, basic plotting**](https://youtu.be/aN5PrEeiWbY)
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
   - **Story ideas workshop and brainstorm**
   - **Discussion with Vermont Department of Health**
