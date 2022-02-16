@@ -101,9 +101,10 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
   - [**Discussion with Vermont Department of Health**](https://youtu.be/3kUGSReTXA0) [[slides](https://github.com/ContextLab/storytelling-with-data/raw/master/assignments/assignment%204/VT_DOH_slides.pptx)]
   - [**Story ideas workshop and brainstorm**](https://youtu.be/WzCBWl4VRew)
-  - **Debugging session (Part I)**
+  - [**Debugging session (Part I)**](https://youtu.be/Rdxtqvo1bQs)
   - **Debugging session (Part II)**
-  - **Story critiques**
+  - **Story critiques**    
+    - Submissions for Spring, 2020: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo)]
     - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987pUS5Ol-A5QIIfjZ7yFBLD)]
 ---
 
