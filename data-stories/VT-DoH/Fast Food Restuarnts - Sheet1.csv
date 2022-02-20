@@ -1,15 +1,15 @@
-County,Population,Taco Bell,McDonald's,Burger King,Wendy's,Dunkin Donuts,KFC,Little Caesars,Domino's,Subway,Pizza Hut,,,Total
-Addison,37363,0,2,0,0,2,0,0,0,2,0,,,6
-Bennington,37347,1,2,1,0,3,1,0,1,2,1,,,12
-Caledonia,30233,1,1,0,0,2,1,0,1,2,1,,,9
-Chittenden,168323,0,7,2,1,14,1,1,6,8,0,,,40
-Essex,5920,0,0,0,0,0,0,0,0,0,0,,,0
-Franklin,49946,1,2,1,0,3,1,0,1,4,1,,,14
-Grand Isle,7293,0,0,0,0,0,0,0,0,1,0,,,1
-Lamoille,25945,0,1,0,0,2,0,0,0,3,0,,,6
-Orange,29277,0,1,0,0,1,0,0,0,0,0,,,2
-Orleans,27393,0,1,0,1,1,0,0,0,2,0,,,5
-Rutland,60572,1,3,1,1,5,1,1,1,5,1,,,20
-Washington,59807,0,2,2,0,4,1,0,2,5,1,,,17
-Windham,45905,1,1,1,1,6,1,0,1,3,0,,,15
-Windsor,57753,0,1,0,0,6,0,0,0,4,0,,,11
+County,Population,Taco Bell,McDonald's,Burger King,Wendy's,Dunkin Donuts,KFC,Little Caesars,Domino's,Subway,Pizza Hut
+Addison,37363,0,2,0,0,2,0,0,0,2,0
+Bennington,37347,1,2,1,0,3,1,0,1,2,1
+Caledonia,30233,1,1,0,0,2,1,0,1,2,1
+Chittenden,168323,0,7,2,1,14,1,1,6,8,0
+Essex,5920,0,0,0,0,0,0,0,0,0,0
+Franklin,49946,1,2,1,0,3,1,0,1,4,1
+Grand Isle,7293,0,0,0,0,0,0,0,0,1,0
+Lamoille,25945,0,1,0,0,2,0,0,0,3,0
+Orange,29277,0,1,0,0,1,0,0,0,0,0
+Orleans,27393,0,1,0,1,1,0,0,0,2,0
+Rutland,60572,1,3,1,1,5,1,1,1,5,1
+Washington,59807,0,2,2,0,4,1,0,2,5,1
+Windham,45905,1,1,1,1,6,1,0,1,3,0
+Windsor,57753,0,1,0,0,6,0,0,0,4,0
