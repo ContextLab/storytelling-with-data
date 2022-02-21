@@ -1,34 +1,47 @@
 # Project information
 
-Name the project and list the authors and their GitHub usernames.  If the GitHub commit history of your project does not reflect each contributor's work (e.g., if a single person was nominated to pull everyone's changes into the repository), you should include a brief description of each contributor's role in the project.
+This project is the data story on mental health of youth in the US by BohanMeng. 
 
 # Overview
 
-This is where you describe what your project is about, in a few sentences.  Specifically:
-- What was your main question?
-- How did you approach exploring and/or answering your question?
-  - What data did you use?
-  - What sorts of data science tools did you use?
-- What did you find or accomplish (be brief)?  For example, did you find any interesting results or insights?  Or did you solve an interesting problem that might be useful in another project?
+The main questions of the projects were: 1) what is the current situation of children and young adults' mental health in the US? What are the possible causes if there exists a problem? 
+
+To answer these questions, we collected data that either directly described the mental health of youth in different states, or closely related to the life quality of them, e.g., the safety and security of their community, the unemployment rate of their parents, etc. 
+
+We plotted the data to visualize its trend over time, and calculated the correlation between different factors. 
+
+We found that: 1) the mental health has among the US youth in the past decade; 2) safety, economic, medical resources are likely not the major influence factor of such rising mental health crisis.
+
+We would like to see follow-up studies on the factors that are less easily quantifiable, include pressure from school, peer, and family expectation, information from the internet and social media, uncertainty about future, etc.  
 
 Upload a movie of your data story to YouTube and include a link here.  You can narrate over a screencast of you scrolling through your notebook, or you can paste your figures into a Powerpoint or Keynote presentation (or similar).  You may also find [Marp](https://yhatt.github.io/marp/) useful; it's what I'm using to generate the slideshows for [Modules 1--4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  (Sample slides [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md) and [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md).)
 
 # Downloading the data
 
-Provide a link to the dataset(s) you're using for the project, along with a brief description of the data.
+Data are collected from the Kids Count Data Center
+Website: https://datacenter.kidscount.org/data#NH/2/0/char/0
+Below are the specific datasets used in the analysis 
+Parent unemplyoment rate
+https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/VT-DoH/child_mental/Unemployment%20rate%20of%20parents.xlsx?raw=true
+
+High school students who felt sad or hopeless
+https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/VT-DoH/child_mental/High%20school%20students%20who%20felt%20sad%20or%20hopeless%20during%20the%20past%20year%20(1).xlsx?raw=true
+
+Young adults report no poor mental health in the past month
+https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/VT-DoH/child_mental/Young%20adults%20ages%2018%20to%2024%20reporting%20zero%20poor%20mental%20health%20days%20in%20the%20past%20month.xlsx?raw=true
+
+children without health insurance:
+https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/VT-DoH/child_mental/Children%20without%20health%20insurance%20by%20age%20group.xlsx?raw=true
+https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/VT-DoH/child_mental/Children%20without%20health%20insurance%20by%20age%20group%20(1).xlsx?raw=true
+
+Children living in unsafe community 
+https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/VT-DoH/child_mental/Children%20who%20live%20in%20unsafe%20communities.xlsx?raw=true
+https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/VT-DoH/child_mental/Children%20who%20live%20in%20unsafe%20communities%20(1).xlsx?raw=true
+
+Children with one or more mental health issues
+https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/VT-DoH/child_mental/Children%20who%20have%20one%20or%20more%20emotional,%20behavioral,%20or%20developmental%20conditions.xlsx?raw=true
+https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/VT-DoH/child_mental/Children%20who%20have%20one%20or%20more%20emotional,%20behavioral,%20or%20developmental%20conditions%20(2).xlsx?raw=true
 
 # Running the code
 
-Describe, in sufficient detail for a new person (moderately competent but unfamiliar with your work) to follow, how to run your code.  If the project is implemented in one or more Colaboratory notebooks, you should provide a link to the notebook(s) here.  Also copy the notebooks (as .ipynb files) into your project folder so that everything related to your project is backed up on GitHub.
-
-# Contributing to the code
-
-Tell other people how they can contribute to the project you've started.  Specifically:
-- What are the most obvious next steps?
-- What are some questions that your work raises?
-- What challenges remain?
-- Are there any known bugs or problems with your approach that someone continuing your project should be aware of?
-
-# Acknowledgements
-
-If your idea is based on or inspired by someone else's work (either their code or their ideas), cite them and provide links to their work.  Also, if you received help or support from someone who is not listed as an author on this project, you should acknowledge them here.
+Starting with the "Data" section, running all the cells in meng_assignment.ipynb will give the visualization and correlation analysis of all data this project includes. 
