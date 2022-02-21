@@ -14,7 +14,11 @@ We found that: 1) the mental health has among the US youth in the past decade; 2
 
 We would like to see follow-up studies on the factors that are less easily quantifiable, include pressure from school, peer, and family expectation, information from the internet and social media, uncertainty about future, etc.  
 
-Upload a movie of your data story to YouTube and include a link here.  You can narrate over a screencast of you scrolling through your notebook, or you can paste your figures into a Powerpoint or Keynote presentation (or similar).  You may also find [Marp](https://yhatt.github.io/marp/) useful; it's what I'm using to generate the slideshows for [Modules 1--4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  (Sample slides [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md) and [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md).)
+Below is the videw of the storytelling
+https://user-images.githubusercontent.com/52428863/154925051-b5c2caee-4a75-4f69-961e-d5a3e4d08bd8.mov
+
+And the slides in the video
+[assignment4.pptx](https://github.com/BohanMeng/storytelling-with-data/files/8107945/assignment4.pptx)
 
 # Downloading the data
 
