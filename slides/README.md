@@ -82,28 +82,30 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [Learning to code with Python and Jupyter Notebooks](http://introtopython.org/) (Source: [introtopython.org](http://introtopython.org/))
   - [DataCamp](https://www.datacamp.com) has generously donated free access to all course materials for Dartmouth students enrolled in Storytelling with Data.  I have pinned an invite link to the `#general` channel in Slack.
 - [Assignment 3: Binary converter](https://github.com/ContextLab/storytelling-with-data-binary-converter) [[Accept assignment](https://classroom.github.com/a/6eTaFkVe)]
-- **Setting up GitHub and Colaboratory and getting started with Assignment 3**
-- **Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+- [**Python continued: list comprehensions and decorators**](https://youtu.be/QcwJtVtmxz0)
+- [**Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack**](https://youtu.be/WY_mOznaQyA) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
 
 ## Module 4: Data science tools
 - [Modules and Packages](https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html) (from [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/index.html) by Jake VanderPlas)
 - [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
-  - **Introduction to NumPy** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
-  - **Introduction to Pandas** [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
+  - [**Introduction to NumPy**](https://youtu.be/d82FIOduvik) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md)]
+  - [**Introduction to Pandas**](https://youtu.be/Ly6ZweQ5bJs) [[slides](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md)]
   - (Optional) practice problems for [NumPy](https://github.com/rougier/numpy-100) and [Pandas](https://github.com/ajcr/100-pandas-puzzles)
 - [Data visualization overview](https://github.com/ContextLab/cs-for-psych/blob/master/slides/module_4/data_visualization.ipynb)
 - More details on plotting libraries: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html) (from [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) by Jake VanderPlas)
 - [Grammar of graphics in Python](https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129) (Source: [towardsdatascience.com](https://towardsdatascience.com/))
 - [Visualizing high-dimensional data with Hypertools](https://hypertools.readthedocs.io/en/latest/tutorials.html) (Source: [hypertools.readthedocs.io](https://hypertools.readthedocs.io/))
 - Interactive lecture: exploring and visualizing a sample dataset [[notebook](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/data_visualization_playground.ipynb)]
-  - **Part I: data wrangling**
-  - **Part II: data wrangling continued, basic plotting**
+  - [**Part I: data wrangling**](https://youtu.be/UPNTM_eakg8)
+  - [**Part II: data wrangling continued, basic plotting**](https://youtu.be/aN5PrEeiWbY)
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
-  - **Story ideas workshop and brainstorm**
-  - **Discussion with Vermont Department of Health**
-  - **Debugging session (Part I)**
-  - **Debugging session (Part II)**
-  - **Story critiques**
+  - [**Discussion with Vermont Department of Health**](https://youtu.be/3kUGSReTXA0) [[slides](https://github.com/ContextLab/storytelling-with-data/raw/master/assignments/assignment%204/VT_DOH_slides.pptx)]
+  - [**Story ideas workshop and brainstorm**](https://youtu.be/WzCBWl4VRew)
+  - [**Debugging session (Part I)**](https://youtu.be/Rdxtqvo1bQs)
+  - [**Debugging session (Part II)**](https://youtu.be/EPSlVDlXDK8)
+  - [**Debugging session (Part III)**](https://youtu.be/IuRmj1d-n7g)
+  - **Story critiques**    
+    - Submissions for Spring, 2020: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo)]
     - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987pUS5Ol-A5QIIfjZ7yFBLD)]
 ---
 
