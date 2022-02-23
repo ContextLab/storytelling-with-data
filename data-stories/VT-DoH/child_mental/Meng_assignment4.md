@@ -16,7 +16,7 @@ We would like to see follow-up studies on the factors that are less easily quant
 
 Below is the videw of the storytelling
 
-https://user-images.githubusercontent.com/52428863/154925051-b5c2caee-4a75-4f69-961e-d5a3e4d08bd8.mov
+https://youtu.be/DkF-uvICciI
 
 And the slides in the video
 
