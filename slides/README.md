@@ -140,5 +140,3 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
     - **Part c**
     - **Part d**
     - **Part e**
-    - **Part f**
-    - **Part g**
