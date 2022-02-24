@@ -133,7 +133,6 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
 - If under 10 MB (total), you can include your data files directly in your project folder.  Otherwise you should host it on Google Drive, Dropbox, or some other cloud-based source accessible to all (current and future) students.  Regardless of how your project's data files are hosted, your notebook should include code for downloading and importing the data (so from a user's perspective it shouldn't matter where the data files are hosted).
 
 ## Part II Lecture recordings:
-  - **GitHub pull requests and generating story ideas**
   - Brainstorming, pitch sessions, debugging, and story critiques:
     - **Part a**
     - **Part b**
