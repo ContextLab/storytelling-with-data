@@ -104,9 +104,10 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [**Debugging session (Part I)**](https://youtu.be/Rdxtqvo1bQs)
   - [**Debugging session (Part II)**](https://youtu.be/EPSlVDlXDK8)
   - [**Debugging session (Part III)**](https://youtu.be/IuRmj1d-n7g)
-  - **Story critiques**    
+  - [**Story critiques**](https://youtu.be/ig0dUWWxAYY)
     - Submissions for Spring, 2020: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo)]
     - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987pUS5Ol-A5QIIfjZ7yFBLD)]
+    - Submissions for Winter, 2022: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp9872PMrg45QvnpNnB9Zb4QVZ)]
 ---
 
 # Part II
