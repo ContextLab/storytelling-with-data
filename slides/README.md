@@ -134,7 +134,7 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
 
 ## Part II Lecture recordings:
   - Brainstorming, pitch sessions, debugging, and story critiques:
-    - **Part a**
+    - [**Part a**](https://youtu.be/9xg1WAb8g5g)
     - **Part b**
     - **Part c**
     - **Part d**
