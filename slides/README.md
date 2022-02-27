@@ -104,9 +104,10 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [**Debugging session (Part I)**](https://youtu.be/Rdxtqvo1bQs)
   - [**Debugging session (Part II)**](https://youtu.be/EPSlVDlXDK8)
   - [**Debugging session (Part III)**](https://youtu.be/IuRmj1d-n7g)
-  - **Story critiques**    
+  - [**Story critiques**](https://youtu.be/ig0dUWWxAYY)
     - Submissions for Spring, 2020: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo)]
     - Submissions for Spring, 2021: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp987pUS5Ol-A5QIIfjZ7yFBLD)]
+    - Submissions for Winter, 2022: [[link](https://youtube.com/playlist?list=PLjQYT8Fwp9872PMrg45QvnpNnB9Zb4QVZ)]
 ---
 
 # Part II
@@ -132,12 +133,9 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
 - If under 10 MB (total), you can include your data files directly in your project folder.  Otherwise you should host it on Google Drive, Dropbox, or some other cloud-based source accessible to all (current and future) students.  Regardless of how your project's data files are hosted, your notebook should include code for downloading and importing the data (so from a user's perspective it shouldn't matter where the data files are hosted).
 
 ## Part II Lecture recordings:
-  - **GitHub pull requests and generating story ideas**
   - Brainstorming, pitch sessions, debugging, and story critiques:
-    - **Part a**
+    - [**Part a**](https://youtu.be/9xg1WAb8g5g)
     - **Part b**
     - **Part c**
     - **Part d**
     - **Part e**
-    - **Part f**
-    - **Part g**
