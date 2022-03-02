@@ -1,8 +1,11 @@
 # Project information
 
-Name the project and list the authors and their GitHub usernames.  If the GitHub commit history of your project does not reflect each contributor's work (e.g., if a single person was nominated to pull everyone's changes into the repository), you should include a brief description of each contributor's role in the project.
+Alex Wells (alexwells-22) and Karim Khalil (karimkhalil-byte) worked to create Happy Sun.
 
 # Overview
+
+Our project set out to explore the connection between the amount of sunlight that a country gets and its average happiness as reported by the World Happiness Report. We wanted to see if more sunshine in a year has any connection to the happiness of the people who live there. We used public data that exists on Wikipedia and the World Happiness Report and found other sources who adapted the same data to more parseable formats. We used best fit regressions to find projected sunlight for years for which we did not have data, correlation to see where happiness and sunniness were correlated. Importantly, this data can only show a correlation between the measures and not causation.
+
 
 This is where you describe what your project is about, in a few sentences.  Specifically:
 - What was your main question?
