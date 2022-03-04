@@ -1,28 +1,27 @@
 # Project information
 
-Name the project and list the authors and their GitHub usernames.  If the GitHub commit history of your project does not reflect each contributor's work (e.g., if a single person was nominated to pull everyone's changes into the repository), you should include a brief description of each contributor's role in the project.
+Alex Wells (alexwells-22) and Karim Khalil (karimkhalil-byte) worked to create Happy Sun.
 
 # Overview
 
-This is where you describe what your project is about, in a few sentences.  Specifically:
-- What was your main question?
-- How did you approach exploring and/or answering your question?
-  - What data did you use?
-  - What sorts of data science tools did you use?
-- What did you find or accomplish (be brief)?  For example, did you find any interesting results or insights?  Or did you solve an interesting problem that might be useful in another project?
+Our project set out to explore the connection between the amount of sunlight that a country gets and its average happiness as reported by the World Happiness Report. We wanted to see if more sunshine in a year has any connection to the happiness of the people who live there. We used public data that exists on Wikipedia and the World Happiness Report and found other sources who adapted the same data to more parseable formats. We used chloropleth maps to show where happiness is highest and most of the year is sunny. We also used a scatterplot with a trendline and independent correlation coefficient to look for a connection between happiness and sunnyness. Importantly, this data can only show a correlation between the measures and not causation.
 
-Upload a movie of your data story to YouTube and include a link here.  You can narrate over a screencast of you scrolling through your notebook, or you can paste your figures into a Powerpoint or Keynote presentation (or similar).  You may also find [Marp](https://yhatt.github.io/marp/) useful; it's what I'm using to generate the slideshows for [Modules 1--4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  (Sample slides [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md) and [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md).)
+We did not find the correlation that we anticipated between these measures. It seems that economic stability is correlated much more closely with happiness than the amount of sun that a particular country recieves in a year. Exploring this relationship in a future project could be interesting.
 
 # Downloading the data
 
-Provide a link to the dataset(s) you're using for the project, along with a brief description of the data.
+Data for number of hours of sunshine per month and year in various cities around the world. Data exists publicly in Wikipedia, data world condensed various tables into one xls file.
+
+https://query.data.world/s/2rpnrvf5mp4zps7rb6o7zfkk4bwwga
+
 
 # Running the code
 
-Describe, in sufficient detail for a new person (moderately competent but unfamiliar with your work) to follow, how to run your code.  If the project is implemented in one or more Colaboratory notebooks, you should provide a link to the notebook(s) here.  Also copy the notebooks (as .ipynb files) into your project folder so that everything related to your project is backed up on GitHub.
+With the following Google Collaboratory link, users should select Runtime->Run all which generates all visualizations used in this data story.
+
+https://colab.research.google.com/drive/165pdL-wK4C7xegVKxklFV2IkCr4gleKS?usp=sharing
+
 
 # Contributing to the code
 
-Tell other people how they can contribute to the project you've started.  Specifically:
-- What are the most obvious next steps?
-- What are some questions that your work raises?
+The next steps in continuing this project likely include searching for correlations between various economic measures of a country's sucess and that country's happiness. Another strong direction for further exploration is to map where the the most and least sun is each month to create the ideal travel plans for someone who seeks to minimize or maximize their time in the sun. Since that would be on a country level, results could be skewed, especially for parts of Russia, Alaska, or Canada.
