@@ -9,7 +9,7 @@ This project is an analysis of two characters in the HBO show Euphoria. Since th
 What we were specifically interested in was whether there would be potentially racially driven differences between public opinion of the characters since one is a caucasian male and the other is a Black male or if there would be a halo effect and more forgiveness for his actions since Nate's character is ridiculously attractive. To explore the public perception, we manually scraped Twitter data on each of the characters of interest (Nate and McKay) in the time frame of the date the episode aired to the day before the next episode (a week). We used bar graphs and word clouds to visualize the data. Since the event of abuse wasn't isolated in the episode (Nate also threatened another character (Jules) in the episode where he physically abused his girlfriend and McKay experienced a traumatic hazing event directly before he was rough with his girlfriend) these events also colored the perception of the action. Interestingly, in McKay's case, people were generally more concerned about his mental state after his traumatic event than angry at him for how he physically took his emotions out on his girlfriend. Whereas people's tweets generally tended to have negative valence while insulting Nate and wanting to see justice served either through pressing charges or by his victims teaming up against him. It would be interesting to see the gender and ethnicities/races of the people commenting the message to see if there are any trends in that regard. 
 
 
-YouTube Link: 
+YouTube Link: https://youtu.be/aLZkylRIK4E
 
 # Downloading the data
 
