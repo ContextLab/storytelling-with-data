@@ -99,7 +99,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [**Part I: data wrangling**](https://youtu.be/UPNTM_eakg8)
   - [**Part II: data wrangling continued, basic plotting**](https://youtu.be/aN5PrEeiWbY)
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
-  - [**Discussion with Vermont Department of Health**](https://youtu.be/3kUGSReTXA0) [[slides](https://github.com/ContextLab/storytelling-with-data/raw/master/assignments/assignment%204/VT_DOH_slides.pptx)]
+  - [**Discussion with Vermont Department of Health**](https://youtu.be/3kUGSReTXA0) [[slides](https://github.com/ContextLab/storytelling-with-data/raw/master/assignments/assignment%204/VT_DOH_slides.pptx)] [[sample notebook](https://colab.research.google.com/drive/1dnR1K4yHoh-OvvZ56jzRfHG2bVfUyL-j?usp=sharing)]
   - [**Story ideas workshop and brainstorm**](https://youtu.be/WzCBWl4VRew)
   - [**Debugging session (Part I)**](https://youtu.be/Rdxtqvo1bQs)
   - [**Debugging session (Part II)**](https://youtu.be/EPSlVDlXDK8)
@@ -137,5 +137,5 @@ Each data story should be contained in a single sub-folder of [data-stories](htt
     - [**Part a**](https://youtu.be/9xg1WAb8g5g)
     - [**Part b**](https://youtu.be/u3B65-6Nfr0)
     - [**Part c**](https://youtu.be/U9KgX-vVDWU)
-    - **Part d**
-    - **Part e**
+    - [**Part d**](https://youtu.be/uGpOTQCs0j8)
+    - [**Part e**](https://youtu.be/FRZ584MOkfU)
