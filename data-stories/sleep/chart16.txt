@@ -1,0 +1,20 @@
+Average sleep times per day, by age and sex
+
+
+		   Average hours per day
+
+			Men	Women
+
+15 to 19 years		9.8	9.8	
+20 to 24 years		9.2	9.4	
+25 to 34 years		8.7	8.9	
+35 to 44 years		8.6	8.6	
+45 to 54 years		8.2	8.5		
+55 to 64 years		8.3	8.5	
+65 years and over	8.9	8.8	
+
+
+NOTE: Data include all persons age 15 and over. 
+Data include all days of the week and are annual averages for 2015.
+
+SOURCE: Bureau of Labor Statistics, American Time Use Survey
