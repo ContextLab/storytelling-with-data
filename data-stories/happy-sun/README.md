@@ -8,6 +8,10 @@ Our project set out to explore the connection between the amount of sunlight tha
 
 We did not find the correlation that we anticipated between these measures. It seems that economic stability is correlated much more closely with happiness than the amount of sun that a particular country recieves in a year. Exploring this relationship in a future project could be interesting.
 
+# Link to story
+
+https://dartmouth.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=03f4cb5a-58bc-4db2-a412-ae4e015aa355
+
 # Downloading the data
 
 Data for number of hours of sunshine per month and year in various cities around the world. Data exists publicly in Wikipedia, data world condensed various tables into one xls file.
