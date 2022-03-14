@@ -31,12 +31,14 @@ relations between stress level and sleep duration: https://raw.githubusercontent
 self-evaluated level of tiredness and sleep duration: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/sleep/sleep_self_evaluation.csv
 
 average sleeping time in the US: https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/sleep/average_sleep_time.xlsx?raw=true
+
 long-term memory and sleep disruption: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/sleep/sleep_memory.csv
+
 health conditions and sleep duration: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/sleep/sleep_physical.csv
 
 # Running the code
 
-Starting with the "Data" section, running all the cells in ???.ipynb will give the visualization and correlation analysis of all data this project includes. 
+Starting with the "Data" section, running all the cells in meng_part2_sleep.ipynb will give the visualization and correlation analysis of all data this project includes. 
 
 # Acknowledgement
 
