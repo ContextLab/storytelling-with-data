@@ -18,7 +18,7 @@ LINK
 
 And the slides in the video
 
-SLIDES
+[psyc81_final_game.pptx](https://github.com/BohanMeng/storytelling-with-data/files/8248558/psyc81_final_game.pptx)
 
 # Downloading the data
 
