@@ -1,6 +1,6 @@
 # Project information
 
-This project is the data story on the influence of sleep deprivation by BohanMeng. 
+This project is the data story on the influence of sleep deprivation by Bohan Meng. 
 
 # Overview
 
@@ -42,4 +42,6 @@ Starting with the "Data" section, running all the cells in ???.ipynb will give t
 
 This analysis used dataset and findings of below articles: 
 
+Buboltz Jr, W. C., Brown, F., & Soper, B. (2001). Sleep habits and patterns of college students: a preliminary study. Journal of American college health, 50(3), 131-135.
 
+Whitehurst, L. N., & Mednick, S. C. (2021). Psychostimulants may block long-term memory formation via degraded sleep in healthy adults. Neurobiology of Learning and Memory, 178, 107342.
