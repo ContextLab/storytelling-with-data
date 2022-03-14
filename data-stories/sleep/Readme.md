@@ -18,7 +18,7 @@ LINK
 
 And the slides in the video
 
-SLIDES
+[story_telling_final.pptx](https://github.com/BohanMeng/storytelling-with-data/files/8248552/story_telling_final.pptx)
 
 # Downloading the data
 
