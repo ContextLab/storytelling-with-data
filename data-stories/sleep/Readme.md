@@ -14,7 +14,7 @@ We would like to see follow-up studies on more specific correlations between sle
 
 Below is the video of the storytelling
 
-LINK
+https://youtu.be/GY9UQKcuVIs
 
 And the slides in the video
 
