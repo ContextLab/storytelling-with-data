@@ -22,7 +22,11 @@ Most data are found on Kaggle (https://www.kaggle.com)
 
 Links to specific datasets can be found below:
 
+World Happiness Report 2019: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/happiness_report/report2019.csv
 
+World Happiness Report 2021: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/happiness_report/report2021.csv
+
+Happiness and Alcohol Consumptions: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/happiness_report/alcohol.csv
 
 # Running the code
 
