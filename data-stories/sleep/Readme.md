@@ -1,20 +1,18 @@
 # Project information
 
-This project is the data story on ??? by BohanMeng. 
+This project is the data story on the influence of sleep deprivation by BohanMeng. 
 
 # Overview
 
-The main questions of the projects were: 
+The main questions of the projects were: how lacking sleep affect people's physical and mental health, as well as their efficiency at work. 
 
-To answer these questions, we collected data that either directly described the mental health of youth in different states, or closely related to the life quality of them, e.g., the safety and security of their community, the unemployment rate of their parents, etc. 
+To answer these questions, we collected data that indicate individuals' health conditions, level of stress, and performance in long-term memory tasks. We then analyze and visualize the relations between these indicators and the sleeping time. 
 
-We plotted the data to visualize its trend over time, and calculated the correlation between different factors. 
+We found that: 1) sleep duration is negatively correlated with participants' level of stress; 2) people with around 6 to 9 hours of sleep have the best health condition, with both short and long sleep correlated with health issues like obesities; 3) disruption of sleep (induced by psychostimulants in the experiment) impair long-term memory. 
 
-We found that: 1) the mental health has among the US youth in the past decade; 2) safety, economic, medical resources are likely not the major influence factor of such rising mental health crisis.
+We would like to see follow-up studies on more specific correlations between sleeping time and aspects of life quality and hopefully optimization functions. We would also like to explore the causal relations between sleep duration and various factors of physical/mental health and cognitive fucntions. 
 
-We would like to see follow-up studies on the factors that are less easily quantifiable, include pressure from school, peer, and family expectation, information from the internet and social media, uncertainty about future, etc.  
-
-Below is the videw of the storytelling
+Below is the video of the storytelling
 
 LINK
 
@@ -25,7 +23,16 @@ SLIDES
 # Downloading the data
 
 Most data are found on Kaggle (https://www.kaggle.com)
-github links
+
+Links to specific datasets can be found below:
+
+relations between stress level and sleep duration: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/sleep/sleep_stress.csv
+
+self-evaluated level of tiredness and sleep duration: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/sleep/sleep_self_evaluation.csv
+
+average sleeping time in the US: https://github.com/BohanMeng/storytelling-with-data/blob/master/data-stories/sleep/average_sleep_time.xlsx?raw=true
+long-term memory and sleep disruption: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/sleep/sleep_memory.csv
+health conditions and sleep duration: https://raw.githubusercontent.com/BohanMeng/storytelling-with-data/master/data-stories/sleep/sleep_physical.csv
 
 # Running the code
 
@@ -33,4 +40,6 @@ Starting with the "Data" section, running all the cells in ???.ipynb will give t
 
 # Acknowledgement
 
-Memory study. 
+This analysis used dataset and findings of below articles: 
+
+
