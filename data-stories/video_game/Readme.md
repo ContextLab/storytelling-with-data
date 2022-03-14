@@ -14,7 +14,7 @@ We would like to see follow-up studies on addctiveness of video games, which are
 
 Below is the video of the storytelling
 
-LINK
+https://youtu.be/rKnzKvXvky8
 
 And the slides in the video
 
