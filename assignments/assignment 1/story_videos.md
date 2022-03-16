@@ -5,7 +5,7 @@
 - [Annemarija](https://youtu.be/1WzH1TYs1g4)
 - [Elisa](https://youtu.be/CzNmbh5LWt8)
 - [Frank](https://youtu.be/zelpsqq1mxc)
-- [Akiah](https://youtu.be/6q8VWcRbiBI)
+- [Akiah](https://www.youtube.com/watch?v=Tyb9q2T8tDM)
 - [Emily](https://youtu.be/SQP_NeiZ0mE)
 - [Alex](https://youtu.be/emEOBEPxwwk)
 - [Saruul](https://youtu.be/AliOZm1EEb0)
