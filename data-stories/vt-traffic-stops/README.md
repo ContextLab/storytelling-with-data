@@ -20,7 +20,7 @@ Data for this project can be found on the [Vermont Department of Public Safety w
 
 # Running the code
 
-Describe, in sufficient detail for a new person (moderately competent but unfamiliar with your work) to follow, how to run your code.  If the project is implemented in one or more Colaboratory notebooks, you should provide a link to the notebook(s) here.  Also copy the notebooks (as .ipynb files) into your project folder so that everything related to your project is backed up on GitHub.
+To run the code, simply open the .jpynb in this repository and select "Run all"
 
 # Contributing to the code
 
