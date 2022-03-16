@@ -1,6 +1,6 @@
 # [Stories from Winter, 2022](https://youtube.com/playlist?list=PLjQYT8Fwp987zYZpfHblo0UwyBp407Nq6)
 - [Fanrui](https://youtu.be/aD_jxKjZv-s)
-- [Karim](https://youtu.be/yTQeZzwl40M)
+- [Karim](https://youtu.be/TaR8HPhVRek)
 - [Allison](https://youtu.be/ZSK2PPUaWkA)
 - [Annemarija](https://youtu.be/1WzH1TYs1g4)
 - [Elisa](https://youtu.be/CzNmbh5LWt8)
