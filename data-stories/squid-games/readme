@@ -1,0 +1,30 @@
+# Project information
+
+Sentiment analysis and comparison between the critics reviews and general audience's reaction to the hit TV show "Squid Game." The team consists of Akiah Watts (AkiahW) and Saruul (Saruulijile2).
+
+# Overview
+
+For this analysis of the TV show Squid Game, we wanted to compare and contrast the reactions of movie critics versus the general audience. We assumed that critics would be more focused on the technical aspects (themes, camera angles, and set/character designs) of Squid Game. On the other hand, we assumed the general audience would be more focused on their responses and feelings to the characters and scenes. To find the potential differences in their reactions, we found a dataset of thousands of reviews on Kaggle and also manually gathered tweet data, as well. Through using sentiment analysis libraries, we calculated the general tendency of the reactions and categorized them into positive, neutral, and negative. Then, we also created word clouds to find the most repeated words in both the critics' review and the general audience's reaction. Through our analysis, we found out that both types of reactions were mostly neutral, but the most common words differed greatly. For example, the critics' reviews used the words "love", "plot", and "good" more often while the general audience used the words "finish" and "good.” These results highlight the difference between how people from different backgrounds would react differently to TV shows. 
+
+YouTube Link: https://youtu.be/A-hdSg7lrOo
+
+# Downloading the data
+
+Dataset of critics reviews of Squid Game that we found on Kaggle
+Reviews: https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/squid-games/squidgame_reviews.csv
+
+Dataset of general public reaction to Squid Game that we manually collected 
+Tweets: https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/squid-games/squidgame_tweets.csv
+
+
+# Running the code
+
+Start by running the setup (outside libraries required for visualizing the data) and data (the aforementioned tweets). The spreadsheets include the tweets, and human analysis of the valence and category the tweet would fall under. Under the Analysis section, we first cleaned up the dataset of critics reviews and got rid of words that were repeated in all the reviews. Then, we created a bar graph with the ratings of Squid Game reviews. Then, we conducted a sentiment analysis and created a wordcloud that showed the most repeated words in bigger fonts. Then, we moved on to analyzing the reaction of the general audience by calculating the valence of the tweets by using a sentiment analysis tool. Interestingly, the results of the analysis did not match with our manual analysis of the tweets. Moreover, we also created a word cloud for the tweets, which showed the most common words in the reaction of general audience. 
+
+# Contributing to the code
+
+Some next steps would be analyzing the sentiment towards the polarizing characters of the show. Also, it would be interesting to collect data on other platforms, such as Instagram and TikTok, where people are less concerned about spoilers.
+
+# Acknowledgements
+
+Akiah's lovely boyfriend and CS major Robert for debugging and helping with the construction of the first bar graph. 
