@@ -8,8 +8,7 @@ PSYC 81.09 (Storytelling with Data) is organized into 2 main parts.  [Part I](ht
 
 [Part II](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/README.md#part-ii) is project-based, and revolves around mini data science projects.  For each project, one or more students choose a question and dataset to explore and turn into a data story.  Each week students and groups will report on their progress with the latest iterations of their stories.  Students should aim to participate in three or more projects during Part II of the course.  At students' discretion, those three (or more) projects may comprise the same questions and/or datasets (e.g., whereby each story builds on the previous story), or multiple questions and/or datasets that may or may not be related.  In addition, students are encouraged to build off of each others' code, projects, and questions.  Projects and project groups should form organically and should remain flexible to facilitate changing goals and interests.
 
-Lecture recordings are denoted in **bolded** links below.  (Inactive links denote
-  lectures that have not happened yet.)
+Lecture recordings are denoted in **bolded** links below.
 
 ## Introduction
 - [Welcome message](https://www.youtube.com/watch?v=LvFQLLTu5KY)
@@ -45,6 +44,7 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
 - [Maximizing the data-to-ink ratio](https://medium.com/plotly/maximizing-the-data-ink-ratio-in-dashboards-and-slide-deck-7887f7c1fab) (Source: [medium.com](https://medium.com/))
 - Take a look at [A Layered Grammar of Graphics](https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf) by Hadley Wickham (skim or skip the code examples) and [The Grammar of Graphics](https://www.dropbox.com/s/4qwd16psogqdgi6/Wilk10.pdf) by Leland Wilkinson.
 - [**Discussion: telling effective stories about data**](https://youtu.be/TbrNyfw9voU)
+- Communicating with sound: in-class discussion with director, editor, and producer [Sam Green](https://www.imdb.com/name/nm0338316/?ref_=tt_ov_dr) and class "field trip" to a showing of [32 SOUNDS](https://hop.dartmouth.edu/events/32-sounds) (**Special thanks to the [Hopkins Center for the Arts at Dartmouth](https://hop.dartmouth.edu/) for donating tickets to all PSYC 81.09 students in the W24 term!**)
 - [Assignment 2: data story remix](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%202/Assignment_2.md)  You find some inspiration by taking a look at one or more of the following sources of data stories:
   - [FiveThirtyEight.com](https://fivethirtyeight.com/)
   - [Reddit: DataIsBeautiful](https://www.reddit.com/r/dataisbeautiful/)
@@ -99,7 +99,8 @@ Lecture recordings are denoted in **bolded** links below.  (Inactive links denot
   - [**Part I: data wrangling**](https://youtu.be/UPNTM_eakg8)
   - [**Part II: data wrangling continued, basic plotting**](https://youtu.be/aN5PrEeiWbY)
 - [Assignment 4: tell your first (notebook-based) data story!](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%204/Assignment_4.md)
-  - [**Discussion with Vermont Department of Health**](https://youtu.be/3kUGSReTXA0) [[slides](https://github.com/ContextLab/storytelling-with-data/raw/master/assignments/assignment%204/VT_DOH_slides.pptx)] [[sample notebook](https://colab.research.google.com/drive/1dnR1K4yHoh-OvvZ56jzRfHG2bVfUyL-j?usp=sharing)]
+  - **Discussion with Climate Interactive (2024)**
+  - [**Discussion with Vermont Department of Health (2022)**](https://youtu.be/3kUGSReTXA0) [[slides](https://github.com/ContextLab/storytelling-with-data/raw/master/assignments/assignment%204/VT_DOH_slides.pptx)] [[sample notebook](https://colab.research.google.com/drive/1dnR1K4yHoh-OvvZ56jzRfHG2bVfUyL-j?usp=sharing)]
   - [**Story ideas workshop and brainstorm**](https://youtu.be/WzCBWl4VRew)
   - [**Debugging session (Part I)**](https://youtu.be/Rdxtqvo1bQs)
   - [**Debugging session (Part II)**](https://youtu.be/EPSlVDlXDK8)

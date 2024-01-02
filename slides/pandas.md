@@ -5,6 +5,7 @@ url: https://github.com/ContextLab/storytelling-with-data
 theme: gaia
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+transition: fade 0.25s
 class:
   - lead  
 ---
@@ -12,7 +13,7 @@ class:
 ![bg opacity:0.1](https://miro.medium.com/max/1080/1*_oSOImPmBFeKj8vqE4FCkQ.jpeg)
 # Introduction to Pandas: **P**ytho**n** **d**ata **a**nalysi**s** toolkit
 ## Jeremy R. Manning
-### PSYC 81.09: Storytelling with Data
+### PSYC 132: Introduction to Programming for Psychological Scientists
 
 ---
 ### Python data science computing stack

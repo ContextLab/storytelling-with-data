@@ -3,8 +3,10 @@
 Note: please work through the material in [Module 4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#module-4-data-science-tools) before beginning this assignment.
 
 For this assignment, you'll be telling a story that seeks to answer or explore
-questions related to [Vermont Department of Health data](https://app.powerbigov.us/view?r=eyJrIjoiMjEzYTFjZWQtN2RmYS00ZWY1LWIxYzQtN2E1YWFlOTBmNTVkIiwidCI6IjIwYjQ5MzNiLWJhYWQtNDMzYy05YzAyLTcwZWRjYzc1NTljNiJ9).  You can
-choose any question and/or dataset(s) to analyze for this assignment.
+questions related to data from [Climate Interactive](https://www.climateinteractive.org/), which you can download
+using their [EN-ROADS](https://en-roads.climateinteractive.org/scenario.html)
+tool. You can choose any question and/or dataset(s) to analyze for this
+assignment.
 
 Your story should be analogous to the ones you put together in [Assignment
 1](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md)
@@ -32,13 +34,12 @@ comprise:
 # Submitting your assignment
 
 Please submit your assignment by making a pull request adding your assignment
-files to the `data-stories/VT-DoH` folder in the course repository.
+files to the `data-stories/climate` folder in the course repository.
 
 # Further resources and reading
 
-During one of our class meetings, we will have a discussion with several
-representatives from the Vermont Department of Health.  This will provide an
-opportunity for the Department of Health to describe some of the issues they are
+During one of our class meetings, we will have a discussion with a representative from Climate Interactive.  This will provide an
+opportunity for the organization to describe some of the issues they are
 most interested in.  The discussion will also provide an opportunity for us to
 engage with the representatives about relevant issues of interest to students in
 the class, brainstorm potential approaches, and so on.  This part of the course
