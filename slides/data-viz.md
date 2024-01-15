@@ -90,7 +90,7 @@ class:
 
 ---
 ## Bar graph
-![height:500px](https://seaborn.pydata.org/_images/seaborn-barplot-1.png)
+![height:500px](https://seaborn.pydata.org/_images/barplot_1_0.png)
 
 ---
 ## Bar graph (grouped)
@@ -130,7 +130,7 @@ class:
 
 ---
 ## Two-dimensional histogram or density plot
-![height:500px](http://seaborn.pydata.org/_images/jointplot_3_0.png)
+![height:500px](https://seaborn.pydata.org/_images/jointplot_9_0.png)
 
 ---
 ## Ridge plot
@@ -158,15 +158,15 @@ class:
 
 ---
 ## Swarm plot
-![height:500px](https://seaborn.pydata.org/_images/seaborn-swarmplot-2.png)
+![height:500px](https://seaborn.pydata.org/_images/swarmplot_5_0.png)
 
 ---
 ## Boxenplot
-![height:500px](https://seaborn.pydata.org/_images/seaborn-boxenplot-2.png)
+![height:500px](https://seaborn.pydata.org/_images/boxenplot_7_0.png)
 
 ---
 ## Box (and whiskers) plot
-![height:500px](https://seaborn.pydata.org/_images/seaborn-boxplot-2.png)
+![height:500px](https://seaborn.pydata.org/_images/boxplot_15_0.png)
 
 ---
 ## Joint plot (scatter)
@@ -194,7 +194,7 @@ class:
 
 ---
 ## Polar area chart (AKA Coxcomb chart, Rose chart)
-![height:500px](https://datavizproject.com/wp-content/uploads/2016/06/DVP_1_100-40.png)
+![height:500px](https://i.stack.imgur.com/gxPwy.png)
 
 ---
 ## Pie chart
@@ -266,7 +266,7 @@ class:
 
 ---
 ## Map projections (also see [Wikipedia](https://en.wikipedia.org/wiki/List_of_map_projections))
-![height:400px](https://geoawesomeness.com/wp-content/uploads/2016/10/What-Map-Projections-Say-About-You.png)
+![height:400px](https://imgs.xkcd.com/comics/map_projections.png)
 
 ---
 ## Cloropleth map
