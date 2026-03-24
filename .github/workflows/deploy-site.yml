@@ -1,0 +1,157 @@
+name: Deploy Course Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'slides/**'
+      - 'assignments/**'
+      - 'data/**'
+      - 'pages/**'
+      - 'css/**'
+      - 'scripts/**'
+      - 'index.html'
+      - 'admin/**'
+      - '.github/workflows/deploy-site.yml'
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          pip install cdl-slides pyyaml playwright
+          npm install -g @marp-team/marp-cli
+          playwright install chromium
+
+      - name: Compile slides
+        run: |
+          echo "Compiling slide decks..."
+          chmod +x scripts/build-slides.sh
+          ./scripts/build-slides.sh || echo "Warning: Some slides failed to compile"
+
+      - name: Build course pages
+        run: |
+          echo "Building HTML pages from markdown..."
+          python scripts/build-pages.py
+
+      - name: Build data story gallery
+        run: |
+          echo "Generating data story gallery..."
+          python scripts/build-gallery.py
+
+      - name: Build assignment PDFs
+        run: |
+          echo "Converting assignments to PDF..."
+          python scripts/build-pdfs.py || echo "Warning: Some PDFs failed to generate"
+
+      - name: Validate build
+        run: |
+          echo "Validating build output..."
+
+          # Check key files exist
+          for f in index.html css/base-styles.css css/site-styles.css; do
+            if [ ! -f "$f" ]; then
+              echo "ERROR: Missing required file: $f"
+              exit 1
+            fi
+          done
+
+          # Check pages generated
+          for p in pages/slides.html pages/assignments.html pages/stories.html pages/syllabus.html; do
+            if [ ! -f "$p" ]; then
+              echo "ERROR: Missing generated page: $p"
+              exit 1
+            fi
+          done
+
+          # Security scan - no secrets in output
+          echo "Scanning for secrets..."
+          if find . -name '.env' -o -name 'credentials.json' -o -name '*.secret' | grep -q .; then
+            echo "ERROR: Potential secret files detected"
+            exit 1
+          fi
+
+          echo "Validation passed!"
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site/css
+          mkdir -p _site/pages
+          mkdir -p _site/slides/figs
+          mkdir -p _site/assignments
+          mkdir -p _site/admin
+          mkdir -p _site/data-stories/demo
+
+          # Root files
+          cp index.html _site/
+          touch _site/.nojekyll
+
+          # CSS
+          cp css/*.css _site/css/
+
+          # Pages (spoke pages)
+          cp pages/*.html _site/pages/
+
+          # Slides (markdown + compiled HTML + figures)
+          cp -r slides/figs/ _site/slides/figs/ 2>/dev/null || true
+          for f in slides/*.html; do
+            [ -f "$f" ] && cp "$f" _site/slides/
+          done
+
+          # Assignments (HTML + PDF + data)
+          for dir in assignments/*/; do
+            dirname=$(basename "$dir")
+            mkdir -p "_site/assignments/$dirname"
+            cp "$dir"index.html "_site/assignments/$dirname/" 2>/dev/null || true
+            cp "$dir"*.pdf "_site/assignments/$dirname/" 2>/dev/null || true
+          done
+
+          # Admin (syllabus PDF)
+          cp admin/*.pdf _site/admin/ 2>/dev/null || true
+
+          # Data stories demo template
+          cp data-stories/demo/README.md _site/data-stories/demo/ 2>/dev/null || true
+
+          echo "Site assembled in _site/"
+          find _site -type f | wc -l | xargs echo "Total files:"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

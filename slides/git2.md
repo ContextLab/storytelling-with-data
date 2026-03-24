@@ -1,11 +1,7 @@
 ---
-title: Fork, clone, and status
-description: Git tutorial part 2
-url: https://github.com/ContextLab/storytelling-with-data
-theme: uncover
-class:
-  - invert
-  - lead
+marp: true
+theme: cdl-theme
+math: katex
 ---
 
 ![bg opacity:0.05](https://news.efinancialcareers.com/binaries/content/gallery/efinancial-careers/articles/2019/04/github.jpg)
@@ -14,13 +10,25 @@ class:
 ### PSYC 81.09: Storytelling with Data
 
 ---
-![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_fork.png)
+
+## Key concepts
+
+<div class="definition-box" data-title="fork, clone, and status">
+
+- **`fork`**: Copy someone else's repository to your own GitHub account
+- **`clone`**: Download a repository from GitHub to your local machine
+- **`status`**: Check which files have been modified, staged, or are untracked
+
+</div>
 
 ---
-![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/github_clone_address.png)
+![height:750px](figs/github_fork.png)
 
 ---
-![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_clone_terminal.png)
+![height:750px](figs/github_clone_address.png)
 
 ---
-![height:750px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/git_status.png)
+![height:750px](figs/git_clone_terminal.png)
+
+---
+![height:750px](figs/git_status.png)

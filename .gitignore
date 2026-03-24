@@ -6,8 +6,31 @@ hypertools_data
 supereeg_data
 data-stories/upper-valley-land-trust/jeremy_uvlt_notebook.ipynb
 nltk_data
-slides/*.ipynb
-assignments/README.md
-assignments/assignment*/Assignment_*.md
 data-stories/semantic-mapping/data
 *__pycache__
+*.pyc
+
+# Build output
+_site/
+slides/*.html
+assignments/*/index.html
+pages/*.html
+
+# Dependencies
+node_modules/
+.playwright/
+
+# Environment
+.env*
+.venv/
+venv/
+
+# Spec artifacts (local only)
+.specify/
+.claude/
+specs/
+notes/
+
+# Tool state
+.omc/
+.playwright-mcp/
