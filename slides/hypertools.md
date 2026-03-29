@@ -12,7 +12,7 @@ math: katex
 
 ## We live in an era of data
 
-![bg right:50% opacity:0.8](figs/hypertools-pasted-image-small-141.png)
+![bg right:50% opacity:0.8](figs/hypertools-pasted-image-140.png)
 
 <div class="note-box" data-title="The data explosion">
 
@@ -24,7 +24,7 @@ Every day, we generate and collect **massive amounts of data** from sensors, soc
 
 ## What is high-dimensional data?
 
-![bg right:40% opacity:0.9](figs/hypertools-pasted-image-small-202.png)
+![bg right:40% opacity:0.9](figs/hypertools-pasted-image-201.png)
 
 <div class="definition-box" data-title="High-dimensional data">
 
@@ -64,7 +64,7 @@ Each snapshot is a point in a space with thousands of dimensions. How can we vis
 
 ## Thought spaces
 
-![bg right:45%](figs/hypertools-thought_space-small-249.png)
+![bg right:45%](figs/hypertools-thought_space-248.png)
 
 <div class="definition-box" data-title="Geometric models of thought">
 
@@ -76,7 +76,7 @@ We can think of concepts as **points in a high-dimensional space**, where the di
 
 ## Contextual drift through thought space
 
-![bg right:45%](figs/hypertools-contextual_drift-small-255.png)
+![bg right:45%](figs/hypertools-contextual_drift-254.png)
 
 <div class="note-box" data-title="Trajectories of thought">
 
@@ -88,7 +88,7 @@ As we think, read, or watch a movie, our mental state **traces a trajectory** th
 
 ## Shared experiences
 
-![bg right:45% opacity:0.9](figs/hypertools-pasted-image-small-344.png)
+![bg right:45% opacity:0.9](figs/hypertools-pasted-image-343.png)
 
 <div class="important-box" data-title="Common ground">
 
@@ -100,7 +100,7 @@ When people share an experience (e.g., watching the same movie), their brain act
 
 ## We need the right tools
 
-![bg right:40%](figs/hypertools-pasted-image-small-352.png)
+![bg right:40%](figs/hypertools-pasted-image-351.png)
 
 <div class="tip-box" data-title="Visualization challenges">
 
@@ -130,7 +130,7 @@ Imagine shining a flashlight on a 3D sculpture and looking at its **shadow** on 
 
 ## Data visualization with Python
 
-![bg right:35%](figs/hypertools-pasted-image-small-671.png)
+![bg right:35%](figs/hypertools-pasted-image-670.png)
 
 <div class="note-box" data-title="The Python ecosystem">
 
@@ -206,7 +206,7 @@ HyperTools automatically applies **PCA** to reduce your data to 3 dimensions and
 
 ## Visualizing brain data with HyperTools
 
-![height:400px](figs/hypertools-raiders-small-420.png)
+![height:400px](figs/hypertools-raiders-419.png)
 
 <div class="note-box" data-title="Neural trajectories">
 

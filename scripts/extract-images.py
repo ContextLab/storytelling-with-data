@@ -12,10 +12,37 @@ Usage:
 import argparse
 import os
 import re
+import subprocess
 import zipfile
 from pathlib import Path
 
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".tiff", ".bmp", ".pdf"}
+# Formats that browsers can't display — convert to PNG
+NON_WEB_FORMATS = {".tiff", ".bmp", ".pdf"}
+
+
+def convert_to_png(file_path):
+    """Convert a non-web image format to PNG using sips (macOS) or ImageMagick."""
+    png_path = file_path.with_suffix(".png")
+    try:
+        # Try sips first (macOS native, fast)
+        subprocess.run(
+            ["sips", "-s", "format", "png", str(file_path), "--out", str(png_path)],
+            capture_output=True, check=True,
+        )
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        try:
+            # Fall back to ImageMagick
+            subprocess.run(
+                ["convert", str(file_path), str(png_path)],
+                capture_output=True, check=True,
+            )
+        except (subprocess.CalledProcessError, FileNotFoundError):
+            print(f"  WARNING: Could not convert {file_path.name} to PNG")
+            return None
+    # Remove the original non-web file
+    file_path.unlink()
+    return png_path
 
 
 def slugify(name):
@@ -97,8 +124,23 @@ def main():
         print(f"ERROR: Unsupported format: {ext} (expected .key or .pptx)")
         return 1
 
-    print(f"Extracted {len(extracted)} images from {input_path.name}:")
-    for name in sorted(extracted):
+    # Convert non-web formats to PNG
+    converted = []
+    for name in extracted:
+        fpath = output_dir / name
+        if fpath.suffix.lower() in NON_WEB_FORMATS:
+            png_path = convert_to_png(fpath)
+            if png_path:
+                converted.append((name, png_path.name))
+                print(f"  CONVERTED: {name} → {png_path.name}")
+            else:
+                converted.append((name, name))
+        else:
+            converted.append((name, name))
+
+    final_names = [c[1] for c in converted]
+    print(f"Extracted {len(final_names)} images from {input_path.name}:")
+    for name in sorted(final_names):
         print(f"  → {output_dir / name}")
 
     return 0
