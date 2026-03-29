@@ -386,6 +386,8 @@ def build_assignments_index():
 
 
 def main():
+    # Ensure output directories exist (pages/ is gitignored)
+    (REPO_ROOT / "pages").mkdir(parents=True, exist_ok=True)
     print("Building course pages...")
     print("\nAssignment pages:")
     build_assignment_pages()
