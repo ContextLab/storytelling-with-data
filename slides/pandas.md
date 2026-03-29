@@ -1,13 +1,7 @@
 ---
-title: Intro to Pandas
-description: Introduction to Pandas
-url: https://github.com/ContextLab/storytelling-with-data
-theme: gaia
-backgroundColor: #fff
-backgroundImage: url('https://marp.app/assets/hero-background.jpg')
-transition: fade 0.25s
-class:
-  - lead  
+marp: true
+theme: cdl-theme
+math: katex
 ---
 
 ![bg opacity:0.1](https://miro.medium.com/max/1080/1*_oSOImPmBFeKj8vqE4FCkQ.jpeg)
@@ -18,20 +12,31 @@ class:
 ---
 ### Python data science computing stack
 
-![height:500px](https://raw.githubusercontent.com/jeremymanning/storytelling-with-data/master/slides/figs/python_libraries.png)
+![height:500px](figs/python_libraries.png)
 
 ---
+<!-- _class: scale-90 -->
 ### Pandas = NumPy + :star2:
+
+<div class="note-box" data-title="What Pandas Adds">
 
 - NumPy `array` objects organize information into tables
 - Pandas introduces `Series` and `DataFrame` objects, which are like enhanced versions of `array`
 - Pandas includes a bunch of functions for creating `DataFrame` objects from common filetypes like .csv, .xlsx, .json, .html, and many others
 - The toolbox also includes some (basic) statistical analysis and plotting functions
 
+</div>
+
 ---
-# Installing Pandas
+### Installing Pandas
+
+<div class="tip-box" data-title="Installation">
+
 - Pandas is installed by default in Colaboratory
-- You can install it in other environments using
+- You can install it in other environments using:
+
+</div>
+
 ```bash
 pip install pandas
 ```
@@ -77,8 +82,14 @@ dtype: float64
 
 ---
 ### Defining indices
+
+<div class="note-box" data-title="Custom Indices">
+
 - By default, `Series` objects are indexed by integers
 - You can specify arbitrary indices as follows:
+
+</div>
+
 ```python
 >>> data = pd.Series([0.25, 0.5, 0.75, 1.0],
                  index=['a', 'b', 'c', 'd'])
@@ -89,9 +100,15 @@ c    0.75
 d    1.00
 dtype: float64
 ```
+
 ---
 ### Defining indices
+
+<div class="tip-box" data-title="Dict-like Access">
+
 - This allows `Series` objects to act like a more powerful version of `dict`
+
+</div>
 
 ```python
 >>> data['a']
@@ -106,9 +123,14 @@ dtype: float64
 
 ---
 ### `DataFrame`: a more powerful `array`
+
+<div class="definition-box" data-title="DataFrame">
+
 - A `DataFrame` is like a 2D `array`, but with the rows and columns labeled
-- Rows labels are called the `index`
+- Row labels are called the `index`
 - Column labels are called the `columns`
+
+</div>
 
 ---
 ### `DataFrame`: a more powerful `array`
@@ -171,6 +193,13 @@ Name: area, dtype: int64
 
 ---
 ### Indexing `DataFrame` objects
+
+<div class="warning-box" data-title="Row Indexing Pitfall">
+
+- Bracket indexing selects **columns**, not rows. Using a row label directly raises a `KeyError`:
+
+</div>
+
 ```python
 >>> states['California']
 ----------------------------------------------------------
@@ -183,6 +212,13 @@ KeyError: 'California'
 
 ---
 ### Indexing `DataFrame` objects
+
+<div class="tip-box" data-title="Use .loc for Row Access">
+
+- Use `.loc[]` to select rows by label. The result is a `Series`:
+
+</div>
+
 ```python
 >>> states.loc['California']
 population    38332521
@@ -195,6 +231,13 @@ pandas.core.series.Series
 
 ---
 ### Indexing `DataFrame` objects
+
+<div class="tip-box" data-title="Use .iloc for Position-based Access">
+
+- Use `.iloc[]` to select rows by integer position:
+
+</div>
+
 ```python
 >>> states.iloc[1:3]
 population    area
@@ -262,22 +305,44 @@ max     46.600000    8.000000  ...     24.800000   82.000000
 ```
 
 ---
-### Some other useful functions to explore (part 1)
+<!-- _class: scale-90 -->
+### Some other useful functions to explore
+
+<div style="display: flex; gap: 2em;">
+<div>
+
+<div class="note-box" data-title="Data Organization">
+
 - `groupby`: organize data according to particular values (e.g., group cars by model year)
 - `fillna`, `ffill`, `bfill`: deal with missing data
 - `rolling`: compute averages over a sliding window
 - `merge`, `join`: combine multiple `DataFrame` objects
-- `melt`: restructure `DataFrame` to have just two columns-- `variable` and `value`
+- `melt`: restructure `DataFrame` to have just two columns -- `variable` and `value`
 
----
-### Some other useful functions to explore (part 2)
+</div>
+
+</div>
+<div>
+
+<div class="note-box" data-title="Inspection &amp; Transformation">
+
 - `head`, `tail`: print out just the first (or last) rows
 - `apply`: apply a function to each value along a given axis
 - `plot`: create figures (lots of options!)
 
+</div>
+
+</div>
+</div>
+
 ---
-## Summary
+### Summary
+
+<div class="tip-box" data-title="Key Takeaways">
+
 - Pandas is a powerful tool for organizing and manipulating data
 - The more Pandas "tricks" you learn, the more efficiently you'll be able to work with data
   - NumPy tricks also come in handy; most work in Pandas too!
 - The best way to learn is to load some real data into a `DataFrame` and start playing around with it
+
+</div>

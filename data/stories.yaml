@@ -1,0 +1,372 @@
+# Data Story Metadata
+# Single source of truth for the Data Stories gallery page.
+# See contracts/story-metadata-schema.yaml for field definitions.
+
+# ============================================================
+# Winter 2022
+# ============================================================
+
+# Assignment 1 - Personal Stories (Winter 2022)
+- title: "Personal Story"
+  student: "Fanrui"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/aD_jxKjZv-s"
+  tags: []
+
+- title: "Personal Story"
+  student: "Karim"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/TaR8HPhVRek"
+  tags: []
+
+- title: "Personal Story"
+  student: "Allison"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/ZSK2PPUaWkA"
+  tags: []
+
+- title: "Personal Story"
+  student: "Annemarija"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/1WzH1TYs1g4"
+  tags: []
+
+- title: "Personal Story"
+  student: "Elisa"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/CzNmbh5LWt8"
+  tags: []
+
+- title: "Personal Story"
+  student: "Frank"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/zelpsqq1mxc"
+  tags: []
+
+- title: "Personal Story"
+  student: "Akiah"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://www.youtube.com/watch?v=Tyb9q2T8tDM"
+  tags: []
+
+- title: "Personal Story"
+  student: "Emily"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/SQP_NeiZ0mE"
+  tags: []
+
+- title: "Personal Story"
+  student: "Alex"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/emEOBEPxwwk"
+  tags: []
+
+- title: "Personal Story"
+  student: "Saruul"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/AliOZm1EEb0"
+  tags: []
+
+# Assignment 2 - Data Story Remix (Winter 2022)
+- title: "Data Story Remix"
+  student: "Allison"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/dt79lHJVJi0"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Emily"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/JAX6DMvNO-Y"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Alex"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/GCJjovHKvs8"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Bohan"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/RUv7R3JBBCQ"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Fanrui"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/mNvCdyWfOwM"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Akiah"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/sX2KVLUWTmQ"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Elisa"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/MwVulh3-gTg"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Saruul"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/cXiDnAclaYg"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Karim"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/I1yKC0pyWPM"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Annemarija"
+  year: 2022
+  term: "Winter 2022"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/n_ZeiVeqN_8"
+  tags: []
+
+# ============================================================
+# Spring 2021
+# ============================================================
+
+# Assignment 1 - Personal Stories (Spring 2021)
+- title: "Personal Story"
+  student: "Nathan"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-1"
+  youtube_url: "https://www.youtube.com/watch?v=xHmGvbgkXKE"
+  tags: []
+
+- title: "Personal Story"
+  student: "Isha"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/nBZaInMG9dE"
+  tags: []
+
+- title: "Personal Story"
+  student: "Hannah"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/qw9cLNZRENQ"
+  tags: []
+
+- title: "Personal Story"
+  student: "Keara"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/JMnTvUqv9dM"
+  tags: []
+
+- title: "Personal Story"
+  student: "Amelia"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/WUpZnfhbo5k"
+  tags: []
+
+- title: "Personal Story"
+  student: "Laya"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/VcdnsAf7IIk"
+  tags: []
+
+- title: "Personal Story"
+  student: "Summer"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/Ks2KhaPJ3IE"
+  tags: []
+
+# Assignment 2 - Data Story Remix (Spring 2021)
+- title: "Data Story Remix"
+  student: "Keara"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/5XsylXsy1p4"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Nathan"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/TbIthT-Rcp8"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Hannah"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/mim-ZqIJfz8"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Amelia"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/K5C4f7mE3UA"
+  tags: []
+
+- title: "Data Story Remix"
+  student: "Isha"
+  year: 2021
+  term: "Spring 2021"
+  assignment: "assignment-2"
+  youtube_url: "https://youtu.be/7TXGuiUfWmg"
+  tags: []
+
+# ============================================================
+# Spring 2020
+# ============================================================
+
+# Assignment 1 - Personal Stories (Spring 2020)
+- title: "Personal Story"
+  student: "Lindsay"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/rSSYIpscCj0"
+  tags: []
+
+- title: "Personal Story"
+  student: "Kumaran"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/d6THfFv0myI"
+  tags: []
+
+- title: "Personal Story"
+  student: "Lenihan"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/giQXgUHD28o"
+  tags: []
+
+- title: "Personal Story"
+  student: "Hong"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/NPq_fPkLqqk"
+  tags: []
+
+- title: "Personal Story"
+  student: "Stuart"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/07usIvFFA1A"
+  tags: []
+
+- title: "Personal Story"
+  student: "Goldszer"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/kEanP-RuGaI"
+  tags: []
+
+- title: "Personal Story"
+  student: "Tang, E."
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/OE3qk2Ti0WQ"
+  tags: []
+
+- title: "Personal Story"
+  student: "Song"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/m2qiRj4k7Yk"
+  tags: []
+
+- title: "Personal Story"
+  student: "Lee"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/gASZGcWZKMM"
+  tags: []
+
+- title: "Personal Story"
+  student: "Tang, B."
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/fOr9OAaCFPU"
+  tags: []
+
+- title: "Personal Story"
+  student: "Ram"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/R2raF14y3V4"
+  tags: []
+
+- title: "Personal Story"
+  student: "Gawerc"
+  year: 2020
+  term: "Spring 2020"
+  assignment: "assignment-1"
+  youtube_url: "https://youtu.be/13B5cXILXD8"
+  tags: []
