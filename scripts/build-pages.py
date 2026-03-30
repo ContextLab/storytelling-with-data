@@ -159,14 +159,17 @@ def inline_format(text):
     return text
 
 
-def get_page_template(title, content, active_page=""):
-    """Wrap content in full HTML page with nav and styling."""
+def get_page_template(title, content, active_page="", root_prefix=".."):
+    """Wrap content in full HTML page with nav and styling.
+
+    root_prefix: relative path to repo root (e.g., ".." for pages/, "../.." for assignments/X/)
+    """
     nav_items = [
-        ("../index.html", "Home", "home"),
-        ("slides.html", "Slides", "slides"),
-        ("assignments.html", "Assignments", "assignments"),
-        ("stories.html", "Data Stories", "stories"),
-        ("syllabus.html", "Syllabus", "syllabus"),
+        (f"{root_prefix}/index.html", "Home", "home"),
+        (f"{root_prefix}/pages/slides.html", "Slides", "slides"),
+        (f"{root_prefix}/pages/assignments.html", "Assignments", "assignments"),
+        (f"{root_prefix}/pages/stories.html", "Data Stories", "stories"),
+        (f"{root_prefix}/pages/syllabus.html", "Syllabus", "syllabus"),
     ]
 
     nav_html = ""
@@ -181,8 +184,8 @@ def get_page_template(title, content, active_page=""):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - Storytelling with Data</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/base-styles.css">
-    <link rel="stylesheet" href="../css/site-styles.css">
+    <link rel="stylesheet" href="{root_prefix}/css/base-styles.css">
+    <link rel="stylesheet" href="{root_prefix}/css/site-styles.css">
     <style>
         .page-content {{
             max-width: 900px;
@@ -240,7 +243,7 @@ def get_page_template(title, content, active_page=""):
 </head>
 <body>
     <nav class="course-nav">
-        <a class="logo" href="../index.html">SWD</a>
+        <a class="logo" href="{root_prefix}/index.html">SWD</a>
         <div class="nav-links">
 {nav_html}            <button class="theme-toggle" id="themeToggle">☀️</button>
         </div>
@@ -291,7 +294,8 @@ def build_assignment_pages():
         content_html = markdown_to_html(md_text)
 
         title = assignment_dir.name.replace("-", " ").title()
-        page_html = get_page_template(title, content_html, active_page="assignments")
+        page_html = get_page_template(title, content_html, active_page="assignments",
+                                      root_prefix="../..")
 
         # Write to assignment dir as index.html
         out_file = assignment_dir / "index.html"

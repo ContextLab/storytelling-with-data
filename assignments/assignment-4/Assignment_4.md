@@ -1,47 +1,75 @@
-# Storytelling with Data Assignment 4: Tell your first (notebook-based) data story!
+# Assignment 4: Tell a "Real" Story About Data
 
-Note: please work through the material in [Module 4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md#module-4-data-science-tools) before beginning this assignment.
+**Released**: Friday, April 24 | **Due**: Monday, April 27
 
-For this assignment, you'll be telling a story that seeks to answer or explore
-questions related to data from [Climate Interactive](https://www.climateinteractive.org/), which you can download
-using their [EN-ROADS](https://en-roads.climateinteractive.org/scenario.html)
-tool. You can choose any question and/or dataset(s) to analyze for this
-assignment.
+## Overview
 
-Your story should be analogous to the ones you put together in [Assignment
-1](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%201/Assignment_1.md)
-and [Assignment
-2](https://github.com/ContextLab/storytelling-with-data/blob/master/assignments/assignment%202/Assignment_2.md),
-but it must be data-driven (like the story you told for Assignment 2).  You
-should support your narrative with specific statistics, data visualizations,
-and/or other figures that you generate in your notebook.
+For this assignment, you'll tell a notebook-based data story using real data from [The Collaborative](https://thecollaborative.us), our social impact practicum partner, or another real-world dataset of your choosing.
 
-You may work on this assignment individually, or in groups of any size you
-choose.
+Your story should be analogous to the ones you put together for Assignments 1 and 2, but this time you must:
 
-# Story format
+- **Use real data** — download, clean, and analyze a real dataset
+- **Write code** — your analysis should be implemented in a Jupyter/Colab notebook
+- **Generate your own figures** — create data visualizations programmatically
+- **Answer a specific question** — frame your story around a clear research question
 
-You should use this [demo
-project](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories/demo)
-and as a template for putting your story together.  The sample notebook contains
-a recommended approach to organizing your notebook (although you may stray from
-that recommended format if you feel it's necessary).  Your project should
-comprise:
-- A single Google Colaboratory-compatible notebook containing your (or your group's) story and code.  Name the notebook `groupname.ipynb`, where `groupname` is replaced with a unique identifier for your group (e.g., your last name and first initial, a made-up team name, etc.).
-- A README file formatted using [Markdown](https://www.markdowntutorial.com/).  Name the file `groupname.md` (again replacing `groupname` with the same unique identifier that you used to name your notebook).
-- A YouTube video (linked to in your README file) of your story.  The precise format of your recorded story is up to you, but I suggest that you either do a narrated screencast of you scrolling through your notebook, or a narrated screencast of a slideshow with figures pasted in from your notebook.
+You may work on this assignment individually or in groups of any size.
 
-# Submitting your assignment
+## Story Format
 
-Please submit your assignment by making a pull request adding your assignment
-files to the `data-stories/climate` folder in the course repository.
+Use the [demo project](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories/demo) as a template for putting your story together. Your project should comprise:
 
-# Further resources and reading
+### 1. Jupyter Notebook
 
-During one of our class meetings, we will have a discussion with a representative from Climate Interactive.  This will provide an
-opportunity for the organization to describe some of the issues they are
-most interested in.  The discussion will also provide an opportunity for us to
-engage with the representatives about relevant issues of interest to students in
-the class, brainstorm potential approaches, and so on.  This part of the course
-is supported by Dartmouth's [Social Impact
-Practicum](https://students.dartmouth.edu/social-impact/programs-initiatives/faculty/social-impact-practicums-sips) program.
+A single Google Colaboratory-compatible notebook containing your story and code. Name the notebook `groupname.ipynb`, where `groupname` is a unique identifier for you or your group.
+
+The notebook should include:
+
+- Your research question and motivation
+- Code for downloading/loading the data
+- Data exploration and cleaning
+- Analysis and visualizations
+- Interpretation and narrative
+
+### 2. README
+
+A README file formatted using [Markdown](https://www.markdowntutorial.com/) based on the [README template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/README.md). Include:
+
+- Project description and overview
+- Link to your YouTube video
+- Links to the data you analyzed
+- Instructions for replicating your results
+- How someone could contribute to your project
+
+### 3. YouTube Video
+
+A video (up to 5 minutes) telling your data story. Suggested formats:
+
+- Narrated screencast scrolling through your notebook
+- Narrated slideshow with figures from your notebook
+- Any creative format that effectively communicates your findings
+
+## Submission
+
+Submit your assignment by making a pull request adding your project files to the course repository's `data-stories/` folder.
+
+## The Collaborative
+
+During week 4, we met with representatives from [The Collaborative](https://thecollaborative.us) to learn about their work and the data they've shared with us. You're encouraged (but not required) to use their dataset for this assignment. You may also use any other real-world dataset.
+
+This part of the course is supported by Dartmouth's [Social Impact Practicum](https://students.dartmouth.edu/social-impact/programs-initiatives/faculty/social-impact-practicums-sips) program.
+
+## Tips
+
+- **Start with a question**, not just a dataset. What do you want to know?
+- **Use vibe coding** to help with data wrangling and visualization — describe what you want and let AI help you build it
+- **Iterate on your figures** — the first plot is rarely the best one
+- **Tell a story**, don't just present results — guide your audience through your reasoning
+- **Keep it focused** — a 5-minute story should make one or two clear points
+
+## Resources
+
+- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) (NumPy, Pandas, Matplotlib)
+- [Dartmouth AI tools](https://chat.dartmouth.edu) — for vibe coding assistance
+- [Kaggle Datasets](https://www.kaggle.com/datasets) — if you want to explore other datasets
+- [Google Dataset Search](https://datasetsearch.research.google.com/)
