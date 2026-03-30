@@ -1,4 +1,4 @@
-# Part II: Independent Data Stories
+# General Data Story Instructions
 
 ## Overview
 
