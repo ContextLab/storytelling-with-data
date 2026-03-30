@@ -4,25 +4,10 @@ theme: cdl-theme
 math: katex
 ---
 
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Data visualization: approaches to creating effective figures
+![bg opacity:0.1](figs/dviz_bg.png)
+# Data visualization in the age of AI
 ## Jeremy R. Manning
 ### PSYC 81.09: Storytelling with Data
-
----
-
-## On the nature of data and data comprehension
-
-<div class="note-box" data-title="Key idea">
-
-A dataset is just a **collection of values** (numbers, text, etc.). In principle we could display those raw values to our audience, but that's usually ineffective at conveying the **specific message** we want to get across.
-
-</div>
-
----
-
-## Which is clearest to you?
-![height:500px](https://miro.medium.com/max/693/1*bV7S0zACdidh11ikjYpLpQ.png)
 
 ---
 
@@ -38,6 +23,11 @@ A dataset is just a **collection of values** (numbers, text, etc.). In principle
 
 ---
 
+## Which is clearest to you?
+![height:500px](figs/data_representations.png)
+
+---
+
 ## Anscombe's quartet
 
 <div class="warning-box" data-title="Statistics can't tell the whole story">
@@ -46,68 +36,60 @@ These four datasets have identical summary statistics, but look very different w
 
 </div>
 
-![height:400px](https://seaborn.pydata.org/_images/anscombes_quartet.png)
+![height:400px](figs/anscombes_quartet.png)
 
 ---
 
-## The Datasaurus Dozen
+<div class="important-box" data-title="The most important question">
 
-<div class="warning-box" data-title="Same statistics, wildly different shapes">
+**What message do you want your audience to take away?**
 
-Another striking example of why visualization matters.
-
-</div>
-
-![height:350px](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
-
----
-
-## Grammar of graphics: intuition
-
-<div class="definition-box" data-title="Grammar of graphics">
-
-A language for describing *all* possible figures. The main idea is to **separate data from how we visualize it**. This can be a useful framework for thinking about data visualization.
+Every visualization decision -- color, layout, chart type -- should serve that message. Start with the message, then choose the visualization.
 
 </div>
 
 ---
 
-<!-- _class: scale-90 -->
+<div class="note-box" data-title="Our approach">
 
-## Grammar of graphics: layers
-
-<div class="note-box" data-title="Figures comprise seven layers">
-
-- **Data**: what information (values) we'll be plotting
-- **Aesthetics**: mapping from data into a "data representation space"
-- **Geometries**: what shapes can be used to represent the data
-- **Facets**: define subplots (groupings) of the data
-- **Statistics**: define statistical models and summaries
-- **Coordinates**: maps coordinates in data space onto the figure
-- **Theme**: any non-data elements of the figure
+We focus on understanding **what** these tools do and **when** to use them -- not memorizing syntax. AI handles the syntax; you handle the thinking.
 
 </div>
 
 ---
 
-## Grammar of graphics: takeaways
+## Vibe coding your visualizations
 
-<div class="tip-box" data-title="Practical takeaway">
+<div class="definition-box" data-title="The vibe coding workflow">
 
-Even if you never use GoG tools explicitly, it's useful to consider what the **separable elements** of figures are and how they affect the figure's appearance.
+1. **Describe** the visualization you want in plain language
+2. **Generate** it with Claude Code (or another AI coding tool)
+3. **Iterate** on the design -- refine colors, labels, layout
+4. **Verify and explain** -- make sure the output is correct and you understand every element
 
 </div>
 
 ---
 
-## Considerations for deciding how to display data
+<div class="warning-box" data-title="Verify and explain">
 
-<div class="note-box" data-title="Key questions">
+AI-generated code can produce plots that *look* right but are **wrong** -- axes may be swapped, data may be filtered incorrectly, or statistics may be miscomputed. Always verify the output against your data, and make sure you can explain what every part of the figure shows.
 
-- Do you want to display the raw values or a summary (or both)?
-- Are the observations discrete or continuous?
-- What patterns in the data do you want to explore or emphasize?
-- **What message do you want your audience to take away?**
+</div>
+
+---
+
+## Grammar of graphics
+
+<div class="note-box" data-title="Figures comprise separable layers">
+
+- **Data**: the values being plotted
+- **Aesthetics**: mapping from data to visual properties (position, color, size)
+- **Geometries**: shapes representing the data (points, bars, lines)
+- **Facets**: subplots or groupings
+- **Statistics**: summaries or transformations
+- **Coordinates**: the coordinate system (Cartesian, polar, geographic)
+- **Theme**: non-data elements (fonts, backgrounds, legends)
 
 </div>
 
@@ -115,280 +97,60 @@ Even if you never use GoG tools explicitly, it's useful to consider what the **s
 
 <!-- _class: scale-90 -->
 
-## Approaches to displaying data
+## Choosing the right visualization
 
-<div style="display: flex; gap: 2em;">
-<div>
+<div class="tip-box" data-title="Match the visualization to your data and message">
 
-<div class="note-box" data-title="Basic approaches">
-
-- **Raw data**: show individual datapoints
-- **Summaries**: highlight trends or patterns
-- **Combinations**: show both raw data *and* trends
-- **Polar plots**: circular data
-
-</div>
-
-</div>
-<div>
-
-<div class="note-box" data-title="Advanced approaches">
-
-- **Clustering**: display groupings in data
-- **Timeseries**: show changes over time
-- **Networks**: links between datapoints
-- **Geospatial**: geographic maps
-- **Animations**: movement conveys information
+- **Comparing categories?** Bar chart, box plot
+- **Showing distributions?** Histogram, violin plot
+- **Revealing relationships?** Scatter plot, heatmap
+- **Tracking change over time?** Line plot
+- **Displaying spatial data?** Choropleth map
+- **Showing connections?** Network graph
+- **Adding a dimension?** Animation
 
 </div>
 
-</div>
-</div>
+---
+
+![bg opacity:0.1](figs/dviz_bg.png)
+# Visualization gallery
+### A reference collection of common plot types
 
 ---
 
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Displaying "raw" data
-### Directly map each observation onto a single point or shape
+## Scatter plot
+![height:500px](figs/scatterplot.png)
 
 ---
 
-## Table
-![height:450px](figs/table.png)
+## Bar chart
+![height:500px](figs/barplot.png)
 
 ---
 
-## Bar graph
-![height:500px](https://seaborn.pydata.org/_images/barplot_1_0.png)
-
----
-
-## Bar graph (grouped)
-![height:500px](https://seaborn.pydata.org/_images/grouped_barplot.png)
-
----
-
-## Bar graph (stacked)
-![height:500px](figs/bar_stacked.png)
-
----
-
-## Scatterplot (2D)
-![height:500px](https://seaborn.pydata.org/_images/scatterplot_3_0.png)
-
----
-
-## Scatterplot (3D)
-![height:500px](figs/scatter3D.png)
+## Histogram
+![height:500px](figs/histplot.png)
 
 ---
 
 ## Heatmap
-![height:500px](https://seaborn.pydata.org/_images/seaborn-heatmap-1.png)
-
----
-
-## Volume plot
-![height:450px](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/36139/versions/8/screenshot.jpg)
-
----
-
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Summaries
-### Characterize overarching trends or patterns without showing individual datapoints
-
----
-
-## Report
-![height:500px](https://www.pybloggers.com/wp-content/uploads/2016/02/www.marsja.sewp-contentuploads201602output_pandas_describe-36b54bfafa7419582f516b1a41d1feb3d22e5bdf.png)
-
----
-
-## Histograms and density plot
-![height:500px](https://seaborn.pydata.org/_images/histplot_9_0.png)
-
----
-
-## Two-dimensional histogram or density plot
-![height:500px](https://seaborn.pydata.org/_images/jointplot_9_0.png)
-
----
-
-## Ridge plot
-![height:500px](https://seaborn.pydata.org/_images/kde_ridgeplot.png)
-
----
-
-## Regression line
-![height:500px](https://seaborn.pydata.org/_images/seaborn-regplot-1.png)
-
----
-
-## Vector field
-![height:500px](figs/quiver_plot.png)
-
----
-
-## Streamline plot
-![height:500px](figs/streamplot.png)
-
----
-
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Combination plots
-### Show both the individual datapoints *and* the summary in a single plot
+![height:500px](figs/heatmap.png)
 
 ---
 
 ## Violin plot
-![height:500px](https://seaborn.pydata.org/_images/simple_violinplots.png)
+![height:500px](figs/violinplot.png)
 
 ---
 
-## Swarm plot
-![height:500px](https://seaborn.pydata.org/_images/swarmplot_5_0.png)
-
----
-
-## Boxenplot
-![height:500px](https://seaborn.pydata.org/_images/boxenplot_7_0.png)
-
----
-
-## Box (and whiskers) plot
-![height:500px](https://seaborn.pydata.org/_images/boxplot_15_0.png)
-
----
-
-## Joint plot (scatter)
-![height:500px](https://seaborn.pydata.org/_images/jointplot_7_0.png)
-
----
-
-## Joint plot (hex)
-![height:500px](https://seaborn.pydata.org/_images/jointplot_11_0.png)
-
----
-
-## Pair grid
-![height:500px](https://seaborn.pydata.org/_images/PairGrid_5_0.png)
-
----
-
-## Scatterplot matrix
-![height:500px](https://seaborn.pydata.org/_images/scatterplot_matrix.png)
-
----
-
-## Raincloud plot
-![height:500px](https://raw.githubusercontent.com/RainCloudPlots/RainCloudPlots/master/images/10repanvplot_cropped.jpg)
-
----
-
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Polar plots
-### Display circular (angular) data, or visualize summaries using polar coordinates
-
----
-
-## Polar area chart (AKA Coxcomb chart, Rose chart)
-![height:500px](https://i.stack.imgur.com/gxPwy.png)
-
----
-
-## Pie chart
-![height:500px](figs/pie_chart.png)
-
----
-
-## Target (bullseye) plot
-![height:500px](https://ggplot2.tidyverse.org/reference/coord_polar-4.png)
-
----
-
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Clustering
-### Emphasize or display groupings in the data
-
----
-
-## Dendrogram
-![height:500px](https://www.data-to-viz.com/graph/dendrogram_files/figure-html/unnamed-chunk-3-1.png)
-
----
-
-## Clustermap
-![height:500px](https://seaborn.pydata.org/_images/seaborn-clustermap-1.png)
-
----
-
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Timeseries data
-### Show changes over time
+## Box plot
+![height:500px](figs/boxplot.png)
 
 ---
 
 ## Line plot
-![height:500px](https://seaborn.pydata.org/_images/wide_data_lineplot.png)
-
----
-
-## Ribbon plot
-![height:500px](https://seaborn.pydata.org/_images/errorband_lineplots.png)
-
----
-
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Networks
-### Highlight physical or conceptual links between datapoints
-
----
-
-## Undirected graph
-![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_random_geometric_graph_001.png)
-
----
-
-## Directed graph
-![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_directed_001.png)
-
----
-
-## Circos plots (AKA Chord diagram)
-![height:500px](https://www.data-to-viz.com/graph/chord_files/figure-html/unnamed-chunk-1-1.png)
-
----
-
-## Circular tree
-![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_circular_tree_001.png)
-
----
-
-## Node colormap
-![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_node_colormap_001.png)
-
----
-
-## Edge colormap
-![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_edge_colormap_001.png)
-
----
-
-## Ego graph
-![height:500px](https://networkx.github.io/documentation/stable/_images/sphx_glr_plot_ego_graph_001.png)
-
----
-
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Geospatial data
-### Geographic maps (locations, addresses, GPS coordinates, etc.)
-
----
-
-## Map projections
-![height:400px](https://imgs.xkcd.com/comics/map_projections.png)
-
-Also see [Wikipedia: List of map projections](https://en.wikipedia.org/wiki/List_of_map_projections)
+![height:500px](figs/lineplot.png)
 
 ---
 
@@ -397,54 +159,13 @@ Also see [Wikipedia: List of map projections](https://en.wikipedia.org/wiki/List
 
 ---
 
-## Bubble map
-![height:500px](figs/bubble_map.png)
+## Network graph
+![height:500px](figs/network_graph.png)
 
 ---
 
-## Geographical line plot
-![height:500px](figs/lineplot_map.png)
-
----
-
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Animations
-### Use movement to convey additional information
-
----
-
-## Uber trips in New York City
-![height:500px](figs/uber_trips_timelapse.gif)
-
----
-
-## Yearly life expectancy vs. GDP throughout the world
+## Animation: life expectancy vs. GDP over time
 ![height:500px](figs/gapminder.gif)
-
----
-
-## Brain-decoded thoughts from different people listening to a story
-![height:450px](https://hypertools.readthedocs.io/en/latest/_images/hypertools.gif)
-
----
-
-![bg opacity:0.1](https://mediashift.org/wp-content/uploads/2015/07/dviz.png)
-# Classics
-
----
-
-## Periodic table
-![height:500px](figs/periodic_table.png)
-
----
-
-## Minard's map of Napoleon's Russian campaign
-![height:500px](https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png)
-
----
-
-## FiveThirtyEight's electoral votes depictions
-![height:500px](https://images.squarespace-cdn.com/content/v1/5bfc8dbab40b9d7dd9054f41/1599947028927-DT85T3QZVWTYV9DDCSAJ/ke17ZwdGBToddI8pDm48kHLiAMEEMQDM76tQyRpIIg17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmnhbJtrfwp8bfXu9iW6Tjn7C_3AHyGAAQIRTc8e8HE5EqiurBLwmJjKjNnB4mrT8N/Snake+Chart+-+2020+-+Election+-+Forecast+-+FiveThirtyEight.jpg)
 
 ---
 
@@ -457,5 +178,30 @@ Also see [Wikipedia: List of map projections](https://en.wikipedia.org/wiki/List
 - Use consistent color schemes to highlight connections
 - Use visual weight across figure elements
 - **Be willing to break all of the rules!**
+
+</div>
+
+---
+
+# Questions? Want to chat more?
+
+<div class="emoji-figure">
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-navy">&#x1F4E7;</span>
+    <span class="label"><a href="mailto:jeremy@dartmouth.edu">Email</a> me</span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-purple">&#x1F4AC;</span>
+    <span class="label">Join our <a href="https://stories-about-data.slack.com">Slack</a></span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-green">&#x1F481;</span>
+    <span class="label">Come to <a href="https://context-lab.com/scheduler">office hours</a></span>
+  </div>
+</div>
+
+<div class="note-box" data-title="Up next...">
+
+- **Friday:** Workshop data story ideas + Assignment 2 release
 
 </div>

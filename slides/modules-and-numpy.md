@@ -4,438 +4,251 @@ theme: cdl-theme
 math: katex
 ---
 
-![bg opacity:0.1](https://miro.medium.com/max/1000/0*H-KlSZBvm_6tzGGH.png)
-# Python external modules and introduction to NumPy
+# Python Modules and the Data Science Stack
 ## Jeremy R. Manning
 ### PSYC 81.09: Storytelling with Data
 
 ---
-### What's a Python module?
+
+### How we approach tools in this course
+
+<div class="note-box" data-title="Philosophy (Donoghue §3.1)">
+
+In this course, we focus on understanding **WHAT** these tools do and **WHEN** to use them -- not memorizing syntax. AI handles the syntax; you handle the thinking.
+
+</div>
+
+Your job is to:
+1. **Know which tool** solves which problem
+2. **Describe** what you want in plain language
+3. **Verify** the generated code does what you expect
+
+---
+
+### What is a Python module?
 
 <div class="definition-box" data-title="Python Modules">
 
 - A Python *module* is a package that provides access to **functions**, **variables**, and **data** within your workspace.
-- Modules extend the *Python standard library*.
-- Modules are kind of like Python's *apps*.
+- Modules extend the *Python standard library* -- they are Python's "apps."
 - AKA: library, package, toolbox, toolkit
 
 </div>
 
----
-<!-- _class: scale-90 -->
-### Which Python modules can you use?
+<div class="tip-box" data-title="Installing Modules">
 
-<div class="note-box" data-title="Built-in vs. Installable">
-
-- There are two types of modules you can use in your Python programs: built-in modules and modules that you install using `pip`, which is like Python's app store.
-- A list of built-in modules may be found [here](https://docs.python.org/3/library/).
-- There are hundreds of thousands of installable modules.  Googling what you're looking for is a good place to start.  Or you can do a search [here](https://pypi.org/).
+Install with `pip install <module_name>` in Terminal, or `!pip install <module_name>` in Colab.
 
 </div>
 
 ---
-### How do you install new modules?
 
-<div class="tip-box" data-title="Installing with pip">
-
-- The easiest way to install Python modules on your local machine is using the [`pip` command](https://pypi.org/project/pip/) from within Terminal:
-
-</div>
-
-```bash
-pip install --user hypertools
-```
-
-<div class="tip-box" data-title="In Colaboratory">
-
-- Within a Colaboratory notebook you can call Terminal commands (including `pip`) by putting a `!` in front of the command in a code cell:
-
-</div>
-
-```bash
-!pip install timecorr
-```
-
----
-### Which modules are installed in your environment?
-
-<div class="note-box" data-title="Listing Installed Modules">
-
-- To get a list of the (many!) already-installed modules from within Colaboratory, type:
-
-</div>
-
-```bash
-!pip freeze
-```
-
-<div class="tip-box" data-title="Local Machine">
-
-- In a "regular" Terminal session (e.g., on your local machine), just omit the `!`
-
-</div>
-
----
-### Use `import` statements to gain access to new modules in your workspace
-
-```python
-import itertools
-import os, sys
-import numpy as np
-from math import log
-from glob import glob as lsdir
-```
-
----
-## Creating your own packages
-![bg height:600 opacity:0.05](https://images.squarespace-cdn.com/content/57e18d24d482e96cd836c9f1/1474401434034-QEZ9O77LV6J5OWS8LGFF/CDL_Avatar.png?content-type=image%2Fpng)
-
-<div class="note-box" data-title="Package Creation">
-
-- You probably won't write or publish your own packages in this course.
-- But, in case you want to see how packages are made, [here](https://github.com/ContextLab/CDL-tutorials/tree/master/packages) is my lab's tutorial for writing one (and making it installable via `pip`).
-
-</div>
-
----
-# Modules give Python its **data science superpowers**
-
-<div class="important-box" data-title="Why Python?">
-
-- Python is a nice language, but many others are nice too
-- Python's enormous library of installable packages is why Python stands out
-
-</div>
-
----
-<!-- _class: scale-90 -->
-### Python has excellent libraries for...
-
-<div class="note-box" data-title="Data Science Capabilities">
-
-- **Wrangling data**: getting the data from the format it's in to the format you need it in
-- **Analyzing data**: carrying out statistical tests, machine learning
-- **Modeling data**: fitting existing models to your data and/or implementing your own models
-- **Visualizing data**: creating figures
-- ...and nearly anything else you can imagine!
-
-</div>
-
----
-### (Part of the) Python data science computing stack
+### The Python data science stack
 
 ![height:500px](figs/python_libraries.png)
 
 ---
-### Storytelling with Data [project template](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories/demo)
-![height:500px](figs/demo_repo_github.png)
-
----
-### Storytelling with Data [project template](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories/demo)
-![height:500px](figs/demo_notebook.png)
-
----
 <!-- _class: scale-90 -->
-![bg opacity:0.05](https://www.promptcloud.com/wp-content/uploads/2018/05/data-wrangling-how-to-do-effectively.jpg)
-# Data wrangling
 
-<div class="warning-box" data-title="Messy Data">
+### Key libraries you will encounter
 
-- Real-world datasets are often messy:
-  - Missing or inconsistent data
-  - Organized in ways that are difficult or inefficient to work with
-- The point of data wrangling tools is to make data easier and more efficient to work with
+| Library | What it does | When to reach for it |
+|-|-|-|
+| **NumPy** | Fast numerical arrays and math | Crunching numbers, linear algebra |
+| **Pandas** | Tabular data (spreadsheets) | Loading CSVs, filtering rows, grouping |
+| **Matplotlib / Seaborn** | Plotting and visualization | Any time you make a figure |
+| **Scikit-learn** | Machine learning | Classification, clustering, regression |
+| **HyperTools** | High-dimensional data visualization | Exploring complex datasets |
+
+You do not need to memorize their APIs. You need to know **which one to ask for**.
+
+---
+
+### What is NumPy?
+
+<div class="definition-box" data-title="NumPy = NUMerical PYthon">
+
+- The **foundation** of nearly every data science tool in Python.
+- Introduces the `array` object: an *n*-dimensional table of numbers (vectors, matrices, tensors).
+- Provides **vectorized operations** -- math applied to entire arrays at once, without writing loops.
 
 </div>
 
 ---
-<!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### NumPy: efficiently storing and manipulating data
 
-<div class="definition-box" data-title="What is NumPy?">
+### When to reach for NumPy
 
-- NumPy stands for NUMerical PYthon.  **It's the foundation of nearly every data science tool and analysis in Python.**
-- Introduces a new type of object called an `array` (plus some others).  These objects store *n*-dimensional tables of numbers (i.e., vectors, matrices, and tensors).
+<div class="note-box" data-title="Use NumPy when...">
+
+- You need **fast numerical operations** on arrays or matrices
+- You are working with **large datasets** where Python lists would be too slow
+- You need **linear algebra**, random number generation, or statistical summaries
+- Another library (Pandas, Scikit-learn, etc.) returns or expects a NumPy array
+
+</div>
+
+<div class="tip-box" data-title="When NOT to use NumPy">
+
+If your data is tabular with mixed types (strings, dates, numbers), reach for **Pandas** instead.
 
 </div>
 
 ---
-<!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### NumPy: efficiently storing and manipulating data
 
-<div class="note-box" data-title="Functions &amp; Documentation">
+### The core idea: vectorized operations
 
-- Also introduces a bunch of functions for efficiently working with `array` objects, and with lots of other useful linear algebra and calculus functions, random number generators, etc.
-- Official tutorials and documentation may be found [here](https://numpy.org/doc/stable/user/quickstart.html).
-
-</div>
-
----
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-# NumPy: basic usage
-
-<div class="tip-box" data-title="Follow Along!">
-
-- Open up a scratch notebook in Colaboratory and follow along!
-
-</div>
+NumPy replaces slow Python loops with fast, readable one-liners:
 
 ```python
 import numpy as np
 
->>> a = np.array([1, 2, 3])
->>> a
-array([1, 2, 3])
->>> a + 2
-array([3, 4, 5])
+# instead of this...
+result = []
+for i in range(1000):
+    result.append(i ** 2)
+
+# ...write this
+result = np.arange(1000) ** 2
 ```
 
+The second version is **shorter**, **faster**, and **easier to read**.
+
 ---
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Some useful functions for querying `array` objects (try them!)
 
-<div class="example-box" data-title="Array Properties">
+### Vibe coding: from idea to working code
 
-- `a.ndim`: the number of axes (dimensions) of the array
-- `a.shape`: returns a `tuple` indicating the size of the array in each dimension
-- `a.size`: the total number of elements in the array
-- `a.dtype`: the data type of the array's elements
+<div class="important-box" data-title="The Vibe Coding Workflow">
+
+1. **Describe** the analysis you want in plain English
+2. **Generate** code using an AI assistant (e.g., Claude Code)
+3. **Run** the code and inspect the output
+4. **Verify and explain** -- make sure you understand every section
 
 </div>
 
-![height:200](https://media3.giphy.com/media/9Jmb2idg10qJSygvTQ/giphy.gif?cid=ecf05e47128c6a2b59965a122c2a1d66c1ca944d91c3b364&rid=giphy.gif)
-
----
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Some useful functions for manipulating `array` objects (part 1)
-
-<div class="note-box" data-title="Reshaping &amp; Slicing">
-
-- `a.reshape`: reshapes the array into a new array of the given size
-- Slicing: `array` objects support slice notation similar to `list` objects.  NumPy `array` objects may be sliced along each dimension simultaneously.
-- `np.ravel`: flattens the `array` into a 1-D vector
-
-</div>
+This is how modern data scientists work. The skill is in knowing what to ask for and whether the result is correct.
 
 ---
 <!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Some useful functions for manipulating `array` objects (part 2)
 
-<div class="note-box" data-title="Combining &amp; Splitting">
+### Demo: describing a numerical task
 
-- `np.repeat`, `np.tile`: repeat elements of an array, or copy the entire array and merge with itself
-- `np.vstack`, `np.hstack`, `np.stack`, `np.concatenate`, `np.block`: combine multiple arrays
-- `np.hsplit`, `np.vsplit`, `np.dsplit`, `np.split`: split an array into parts
-- `a.sort`: returns a sorted copy of `a`
+Suppose you want to analyze how *correlated* different variables are in a dataset. You might prompt:
+
+<div class="example-box" data-title="Example Prompt">
+
+"Load the Iris dataset from scikit-learn. Compute the correlation matrix of the four numeric features using NumPy. Then plot it as a heatmap with Seaborn, labeling axes with feature names."
 
 </div>
+
+Notice: the prompt names **specific tools** (NumPy, Seaborn, scikit-learn) and describes the **goal**, not the syntax.
 
 ---
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Some other commonly used `numpy` functions (part 1)
+<!-- _class: scale-90 -->
 
-<div class="note-box" data-title="Generating Sequences">
-
-- `np.arange`: works like the `range` function, but returns an `array` object
-- `np.linspace`, `np.logspace`, `np.mgrid`, `np.ogrid`: create `array` of spaced out values
-
-</div>
-
----
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Some other commonly used `numpy` functions (part 2)
-
-<div class="note-box" data-title="Array Initialization">
-
-- `np.zeros` and `np.ones`: produce an `array` of the given size, filled with all 0s or 1s
-- `np.zeros_like`, `np.ones_like`: `array` of same size as input, filled with 0s or 1s
-
-</div>
-
----
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Some other commonly used `numpy` functions (part 3)
-
-<div class="note-box" data-title="Math &amp; Stats">
-
-- Many standard math and stats functions you might expect
-  - `np.sin`, `np.cos`, `np.exp`, `np.sqrt`, `np.dot`, `np.outer`, `np.mean`, `np.std`, etc.
-  - These all operate on `array` objects, but can also be used for other built-in datatypes like `int` and `float`.
-
-</div>
-
----
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Aside: broadcasting in `numpy`
-
-<div class="important-box" data-title="Broadcasting">
-
-- Most NumPy functions automatically apply to every element in an `array` (without a loop!)
-- This can make for very efficient and clean code:
-
-</div>
+### Demo: generated code
 
 ```python
-x = np.arange(10) ** 2
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+
+iris = load_iris()
+corr = np.corrcoef(iris.data, rowvar=False)
+
+plt.figure(figsize=(6, 5))
+sns.heatmap(corr, annot=True, fmt=".2f",
+            xticklabels=iris.feature_names,
+            yticklabels=iris.feature_names,
+            cmap="coolwarm")
+plt.title("Iris Feature Correlations")
+plt.tight_layout()
+plt.show()
 ```
-vs
-```python
-x = []
-for i in range(10):
-  x[i] = i ** 2
-```
 
----
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Some other commonly used `numpy` functions (part 4)
-
-<div class="note-box" data-title="Random Numbers">
-
-- `np.random.rand`, `np.random.randn`, `np.random.randint`: generate random numbers.
-- `np.random.choice`: choose random element(s) from a 1D `array`.
-
-</div>
+AI generated this in seconds. Your job is to **understand what it does**.
 
 ---
 <!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Some other commonly used `numpy` functions (part 5)
 
-<div class="note-box" data-title="Logical &amp; Cumulative Operations">
+### Verify and explain
 
-- `a.all()`: `True` iff *every* element of the array is `True`
-- `a.any()`: `True` iff *any* element of the array is `True`
-- `a.argmax`, `a.argmin`: return the max or min values (potentially along each dimension)
-- `a.cumsum`, `a.cumprod`: return an array of the same size as `a`, but storing the cumulative sum or product of each successive element of `a` along the given dimension
+Walk through the generated code and answer:
 
-</div>
+1. **Where does the data come from?** (`load_iris()` -- a built-in scikit-learn dataset)
+2. **What does `np.corrcoef` compute?** (Pearson correlation coefficients between columns)
+3. **Why `rowvar=False`?** (Tells NumPy that columns are variables, rows are observations)
+4. **What does the heatmap show?** (Which features move together vs. independently)
 
----
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-## Some strange NumPy stuff
-
-<div class="warning-box" data-title="Views vs. Copies">
-
-- When you slice an array, it returns a *pointer* to the original data, called a `view`.
-- If you change the data in the original array, the values in the slice will change too (and *vice versa*).
-- If you don't want this to happen, use `copy`:
-  - `a.copy()`: creates a new `array` with the same data
-
-</div>
+If you cannot answer these questions, you are not ready to move on.
 
 ---
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-## Some strange NumPy stuff
 
-<div class="tip-box" data-title="Debugging Tip">
-
-- If you're finding that your data is being changed in strange ways, a good thing to check first is that you're dealing with `array` objects correctly.
-- Only copy data when you need to -- otherwise you'll be wasting memory by storing redundant copies of the same thing.
-
-</div>
-
----
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Practicing NumPy: basics
+### Try it yourself
 
 <div class="example-box" data-title="Exercise">
 
-- Create an `array` of ones with 10 rows and 5 columns
+Open a Colab notebook and use an AI assistant to generate code for the following task:
+
+"Create a 1000-element array of random numbers drawn from a normal distribution. Compute the mean and standard deviation. Then plot a histogram with 30 bins and overlay a vertical line at the mean."
+
+After the code runs, **explain each line** to a partner or in a markdown cell.
 
 </div>
 
 ---
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Practicing NumPy: basics
 
-<div class="example-box" data-title="Exercise">
+### Building your toolkit intuition
 
-- Create a 4 by 7 `array` of random `int`s between 6 and 30
-  - Find the rows and columns of all values greater than 10 (`np.where`)
+<div class="tip-box" data-title="How to Decide Which Tool to Use">
 
-</div>
+Ask yourself:
+- **Is my data a table with column names?** --> Pandas
+- **Do I need fast math on arrays of numbers?** --> NumPy
+- **Am I fitting a model or classifier?** --> Scikit-learn
+- **Do I need a plot?** --> Matplotlib or Seaborn
+- **Am I exploring high-dimensional structure?** --> HyperTools
 
----
-<!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Practicing NumPy: basics
-
-<div class="example-box" data-title="Exercise">
-
-- Create a 4 by 7 `array` of random `int`s between 6 and 30
-  - Write a function that checks if any of the values are equal to 30.
-    - If so, the function should print "The array contains at least 1 30!"
-    - If not, the function should print "No 30s were found"
-    - Then return the number of times 30 appeared in the array
+When in doubt, describe your goal to an AI assistant and let it pick the library.
 
 </div>
 
 ---
-<!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Practicing NumPy: broadcasting and loops
 
-<div class="example-box" data-title="Exercise">
+### Before you move on
 
-- Create an `array` containing the first 10 cubes starting from 1 (i.e., 1, 8, 27, etc.)
-- Create a function that returns an `array` containing the square roots of `n` evenly spaced values between to integers, `x` and `y`.  (Your function should accept 3 inputs: `x`, `y`, and `n`.)  Hint: `np.linspace`
+<div class="warning-box" data-title="Verify and Explain">
 
-</div>
+Before moving on: **read the generated code and explain in your own words what each section does and why.**
 
----
-<!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Practicing NumPy: broadcasting and loops
-
-<div class="example-box" data-title="Exercise">
-
-- Create a 3 by 4 by 5 `array` of random numbers chosen uniformly between 0 and 1.
-  - Sort the values in ascending order and reshape the `array` into a new 20 by 30 `array`
-  - Print out the 10th row
-  - Print out rows 5 through 9 (inclusive) of columns 20 through 25 (use slice notation!)
+- If a line uses a function you have never seen, look up what it returns.
+- If you cannot explain *why* a step is there, you do not yet understand the analysis.
+- Understanding beats memorization. The AI can write the code -- only you can judge whether it answers your question.
 
 </div>
 
 ---
-<!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Practicing NumPy: manipulating matrices
 
-<div class="example-box" data-title="Exercise">
+# Questions? Want to chat more?
 
-- Create two `array` objects, each filled with random draws from the unit Gaussian distribution (`np.random.randn`):
-  - `a` should be 5 by 7
-  - `b` should be 10 by 7
-- Create a new `array`, `c`, comprising `a` stacked on top of `b`
-
+<div class="emoji-figure">
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-navy">&#x1F4E7;</span>
+    <span class="label"><a href="mailto:jeremy@dartmouth.edu">Email</a> me</span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-purple">&#x1F4AC;</span>
+    <span class="label">Join our <a href="https://stories-about-data.slack.com">Slack</a></span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-green">&#x1F481;</span>
+    <span class="label">Come to <a href="https://context-lab.com/scheduler">office hours</a></span>
+  </div>
 </div>
 
----
-<!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Practicing NumPy: manipulating matrices
+<div class="note-box" data-title="Up next...">
 
-<div class="example-box" data-title="Exercise">
-
-- Reshape `c` into a column vector.  Hint: `np.ravel`.
-- Create a new `array`, `d`, comprising `c` stacked horizontally 5 times.  Hint: `np.tile`.
-- Create a new `array`, `e`, that repeats each element of `d` 2 times in a row (it should have twice as many rows and columns as `d`).  Hint: `np.repeat`.
-
-</div>
-
----
-<!-- _class: scale-90 -->
-![bg height:500 opacity:0.1](https://cdn-images-1.medium.com/fit/t/1600/480/1*cyXCE-JcBelTyrK-58w6_Q.png)
-### Closing thoughts and things to consider
-
-<div class="tip-box" data-title="Key Takeaways">
-
-- Most (all?) data may be represented as matrices, so `array` objects are highly generalizable.
-- Suppose you had a dataset, like a huge spreadsheet of measurements.  How could you use NumPy to start understanding your data?
-- Think about what is or isn't *intuitive* about NumPy.  Why might things have been set up the way they are?  Can you articulate any points of confusion?
-- Fluency with NumPy will help you understand and manipulate data easily.
+- Check the course schedule for what's coming next
 
 </div>

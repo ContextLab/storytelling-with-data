@@ -240,6 +240,7 @@ TEMPLATE_FOOT = """
 ASSIGNMENT_LABELS = {
     "assignment-1": "Assignment 1: Personal Stories",
     "assignment-2": "Assignment 2: Data Story Remix",
+    "assignment-3": "Assignment 3: Neat Demos",
     "assignment-4": "Assignment 4: Class Data Story",
     "part-ii": "Part II: Independent Data Stories",
 }
@@ -263,7 +264,7 @@ def validate_stories(stories):
     """Validate story entries against schema. Returns list of warnings."""
     warnings = []
     required = ["title", "student", "year", "term", "assignment", "youtube_url"]
-    valid_assignments = {"assignment-1", "assignment-2", "assignment-4", "part-ii"}
+    valid_assignments = {"assignment-1", "assignment-2", "assignment-3", "assignment-4", "part-ii"}
 
     for i, story in enumerate(stories):
         for field in required:
@@ -331,7 +332,7 @@ def generate_gallery_html(stories):
             a = s.get("assignment", "other")
             by_assignment.setdefault(a, []).append(s)
 
-        for assignment in ["assignment-1", "assignment-2", "assignment-4", "part-ii"]:
+        for assignment in ["assignment-1", "assignment-2", "assignment-3", "assignment-4", "part-ii"]:
             if assignment not in by_assignment:
                 continue
             label = ASSIGNMENT_LABELS.get(assignment, assignment)

@@ -1,6 +1,7 @@
 # Data Story Metadata
 # Single source of truth for the Data Stories gallery page.
 # See contracts/story-metadata-schema.yaml for field definitions.
+# Valid assignment types: assignment-1, assignment-2, assignment-3, assignment-4, part-ii
 
 # ============================================================
 # Winter 2022

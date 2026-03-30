@@ -4,345 +4,277 @@ theme: cdl-theme
 math: katex
 ---
 
-![bg opacity:0.1](https://miro.medium.com/max/1080/1*_oSOImPmBFeKj8vqE4FCkQ.jpeg)
-# Introduction to Pandas: **P**ytho**n** **d**ata **a**nalysi**s** toolkit
+# Introduction to Pandas
 ## Jeremy R. Manning
-### PSYC 132: Introduction to Programming for Psychological Scientists
+### PSYC 81.09: Storytelling with Data
 
 ---
+
+### Our philosophy
+
+<div class="important-box" data-title="Tools, Not Syntax">
+
+We focus on understanding **what** tools do and **when** to use them — not memorizing syntax. AI handles the syntax; you handle the thinking.
+
+</div>
+
+This lecture introduces **Pandas**, the core Python library for working with tabular data. You will learn what it is, when to reach for it, and how to use vibe coding to get things done.
+
+---
+
 ### Python data science computing stack
 
 ![height:500px](figs/python_libraries.png)
 
 ---
-<!-- _class: scale-90 -->
+
+### What is Pandas?
+
+<div class="definition-box" data-title="Pandas in a Nutshell">
+
+**Pandas** is Python's toolkit for working with structured, tabular data — the kind of data you encounter in spreadsheets, CSV files, and databases.
+
+It provides two core data structures:
+- **Series** — a labeled one-dimensional array (like a single column)
+- **DataFrame** — a labeled two-dimensional table (rows and columns)
+
+</div>
+
+---
+
 ### Pandas = NumPy + :star2:
 
-<div class="note-box" data-title="What Pandas Adds">
+<div class="note-box" data-title="What Pandas Adds to NumPy">
 
-- NumPy `array` objects organize information into tables
-- Pandas introduces `Series` and `DataFrame` objects, which are like enhanced versions of `array`
-- Pandas includes a bunch of functions for creating `DataFrame` objects from common filetypes like .csv, .xlsx, .json, .html, and many others
-- The toolbox also includes some (basic) statistical analysis and plotting functions
+- NumPy gives you fast numerical arrays
+- Pandas wraps those arrays with **labeled rows and columns**, so you can refer to data by name instead of position
+- Pandas also adds built-in support for **reading/writing common file formats** (CSV, Excel, JSON, SQL, and more)
+- It includes functions for **grouping, merging, reshaping, and summarizing** data
+
+</div>
+
+Think of it this way: NumPy is the engine, Pandas is the dashboard.
+
+---
+
+### When to reach for Pandas
+
+<div class="note-box" data-title="Use Pandas When...">
+
+Reach for Pandas whenever your data has **rows and columns**:
+- CSV or Excel files
+- SQL query results
+- Survey responses, experimental logs, behavioral data
+- Anything you would open in a spreadsheet
+
+If your data is a plain grid of numbers (e.g., a matrix of pixel values), NumPy alone may be enough. If it has **labels, mixed types, or missing values**, Pandas is the right tool.
 
 </div>
 
 ---
-### Installing Pandas
 
-<div class="tip-box" data-title="Installation">
+### The vibe coding workflow
 
-- Pandas is installed by default in Colaboratory
-- You can install it in other environments using:
+<div class="tip-box" data-title="How We Work With Pandas">
+
+Instead of memorizing API details, we use a three-step workflow:
+
+1. **Describe** your goal in plain language
+2. **Generate** code with an AI assistant (e.g., Claude Code)
+3. **Verify and explain** — read the code, make sure it does what you intended, and explain it in your own words
 
 </div>
 
-```bash
-pip install pandas
-```
+This is how professional data scientists increasingly work. The skill is in knowing what to ask for and whether the result is correct.
 
 ---
-### Importing Pandas into your workspace (follow along in a notebook!)
+
+<!-- _class: scale-90 -->
+
+### Vibe coding demo: loading and exploring data
+
+Suppose you have a CSV of automobile data and you want to explore it. You might prompt:
+
+> *"Load the CSV from this URL into a Pandas DataFrame. Show the first few rows and a statistical summary of the numeric columns."*
+
+The generated code might look like:
 
 ```python
 import pandas as pd
+
+cars = pd.read_csv('https://tinyurl.com/ydevw29o')
+print(cars.head())
+print(cars.describe())
 ```
 
+The key question is not "did I write this?" but "do I understand what it does?"
+
 ---
-## `Series` objects: 1-D array of indexed data
+
+### Vibe coding demo: filtering and grouping
+
+Next, you might ask:
+
+> *"Group the cars by number of cylinders and compute the average miles per gallon for each group. Sort the result from highest to lowest mpg."*
+
+Generated code:
 
 ```python
->>> data = pd.Series([0.25, 0.5, 0.75, 1.0])
->>> data
-0    0.25
-1    0.50
-2    0.75
-3    1.00
-dtype: float64
+avg_mpg = cars.groupby('cylinders')['mpg'].mean().sort_values(ascending=False)
+print(avg_mpg)
 ```
 
+One line — but it chains several Pandas operations. Can you explain each step?
+
 ---
-## `Series` objects: 1-D array of indexed data
+
+### Vibe coding demo: creating new columns
+
+> *"Add a column called 'efficiency' that categorizes each car as 'high' if mpg > 30, 'medium' if between 20 and 30, and 'low' otherwise."*
+
+Generated code:
 
 ```python
->>> data.values
-array([ 0.25,  0.5 ,  0.75,  1.  ])
+import numpy as np
 
->>> data.index
-RangeIndex(start=0, stop=4, step=1)
-
->>> data[2]
-0.75
-
->>> data[1:3]
-1    0.50
-2    0.75
-dtype: float64
+cars['efficiency'] = np.select(
+    [cars['mpg'] > 30, cars['mpg'] >= 20],
+    ['high', 'medium'],
+    default='low'
+)
 ```
 
----
-### Defining indices
-
-<div class="note-box" data-title="Custom Indices">
-
-- By default, `Series` objects are indexed by integers
-- You can specify arbitrary indices as follows:
-
-</div>
-
-```python
->>> data = pd.Series([0.25, 0.5, 0.75, 1.0],
-                 index=['a', 'b', 'c', 'd'])
->>> data
-a    0.25
-b    0.50
-c    0.75
-d    1.00
-dtype: float64
-```
+Notice how the AI reached for `np.select` — a NumPy function that works seamlessly with Pandas columns. Understanding the ecosystem matters.
 
 ---
-### Defining indices
 
-<div class="tip-box" data-title="Dict-like Access">
+<div class="warning-box" data-title="Verify and Explain">
 
-- This allows `Series` objects to act like a more powerful version of `dict`
+**Before moving on**: read the generated code and explain in your own words what each section does and why.
 
-</div>
+- What does `groupby` actually do to the data?
+- Why does `sort_values` take `ascending=False`?
+- What happens if a column has missing values?
 
-```python
->>> data['a']
-0.25
-
->>> data['a':'c']
-a    0.25
-b    0.50
-c    0.75
-dtype: float64
-```
-
----
-### `DataFrame`: a more powerful `array`
-
-<div class="definition-box" data-title="DataFrame">
-
-- A `DataFrame` is like a 2D `array`, but with the rows and columns labeled
-- Row labels are called the `index`
-- Column labels are called the `columns`
+If you cannot explain the code, you do not yet understand it. Ask the AI to break it down step by step, or try modifying the code and observing what changes.
 
 </div>
 
 ---
-### `DataFrame`: a more powerful `array`
-```python
->>> areas = {'California': 423967,
-             'Texas': 695662,
-             'New York': 141297,
-             'Florida': 170312,
-             'Illinois': 149995}
->>> populations = {'California': 38332521,
-                   'Texas': 26448193,
-                   'New York': 19651127,
-                   'Florida': 19552860,
-                   'Illinois': 12882135}
-```
 
----
-### `DataFrame`: a more powerful `array`
-```python
->>> states = pd.DataFrame({'population': populations, 'area': areas})
->>> states
-            population    area
-California    38332521  423967
-Texas         26448193  695662
-New York      19651127  141297
-Florida       19552860  170312
-Illinois      12882135  149995
-```
-
----
-### `DataFrame`: a more powerful `array`
-
-```python
->>> states.index
-Index(['California', 'Texas', 'New York', 'Florida',
-       'Illinois'], dtype='object')
-
->>> states.columns
-Index(['population', 'area'], dtype='object')
-
->>> states.values
-array([[38332521,   423967],
-       [26448193,   695662],
-       [19651127,   141297],
-       [19552860,   170312],
-       [12882135,   149995]])
-```
-
----
-### Indexing `DataFrame` objects
-```python
->>> states['area']
-California    423967
-Florida       170312
-Illinois      149995
-New York      141297
-Texas         695662
-Name: area, dtype: int64
-```
-
----
-### Indexing `DataFrame` objects
-
-<div class="warning-box" data-title="Row Indexing Pitfall">
-
-- Bracket indexing selects **columns**, not rows. Using a row label directly raises a `KeyError`:
-
-</div>
-
-```python
->>> states['California']
-----------------------------------------------------------
-
-KeyError                 Traceback (most recent call last)
-...
-...
-KeyError: 'California'
-```
-
----
-### Indexing `DataFrame` objects
-
-<div class="tip-box" data-title="Use .loc for Row Access">
-
-- Use `.loc[]` to select rows by label. The result is a `Series`:
-
-</div>
-
-```python
->>> states.loc['California']
-population    38332521
-area            423967
-Name: California, dtype: int64
-
->>> type(states.loc['California'])
-pandas.core.series.Series
-```
-
----
-### Indexing `DataFrame` objects
-
-<div class="tip-box" data-title="Use .iloc for Position-based Access">
-
-- Use `.iloc[]` to select rows by integer position:
-
-</div>
-
-```python
->>> states.iloc[1:3]
-population    area
-Texas       26448193  695662
-New York    19651127  141297
-```
-
----
-### Adding columns to `DataFrame` objects
-```python
->>> states['density'] = states['population'] / states['area']
->>> states
-            population    area     density
-California    38332521  423967   90.413926
-Texas         26448193  695662   38.018740
-New York      19651127  141297  139.076746
-Florida       19552860  170312  114.806121
-Illinois      12882135  149995   85.883763
-```
-
----
-### Modifying values of `DataFrame` objects
-```python
->>> states.loc['California', 'population'] += 1
->>> states
-            population    area     density
-California    38332522  423967   90.413926
-Texas         26448193  695662   38.018740
-New York      19651127  141297  139.076746
-Florida       19552860  170312  114.806121
-Illinois      12882135  149995   85.883763
-```
-
----
-### Let's get some data!
-```python
->>> cars = pd.read_csv('https://tinyurl.com/ydevw29o')
->>> cars.head()
-    mpg  cylinders  displacement  ...                      name
-0  18.0          8         307.0  ... chevrolet chevelle malibu
-1  15.0          8         350.0  ...         buick skylark 320
-2  18.0          8         318.0  ...        plymouth satellite
-3  16.0          8         304.0  ...             amc rebel sst
-4  17.0          8         302.0  ...               ford torino
-
-[5 rows x 9 columns]
-```
-
----
-### Data summaries with `pandas.describe`
-
-```python
->>> cars.describe()
-              mpg   cylinders  ...  acceleration  model_year
-count  398.000000  398.000000  ...    398.000000  398.000000
-mean    23.514573    5.454774  ...     15.568090   76.010050
-std      7.815984    1.701004  ...      2.757689    3.697627
-min      9.000000    3.000000  ...      8.000000   70.000000
-25%     17.500000    4.000000  ...     13.825000   73.000000
-50%     23.000000    4.000000  ...     15.500000   76.000000
-75%     29.000000    8.000000  ...     17.175000   79.000000
-max     46.600000    8.000000  ...     24.800000   82.000000
-
-[8 rows x 7 columns]
-```
-
----
 <!-- _class: scale-90 -->
-### Some other useful functions to explore
+
+### The Pandas toolkit at a glance
 
 <div style="display: flex; gap: 2em;">
 <div>
 
-<div class="note-box" data-title="Data Organization">
+<div class="note-box" data-title="Loading &amp; Saving">
 
-- `groupby`: organize data according to particular values (e.g., group cars by model year)
-- `fillna`, `ffill`, `bfill`: deal with missing data
-- `rolling`: compute averages over a sliding window
-- `merge`, `join`: combine multiple `DataFrame` objects
-- `melt`: restructure `DataFrame` to have just two columns -- `variable` and `value`
+- `read_csv`, `read_excel`, `read_json` — load data from files or URLs
+- `to_csv`, `to_excel` — export data back out
+
+</div>
+
+<div class="note-box" data-title="Exploration">
+
+- `head`, `tail` — preview rows
+- `describe` — summary statistics
+- `info` — column types and missing values
 
 </div>
 
 </div>
 <div>
 
-<div class="note-box" data-title="Inspection &amp; Transformation">
+<div class="note-box" data-title="Transformation">
 
-- `head`, `tail`: print out just the first (or last) rows
-- `apply`: apply a function to each value along a given axis
-- `plot`: create figures (lots of options!)
+- `groupby` — split-apply-combine
+- `merge`, `join` — combine DataFrames
+- `apply` — run a function on each row or column
+- `fillna` — handle missing data
+
+</div>
+
+<div class="note-box" data-title="Visualization">
+
+- `plot` — quick charts built on Matplotlib
 
 </div>
 
 </div>
+</div>
+
+You do not need to memorize these. Know they exist so you can ask for them by name.
+
+---
+
+### What could go wrong?
+
+<div class="warning-box" data-title="Common Pitfalls">
+
+AI-generated Pandas code can be subtly wrong. Watch for:
+- **Wrong column names** — the AI may guess a column name that does not exist in your data
+- **Silent type coercion** — numbers stored as strings can cause unexpected results
+- **Missing data** — operations may silently drop rows with `NaN` values
+- **Index confusion** — Pandas indexes can behave in surprising ways after filtering or merging
+
+Always inspect your DataFrame (`head`, `shape`, `dtypes`) after each transformation.
+
 </div>
 
 ---
+
+### Developing your intuition
+
+<div class="tip-box" data-title="Practice Strategy">
+
+To build real understanding through vibe coding:
+1. **Start with a question** about a dataset, not a function name
+2. **Generate** the code, then **predict** what the output will be before running it
+3. **Compare** your prediction to the actual result
+4. **Modify** the code — change a parameter, swap a function — and observe what changes
+5. **Explain** the result to a classmate (or to yourself out loud)
+
+The goal is to develop intuition for what Pandas operations do, so you can direct the AI effectively and catch its mistakes.
+
+</div>
+
+---
+
 ### Summary
 
 <div class="tip-box" data-title="Key Takeaways">
 
-- Pandas is a powerful tool for organizing and manipulating data
-- The more Pandas "tricks" you learn, the more efficiently you'll be able to work with data
-  - NumPy tricks also come in handy; most work in Pandas too!
-- The best way to learn is to load some real data into a `DataFrame` and start playing around with it
+- **Pandas** is the go-to Python library for tabular data (rows and columns)
+- It builds on NumPy by adding labels, file I/O, and powerful data manipulation tools
+- In this course, we use **vibe coding**: describe what you want, generate code with AI, then verify and explain
+- Your job is to **think clearly about data** — know what questions to ask, what tools exist, and whether the answers make sense
+- The syntax will change; the thinking will not
+
+</div>
+
+---
+
+# Questions? Want to chat more?
+
+<div class="emoji-figure">
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-navy">&#x1F4E7;</span>
+    <span class="label"><a href="mailto:jeremy@dartmouth.edu">Email</a> me</span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-purple">&#x1F4AC;</span>
+    <span class="label">Join our <a href="https://stories-about-data.slack.com">Slack</a></span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-green">&#x1F481;</span>
+    <span class="label">Come to <a href="https://context-lab.com/scheduler">office hours</a></span>
+  </div>
+</div>
+
+<div class="note-box" data-title="Up next...">
+
+- Check the course schedule for what's coming next
 
 </div>
