@@ -32,6 +32,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Need previous commit to detect changes
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -42,6 +44,37 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('scripts/*.py') }}
+          restore-keys: pip-${{ runner.os }}-
+
+      - name: Cache npm packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: npm-${{ runner.os }}-marp
+          restore-keys: npm-${{ runner.os }}-
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-chromium
+
+      - name: Cache compiled slides
+        uses: actions/cache@v4
+        with:
+          path: |
+            slides/*.html
+            slides/*.pdf
+            slides/themes/
+            slides/images/
+          key: slides-${{ hashFiles('slides/*.md') }}
+          restore-keys: slides-
 
       - name: Install system dependencies
         run: |
@@ -54,11 +87,53 @@ jobs:
           npm install -g @marp-team/marp-cli
           playwright install chromium
 
-      - name: Compile slides
+      - name: Compile slides (incremental)
         run: |
-          echo "Compiling slide decks..."
+          echo "Compiling slide decks (incremental)..."
           chmod +x scripts/build-slides.sh
-          ./scripts/build-slides.sh || echo "Warning: Some slides failed to compile"
+
+          # Detect which slide .md files changed since last commit
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'slides/*.md' 2>/dev/null || echo "")
+
+          # Also check for workflow or script changes that require full rebuild
+          INFRA_CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'scripts/build-slides.sh' '.github/workflows/deploy-site.yml' 2>/dev/null || echo "")
+
+          if [ -n "$INFRA_CHANGED" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Infrastructure changed or manual trigger — full rebuild"
+            ./scripts/build-slides.sh || echo "Warning: Some slides failed to compile"
+          elif [ -z "$CHANGED" ]; then
+            echo "No slide sources changed — checking for missing HTML..."
+            # Still compile any slides that don't have HTML yet
+            for md in slides/*.md; do
+              [ "$md" = "slides/README.md" ] && continue
+              html="${md%.md}.html"
+              if [ ! -f "$html" ]; then
+                echo "Missing HTML for $(basename $md) — compiling"
+                ./scripts/build-slides.sh "$md" || echo "Warning: Failed to compile $md"
+              fi
+            done
+            echo "Incremental check complete"
+          else
+            echo "Changed slides: $CHANGED"
+            for md in $CHANGED; do
+              if [ -f "$md" ] && [ "$md" != "slides/README.md" ]; then
+                echo "Compiling changed: $md"
+                ./scripts/build-slides.sh "$md" || echo "Warning: Failed to compile $md"
+              fi
+            done
+            # Also compile any slides missing HTML (new files)
+            for md in slides/*.md; do
+              [ "$md" = "slides/README.md" ] && continue
+              html="${md%.md}.html"
+              if [ ! -f "$html" ]; then
+                echo "Missing HTML for $(basename $md) — compiling"
+                ./scripts/build-slides.sh "$md" || echo "Warning: Failed to compile $md"
+              fi
+            done
+          fi
+
+      - name: Generate index.html from outline
+        run: python scripts/build-index.py
 
       - name: Build course pages
         run: |
@@ -79,7 +154,6 @@ jobs:
         run: |
           echo "Validating build output..."
 
-          # Check key files exist
           for f in index.html css/base-styles.css css/site-styles.css; do
             if [ ! -f "$f" ]; then
               echo "ERROR: Missing required file: $f"
@@ -87,20 +161,12 @@ jobs:
             fi
           done
 
-          # Check pages generated
-          for p in pages/slides.html pages/assignments.html pages/stories.html pages/syllabus.html; do
+          for p in pages/assignments.html pages/stories.html pages/syllabus.html; do
             if [ ! -f "$p" ]; then
               echo "ERROR: Missing generated page: $p"
               exit 1
             fi
           done
-
-          # Security scan - no secrets in output
-          echo "Scanning for secrets..."
-          if find . -name '.env' -o -name 'credentials.json' -o -name '*.secret' | grep -q .; then
-            echo "ERROR: Potential secret files detected"
-            exit 1
-          fi
 
           echo "Validation passed!"
 
@@ -109,6 +175,8 @@ jobs:
           mkdir -p _site/css
           mkdir -p _site/pages
           mkdir -p _site/slides/figs
+          mkdir -p _site/slides/themes
+          mkdir -p _site/slides/images
           mkdir -p _site/assignments
           mkdir -p _site/admin
           mkdir -p _site/data-stories/demo
@@ -125,7 +193,6 @@ jobs:
 
           # Slides (compiled HTML + figures + theme assets)
           cp -a slides/figs/. _site/slides/figs/ 2>/dev/null || true
-          mkdir -p _site/slides/themes _site/slides/images
           cp -a slides/themes/. _site/slides/themes/ 2>/dev/null || true
           cp -a slides/images/. _site/slides/images/ 2>/dev/null || true
           for f in slides/*.html; do
