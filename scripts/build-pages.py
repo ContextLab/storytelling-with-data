@@ -166,10 +166,9 @@ def get_page_template(title, content, active_page="", root_prefix=".."):
     """
     nav_items = [
         (f"{root_prefix}/index.html", "Home", "home"),
-        (f"{root_prefix}/pages/slides.html", "Slides", "slides"),
+        (f"{root_prefix}/pages/syllabus.html", "Syllabus", "syllabus"),
         (f"{root_prefix}/pages/assignments.html", "Assignments", "assignments"),
         (f"{root_prefix}/pages/stories.html", "Data Stories", "stories"),
-        (f"{root_prefix}/pages/syllabus.html", "Syllabus", "syllabus"),
     ]
 
     nav_html = ""
@@ -243,7 +242,7 @@ def get_page_template(title, content, active_page="", root_prefix=".."):
 </head>
 <body>
     <nav class="course-nav">
-        <a class="logo" href="{root_prefix}/index.html">SWD</a>
+        <a class="logo" href="{root_prefix}/index.html">PSYC 81.09</a>
         <div class="nav-links">
 {nav_html}            <button class="theme-toggle" id="themeToggle">☀️</button>
         </div>

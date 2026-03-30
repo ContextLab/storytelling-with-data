@@ -459,16 +459,12 @@ def generate_html(weeks, part2_content):
 </head>
 <body>
     <nav class="course-nav">
-        <a class="logo" href="index.html">SWD</a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="nav-links" id="navLinks">
+        <a class="logo" href="index.html">PSYC 81.09</a>
+        <div class="nav-links">
             <a href="index.html" class="active">Home</a>
-            <a href="pages/slides.html">Slides</a>
+            <a href="pages/syllabus.html">Syllabus</a>
             <a href="pages/assignments.html">Assignments</a>
             <a href="pages/stories.html">Data Stories</a>
-            <a href="pages/syllabus.html">Syllabus</a>
             <button class="theme-toggle" id="themeToggle">&#9728;&#65039;</button>
         </div>
     </nav>
@@ -592,11 +588,6 @@ def generate_html(weeks, part2_content):
             document.documentElement.setAttribute('data-theme', next);
             localStorage.setItem('theme', next);
             this.textContent = next === 'dark' ? '\\u2600\\uFE0F' : '\\uD83C\\uDF19';
-        }});
-
-        // Hamburger menu
-        document.getElementById('hamburger').addEventListener('click', function() {{
-            document.getElementById('navLinks').classList.toggle('open');
         }});
 
         // Scroll nav shadow

@@ -292,13 +292,12 @@ def generate_gallery_html(stories):
     html = TEMPLATE_HEAD
     html += """
     <nav class="course-nav">
-        <a class="logo" href="../index.html">SWD</a>
+        <a class="logo" href="../index.html">PSYC 81.09</a>
         <div class="nav-links">
             <a href="../index.html">Home</a>
-            <a href="slides.html">Slides</a>
+            <a href="syllabus.html">Syllabus</a>
             <a href="assignments.html">Assignments</a>
             <a href="stories.html" class="active">Data Stories</a>
-            <a href="syllabus.html">Syllabus</a>
             <button class="theme-toggle" id="themeToggle">☀️</button>
         </div>
     </nav>
