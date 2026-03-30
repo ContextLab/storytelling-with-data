@@ -234,6 +234,8 @@ def get_page_template(title, content, active_page=""):
             transition: background var(--transition-fast);
         }}
         .download-btn:hover {{ background: var(--primary-dark); text-decoration: none; }}
+        .page-content a.download-btn {{ color: white; }}
+        .page-content a.download-btn:hover {{ color: white; }}
     </style>
 </head>
 <body>
@@ -274,8 +276,13 @@ def build_assignment_pages():
         if not assignment_dir.is_dir():
             continue
 
-        # Find markdown file
-        md_files = list(assignment_dir.glob("*.md"))
+        # Find the main assignment markdown (prefer Assignment_*.md)
+        md_files = list(assignment_dir.glob("Assignment_*.md"))
+        if not md_files:
+            md_files = list(assignment_dir.glob("assignment_*.md"))
+        if not md_files:
+            md_files = [f for f in assignment_dir.glob("*.md")
+                        if f.name.lower() not in ("story_videos.md", "readme.md")]
         if not md_files:
             continue
 
