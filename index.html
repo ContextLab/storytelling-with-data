@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./css/site-styles.css">
 
     <style>
-        /* Module pills bar */
-        .module-pills {
+        /* Week pills bar */
+        .week-pills {
             background: var(--surface-color);
             border-bottom: 1px solid var(--border-color);
             padding: 1rem 2rem;
@@ -19,7 +19,7 @@
             top: 60px;
             z-index: 100;
         }
-        .module-pills-container {
+        .week-pills-container {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -27,7 +27,7 @@
             gap: 0.5rem;
             flex-wrap: wrap;
         }
-        .module-pill {
+        .week-pill {
             background: var(--bg-color);
             color: var(--text-secondary);
             padding: 0.5rem 1rem;
@@ -39,39 +39,45 @@
             transition: all var(--transition-base);
             text-decoration: none;
         }
-        .module-pill:hover {
+        .week-pill:hover {
             border-color: var(--primary-color);
             color: var(--primary-color);
         }
 
-        /* Module sections */
+        /* Week sections */
         .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 
-        .module-section {
-            margin-bottom: 2rem;
+        .week-section {
+            margin-bottom: 1rem;
             scroll-margin-top: 140px;
         }
-        .module-header {
+        .week-header {
             background: var(--surface-color);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
-            padding: 1.5rem 2rem;
+            padding: 1rem 1.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .module-header:hover {
+        .week-header:hover {
             border-color: var(--primary-color);
             background: var(--surface-hover);
         }
-        .module-header.expanded {
+        .week-header.expanded {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
             border-bottom-color: transparent;
         }
-        .module-number {
+        .week-header-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .week-number {
             display: inline-block;
             background: var(--gradient-primary);
             color: white;
@@ -79,104 +85,133 @@
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            white-space: nowrap;
         }
-        .module-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.25rem;
-        }
-        .module-subtitle {
+        .week-dates {
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+        }
+        .week-theme {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 1.1rem;
         }
         .expand-icon {
             color: var(--text-muted);
-            font-size: 1.25rem;
             transition: transform 0.3s ease;
+            flex-shrink: 0;
         }
-        .module-header.expanded .expand-icon { transform: rotate(180deg); }
+        .week-header.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
 
-        .module-content {
+        .week-content {
             display: none;
             background: var(--surface-color);
             border: 1px solid var(--border-color);
             border-top: none;
             border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-            padding: 2rem;
+            padding: 1.5rem;
         }
-        .module-content.expanded { display: block; }
+        .week-content.expanded {
+            display: block;
+        }
 
-        .module-content h3 {
-            color: var(--text-primary);
-            font-size: 1.1rem;
-            margin: 1.5rem 0 0.75rem 0;
-        }
-        .module-content h3:first-child { margin-top: 0; }
-        .module-content ul { list-style: none; padding: 0; }
-        .module-content li {
-            padding: 0.5rem 0;
+        /* Day rows */
+        .day-row {
+            padding: 0.75rem 0;
             border-bottom: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            line-height: 1.6;
         }
-        .module-content li:last-child { border-bottom: none; }
-        .module-content a { color: var(--primary-light); text-decoration: none; }
-        .module-content a:hover { text-decoration: underline; }
+        .day-row:last-of-type {
+            border-bottom: none;
+        }
+        .day-row.cancelled {
+            opacity: 0.6;
+        }
+        .day-heading {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+        .day-details ul {
+            margin: 0.25rem 0 0 1.25rem;
+            padding: 0;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .day-details li {
+            margin-bottom: 0.15rem;
+        }
+        .day-details a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .day-details a:hover {
+            text-decoration: underline;
+        }
+        .no-class-notice {
+            color: var(--text-muted);
+            padding: 1rem 0;
+        }
 
-        .video-link { color: var(--accent-color) !important; font-weight: 600; }
-        .video-link i { margin-right: 0.25rem; }
-
-        /* Submissions section */
-        .submissions {
+        /* Week details (resources, recordings) */
+        .week-details {
             margin-top: 1rem;
-            padding: var(--spacing-md);
-            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
         }
-        .submissions h4 {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-        .submissions a {
-            display: inline-block;
-            margin-right: 1rem;
-            font-size: 0.875rem;
-        }
-
-        /* Responsive hamburger */
-        .hamburger {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-primary);
-            font-size: 1.5rem;
+        .week-details summary {
+            padding: 0.75rem 1rem;
             cursor: pointer;
+            color: var(--text-secondary);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-        @media (max-width: 768px) {
-            .hamburger { display: block; }
-            .course-nav .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0; right: 0;
-                background: var(--bg-color);
-                border-bottom: 1px solid var(--border-color);
-                flex-direction: column;
-                padding: var(--spacing-md);
-                gap: var(--spacing-md);
-            }
-            .course-nav .nav-links.open { display: flex; }
-            .module-pills-container { gap: 0.25rem; }
-            .module-pill { font-size: 0.75rem; padding: 0.375rem 0.75rem; }
-            .module-title { font-size: 1.15rem; }
+        .week-details summary:hover {
+            color: var(--primary-color);
+        }
+        .week-details[open] summary {
+            border-bottom: 1px solid var(--border-color);
+        }
+        .week-details ul {
+            margin: 0.5rem 1rem 1rem 2rem;
+            padding: 0;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .week-details a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .week-details a:hover {
+            text-decoration: underline;
         }
 
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        /* Part II description */
+        .part2-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .part2-description h3 {
+            color: var(--text-primary);
+            margin-top: 1.5rem;
+        }
+        .part2-description a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .part2-description a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .week-pills-container { gap: 0.25rem; }
+            .week-pill { font-size: 0.75rem; padding: 0.375rem 0.75rem; }
+            .week-header-info { gap: 0.5rem; }
+            .week-theme { font-size: 1rem; }
         }
     </style>
 </head>
@@ -192,7 +227,7 @@
             <a href="pages/assignments.html">Assignments</a>
             <a href="pages/stories.html">Data Stories</a>
             <a href="pages/syllabus.html">Syllabus</a>
-            <button class="theme-toggle" id="themeToggle">☀️</button>
+            <button class="theme-toggle" id="themeToggle">&#9728;&#65039;</button>
         </div>
     </nav>
 
@@ -227,280 +262,639 @@
         </div>
     </section>
 
-    <!-- Module Pills -->
-    <div class="module-pills">
-        <div class="module-pills-container">
-            <a href="#intro" class="module-pill">Intro</a>
-            <a href="#module1" class="module-pill">Module 1</a>
-            <a href="#module2" class="module-pill">Module 2</a>
-            <a href="#module3" class="module-pill">Module 3</a>
-            <a href="#module4" class="module-pill">Module 4</a>
-            <a href="#part2" class="module-pill">Part II</a>
+    <!-- Week Pills -->
+    <div class="week-pills">
+        <div class="week-pills-container">
+            <a href="#week1" class="week-pill">W1</a>
+            <a href="#week2" class="week-pill">W2</a>
+            <a href="#week3" class="week-pill">W3</a>
+            <a href="#week4" class="week-pill">W4</a>
+            <a href="#week5" class="week-pill">W5</a>
+            <a href="#week6" class="week-pill">W6</a>
+            <a href="#week7" class="week-pill">W7</a>
+            <a href="#week8" class="week-pill">W8</a>
+            <a href="#week9" class="week-pill">W9</a>
+            <a href="#week10" class="week-pill">W10</a>
+            <a href="#part2" class="week-pill">Part II</a>
         </div>
     </div>
 
-    <!-- Course Outline -->
     <div class="container">
 
-        <!-- Introduction -->
-        <div class="module-section" id="intro">
-            <div class="module-header" onclick="toggleModule(this)">
-                <div>
-                    <span class="module-number">Welcome</span>
-                    <div class="module-title">Introduction</div>
-                    <div class="module-subtitle">Course overview, tools, and getting started</div>
-                </div>
-                <i class="fas fa-chevron-down expand-icon"></i>
-            </div>
-            <div class="module-content">
-                <ul>
-                    <li><a class="video-link" href="https://www.youtube.com/watch?v=LvFQLLTu5KY"><i class="fas fa-play-circle"></i> Welcome message</a></li>
-                    <li><a class="video-link" href="https://youtu.be/JwA6zyWdNIs"><i class="fas fa-play-circle"></i> Supplemental welcome message</a></li>
-                    <li>Learning remotely: <a href="https://youtu.be/uxqZ-Xdra0I">tools</a>, <a href="https://youtu.be/RzCXL8p5VAU">tips</a>, and <a href="https://youtu.be/5OmFGIYy1kM">tricks</a></li>
-                    <li><a href="pages/syllabus.html">Course syllabus</a></li>
-                    <li><a class="video-link" href="https://youtu.be/X0P9GHjmmBE"><i class="fas fa-play-circle"></i> Discussion: the pursuit of truth</a></li>
-                </ul>
-            </div>
+
+    <div class="week-section" id="week1">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 1</span>
+          <span class="week-dates">Mar 30 – Apr 3</span>
+          <span class="week-theme">Truth & Storytelling</span>
         </div>
-
-        <h2 style="color: var(--text-primary); font-size: 1.75rem; margin: 2rem 0 1rem;
-            padding-bottom: 0.5rem; border-bottom: 2px solid var(--primary-color);">
-            Part I
-        </h2>
-
-        <!-- Module 1 -->
-        <div class="module-section" id="module1">
-            <div class="module-header" onclick="toggleModule(this)">
-                <div>
-                    <span class="module-number">Module 1</span>
-                    <div class="module-title">What Makes a Good Story?</div>
-                    <div class="module-subtitle">Storytelling fundamentals, structure, feedback, and pitching</div>
-                </div>
-                <i class="fas fa-chevron-down expand-icon"></i>
-            </div>
-            <div class="module-content">
-                <h3>Resources</h3>
-                <ul>
-                    <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/we-are-all-storytellers/v/storytelling-introb">Introduction to storytelling</a> (Khan Academy / Pixar)</li>
-                    <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/we-are-all-storytellers/v/video2-stories">What makes a great story?</a></li>
-                    <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/story-structure/v/piab-storystructure">Structuring stories for effective communication</a></li>
-                    <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/visual-language/v/visual-language">Using pictures to tell a story</a></li>
-                    <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching1">Pitching your story</a></li>
-                    <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching2">Giving constructive feedback</a></li>
-                    <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching3">Using feedback to improve your story</a></li>
-                </ul>
-                <h3>Assignment</h3>
-                <ul>
-                    <li><a href="pages/assignments.html">Assignment 1: Tell the class a 5-minute story</a></li>
-                </ul>
-                <h3>Lectures</h3>
-                <ul>
-                    <li><a class="video-link" href="https://youtu.be/neSuDd6s3Kc"><i class="fas fa-play-circle"></i> Workshopping story ideas</a></li>
-                    <li><a class="video-link" href="https://youtu.be/hopzOYrLTTc"><i class="fas fa-play-circle"></i> Discussions about stories (part 1)</a></li>
-                    <li><a class="video-link" href="https://youtu.be/58rs4Yy-c9Y"><i class="fas fa-play-circle"></i> Discussions about stories (part 2)</a></li>
-                </ul>
-                <div class="submissions">
-                    <h4>Student Submissions</h4>
-                    <a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar">Spring 2020</a>
-                    <a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp985vbr6g0_ATi5tkh7XtUPVQ">Spring 2021</a>
-                    <a href="https://youtube.com/playlist?list=PLjQYT8Fwp987zYZpfHblo0UwyBp407Nq6">Winter 2022</a>
-                </div>
-            </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <div class="day-row ">
+          <div class="day-heading">Monday Mar 30 — The Pursuit of Truth</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/truth-and-storytelling.html">slides</a></li>
+  <li>Discussion: truth in the age of fake news and AI</li>
+  <li>Course overview and welcome</li>
+</ul>
+          </div>
         </div>
-
-        <!-- Module 2 -->
-        <div class="module-section" id="module2">
-            <div class="module-header" onclick="toggleModule(this)">
-                <div>
-                    <span class="module-number">Module 2</span>
-                    <div class="module-title">Visualizing Data</div>
-                    <div class="module-subtitle">Data representation, effective figures, grammar of graphics</div>
-                </div>
-                <i class="fas fa-chevron-down expand-icon"></i>
-            </div>
-            <div class="module-content">
-                <h3>Resources</h3>
-                <ul>
-                    <li><a href="https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning/pre-algebra-representing-data/v/ways-to-represent-data">Introduction to representing data</a> (Khan Academy)</li>
-                    <li><a href="https://www.dropbox.com/s/qdiqqt3a8i632hn/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf">Designing effective scientific figures</a></li>
-                    <li><a href="https://medium.com/plotly/maximizing-the-data-ink-ratio-in-dashboards-and-slide-deck-7887f7c1fab">Maximizing the data-to-ink ratio</a></li>
-                    <li><a href="https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf">A Layered Grammar of Graphics</a> by Hadley Wickham</li>
-                </ul>
-                <h3>Assignment</h3>
-                <ul>
-                    <li><a href="pages/assignments.html">Assignment 2: Data story remix</a></li>
-                </ul>
-                <h3>Lectures</h3>
-                <ul>
-                    <li><a class="video-link" href="https://youtu.be/TbrNyfw9voU"><i class="fas fa-play-circle"></i> Discussion: telling effective stories about data</a></li>
-                    <li><a class="video-link" href="https://youtu.be/o-FO7pulALM"><i class="fas fa-play-circle"></i> Workshopping data story ideas</a></li>
-                    <li><a class="video-link" href="https://youtu.be/RowGoMEwBoQ"><i class="fas fa-play-circle"></i> Discussions about data stories (part 1)</a></li>
-                    <li><a class="video-link" href="https://youtu.be/ygRP2rFwJjY"><i class="fas fa-play-circle"></i> Discussions about data stories (part 2)</a></li>
-                </ul>
-                <div class="submissions">
-                    <h4>Student Submissions</h4>
-                    <a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y">Spring 2020</a>
-                    <a href="https://youtube.com/playlist?list=PLjQYT8Fwp984OgKhTwslvZ6RHIt1mXMeB">Spring 2021</a>
-                    <a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp984bcI29bbv9-mLSbKbx5RFW">Winter 2022</a>
-                </div>
-            </div>
+        <div class="day-row cancelled">
+          <div class="day-heading">Wednesday Apr 1</div>
+          <div class="day-details">
+<ul>
+  <li><em>No class (instructor away)</em></li>
+</ul>
+          </div>
         </div>
-
-        <!-- Module 3 -->
-        <div class="module-section" id="module3">
-            <div class="module-header" onclick="toggleModule(this)">
-                <div>
-                    <span class="module-number">Module 3</span>
-                    <div class="module-title">Python &amp; Jupyter Notebooks</div>
-                    <div class="module-subtitle">Programming fundamentals, Git, Python data science stack</div>
-                </div>
-                <i class="fas fa-chevron-down expand-icon"></i>
-            </div>
-            <div class="module-content">
-                <h3>Getting Started</h3>
-                <ul>
-                    <li><a class="video-link" href="https://youtu.be/g92mLcBc_gI"><i class="fas fa-play-circle"></i> Discussion: intro to programming</a></li>
-                    <li><a href="https://colab.research.google.com/github/ContextLab/cs-for-psych/blob/master/slides/module_1/introduction_and_overview.ipynb">Getting set up on Google Colaboratory</a></li>
-                </ul>
-                <h3>Git &amp; GitHub</h3>
-                <ul>
-                    <li><a href="https://www.youtube.com/watch?v=4Fsg4UPHsrM">Overview of Git and GitHub</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=4aMftm6V_lY">Git basics part 1: fork, clone, status</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=j1EuezxSqsY">Git basics part 2: add, rm, commit, push, pull</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=PlqGgzpw1c0">Intermediate git: branch, merge, remote</a></li>
-                    <li><a href="https://youtu.be/N9_OP6gwgjU">Handling git merge conflicts</a></li>
-                    <li><a href="https://youtu.be/9SIqCrj_vyQ">GitHub project management tools</a></li>
-                </ul>
-                <h3>Python</h3>
-                <ul>
-                    <li><a href="pages/slides.html">High-level introduction to Python</a> (slides)</li>
-                    <li><a href="https://github.com/ContextLab/cs-for-psych/tree/master/slides">Introduction to Programming for Psychological Scientists</a></li>
-                    <li><a href="https://www.codecademy.com/learn/learn-python">Codecademy: Introduction to Python</a></li>
-                    <li><a href="http://introtopython.org/">Learning to code with Python and Jupyter Notebooks</a></li>
-                </ul>
-                <h3>Assignment</h3>
-                <ul>
-                    <li><a href="pages/assignments.html">Assignment 3: Binary converter</a> (GitHub Classroom)</li>
-                </ul>
-                <h3>Lectures</h3>
-                <ul>
-                    <li><a class="video-link" href="https://youtu.be/QcwJtVtmxz0"><i class="fas fa-play-circle"></i> Python: list comprehensions and decorators</a></li>
-                    <li><a class="video-link" href="https://youtu.be/WY_mOznaQyA"><i class="fas fa-play-circle"></i> Modules, Python data science stack</a> (<a href="pages/slides.html">slides</a>)</li>
-                </ul>
-            </div>
+        <div class="day-row cancelled">
+          <div class="day-heading">Thursday Apr 2 (X-hour)</div>
+          <div class="day-details">
+<ul>
+  <li><em>No class (instructor away)</em></li>
+</ul>
+          </div>
         </div>
-
-        <!-- Module 4 -->
-        <div class="module-section" id="module4">
-            <div class="module-header" onclick="toggleModule(this)">
-                <div>
-                    <span class="module-number">Module 4</span>
-                    <div class="module-title">Data Science Tools</div>
-                    <div class="module-subtitle">NumPy, Pandas, Matplotlib, Seaborn, Hypertools</div>
-                </div>
-                <i class="fas fa-chevron-down expand-icon"></i>
-            </div>
-            <div class="module-content">
-                <h3>Resources</h3>
-                <ul>
-                    <li><a href="https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html">Modules and Packages</a> (Whirlwind Tour of Python)</li>
-                    <li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html">NumPy</a> &amp; <a href="https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html">Pandas</a> (Python Data Science Handbook)</li>
-                    <li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html">Matplotlib</a> &amp; <a href="https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html">Seaborn</a></li>
-                    <li><a href="https://hypertools.readthedocs.io/en/latest/tutorials.html">Hypertools: visualizing high-dimensional data</a></li>
-                </ul>
-                <h3>Lectures</h3>
-                <ul>
-                    <li><a class="video-link" href="https://youtu.be/d82FIOduvik"><i class="fas fa-play-circle"></i> Introduction to NumPy</a> (<a href="pages/slides.html">slides</a>)</li>
-                    <li><a class="video-link" href="https://youtu.be/Ly6ZweQ5bJs"><i class="fas fa-play-circle"></i> Introduction to Pandas</a> (<a href="pages/slides.html">slides</a>)</li>
-                    <li><a class="video-link" href="https://youtu.be/UPNTM_eakg8"><i class="fas fa-play-circle"></i> Data wrangling (part I)</a></li>
-                    <li><a class="video-link" href="https://youtu.be/aN5PrEeiWbY"><i class="fas fa-play-circle"></i> Data wrangling &amp; basic plotting (part II)</a></li>
-                </ul>
-                <h3>Assignment</h3>
-                <ul>
-                    <li><a href="pages/assignments.html">Assignment 4: Tell your first data story!</a></li>
-                </ul>
-                <h3>Debugging Sessions</h3>
-                <ul>
-                    <li><a class="video-link" href="https://youtu.be/Rdxtqvo1bQs"><i class="fas fa-play-circle"></i> Debugging (Part I)</a></li>
-                    <li><a class="video-link" href="https://youtu.be/EPSlVDlXDK8"><i class="fas fa-play-circle"></i> Debugging (Part II)</a></li>
-                    <li><a class="video-link" href="https://youtu.be/IuRmj1d-n7g"><i class="fas fa-play-circle"></i> Debugging (Part III)</a></li>
-                    <li><a class="video-link" href="https://youtu.be/ig0dUWWxAYY"><i class="fas fa-play-circle"></i> Story critiques</a></li>
-                </ul>
-                <div class="submissions">
-                    <h4>Student Submissions</h4>
-                    <a href="https://youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo">Spring 2020</a>
-                    <a href="https://youtube.com/playlist?list=PLjQYT8Fwp987pUS5Ol-A5QIIfjZ7yFBLD">Spring 2021</a>
-                    <a href="https://youtube.com/playlist?list=PLjQYT8Fwp9872PMrg45QvnpNnB9Zb4QVZ">Winter 2022</a>
-                </div>
-            </div>
+        <div class="day-row ">
+          <div class="day-heading">Friday Apr 3 — What Makes a Good Story?</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/storytelling-workshop.html">slides</a></li>
+  <li>Workshop: pitch your story ideas</li>
+  <li><strong>Assignment 1 released</strong> (due Monday Apr 6): Tell the class a 5-minute story</li>
+</ul>
+          </div>
         </div>
+        <details class="week-details">
+          <summary><i class="fas fa-book"></i> Resources</summary>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=LvFQLLTu5KY">Welcome message</a> | <a href="https://youtu.be/JwA6zyWdNIs">Supplemental welcome message</a></li>
+  <li>Learning remotely: <a href="https://youtu.be/uxqZ-Xdra0I">tools</a>, <a href="https://youtu.be/RzCXL8p5VAU">tips</a>, and <a href="https://youtu.be/5OmFGIYy1kM">tricks</a> for engaging with online aspects of the course</li>
+  <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/we-are-all-storytellers/v/storytelling-introb">Introduction to storytelling</a> (Khan Academy / Pixar)</li>
+  <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/we-are-all-storytellers/v/video2-stories">What makes a great story?</a> (Khan Academy / Pixar)</li>
+  <li>Exercise: <a href="https://www.khanacademy.org/partner-content/pixar/storytelling/we-are-all-storytellers/a/activity-1">Telling a story about a vivid memory</a> (Khan Academy / Pixar)</li>
+  <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/story-structure/v/piab-storystructure">Structuring stories for effective communication</a> (Khan Academy / Pixar)</li>
+  <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/visual-language/v/visual-language">Using pictures to tell a story</a> (Khan Academy / Pixar)</li>
+  <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching1">Pitching your story</a> (Khan Academy / Pixar)</li>
+  <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching2">Giving constructive feedback</a> (Khan Academy / Pixar)</li>
+  <li><a href="https://www.khanacademy.org/partner-content/pixar/storytelling/storyboard-your-film/v/pitching3">Using feedback to improve your story</a> (Khan Academy / Pixar)</li>
+  <li>You may find some inspiration by taking a look at some <a href="https://themoth.org/radio-hour">Moth Radio Hour stories</a></li>
+</ul>
+        </details>
+        <details class="week-details">
+          <summary><i class="fas fa-play-circle"></i> Lecture Recordings</summary>
+<ul>
+  <li><a href="https://youtu.be/X0P9GHjmmBE">Discussion: the pursuit of truth</a></li>
+  <li><a href="https://youtu.be/neSuDd6s3Kc">Workshopping story ideas</a></li>
+  <li><a href="https://youtu.be/hopzOYrLTTc">Discussions about stories (part 1)</a></li>
+  <li><a href="https://youtu.be/58rs4Yy-c9Y">Discussions about stories (part 2)</a></li>
+</ul>
+        </details>
+        <details class="week-details">
+          <summary><i class="fas fa-film"></i> Student Submissions</summary>
+<ul>
+  <li><a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp985vuGsFBKkJlOv5L8H4igar">Spring 2020</a></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp985vbr6g0_ATi5tkh7XtUPVQ">Spring 2021</a></li>
+  <li><a href="https://youtube.com/playlist?list=PLjQYT8Fwp987zYZpfHblo0UwyBp407Nq6">Winter 2022</a></li>
+</ul>
+        </details>
+      </div>
+    </div>
 
-        <!-- Part II -->
-        <h2 style="color: var(--text-primary); font-size: 1.75rem; margin: 2rem 0 1rem;
-            padding-bottom: 0.5rem; border-bottom: 2px solid var(--primary-color);">
+
+    <div class="week-section" id="week2">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 2</span>
+          <span class="week-dates">Apr 6 – 10</span>
+          <span class="week-theme">Visualizing Data</span>
+        </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <div class="day-row ">
+          <div class="day-heading">Monday Apr 6 — Review Assignment 1 Stories</div>
+          <div class="day-details">
+<ul>
+  <li>Peer feedback and discussion (no slides)</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Wednesday Apr 8 — Data Representations & Effective Figures</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/data-viz.html">slides</a></li>
+  <li>Data representations, effective figures, grammar of graphics</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Thursday Apr 9 (X-hour)</div>
+          <div class="day-details">
+<ul>
+  <li>Additional office hours (sign up)</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Friday Apr 10 — Workshop Data Story Ideas</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/data-story-workshop.html">slides</a></li>
+  <li>Workshop: pitch your data story ideas</li>
+  <li><strong>Assignment 2 released</strong> (due Monday Apr 13): Data story remix</li>
+</ul>
+          </div>
+        </div>
+        <details class="week-details">
+          <summary><i class="fas fa-book"></i> Resources</summary>
+<ul>
+  <li><a href="https://www.khanacademy.org/math/pre-algebra/pre-algebra-math-reasoning/pre-algebra-representing-data/v/ways-to-represent-data">Introduction to representing data</a> (Khan Academy)</li>
+  <li><a href="https://www.dropbox.com/s/qdiqqt3a8i632hn/DesigningEffectiveScientificFigures_Zabala_afternoon_v00.pdf">Designing effective scientific figures</a> (Aiora Zabala)</li>
+  <li><a href="https://medium.com/plotly/maximizing-the-data-ink-ratio-in-dashboards-and-slide-deck-7887f7c1fab">Maximizing the data-to-ink ratio</a> (medium.com)</li>
+  <li><a href="https://www.dropbox.com/s/xhpjth2f4aamn5u/layered-grammar.pdf">A Layered Grammar of Graphics</a> by Hadley Wickham</li>
+  <li><a href="https://www.dropbox.com/s/4qwd16psogqdgi6/Wilk10.pdf">The Grammar of Graphics</a> by Leland Wilkinson</li>
+  <li>Data story inspiration: <a href="https://fivethirtyeight.com/">FiveThirtyEight</a>, <a href="https://www.reddit.com/r/dataisbeautiful/">Reddit: DataIsBeautiful</a>, <a href="https://towardsdatascience.com/">Towards Data Science</a>, <a href="https://www.youtube.com/user/minutephysics">Minute Physics</a>, <a href="https://medium.com/kaggle-blog">Kaggle Blog</a>, <a href="https://iquantny.tumblr.com/">IQuantNY</a>, <a href="https://www.nytimes.com/section/science">New York Times: Science</a>, <a href="https://www.washingtonpost.com/">Washington Post: Visual Stories</a>, <a href="https://distill.pub/archive/">Distill.pub</a></li>
+  <li>Communicating with sound: in-class discussion with director, editor, and producer <a href="https://www.imdb.com/name/nm0338316/?ref_=tt_ov_dr">Sam Green</a> and class "field trip" to a showing of <a href="https://hop.dartmouth.edu/events/32-sounds">32 SOUNDS</a></li>
+</ul>
+        </details>
+        <details class="week-details">
+          <summary><i class="fas fa-play-circle"></i> Lecture Recordings</summary>
+<ul>
+  <li><a href="https://youtu.be/TbrNyfw9voU">Discussion: telling effective stories about data</a></li>
+  <li><a href="https://youtu.be/o-FO7pulALM">Workshopping data story ideas</a></li>
+  <li><a href="https://youtu.be/RowGoMEwBoQ">Discussions about data stories (part 1)</a></li>
+  <li><a href="https://youtu.be/ygRP2rFwJjY">Discussions about data stories (part 2)</a></li>
+</ul>
+        </details>
+        <details class="week-details">
+          <summary><i class="fas fa-film"></i> Student Submissions</summary>
+<ul>
+  <li><a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp98490cWdyQaIOaMcGF8tXM-Y">Spring 2020</a></li>
+  <li><a href="https://youtube.com/playlist?list=PLjQYT8Fwp984OgKhTwslvZ6RHIt1mXMeB">Spring 2021</a></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp984bcI29bbv9-mLSbKbx5RFW">Winter 2022</a></li>
+</ul>
+        </details>
+      </div>
+    </div>
+
+
+    <div class="week-section" id="week3">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 3</span>
+          <span class="week-dates">Apr 13 – 17</span>
+          <span class="week-theme">Programming Fundamentals</span>
+        </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <div class="day-row ">
+          <div class="day-heading">Monday Apr 13 — Review Assignment 2 Stories</div>
+          <div class="day-details">
+<ul>
+  <li>Peer feedback and discussion (no slides)</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Wednesday Apr 15 — Introduction to Programming</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/intro-to-python.html">slides</a></li>
+  <li>Getting set up in Google Colab</li>
+  <li>Introduction to programming concepts</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Thursday Apr 16 (X-hour) — Introduction to Vibe Coding</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/vibe-coding.html">slides</a></li>
+  <li>Using AI tools to accelerate development</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Friday Apr 17 — Assignment 3 Brainstorm</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/assignment3-workshop.html">slides</a></li>
+  <li>Workshop: brainstorm project ideas</li>
+  <li><strong>Assignment 3 released</strong> (due Monday Apr 20): Build something cool</li>
+</ul>
+          </div>
+        </div>
+        <details class="week-details">
+          <summary><i class="fas fa-book"></i> Resources</summary>
+<ul>
+  <li><a href="https://colab.research.google.com/github/ContextLab/cs-for-psych/blob/master/slides/module_1/introduction_and_overview.ipynb">Getting set up on Google Colaboratory</a> (cs-for-psych)</li>
+  <li><a href="https://github.com/ContextLab/cs-for-psych/tree/master/slides">Introduction to Programming for Psychological Scientists</a></li>
+  <li><a href="https://github.com/ContextLab/storytelling-with-data/blob/master/slides/intro_to_python.ipynb">High-level introduction to Python</a></li>
+  <li><a href="https://www.codecademy.com/learn/learn-python">Codecademy's Introduction to Python</a></li>
+  <li><a href="http://introtopython.org/">Learning to code with Python and Jupyter Notebooks</a></li>
+  <li><a href="https://www.codecademy.com/learn/learn-the-command-line">Introduction to using the command line</a></li>
+  <li>Git overview: <a href="slides/git.html">slides</a></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp984zMjN5rJChfdI5Z8jtaWww">Project management and version control with git and GitHub</a>:</li>
+  <li><a href="https://www.youtube.com/watch?v=4Fsg4UPHsrM">Overview of Git and GitHub</a></li>
+  <li><a href="https://www.youtube.com/watch?v=4aMftm6V_lY">Git basics part 1: fork, clone, and status</a></li>
+  <li><a href="https://www.youtube.com/watch?v=j1EuezxSqsY">Git basics part 2: add, rm, mv, commit, push, and pull</a></li>
+  <li><a href="https://www.youtube.com/watch?v=PlqGgzpw1c0">Intermediate git: ignore, revert, checkout, branch, merge, and remote</a></li>
+  <li><a href="https://youtu.be/N9_OP6gwgjU">Handling git merge conflicts</a></li>
+  <li><a href="https://youtu.be/9SIqCrj_vyQ">GitHub project management tools</a></li>
+  <li>Optional (ungraded) assignment: <a href="https://github.com/ContextLab/github-starter-course">GitHub Fundamentals</a> <a href="https://classroom.github.com/a/--OlsCRh">[Accept assignment</a>]</li>
+</ul>
+        </details>
+        <details class="week-details">
+          <summary><i class="fas fa-play-circle"></i> Lecture Recordings</summary>
+<ul>
+  <li><a href="https://youtu.be/g92mLcBc_gI">Discussion: intro to programming</a></li>
+  <li><a href="https://youtu.be/QcwJtVtmxz0">Python continued: list comprehensions and decorators</a></li>
+  <li><a href="https://youtu.be/WY_mOznaQyA">Assignment 3 Q&A, introduction to Python modules, preview of Python data science stack</a> <a href="slides/modules-and-numpy.html">[slides</a>]</li>
+</ul>
+        </details>
+      </div>
+    </div>
+
+
+    <div class="week-section" id="week4">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 4</span>
+          <span class="week-dates">Apr 20 – 24</span>
+          <span class="week-theme">Social Impact Practicum + Data Science Stack</span>
+        </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <div class="day-row ">
+          <div class="day-heading">Monday Apr 20 — Meet The Collaborative</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/collaborative-intro.html">slides</a></li>
+  <li>Introduction to <a href="https://thecollaborative.us">The Collaborative</a></li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row cancelled">
+          <div class="day-heading">Wednesday Apr 22</div>
+          <div class="day-details">
+<ul>
+  <li><em>No class (instructor away)</em></li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Thursday Apr 23 (X-hour) — Python Data Science Stack</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/data-science-demo.html">slides</a></li>
+  <li>Overview and demo of NumPy, Pandas, Matplotlib, Seaborn, and Hypertools</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Friday Apr 24 — Hackathon + Brainstorming</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/collaborative-workshop.html">slides</a></li>
+  <li>Hackathon: build your first notebook-based data story</li>
+  <li><strong>Assignment 4 released</strong> (due Monday Apr 27): Tell a "real" story about data</li>
+</ul>
+          </div>
+        </div>
+        <details class="week-details">
+          <summary><i class="fas fa-book"></i> Resources</summary>
+<ul>
+  <li><a href="https://jakevdp.github.io/WhirlwindTourOfPython/13-modules-and-packages.html">Modules and Packages</a> (from <a href="https://jakevdp.github.io/WhirlwindTourOfPython/index.html">Whirlwind Tour of Python</a> by Jake VanderPlas)</li>
+  <li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html">NumPy</a> and <a href="https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html">Pandas</a> (from <a href="https://jakevdp.github.io/PythonDataScienceHandbook/index.html">Python Data Science Handbook</a> by Jake VanderPlas)</li>
+  <li>(Optional) practice problems for <a href="https://github.com/rougier/numpy-100">NumPy</a> and <a href="https://github.com/ajcr/100-pandas-puzzles">Pandas</a></li>
+  <li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html">Matplotlib</a> and <a href="https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html">Seaborn</a> (from <a href="https://jakevdp.github.io/PythonDataScienceHandbook/index.html">Python Data Science Handbook</a> by Jake VanderPlas)</li>
+  <li><a href="https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129">Grammar of graphics in Python</a> (towardsdatascience.com)</li>
+  <li><a href="https://github.com/ContextLab/cs-for-psych/blob/master/slides/module_4/data_visualization.ipynb">Data visualization overview</a></li>
+  <li><a href="https://hypertools.readthedocs.io/en/latest/tutorials.html">Visualizing high-dimensional data with Hypertools</a></li>
+  <li>Interactive lecture: exploring and visualizing a sample dataset <a href="https://github.com/ContextLab/storytelling-with-data/blob/master/slides/data_visualization_playground.ipynb">[notebook</a>]</li>
+  <li><a href="https://www.datacamp.com">DataCamp</a> — free access for enrolled Dartmouth students (invite link pinned in Slack `#general`)</li>
+</ul>
+        </details>
+        <details class="week-details">
+          <summary><i class="fas fa-play-circle"></i> Lecture Recordings</summary>
+<ul>
+  <li><a href="https://youtu.be/d82FIOduvik">Introduction to NumPy</a> <a href="slides/modules-and-numpy.html">[slides</a>]</li>
+  <li><a href="https://youtu.be/Ly6ZweQ5bJs">Introduction to Pandas</a> <a href="slides/pandas.html">[slides</a>]</li>
+  <li><a href="https://youtu.be/UPNTM_eakg8">Part I: data wrangling</a></li>
+  <li><a href="https://youtu.be/aN5PrEeiWbY">Part II: data wrangling continued, basic plotting</a></li>
+  <li>Discussion with Climate Interactive (2024)</li>
+  <li><a href="https://youtu.be/3kUGSReTXA0">Discussion with Vermont Department of Health (2022)</a> <a href="https://github.com/ContextLab/storytelling-with-data/raw/master/assignments/assignment%204/VT_DOH_slides.pptx">[slides</a>] <a href="https://colab.research.google.com/drive/1dnR1K4yHoh-OvvZ56jzRfHG2bVfUyL-j?usp=sharing">[sample notebook</a>]</li>
+  <li><a href="https://youtu.be/WzCBWl4VRew">Story ideas workshop and brainstorm</a></li>
+  <li><a href="https://youtu.be/Rdxtqvo1bQs">Debugging session (Part I)</a></li>
+  <li><a href="https://youtu.be/EPSlVDlXDK8">Debugging session (Part II)</a></li>
+  <li><a href="https://youtu.be/IuRmj1d-n7g">Debugging session (Part III)</a></li>
+  <li><a href="https://youtu.be/ig0dUWWxAYY">Story critiques</a></li>
+</ul>
+        </details>
+        <details class="week-details">
+          <summary><i class="fas fa-film"></i> Student Submissions</summary>
+<ul>
+  <li><a href="https://youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo">Spring 2020</a></li>
+  <li><a href="https://youtube.com/playlist?list=PLjQYT8Fwp987pUS5Ol-A5QIIfjZ7yFBLD">Spring 2021</a></li>
+  <li><a href="https://youtube.com/playlist?list=PLjQYT8Fwp9872PMrg45QvnpNnB9Zb4QVZ">Winter 2022</a></li>
+</ul>
+        </details>
+      </div>
+    </div>
+
+
+    <div class="week-section" id="week5">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 5</span>
+          <span class="week-dates">Apr 27 – May 1</span>
+          <span class="week-theme">Part II Begins</span>
+        </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <div class="day-row ">
+          <div class="day-heading">Monday Apr 27 — Review and Discuss Stories</div>
+          <div class="day-details">
+<ul>
+  <li>Peer feedback and discussion (no slides)</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Wednesday Apr 29 — Part II Introduction</div>
+          <div class="day-details">
+<ul>
+  <li><a href="slides/part2-intro.html">slides</a></li>
+  <li>Introduction to the Part II cycle: pitch, refine, critique</li>
+  <li>New tools and demos</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Thursday Apr 30 (X-hour)</div>
+          <div class="day-details">
+<ul>
+  <li>Additional office hours (sign up)</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Friday May 1 — Hackathon + Open Discussion</div>
+          <div class="day-details">
+<ul>
+  <li>Hackathon and brainstorming session</li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="week-section" id="week6">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 6</span>
+          <span class="week-dates">May 4 – 8</span>
+          <span class="week-theme">Part II</span>
+        </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <div class="day-row ">
+          <div class="day-heading">Monday May 4 — Review and Discuss Stories</div>
+          <div class="day-details">
+<ul>
+  <li>Peer feedback and discussion (no slides)</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Wednesday May 6 — New Tools + Demos</div>
+          <div class="day-details">
+<ul>
+  <li>Topic TBD based on class interests</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Thursday May 7 (X-hour)</div>
+          <div class="day-details">
+<ul>
+  <li>Additional office hours (sign up) or hackathon/demos</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Friday May 8 — Hackathon + Open Discussion</div>
+          <div class="day-details">
+<ul>
+  <li>Hackathon and brainstorming session</li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="week-section" id="week7">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 7</span>
+          <span class="week-dates">May 11 – 15</span>
+          <span class="week-theme">Part II</span>
+        </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <div class="day-row ">
+          <div class="day-heading">Monday May 11 — Review and Discuss Stories</div>
+          <div class="day-details">
+<ul>
+  <li>Peer feedback and discussion (no slides)</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Wednesday May 13 — New Tools + Demos</div>
+          <div class="day-details">
+<ul>
+  <li>Topic TBD based on class interests</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Thursday May 14 (X-hour)</div>
+          <div class="day-details">
+<ul>
+  <li>Additional office hours (sign up) or hackathon/demos</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Friday May 15 — Hackathon + Open Discussion</div>
+          <div class="day-details">
+<ul>
+  <li>Hackathon and brainstorming session</li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="week-section" id="week8">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 8</span>
+          <span class="week-dates">May 18 – 22</span>
+          <span class="week-theme">Part II</span>
+        </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <div class="day-row ">
+          <div class="day-heading">Monday May 18 — Review and Discuss Stories</div>
+          <div class="day-details">
+<ul>
+  <li>Peer feedback and discussion (no slides)</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Wednesday May 20 — New Tools + Demos</div>
+          <div class="day-details">
+<ul>
+  <li>Topic TBD based on class interests</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Thursday May 21 (X-hour)</div>
+          <div class="day-details">
+<ul>
+  <li>Additional office hours (sign up) or hackathon/demos</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Friday May 22 — Hackathon + Open Discussion</div>
+          <div class="day-details">
+<ul>
+  <li>Hackathon and brainstorming session</li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="week-section" id="week9">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 9</span>
+          <span class="week-dates">May 25 – 29</span>
+          <span class="week-theme">No Class</span>
+        </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <p class="no-class-notice"><em>No class this week</em></p>
+      </div>
+    </div>
+
+
+    <div class="week-section" id="week10">
+      <div class="week-header" onclick="toggleWeek(this)">
+        <div class="week-header-info">
+          <span class="week-number">Week 10</span>
+          <span class="week-dates">Jun 1 – 3</span>
+          <span class="week-theme">Part II — Final Week</span>
+        </div>
+        <i class="fas fa-chevron-down expand-icon"></i>
+      </div>
+      <div class="week-content">
+        <div class="day-row ">
+          <div class="day-heading">Monday Jun 1 — Review and Discuss Stories</div>
+          <div class="day-details">
+<ul>
+  <li>Peer feedback and discussion (no slides)</li>
+</ul>
+          </div>
+        </div>
+        <div class="day-row ">
+          <div class="day-heading">Wednesday Jun 3 — Final Presentations</div>
+          <div class="day-details">
+<ul>
+  <li>Final data story presentations and celebration</li>
+  <li>Last day of class</li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- Part II Description -->
+        <h2 id="part2" style="color: var(--text-primary); font-size: 1.75rem; margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem; border-bottom: 2px solid var(--primary-color);
+            scroll-margin-top: 140px;">
             Part II
         </h2>
+<div class="part2-description">
+<p>We will spend Part II of the course repeating three general steps in the storytelling process (a video introduction to Part II may be found <a href="https://youtu.be/WxW-6dsPxB0">here</a>):</p>
+<ol>
+  <li><strong>Pitching and brainstorming.</strong> You'll present your ideas to your classmates, form groups, workshop story ideas.</li>
+<li>Brainstorm session</li>
+  <li><strong>Refinement.</strong> We'll workshop your (and your group's) ideas and code. You can also use this time to bring up new content ideas that you'd like to learn more about.</li>
+  <li><strong>Critiquing.</strong> As a class we will discuss your story and provide constructive feedback. We'll also go through your code and discuss any relevant coding issues (e.g., challenges, clever hacks, etc.) that might be relevant to the class.</li>
+</ol>
+<p>You should plan to make it through this cycle at least three times during Part II of the course (i.e., you should produce at least 3 data stories).</p>
+<h3>Data Story Project Template</h3>
+<p>Each data story should be contained in a single sub-folder of <a href="https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories">data-stories</a>. Your project should comprise the following files, based on <a href="https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/">this project template</a>:</p>
+<li>A README.md markdown file based on <a href="https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/README.md">this template</a>. The README file should contain:</li>
+<li>A project description and overview.</li>
+<li>A link to a YouTube video of your (5 minute) data story. (A playlist containing the current set of data stories may be found <a href="https://www.youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo">here</a>.)</li>
+<li>Links to the data you analyzed.</li>
+<li>Instructions for replicating your results.</li>
+<li>A description of how someone could contribute to your project.</li>
+<li>Acknowledgements and citations.</li>
+<li>Your data story (hosted on YouTube and cited in your README file). Note: you don't need to upload the source video, but if you use any images or slides you should include them in a sub-folder.</li>
+<li>Your project's code (e.g., notebooks, Python scripts, etc.), based on <a href="https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/demo.ipynb">this template</a>.</li>
+<li>If under 10 MB (total), you can include your data files directly in your project folder. Otherwise you should host it on Google Drive, Dropbox, or some other cloud-based source accessible to all (current and future) students. Regardless of how your project's data files are hosted, your notebook should include code for downloading and importing the data (so from a user's perspective it shouldn't matter where the data files are hosted).</li>
+<h3>Part II Lecture Recordings</h3>
+<li>Brainstorming, pitch sessions, debugging, and story critiques:</li>
+<li><a href="https://youtu.be/9xg1WAb8g5g">Part a</a></li>
+<li><a href="https://youtu.be/u3B65-6Nfr0">Part b</a></li>
+<li><a href="https://youtu.be/U9KgX-vVDWU">Part c</a></li>
+<li><a href="https://youtu.be/uGpOTQCs0j8">Part d</a></li>
+<li><a href="https://youtu.be/FRZ584MOkfU">Part e</a></li>
+</div>
 
-        <div class="module-section" id="part2">
-            <div class="module-header" onclick="toggleModule(this)">
-                <div>
-                    <span class="module-number">Part II</span>
-                    <div class="module-title">Independent Data Stories</div>
-                    <div class="module-subtitle">Pitch, refine, critique — produce 3+ data stories on topics of your choosing</div>
-                </div>
-                <i class="fas fa-chevron-down expand-icon"></i>
-            </div>
-            <div class="module-content">
-                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
-                    In Part II, students repeat three general steps in the storytelling process
-                    (<a href="https://youtu.be/WxW-6dsPxB0">video introduction</a>):
-                </p>
-                <ol style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                    <li><strong>Pitching &amp; brainstorming.</strong> Present ideas, form groups, workshop story ideas.</li>
-                    <li><strong>Refinement.</strong> Workshop ideas and code. Bring up new content to learn.</li>
-                    <li><strong>Critiquing.</strong> Discuss stories as a class with constructive feedback.</li>
-                </ol>
-                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
-                    Each data story should follow the <a href="https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories/demo">project template</a>
-                    and include a README, YouTube video, notebook, and data files.
-                </p>
-                <h3>Lecture Recordings</h3>
-                <ul>
-                    <li><a class="video-link" href="https://youtu.be/9xg1WAb8g5g"><i class="fas fa-play-circle"></i> Part a</a></li>
-                    <li><a class="video-link" href="https://youtu.be/u3B65-6Nfr0"><i class="fas fa-play-circle"></i> Part b</a></li>
-                    <li><a class="video-link" href="https://youtu.be/U9KgX-vVDWU"><i class="fas fa-play-circle"></i> Part c</a></li>
-                    <li><a class="video-link" href="https://youtu.be/uGpOTQCs0j8"><i class="fas fa-play-circle"></i> Part d</a></li>
-                    <li><a class="video-link" href="https://youtu.be/FRZ584MOkfU"><i class="fas fa-play-circle"></i> Part e</a></li>
-                </ul>
-                <p style="margin-top: 1.5rem;">
-                    <a href="pages/stories.html" style="display: inline-flex; align-items: center; gap: 0.5rem;
-                        padding: 0.75rem 1.5rem; background: var(--gradient-primary); color: white;
-                        border-radius: var(--radius-md); text-decoration: none; font-weight: 600;
-                        transition: opacity var(--transition-fast);"
-                        onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
-                        <i class="fas fa-film"></i> Browse Data Stories Gallery
-                    </a>
-                </p>
-            </div>
-        </div>
 
         <!-- Getting Help -->
-        <div class="module-section" id="help" style="margin-top: 2rem;">
-            <div class="module-header" onclick="toggleModule(this)">
-                <div>
-                    <span class="module-number" style="background: var(--gradient-secondary);">Resources</span>
-                    <div class="module-title">Getting Help</div>
-                    <div class="module-subtitle">Where to find datasets, tutorials, and support</div>
+        <div class="week-section" id="help" style="margin-top: 2rem;">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-info">
+                    <span class="week-number" style="background: var(--gradient-secondary);">Resources</span>
+                    <span class="week-theme">Getting Help</span>
                 </div>
                 <i class="fas fa-chevron-down expand-icon"></i>
             </div>
-            <div class="module-content">
+            <div class="week-content">
                 <h3>Getting Help</h3>
                 <ul>
-                    <li><a href="https://chat.openai.com/">ChatGPT</a> and <a href="https://ai.dartmouth.edu/dartmouth-chat">Dartmouth Chat</a> — AI tools for code, ideas, and more</li>
-                    <li><a href="https://stackoverflow.com/">Stack Overflow</a> — Q&amp;A for technical topics</li>
-                    <li><a href="https://github.com/ContextLab/CDL-tutorials">CDL Tutorials</a> — lab tutorials on a variety of topics</li>
-                    <li><a href="https://stories-about-data.slack.com">Slack</a> — course chatroom for Dartmouth students</li>
+                    <li><a href="https://chat.dartmouth.edu">Dartmouth AI Chat</a> and <a href="https://chat.openai.com/">ChatGPT</a> &mdash; AI tools for code, ideas, and more</li>
+                    <li><a href="https://stackoverflow.com/">Stack Overflow</a> &mdash; Q&amp;A for technical topics</li>
+                    <li><a href="https://github.com/ContextLab/CDL-tutorials">CDL Tutorials</a> &mdash; lab tutorials on a variety of topics</li>
+                    <li><a href="https://stories-about-data.slack.com">Slack</a> &mdash; course chatroom for Dartmouth students</li>
                 </ul>
                 <h3>Datasets</h3>
                 <ul>
@@ -536,8 +930,8 @@
     </footer>
 
     <script>
-        // Module expand/collapse
-        function toggleModule(header) {
+        // Week expand/collapse
+        function toggleWeek(header) {
             const content = header.nextElementSibling;
             header.classList.toggle('expanded');
             content.classList.toggle('expanded');
@@ -547,13 +941,13 @@
         const themeToggle = document.getElementById('themeToggle');
         const saved = localStorage.getItem('theme') || 'dark';
         document.documentElement.setAttribute('data-theme', saved);
-        themeToggle.textContent = saved === 'dark' ? '☀️' : '🌙';
+        themeToggle.textContent = saved === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
         themeToggle.addEventListener('click', function() {
             const current = document.documentElement.getAttribute('data-theme');
             const next = current === 'dark' ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', next);
             localStorage.setItem('theme', next);
-            this.textContent = next === 'dark' ? '☀️' : '🌙';
+            this.textContent = next === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
         });
 
         // Hamburger menu

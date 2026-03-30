@@ -76,3 +76,16 @@ cd _site && python -m http.server 8000
 - Upstream remote: `https://github.com/ContextLab/storytelling-with-data.git`
 - Push to master triggers GitHub Actions deploy to GitHub Pages
 - Students work on forks; instructor merges via per-student remotes in `add_remotes.sh`
+
+## Active Technologies
+- Markdown (cdl-slides format), HTML/CSS, YAML, cdl-slides (Marp)
+- index.html is auto-generated from slides/README.md via `scripts/build-index.py`
+- slides/README.md is the single source of truth for the week-by-week course schedule
+- Flat files — slide markdown, assignment markdown, stories.yaml
+
+## Recent Changes
+- 003-course-schedule-refactor: Restructured from 4-module layout to week-by-week Spring 2026 schedule. Added build-index.py to auto-generate index.html from slides/README.md. Created 8 new slide decks, audited all existing decks. Deleted deprecated git1-git6 slides. Renamed lecture-1.md → truth-and-storytelling.md.
+- 002-vibe-coding-curriculum: Added vibe coding slides, reworked Module 4 content, refactored Assignment 3
+
+## Recent Changes
+- 002-vibe-coding-curriculum: Added Markdown (cdl-slides format), HTML/CSS, YAML + cdl-slides (Marp), existing build pipeline from feature 001

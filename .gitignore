@@ -13,8 +13,15 @@ data-stories/semantic-mapping/data
 # Build output
 _site/
 slides/*.html
+slides/*.pdf
 assignments/*/index.html
 pages/*.html
+
+# cdl-slides temp files
+slides/.*_processed_*.md
+slides/cdl-theme-*/
+slides/themes/
+slides/images/
 
 # Dependencies
 node_modules/
