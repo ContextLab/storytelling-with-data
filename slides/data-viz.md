@@ -2,6 +2,8 @@
 marp: true
 theme: cdl-theme
 math: katex
+transition: fade 0.25s
+author: Contextual Dynamics Lab
 ---
 
 ![bg opacity:0.1](figs/dviz_bg.png)

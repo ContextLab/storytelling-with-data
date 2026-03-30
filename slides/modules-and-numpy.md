@@ -2,6 +2,8 @@
 marp: true
 theme: cdl-theme
 math: katex
+transition: fade 0.25s
+author: Contextual Dynamics Lab
 ---
 
 # Python Modules and the Data Science Stack
