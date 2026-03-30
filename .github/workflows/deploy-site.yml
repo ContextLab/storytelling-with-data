@@ -123,8 +123,10 @@ jobs:
           # Pages (spoke pages)
           cp pages/*.html _site/pages/
 
-          # Slides (markdown + compiled HTML + figures)
+          # Slides (compiled HTML + figures + theme assets)
           cp -r slides/figs/ _site/slides/figs/ 2>/dev/null || true
+          cp -r slides/themes/ _site/slides/themes/ 2>/dev/null || true
+          cp -r slides/images/ _site/slides/images/ 2>/dev/null || true
           for f in slides/*.html; do
             [ -f "$f" ] && cp "$f" _site/slides/
           done

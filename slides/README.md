@@ -264,34 +264,11 @@ Course schedule for Spring term 2026 (Mar 30 – Jun 3).
 
 ---
 
-# Part II
+## Data Story Resources
 
-We will spend Part II of the course repeating three general steps in the storytelling process (a video introduction to Part II may be found [here](https://youtu.be/WxW-6dsPxB0)):
-1. **Pitching and brainstorming.** You'll present your ideas to your classmates, form groups, workshop story ideas.
-    - Brainstorm session
-2. **Refinement.** We'll workshop your (and your group's) ideas and code. You can also use this time to bring up new content ideas that you'd like to learn more about.
-3. **Critiquing.** As a class we will discuss your story and provide constructive feedback. We'll also go through your code and discuss any relevant coding issues (e.g., challenges, clever hacks, etc.) that might be relevant to the class.
+- [Data story project template](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories/demo) — use this as a starting point for your projects
+- [General data story instructions](../assignments/data-stories/index.html) — full details on deliverables and evaluation
+- [Data story video introduction](https://youtu.be/WxW-6dsPxB0)
 
-You should plan to make it through this cycle at least three times during Part II of the course (i.e., you should produce at least 3 data stories).
-
-## Data Story Project Template
-
-Each data story should be contained in a single sub-folder of [data-stories](https://github.com/ContextLab/storytelling-with-data/tree/master/data-stories). Your project should comprise the following files, based on [this project template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/):
-- A README.md markdown file based on [this template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/README.md). The README file should contain:
-  - A project description and overview.
-  - A link to a YouTube video of your (5 minute) data story. (A playlist containing the current set of data stories may be found [here](https://www.youtube.com/playlist?list=PLjQYT8Fwp987s_ajlAjwijpE4NvWGBUDo).)
-  - Links to the data you analyzed.
-  - Instructions for replicating your results.
-  - A description of how someone could contribute to your project.
-  - Acknowledgements and citations.
-- Your data story (hosted on YouTube and cited in your README file). Note: you don't need to upload the source video, but if you use any images or slides you should include them in a sub-folder.
-- Your project's code (e.g., notebooks, Python scripts, etc.), based on [this template](https://github.com/ContextLab/storytelling-with-data/blob/master/data-stories/demo/demo.ipynb).
-- If under 10 MB (total), you can include your data files directly in your project folder. Otherwise you should host it on Google Drive, Dropbox, or some other cloud-based source accessible to all (current and future) students. Regardless of how your project's data files are hosted, your notebook should include code for downloading and importing the data (so from a user's perspective it shouldn't matter where the data files are hosted).
-
-## Part II Lecture Recordings
-- Brainstorming, pitch sessions, debugging, and story critiques:
-  - [Part a](https://youtu.be/9xg1WAb8g5g)
-  - [Part b](https://youtu.be/u3B65-6Nfr0)
-  - [Part c](https://youtu.be/U9KgX-vVDWU)
-  - [Part d](https://youtu.be/uGpOTQCs0j8)
-  - [Part e](https://youtu.be/FRZ584MOkfU)
+#### Past lecture recordings
+- [Part a](https://youtu.be/9xg1WAb8g5g), [Part b](https://youtu.be/u3B65-6Nfr0), [Part c](https://youtu.be/U9KgX-vVDWU), [Part d](https://youtu.be/uGpOTQCs0j8), [Part e](https://youtu.be/FRZ584MOkfU)
