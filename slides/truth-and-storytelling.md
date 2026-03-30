@@ -215,7 +215,7 @@ Data literacy is a superpower. *When you can evaluate evidence for yourself, you
 
 <div class="important-box" data-title="AI is not going to (fully) solve this for us">
 
-Consider: when you ask ChatGPT to analyze some data, how can you really know that it did what you asked (or meant)? You need to be able to think through the process yourself to (a) ask the right questions, and (b) evaluate the answers you get.
+Consider: when you ask ChatGPT to analyze some data, how can you really **know** that it did what you asked (or meant)? You need to be able to think through the process yourself to (a) ask the right questions, and (b) evaluate the answers you get.
 
 </div>
 
@@ -236,7 +236,7 @@ Consider: when you ask ChatGPT to analyze some data, how can you really know tha
 
 <div class="note-box" data-title="Why this matters for you">
 
-The ability to critically evaluate claims — and to produce honest, evidence-based analyses — has never been more important.
+The ability to critically evaluate claims — and to produce honest, evidence-based analyses — has never been more important. The ability to *communicate* your arguments clearly and compellingly is also crucial. This course will help you develop both skill sets.
 
 </div>
 
@@ -352,7 +352,7 @@ Learn to tell **true stories** with data — stories that are:
 
 <div class="tip-box" data-title="No prerequisites">
 
-You do not need prior programming experience. We will build everything up from scratch.
+You do not need prior programming experience. We will build up the required skill set from scratch.
 
 </div>
 
