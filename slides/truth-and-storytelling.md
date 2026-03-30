@@ -14,53 +14,6 @@ Dartmouth College
 Spring 2026
 
 ---
-<!-- _class: scale-90 -->
-
-## Welcome!
-
-<div class="note-box" data-title="What this course is about">
-
-This course is a **data science bootcamp** wrapped in the art of storytelling. You will learn to:
-
-- Find, analyze, interpret, and visualize data
-- Craft compelling narratives grounded in evidence
-- Use modern tools — Python, Jupyter, and AI-assisted coding — to tell stories that matter
-
-*Whether you pursue data science, medicine, policy, research, or business, these skills will serve you **everywhere**!*
-
-</div>
-
-<div class="tip-box" data-title="Teaching philosophy">
-
-I strongly believe in **teaching by doing**. We will learn concepts through hands-on practice. You will build a portfolio of data stories that you can share with future employers, collaborators, and friends. We'll critically evaluate each others' stories in a supportive environment, and you'll learn to give and receive feedback that helps you grow.
-
-</div>
-
----
-
-<!-- _class: scale-90 -->
-
-## Course structure
-
-<div class="note-box" data-title="Part 1: Building the toolkit (Weeks 1&mdash;4)">
-
-Four modules, each with an assignment:
-1. What makes a good story?
-2. Data visualization
-3. Python and Jupyter notebooks
-4. Vibe coding and data science tools
-
-</div>
-
-<div class="note-box" data-title="Part 2: Data stories (Weeks 5&mdash;10)">
-
-- Pick a question and a dataset (solo or in groups)
-- Analyze the data, build visualizations, and create a video telling your story
-- Produce a minimum of **3 data stories** during Part 2
-
-</div>
-
----
 
 # Who am I?
 <!-- _class: manual-layout -->
@@ -147,8 +100,56 @@ Associate Professor | Psychological &amp; Brain Sciences | <img src="figs/instru
 </div>
 
 ---
+<!-- _class: scale-90 -->
 
-## The pursuit of truth
+## Welcome!
+
+<div class="note-box" data-title="What this course is about">
+
+This course is a **data science bootcamp** wrapped in the art of storytelling. You will learn to:
+
+- Find, analyze, interpret, and visualize data
+- Craft compelling narratives grounded in evidence
+- Use modern tools — Python, Jupyter, and AI-assisted coding — to tell stories that matter
+
+*Whether you pursue data science, medicine, policy, research, business, or myriad other fields, these skills will serve you well **nearly everywhere**!*
+
+</div>
+
+<div class="tip-box" data-title="Teaching philosophy">
+
+I strongly believe in **teaching by doing**. We will learn concepts through hands-on practice. You will build a portfolio of data stories that you can share with future employers, collaborators, and friends. We'll critically evaluate each others' stories in a supportive environment, and you'll learn to give and receive feedback that helps you grow.
+
+</div>
+
+---
+
+<!-- _class: scale-90 -->
+
+## Course structure
+
+<div class="note-box" data-title="Part 1: Building the toolkit (Weeks 1&mdash;4)">
+
+Four modules, each with an assignment:
+1. What makes a good story?
+2. Data visualization
+3. Python and Jupyter notebooks
+4. Vibe coding and data science tools
+
+</div>
+
+<div class="note-box" data-title="Part 2: Data stories (Weeks 5&mdash;10)">
+
+- Pick a question and a dataset (solo or in groups)
+- Analyze the data, build visualizations, and create a video telling your story
+- Produce a minimum of **3 data stories** during Part 2
+
+</div>
+
+---
+<!-- _class: scale-80 -->
+
+## Overarching goal: the pursuit of *truth*
 
 <div class="definition-box" data-title="A fundamental question">
 
@@ -156,11 +157,19 @@ What does it mean to **know** something?
 
 </div>
 
-<div class="example-box" data-title="Think of something you know with near-100% certainty...">
+<div class="note-box" data-title="Think of something you know with near-100% certainty...">
 
 - How did that knowledge get into your brain?
 - What evidence supports it?
 - What would it take to convince you otherwise?
+
+</div>
+
+<div class="example-box" data-title="Example: &quot;levels of scientific inquiry&quot;">
+
+- In my lab, I study learning and memory. I *assume* that these functions happen in the brain, and that we can learn about them by measuring brain activity.
+- At a hypothetical lab one level *lower* in the hierarchy: maybe memories are stored in RNA instead of synapses. Some memories can even be passed on to offspring! (This is actually a real hypothesis in the field of epigenetics.)
+- At a hypothetical lab one level *higher* in the hierarchy: maybe learning and memory are epiphenomena of more general principles of information processing that apply to all complex systems, from brains to ecosystems to economies.
 
 </div>
 
