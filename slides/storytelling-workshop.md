@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# What Makes a Good Story?
+# What makes a good story?
 ## PSYC 81.09: Storytelling with Data
 
 Jeremy R. Manning
