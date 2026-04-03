@@ -7,8 +7,11 @@ author: Contextual Dynamics Lab
 ---
 
 # What Makes a Good Story?
-## Workshop
-### PSYC 81.09: Storytelling with Data
+## PSYC 81.09: Storytelling with Data
+
+Jeremy R. Manning
+Dartmouth College
+Spring 2026
 
 ---
 
