@@ -1,3 +1,6 @@
 [submodule "data-stories/Likeability-Predictor"]
 	path = data-stories/Likeability-Predictor
 	url = https://github.com/marissapbenz26-eng/Likeability-Predictor.git
+[submodule "data-stories/data-visualization-mcp"]
+	path = data-stories/data-visualization-mcp
+	url = https://github.com/kate-marine/data-visualization-mcp.git
