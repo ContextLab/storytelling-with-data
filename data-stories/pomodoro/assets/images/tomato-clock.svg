@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Tomato focus clock</title>
+  <desc id="desc">A bright tomato-shaped clock with leaves and a timer hand.</desc>
+  <rect width="320" height="320" rx="40" fill="#f7faf8"/>
+  <circle cx="160" cy="170" r="94" fill="#e84d5b"/>
+  <circle cx="130" cy="147" r="20" fill="#ff7a83" opacity=".72"/>
+  <path d="M160 64c9 26 3 45-18 58 30-8 50 2 62 31 3-31 18-48 47-51-25-8-40-22-47-42-15 18-30 24-44 4Z" fill="#1f9c70"/>
+  <circle cx="160" cy="170" r="58" fill="#ffffff" opacity=".94"/>
+  <circle cx="160" cy="170" r="7" fill="#233238"/>
+  <path d="M160 170V129" stroke="#233238" stroke-width="9" stroke-linecap="round"/>
+  <path d="M160 170l33 22" stroke="#233238" stroke-width="9" stroke-linecap="round"/>
+  <path d="M99 232c34 30 91 31 126 0" fill="none" stroke="#b71f32" stroke-width="10" stroke-linecap="round" opacity=".36"/>
+</svg>

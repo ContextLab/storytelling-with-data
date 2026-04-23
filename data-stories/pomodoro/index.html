@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="timer-panel" aria-labelledby="timer-heading">
+        <div class="intro-row">
+          <div>
+            <p class="eyebrow">Study timer</p>
+            <h1 id="timer-heading">Pomodoro focus clock</h1>
+          </div>
+          <img class="timer-art" src="assets/images/tomato-clock.svg" alt="A tomato-shaped focus clock">
+        </div>
+
+        <div class="status-strip" id="status-strip" data-phase="study">
+          <span id="phase-label">Study phase</span>
+          <span id="next-phase-note">Break is ready after this round.</span>
+        </div>
+
+        <div class="timer-display" id="timer-display" aria-live="polite">25:00</div>
+
+        <div class="control-row" aria-label="Timer controls">
+          <button class="primary-action" id="start-pause-button" type="button">Start</button>
+          <button id="reset-button" type="button">Reset</button>
+          <button id="next-phase-button" type="button" disabled>Start break</button>
+          <button id="dismiss-alarm-button" type="button" hidden>Dismiss alarm</button>
+        </div>
+
+        <div class="feedback-region" id="feedback-region" aria-live="assertive">
+          Ready when you are.
+        </div>
+      </section>
+
+      <section class="settings-panel" aria-labelledby="settings-heading">
+        <h2 id="settings-heading">Session lengths</h2>
+
+        <div class="preset-row" aria-label="Preset timers">
+          <button class="preset-button is-selected" type="button" data-preset="25-5">25 / 5</button>
+          <button class="preset-button" type="button" data-preset="50-10">50 / 10</button>
+        </div>
+
+        <form id="duration-form" class="duration-form" novalidate>
+          <fieldset>
+            <legend>Study</legend>
+            <label>
+              Hours
+              <input id="study-hours" inputmode="numeric" autocomplete="off" value="0">
+            </label>
+            <label>
+              Minutes
+              <input id="study-minutes" inputmode="numeric" autocomplete="off" value="25">
+            </label>
+            <label>
+              Seconds
+              <input id="study-seconds" inputmode="numeric" autocomplete="off" value="0">
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Break</legend>
+            <label>
+              Hours
+              <input id="break-hours" inputmode="numeric" autocomplete="off" value="0">
+            </label>
+            <label>
+              Minutes
+              <input id="break-minutes" inputmode="numeric" autocomplete="off" value="5">
+            </label>
+            <label>
+              Seconds
+              <input id="break-seconds" inputmode="numeric" autocomplete="off" value="0">
+            </label>
+          </fieldset>
+
+          <button type="submit">Apply custom times</button>
+          <p class="form-message" id="duration-message" role="status"></p>
+        </form>
+      </section>
+
+      <section class="tasks-panel" aria-labelledby="tasks-heading">
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow">Task list</p>
+            <h2 id="tasks-heading">What needs to get done?</h2>
+          </div>
+          <span class="task-count" id="task-count">0 tasks</span>
+        </div>
+
+        <form id="task-form" class="task-form" novalidate>
+          <label for="task-input">Add a study task</label>
+          <div class="task-entry-row">
+            <input id="task-input" autocomplete="off" placeholder="Read chapter 4">
+            <button type="submit">Add task</button>
+          </div>
+          <p class="form-message" id="task-message" role="status"></p>
+        </form>
+
+        <ul class="task-list" id="task-list" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
