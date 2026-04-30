@@ -1,0 +1,282 @@
+# T012: Curated cross-year header mapping (Measure table per data-model.md §4 + §13)
+#
+# Each measure has:
+#   id, display_name, description, value_scale_canonical
+#   aliases: list of {workbook_id, sheet_pattern (regex), header_pattern (substring)}
+#
+# `header_pattern` is a case-insensitive substring search. The first match in a sheet wins.
+# `transform` examples: identity, recode_yes_no_to_binary, recode_likert4_to_int
+
+measures:
+
+  # ---- 30-day use measures (Core Measures) ----
+  - id: use_30day_alc
+    display_name: "30-day alcohol use"
+    description: "During the past 30 days, did you drink one or more drinks of an alcoholic beverage?"
+    value_scale_canonical: binary_yes_no
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Alc?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "drink one or more drinks of an alcoholic beverage", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Alc?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "drink one or more drinks of an alcoholic beverage", transform: identity }
+
+  - id: use_30day_cig
+    display_name: "30-day cigarette use"
+    description: "During the past 30 days, did you smoke part or all of a cigarette?"
+    value_scale_canonical: binary_yes_no
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Cig?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "smoke part or all of a cigarette", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Cig?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "smoke part or all of a cigarette", transform: identity }
+
+  - id: use_30day_vape
+    display_name: "30-day vape use"
+    description: "During the past 30 days, did you use a vape product?"
+    value_scale_canonical: binary_yes_no
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Vape?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "use a vape product", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Vape?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "use a vape product", transform: identity }
+
+  - id: use_30day_mj
+    display_name: "30-day marijuana use"
+    description: "During the past 30 days, did you use a marijuana (cannabis) product?"
+    value_scale_canonical: binary_yes_no
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "MJ?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "marijuana (cannabis) product", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "MJ?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "marijuana (cannabis) product", transform: identity }
+
+  - id: use_30day_rx
+    display_name: "30-day prescription-drug misuse"
+    description: "During the past 30 days, have you used prescription drugs not prescribed to you?"
+    value_scale_canonical: binary_yes_no
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Rx?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "prescription drugs not prescribed", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^2025$", header_pattern: "prescription drugs NOT prescribed", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Rx?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "prescription drugs", transform: identity }
+
+  # ---- Perceived harm measures ----
+  - id: harm_alc
+    display_name: "Perceived harm — alcohol"
+    description: "How much do you think people risk harming themselves if they have 5+ drinks?"
+    value_scale_canonical: likert4_no_to_great_risk
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Harm alc?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "5 or more drinks of an alcoholic beverage", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Harm alc?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "5 or more drinks of an alcoholic beverage", transform: identity }
+
+  - id: harm_cig
+    display_name: "Perceived harm — cigarettes"
+    description: "How much do you think people risk harming themselves if they smoke a pack a day?"
+    value_scale_canonical: likert4_no_to_great_risk
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Harm cig?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "smoke one or more packs of cigarettes per day", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Harm cig?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "smoke one or more packs of cigarettes per day", transform: identity }
+
+  - id: harm_vape
+    display_name: "Perceived harm — vape"
+    description: "How much do you think people risk harming themselves with daily vape use?"
+    value_scale_canonical: likert4_no_to_great_risk
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Harm vape?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "one or more vape pods per day", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Harm vape?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "one or more vape pods per day", transform: identity }
+
+  - id: harm_mj
+    display_name: "Perceived harm — marijuana"
+    description: "How much do you think people risk harming themselves with weekly marijuana use?"
+    value_scale_canonical: likert4_no_to_great_risk
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Harm MJ?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "marijuana (cannabis/weed) products once or twice", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Harm MJ?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "marijuana (cannabis/weed) products once or twice", transform: identity }
+
+  - id: harm_rx
+    display_name: "Perceived harm — Rx misuse"
+    description: "How much do you think people risk harming themselves by misusing prescription drugs?"
+    value_scale_canonical: likert4_no_to_great_risk
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Harm Rx?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "prescription drugs that are not prescribed", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Harm Rx?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "prescription drugs that are not prescribed", transform: identity }
+
+  # ---- Peer disapproval ----
+  - id: peer_alc
+    display_name: "Peer disapproval — alcohol"
+    description: "How wrong do your friends feel it would be for you to drink alcohol nearly every day?"
+    value_scale_canonical: likert4_not_to_very_wrong
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Peer alc?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "How wrong do your friends feel it would be for you to have one or two drinks", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Peer alc?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "How wrong do your friends feel it would be for you to have one or two drinks", transform: identity }
+
+  - id: peer_vape
+    display_name: "Peer disapproval — vape"
+    description: "How wrong do your friends feel it would be for you to use vape products?"
+    value_scale_canonical: likert4_not_to_very_wrong
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Peer vape?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "friends feel it would be for you to use vape", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Peer vape?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "friends feel it would be for you to use vape", transform: identity }
+
+  - id: peer_mj
+    display_name: "Peer disapproval — marijuana"
+    description: "How wrong do your friends feel it would be for you to use marijuana products?"
+    value_scale_canonical: likert4_not_to_very_wrong
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Peer MJ?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "friends feel it would be for you to use marijuana", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Peer MJ?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "friends feel it would be for you to use marijuana", transform: identity }
+
+  # ---- Parental disapproval ----
+  - id: parent_alc
+    display_name: "Parental disapproval — alcohol"
+    description: "How wrong do your parents feel it would be for you to drink alcohol nearly every day?"
+    value_scale_canonical: likert4_not_to_very_wrong
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: "^2022$", header_pattern: "Parent alc?", transform: identity }
+      - { workbook_id: hs_core, sheet_pattern: "^(2023|2025)$", header_pattern: "How wrong do your parents feel it would be for you to have one or two drinks", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^2022$", header_pattern: "Parent alc?", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: "^(2023|2024|2025)$", header_pattern: "How wrong do your parents feel it would be for you to have one or two drinks", transform: identity }
+
+  # ---- Mental health (cross-workbook) ----
+  - id: mh_sad_hopeless
+    display_name: "Felt sad or hopeless (past year)"
+    description: "In the past year, I have felt sad or hopeless"
+    value_scale_canonical: likert4_freq
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: ".*", header_pattern: "felt sad or hopeless", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: ".*", header_pattern: "felt sad or hopeless", transform: identity }
+
+  - id: mh_anxious_worried
+    display_name: "Felt anxious or worried (past year)"
+    description: "In the past year, I have felt anxious or worried"
+    value_scale_canonical: likert4_freq
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: ".*", header_pattern: "felt anxious or worried", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: ".*", header_pattern: "felt anxious or worried", transform: identity }
+
+  - id: feel_safe_school
+    display_name: "Feel safe at school"
+    description: "I feel safe at school"
+    value_scale_canonical: likert4_agree
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: ".*", header_pattern: "feel safe at school", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: ".*", header_pattern: "feel safe at school", transform: identity }
+
+  - id: feel_matter_community
+    display_name: "Feel I matter to the community"
+    description: "I feel I matter to the community"
+    value_scale_canonical: likert4_agree
+    aliases:
+      - { workbook_id: hs_core, sheet_pattern: ".*", header_pattern: "I feel I matter", transform: identity }
+      - { workbook_id: ms_core, sheet_pattern: ".*", header_pattern: "I feel I matter", transform: identity }
+
+  # ---- RTU event measures ----
+  - id: rtu_felt_safe
+    display_name: "Felt safe and comfortable at RTU event"
+    description: "Did you feel safe and comfortable at the event?"
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: ".*", header_pattern: "Did you feel safe and comfortable at the event?", transform: identity }
+
+  # ---- Developmental assets (Event 5) ----
+  - id: da_support
+    display_name: "Developmental asset: Support"
+    description: "Support: There are trusted adults in my life that I know I can count on."
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 5", header_pattern: "Support: There are trusted adults", transform: identity }
+
+  - id: da_empowerment
+    display_name: "Developmental asset: Empowerment"
+    description: "Empowerment: I feel safe, valued, and appreciated."
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 5", header_pattern: "Empowerment", transform: identity }
+
+  - id: da_boundaries
+    display_name: "Developmental asset: Boundaries"
+    description: "Boundaries and Expectations: I have clear expectations."
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 5", header_pattern: "Boundaries and Expectations", transform: identity }
+
+  - id: da_constructive_time
+    display_name: "Developmental asset: Constructive Use of Time"
+    description: "Constructive Use of Time: I engage with my community."
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 5", header_pattern: "Constructive Use of Time", transform: identity }
+
+  - id: da_commitment_learning
+    display_name: "Developmental asset: Commitment to Learning"
+    description: "Commitment to Learning: I appreciate learning new things."
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 5", header_pattern: "Commitment to Learning", transform: identity }
+
+  - id: da_positive_values
+    display_name: "Developmental asset: Positive Values"
+    description: "Positive Values: I respect my friends and my community."
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 5", header_pattern: "Positive Values", transform: identity }
+
+  - id: da_social_competencies
+    display_name: "Developmental asset: Social Competencies"
+    description: "Social Competencies: I express myself honestly."
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 5", header_pattern: "Social Competencies", transform: identity }
+
+  - id: da_positive_identity
+    display_name: "Developmental asset: Positive Identity"
+    description: "Positive Identity: I feel like I matter."
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 5", header_pattern: "Positive Identity", transform: identity }
+
+  - id: rtu_better_connected
+    display_name: "Better connected to community as a result of RTU"
+    description: "I feel better connected to my community as a result of RTU."
+    value_scale_canonical: likert5_agree
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 5", header_pattern: "better connected to my community", transform: identity }
+
+  # ---- RTU free-text learning columns (mark as freetext_canonical for the picker) ----
+  - id: rtu_what_learned
+    display_name: "What did you learn from this event?"
+    description: "What did you learn from this event?"
+    value_scale_canonical: free
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: ".*", header_pattern: "What did you learn from this event", transform: identity }
+
+  - id: rtu_apply_learned
+    display_name: "How will you apply what you learned?"
+    description: "How will you apply what you learned to your everyday life?"
+    value_scale_canonical: free
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: ".*", header_pattern: "How will you apply what you learned", transform: identity }
+
+  - id: rtu_recipe
+    display_name: "Cookbook recipe (Event 4)"
+    description: "We're making an RTU cookbook! Please provide the recipe to a meal or dessert that reminds you of someone."
+    value_scale_canonical: free
+    aliases:
+      - { workbook_id: rtu_2025_26, sheet_pattern: "Event 4", header_pattern: "RTU cookbook", transform: identity }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collaborative Dataset Explorer</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="assets/vendor/tabulator.min.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="rail" id="nav-rail">
+      <div class="brand">
+        <div class="title">Collaborative<br/>dataset</div>
+        <div class="subtitle">RTU · HS · MS</div>
+      </div>
+      <div class="nav-item active" data-view="tables"><span class="glyph">▦</span>Tables</div>
+      <div class="nav-item" data-view="compare"><span class="glyph">▥</span>Compare</div>
+      <div class="nav-item" data-view="timeline"><span class="glyph">∿</span>Timeline</div>
+      <div class="nav-item" data-view="sankey"><span class="glyph">⫷</span>Sankey</div>
+      <div class="nav-item" data-view="effectiveness"><span class="glyph">⊙</span>Effectiveness</div>
+      <div class="nav-item" data-view="sentiment"><span class="glyph">±</span>Sentiment</div>
+      <div class="nav-item" data-view="theme-map"><span class="glyph">⁂</span>Theme map</div>
+      <div class="nav-item" data-view="recipes"><span class="glyph">≋</span>Recipes</div>
+    </aside>
+
+    <header class="topbar" id="topbar">
+      <select id="workbook-select" aria-label="Workbook"></select>
+      <select id="sheet-select" aria-label="Sheet"></select>
+      <span class="crumbs" id="crumbs"></span>
+      <span class="badge" id="bundle-badge">loading…</span>
+    </header>
+
+    <main class="main" id="view-root">
+      <div class="loading">
+        <span>Loading bundle</span>
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </main>
+
+    <aside class="filters" id="filter-rail">
+      <div class="group">
+        <h3>Schools</h3>
+        <div id="filter-schools"></div>
+      </div>
+      <div class="group">
+        <h3>Grades</h3>
+        <div id="filter-grades"></div>
+      </div>
+      <div class="group">
+        <h3>Search free-text</h3>
+        <input type="search" id="filter-search" placeholder="words to find…" />
+      </div>
+    </aside>
+  </div>
+
+  <div id="tooltip" class="tooltip" role="tooltip"></div>
+  <div id="side-panel" class="side-panel" aria-hidden="true">
+    <button class="close" id="side-panel-close" aria-label="Close panel">✕ close</button>
+    <div id="side-panel-body"></div>
+  </div>
+
+  <script src="assets/vendor/d3.v7.min.js"></script>
+  <script src="assets/vendor/d3-sankey.v0.12.min.js"></script>
+  <script src="assets/vendor/tabulator.min.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

@@ -41,3 +41,11 @@ notes/
 # Tool state
 .omc/
 .playwright-mcp/
+# Collaborative explorer build artifacts (contains free-text PII; do not publish)
+data-stories/collaborative/explorer/dist/data.json
+data-stories/collaborative/explorer/dist/data.json.gz
+data-stories/collaborative/explorer/.venv/
+data-stories/collaborative/explorer/pipeline/__pycache__/
+data-stories/collaborative/explorer/tests/__pycache__/
+data-stories/collaborative/explorer/tests/.pytest_cache/
+data-stories/collaborative/explorer/pipeline/.cluster_name_cache.json

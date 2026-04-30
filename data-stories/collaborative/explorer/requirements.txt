@@ -1,0 +1,18 @@
+# T003: pinned Python build dependencies for the Collaborative Explorer
+# CPU-only torch; no GPU required.
+
+pandas==2.2.3
+openpyxl==3.1.5
+numpy==1.26.4
+scikit-learn==1.5.2
+umap-learn==0.5.7
+hdbscan==0.8.40
+sentence-transformers==3.3.1
+transformers==4.46.3
+torch==2.5.1
+pyyaml==6.0.2
+jsonschema==4.23.0
+pytest==8.3.4
+playwright==1.49.1
+# Optional: local LLM cluster naming. Install via `pip install -r requirements.txt --extra-index-url ...`
+# llama-cpp-python==0.3.5 ; install separately if a precompiled wheel is unavailable on your platform.
