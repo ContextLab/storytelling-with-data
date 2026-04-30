@@ -82,10 +82,13 @@ cd _site && python -m http.server 8000
 - index.html is auto-generated from slides/README.md via `scripts/build-index.py`
 - slides/README.md is the single source of truth for the week-by-week course schedule
 - Flat files — slide markdown, assignment markdown, stories.yaml
+- Python 3.11 (build pipeline); ES2020 JavaScript + HTML5 + CSS3 (runtime explorer). (004-collab-data-explorer)
+- filesystem-only; the explorer reads a single `data.json` (gzipped optionally as `data.json.gz`) at runtime. Source workbooks remain untouched. (004-collab-data-explorer)
 
 ## Recent Changes
 - 003-course-schedule-refactor: Restructured from 4-module layout to week-by-week Spring 2026 schedule. Added build-index.py to auto-generate index.html from slides/README.md. Created 8 new slide decks, audited all existing decks. Deleted deprecated git1-git6 slides. Renamed lecture-1.md → truth-and-storytelling.md.
 - 002-vibe-coding-curriculum: Added vibe coding slides, reworked Module 4 content, refactored Assignment 3
 
 ## Recent Changes
+- 004-collab-data-explorer: Added Python 3.11 (build pipeline); ES2020 JavaScript + HTML5 + CSS3 (runtime explorer).
 - 002-vibe-coding-curriculum: Added Markdown (cdl-slides format), HTML/CSS, YAML + cdl-slides (Marp), existing build pipeline from feature 001
