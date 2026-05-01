@@ -8,11 +8,13 @@ import { renderEffectiveness } from './views/effectiveness.js';
 import { renderSentiment } from './views/sentiment.js';
 import { renderThemeMap } from './views/theme-map.js';
 import { renderRecipes } from './views/recipes.js';
+import { renderCustom } from './views/custom.js';
 
 const VIEWS = {
   'tables': renderTables, 'compare': renderCompare, 'timeline': renderTimeline,
   'sankey': renderSankey, 'effectiveness': renderEffectiveness,
   'sentiment': renderSentiment, 'theme-map': renderThemeMap, 'recipes': renderRecipes,
+  'custom': renderCustom,
 };
 
 export const state = {

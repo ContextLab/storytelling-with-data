@@ -17,6 +17,7 @@ import numpy as np
 
 from . import (
     cluster_namer,
+    dropout_analysis,
     effectiveness,
     ingest,
     nlp,
@@ -300,6 +301,15 @@ def main(argv: list[str] | None = None) -> int:
         sentiment_scores=sentiment_score_by_ft_id,
     )
 
+    dropout = dropout_analysis.compute(
+        responses=resp_records,
+        sheets=sheets,
+        freetext_items=ft_stubs,
+        sentiment_scores=sentiment_score_by_ft_id,
+        effectiveness_indicators=indicators,
+        col_to_measure=col_to_measure,
+    )
+
     model_versions = nlp.model_versions()
     model_versions["cluster_namer"] = cluster_namer.cluster_namer_id()
 
@@ -318,6 +328,7 @@ def main(argv: list[str] | None = None) -> int:
         schema_drift=drift_payload,
         recipe_axes=recipes.axis_definitions(),
         model_versions=model_versions,
+        dropout_analysis=dropout,
     )
 
     # ---- Phase H: validate + write ----
