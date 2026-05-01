@@ -49,6 +49,7 @@ def assemble_bundle(
     recipe_axes: dict[str, Any],
     model_versions: dict[str, str],
     dropout_analysis: dict[str, Any] | None = None,
+    curated_themes: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     return {
         "version": BUNDLE_SCHEMA_VERSION,
@@ -69,6 +70,7 @@ def assemble_bundle(
         "schema_drift": schema_drift,
         "recipe_axes": recipe_axes,
         "dropout_analysis": dropout_analysis or {},
+        "curated_themes": curated_themes or [],
     }
 
 

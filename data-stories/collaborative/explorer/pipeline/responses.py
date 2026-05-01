@@ -14,6 +14,7 @@ import pandas as pd
 
 from . import ingest
 from . import schools
+from . import text_cleanup
 
 
 @dataclass
@@ -21,8 +22,9 @@ class FreeTextStub:
     id: str
     response_id: str
     column_id: str
-    text: str
+    text: str             # original verbatim text (used for display)
     text_length: int
+    text_normalized: str = ""  # cleaned for embedding/clustering
     is_recipe_candidate: bool = False
 
 
@@ -93,6 +95,7 @@ def build_responses(
                         column_id=col_id,
                         text=text,
                         text_length=len(text),
+                        text_normalized=text_cleanup.normalize(text),
                         is_recipe_candidate=(recipe_idx is not None and col_pos == recipe_idx),
                     )
                     response.freetext_item_ids.append(ft.id)

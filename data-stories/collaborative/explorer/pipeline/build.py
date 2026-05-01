@@ -17,6 +17,7 @@ import numpy as np
 
 from . import (
     cluster_namer,
+    curated_themes,
     dropout_analysis,
     effectiveness,
     ingest,
@@ -69,11 +70,33 @@ def main(argv: list[str] | None = None) -> int:
     print(f"[build]   {len(resp_records)} responses, {len(ft_stubs)} free-text items.")
 
     # ---- Phase D: NLP — sentiment + embedding ----
-    texts = [ft.text for ft in ft_stubs]
-    print(f"[build]   computing sentiment for {len(texts)} items…")
-    sent_scores, sent_labels = nlp.score_sentiment(texts)
-    print(f"[build]   computing embeddings for {len(texts)} items…")
-    embeddings = nlp.embed(texts)
+    # Embed and score the *normalized* text (typos fixed, contractions expanded)
+    # so that surface variation doesn't fragment the embedding space.
+    texts_norm = [(ft.text_normalized or ft.text) for ft in ft_stubs]
+    print(f"[build]   computing sentiment for {len(texts_norm)} items…")
+    sent_scores, sent_labels = nlp.score_sentiment(texts_norm)
+    print(f"[build]   computing embeddings for {len(texts_norm)} items…")
+    embeddings = nlp.embed(texts_norm)
+
+    # ---- Phase D2: curated theme assignment for "how will you apply" ----
+    apply_col_ids = {
+        c.column_ids[i]
+        for c in sheets
+        for i in range(len(c.headers))
+        if "how will you apply" in c.headers[i].lower()
+    }
+    apply_idx = [i for i, ft in enumerate(ft_stubs) if ft.column_id in apply_col_ids]
+    curated_theme_by_ft_id: dict[str, tuple[str, float]] = {}
+    if apply_idx:
+        apply_texts = [texts_norm[i] for i in apply_idx]
+        print(f"[build]   assigning curated themes for {len(apply_texts)} 'how will you apply' items…")
+        assignments = curated_themes.assign(apply_texts, nlp.embed)
+        for j, i in enumerate(apply_idx):
+            curated_theme_by_ft_id[ft_stubs[i].id] = assignments[j]
+        # Print a quick distribution
+        from collections import Counter
+        dist = Counter(t for t, _ in assignments)
+        print(f"[build]   curated-theme distribution (top 5): {dist.most_common(5)}")
 
     # ---- Phase E: per-column theme map (UMAP + HDBSCAN + cluster naming) ----
     theme_maps: list[dict[str, Any]] = []
@@ -268,16 +291,20 @@ def main(argv: list[str] | None = None) -> int:
     for i, ft in enumerate(ft_stubs):
         coords = coords_by_ft_id.get(ft.id)
         coord_pair = [float(coords[0]), float(coords[1])] if coords is not None else None
+        ct = curated_theme_by_ft_id.get(ft.id)
         freetext_payload.append({
             "id": ft.id,
             "response_id": ft.response_id,
             "column_id": ft.column_id,
             "text": ft.text,
+            "text_normalized": ft.text_normalized or ft.text,
             "text_length": ft.text_length,
             "sentiment_score": float(sent_scores[i]),
             "sentiment_label": sent_labels[i],
             "coords_2d": coord_pair,
             "cluster_id": cluster_id_by_ft_id.get(ft.id, "uncategorized"),
+            "curated_theme_id": ct[0] if ct else None,
+            "curated_theme_score": ct[1] if ct else None,
             "is_recipe_candidate": bool(ft.is_recipe_candidate),
             "recipe_axes": recipe_axes_per_ft.get(ft.id),
         })
@@ -329,6 +356,7 @@ def main(argv: list[str] | None = None) -> int:
         recipe_axes=recipes.axis_definitions(),
         model_versions=model_versions,
         dropout_analysis=dropout,
+        curated_themes=curated_themes.theme_records(),
     )
 
     # ---- Phase H: validate + write ----
