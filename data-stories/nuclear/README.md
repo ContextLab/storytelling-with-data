@@ -28,7 +28,7 @@ The era of formal arms control between the US and Russia ended in February 2026.
 
 ## Video
 
-YouTube: https://youtu.be/hJDVfCPZOYc
+YouTube: [https://youtu.be/hJDVfCPZOYc](https://youtu.be/u_0ErPb7Ntw)
 
 The video opens with a short clip from the 1983 film *WarGames* and uses the bubble chart's 1983 frame — the year the film was released — as the visual entry point before the animation rewinds to 1945 and plays forward through 2024, with narration extending to the February 2026 expiration of New START. See the *Note on the video* section of the notebook for a full description of the video's structure and a media-attribution / fair-use statement.
 
