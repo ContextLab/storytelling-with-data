@@ -15,20 +15,21 @@ For the actually story part, I wanted to show how the server could actually be u
 
 The biggest limitation I ran into was that suggest_vizspec (tool that is supposed to interpret plain English chart requests but didn’t end up finishing) can pick the right plot type but doesn't know to chain in a aggregate_dataset call when the request implies it. For example asking for "total revenue by city" is a single spoken phrase but implies two server-side operations, and means letting tools call other tools which I didn’t have time to implement.
 
-See DESIGN.md for more in depth explanation of server itself and data-mcp-2 for full repo just for the mcp itself
+See DESIGN.md for more in depth explanation of server itself and [data-mcp-2](https://github.com/kate-marine/data-visualization-mcp-server) for the full repo of for the mcp server 
 
 
+**Video link:** https://youtu.be/ghtawmGFPXc
 
 
-Upload a movie of your data story to YouTube and include a link here.  You can narrate over a screencast of you scrolling through your notebook, or you can paste your figures into a Powerpoint or Keynote presentation (or similar).  You may also find [Marp](https://yhatt.github.io/marp/) useful; it's what I'm using to generate the slideshows for [Modules 1--4](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/outline.md).  (Sample slides [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/modules_and_numpy.md) and [here](https://github.com/ContextLab/storytelling-with-data/blob/master/slides/pandas.md).)
+## Downloading the data
 
-# Downloading the data
-
-Provide a link to the dataset(s) you're using for the project, along with a brief description of the data.
+See csv. It's super small, used just to test the MCP tools which were the main focus of this project
 
 # Running the code
 
-Describe, in sufficient detail for a new person (moderately competent but unfamiliar with your work) to follow, how to run your code.  If the project is implemented in one or more Colaboratory notebooks, you should provide a link to the notebook(s) here.  Also copy the notebooks (as .ipynb files) into your project folder so that everything related to your project is backed up on GitHub.
+See [data-mcp-2 ](https://github.com/kate-marine/data-visualization-mcp-server) for full code repo.
+
+Describe, in sufficient detail for a new person (moderately competent but unfamiliar with your work) to follow, how to run your code. 
 
 # Contributing to the code
 
@@ -40,13 +41,7 @@ Tell other people how they can contribute to the project you've started.  Specif
 
 # Acknowledgements
 
-If your idea is based on or inspired by someone else's work (either their code or their ideas), cite them and provide links to their work.  Also, if you received help or support from someone who is not listed as an author on this project, you should acknowledge them here.
+Original MCP server was built based on an application prompt from the DALI lab. Here is link: https://dalilab.notion.site/Data-Challenge-2b3ecf13c9e14ce18932c95b095519a3 
 
 
-Project information: project name, authors, GitHub usernames
-Overview: main question, approach, data used, tools used, key findings
-YouTube link: a link to your 5-minute data story video
-Data links: where to find the data you analyzed
-Running the code: instructions for replicating your results
-Contributing: next steps, open questions, known issues
-Acknowledgements and citations
+
