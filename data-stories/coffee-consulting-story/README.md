@@ -15,7 +15,7 @@ For the actually story part, I wanted to show how the server could actually be u
 
 The biggest limitation I ran into was that suggest_vizspec (tool that is supposed to interpret plain English chart requests but didn’t end up finishing) can pick the right plot type but doesn't know to chain in a aggregate_dataset call when the request implies it. For example asking for "total revenue by city" is a single spoken phrase but implies two server-side operations, and means letting tools call other tools which I didn’t have time to implement.
 
-See DESIGN.md for more in depth explanation of server itself and [data-mcp-2](https://github.com/kate-marine/data-visualization-mcp-server) for the full repo of for the mcp server 
+See DESIGN.md for more in depth explanation of server itself and https://github.com/kate-marine/data-visualization-mcp-server.git for the full repo of for the mcp server 
 
 
 **Video link:** https://youtu.be/ghtawmGFPXc
@@ -27,7 +27,7 @@ See csv. It's super small, used just to test the MCP tools which were the main f
 
 # Running the code
 
-See [data-mcp-2 ](https://github.com/kate-marine/data-visualization-mcp-server) for full code repo.
+See https://github.com/kate-marine/data-visualization-mcp-server.git for full code repo.
 
 Describe, in sufficient detail for a new person (moderately competent but unfamiliar with your work) to follow, how to run your code. 
 
