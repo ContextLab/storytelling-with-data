@@ -7,22 +7,24 @@ Betting markets are often thought of highly efficient markets, meaning that the 
 
 Hegarty & Whelan (2024) show that the standard test for FLB is methodologically biased, and Winkelmann et al. (2024) show that the per-league, per-season analyses common in literature actually have some severe multiple-testing and statistical-power problems. So my main question is this project was to which sports betting markets can be still be called efficient (and whether they really have FLB) once they are tested more robustly with proper uncertainty quantification, multiple-testing correction, and power analysis?
 
-What was your main question?
-How did you approach exploring and/or answering your question?
-What data did you use?
-What sorts of data science tools did you use?
-What did you find or accomplish (be brief)? For example, did you find any interesting results or insights? Or did you solve an interesting problem that might be useful in another project?
+## Approach and Methods
 
+I started by replicating the Hegarty & Whelan FLB regression across 9 European soccer leagues, then applied Winkelmann's critique on my own results via Bonferroni/BH-FDR correction, analytical power analysis, and a direct null simulation. 
 
+First step was devigging the bookmaker odds (ie removing  built-in profit margin to turn the raw prices into actual probabilities) using four methods (normalized, additive, power, and Shin) with the normalized estimator as the primary measure. To test for favorite-longshot bias, I ran a weighted least squares regression with match-level cluster-robust standard errors, since the three outcomes of a match are mechanically correlated. Then I had to correct for testing nine leagues at once using Bonferroni and BH-FDR. I assessed each null result with simulation-based power analysis, and verified the test's calibration with a direct null simulation. 
 
-### Central Questions
+Separately, I benchmarked the market against a LightGBM multiclass classifier to quantify how much real information the market's prices contain. I trained it with walk-forward cross-validation to avoid lookahead and recalibrated the outputs with post-hoc isotonic regression. Then wrapped it in split and Mondrian conformal prediction to compare model and market on equal footing. Also attached bootstrap confidence intervals to every reported metric.
 
-1. Does the market for European soccer betting have a systematic bias (favorite-longshot bias), and if so, how large and how robust is it? 
+## Data
+I used closing-odds and match-result data for 9 European soccer leagues (2013-2024) from https://www.football-data.co.uk/data.php (8,538 total matches).
 
-2. How does a machine learning model compare to the market as a probability estimator?
+## Key Findings
 
+1. FLB is present in the pooled data (γ = +0.046, p < 0.001) but after correcting for testing 9 leagues simultaneously, only Serie A was still statistically significant. Supports Winkelman's prediction suggesting that most individual league findings are fragile under robust testing.
 
----
+2. A null result is not an efficiency result: the Premier League is underpowered to detect a pooled-size bias, so "no FLB in the Premier League" is a statement about sample size, not market efficiency.
+
+3. The market out-predicts a carefully calibrated ML model, and the gap is statistically real — evidence that prices encode information (injuries, lineups, betting flow) beyond team-level featur
 
 ## Key findings
 
