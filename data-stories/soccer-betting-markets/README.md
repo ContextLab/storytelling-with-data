@@ -1,6 +1,19 @@
 # Calibrated Claims: Conformal Prediction Meets Sports Betting Market Efficiency
 
-An empirical study of soccer betting market efficiency across 9 European leagues (2015–2022), using conformal prediction and simulation-based uncertainty quantification.
+# Overview
+A study of soccer betting market efficiency across 9 European leagues (2015–2022), using conformal prediction and simulation-based uncertainty quantification.
+
+Betting markets are often thought of highly efficient markets, meaning that the prices should reflect true outcome probabilities. A widely documented violation of this efficiency though is the favorite-longshot bias (FLB) where favorites are underpriced relative to their true win probability, and longshots (the underdogs) are overpriced. Two recent papers give interesting ideas on this idea though and are what inspired this project. 
+
+Hegarty & Whelan (2024) show that the standard test for FLB is methodologically biased, and Winkelmann et al. (2024) show that the per-league, per-season analyses common in literature actually have some severe multiple-testing and statistical-power problems. So my main question is this project was to which sports betting markets can be still be called efficient (and whether they really have FLB) once they are tested more robustly with proper uncertainty quantification, multiple-testing correction, and power analysis?
+
+What was your main question?
+How did you approach exploring and/or answering your question?
+What data did you use?
+What sorts of data science tools did you use?
+What did you find or accomplish (be brief)? For example, did you find any interesting results or insights? Or did you solve an interesting problem that might be useful in another project?
+
+
 
 ### Central Questions
 
