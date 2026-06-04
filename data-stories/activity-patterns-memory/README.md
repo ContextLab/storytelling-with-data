@@ -3,7 +3,8 @@ Author: Kate Marine kate-marine
 
 **Main question:** Can the temporal patterns in fitbit activity data predict memory-task performance beyond what is already captured by a participant's average activity level? 
 
-Link to video:
+Link to video: https://youtu.be/tRfJIgmk0RA
+
 Link to code: https://github.com/kate-marine/wearable-dynamics-data-model.git 
 
 ## Approach
