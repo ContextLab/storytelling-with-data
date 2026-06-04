@@ -3,6 +3,9 @@ Author: Kate Marine kate-marine
 
 **Main question:** Can the temporal patterns in fitbit activity data predict memory-task performance beyond what is already captured by a participant's average activity level? 
 
+Link to video:
+Link to code: https://github.com/kate-marine/wearable-dynamics-data-model.git 
+
 ## Approach
 
 I built two models, one as a baseline using only mean activity, and another with added temporal/dynamic features. These included variability metrics (standard deviation, range, coefficient of variation) linear slope over the year, and autocorrelation at lags 1 and 7 days. For both models I standardized every feature so they were on a common scale and then fit a Ridge regression. I scored everything with shuffled k-fold cross-validation, and then looked at the R² to compare the two models' performance. 
