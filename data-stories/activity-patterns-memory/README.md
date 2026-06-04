@@ -41,7 +41,7 @@ python -m src.posthoc_analysis            # Elastic Net, Random Forest, Spearman
 
 ## Contributing to the code
 
-**Challenges and potential next steps:**
+### Challenges and potential next steps:
 I was a little limited in what I could include in the models since things like sleep and heart-rate/HRV (probably pretty strong ties to cognitive performance) were too sparse in the data. So this could definitely be revisited/replicated if can get more data. As a next step I might look into a different target metric (rather than memory) such as one of the mental health measures like typical stress. From a Spearman screen I ran I might look into the mean__floors vs. vocab learning correlation as well. 
 
 The biggest problem with the apporach I've taken is that the sample size of 113 participants is too small for meaningful modeling and led to significant overfitting. 
