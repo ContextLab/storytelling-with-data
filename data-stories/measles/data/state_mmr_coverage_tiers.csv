@@ -1,0 +1,16 @@
+school_year_end,states_at_or_above_95,states_90_to_95,states_below_90,total_jurisdictions,data_quality
+2011,21,26,4,51,verified
+2012,20,27,4,51,verified
+2013,23,25,3,51,interpolated
+2014,22,26,3,51,interpolated
+2015,22,26,3,51,interpolated
+2016,22,26,3,51,interpolated
+2017,22,26,3,51,interpolated
+2018,22,26,3,51,verified
+2019,23,25,3,51,verified
+2020,18,27,6,51,verified
+2021,14,27,9,50,verified
+2022,14,26,10,50,verified
+2023,11,25,14,50,verified
+2024,11,23,16,50,verified
+2025,11,23,16,50,verified

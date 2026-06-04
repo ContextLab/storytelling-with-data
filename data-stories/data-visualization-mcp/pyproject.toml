@@ -1,0 +1,32 @@
+[project]
+name = "data-viz-mcp"
+version = "0.1.0"
+description = "MCP server for dataset upload, visualization spec definition, and chart generation"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0",
+    "pandas>=2.0",
+    "matplotlib>=3.8",
+    "plotly>=5.20",
+    "pydantic>=2.0",
+]
+
+[project.scripts]
+data-viz-mcp = "data_viz_mcp.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/data_viz_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
