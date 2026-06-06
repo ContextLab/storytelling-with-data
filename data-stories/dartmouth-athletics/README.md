@@ -4,7 +4,7 @@ This comes from some of data analysis work I did for the Dartmouth Athletics dep
 
 Author: Kate Marine (kate-marine)
 
-Link to video: 
+Link to video: https://youtu.be/66dCtM_UWU8 
 
 
 ## Overview
